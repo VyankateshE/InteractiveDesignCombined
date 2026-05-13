@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<section name="java.lang.Class">
+		<item key="replaceBarOpen" value="false"/>
+		<list key="findhistory">
+			<item value="processAndGeneratePdf(MultipartFile htmlFile,"/>
+			<item value="pdfConfig.put(&quot;pageSize&quot;, pageSi"/>
+			<item value="dataSource"/>
+			<item value="pdfConfig.put(&quot;pageSize&quot;, pageSize);&#x0A;"/>
+			<item value="pdfConfig.put(&quot;pageSize&quot;, pageSize);&#x0A;pdfConfig.put(&quot;orientation&quot;, orientation);"/>
+			<item value="uploadHtmlToPdf"/>
+		</list>
+	</section>
+</section>

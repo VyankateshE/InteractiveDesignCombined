@@ -1,0 +1,646 @@
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Print Preview</title>
+        
+  <style>* { box-sizing: border-box; } body {margin: 0;}h1.custom-heading{font-size:32px;font-weight:bold;margin:16px 0;}h2.custom-heading{font-size:24px;font-weight:bold;margin:14px 0;}h3.custom-heading{font-size:18px;font-weight:bold;margin:12px 0;}h4.custom-heading{font-size:16px;font-weight:bold;margin:10px 0;}h5.custom-heading{font-size:14px;font-weight:bold;margin:8px 0;}h6.custom-heading{font-size:12px;font-weight:bold;margin:6px 0;}h7.custom-heading{font-size:11px;font-weight:bold;margin:4px 0;}</style>
+  
+
+        <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            body { font-family: Arial, sans-serif; background: white; }
+            .page-container { background: white; }
+            @media print {
+                body { background: white; }
+                .page-container { margin: 0; box-shadow: none; page-break-after: always; }
+            }
+        </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.2.4/css/buttons.dataTables.min.css">
+        
+<script>
+(function() {
+  var exportDatasourcePayload = {"defaultFileName":"","fileNames":[],"files":[],"baseJson":null};
+  var exportedJsonData = [];
+
+  if (exportDatasourcePayload.baseJson != null) {
+    exportedJsonData.push(exportDatasourcePayload.baseJson);
+  }
+
+  exportDatasourcePayload.files.forEach(function(entry) {
+    exportedJsonData.push(entry.data);
+  });
+
+  window.__iDesignerExportDataSources = exportDatasourcePayload;
+  window.project_type2 = "downloadedJsonType";
+  window.jsonData1 = exportedJsonData;
+  var project_type2 = window.project_type2;
+  var jsonData1 = window.jsonData1;
+
+  try {
+    if (exportDatasourcePayload.baseJson != null) {
+      localStorage.setItem("common_json", JSON.stringify(exportDatasourcePayload.baseJson));
+    } else {
+      localStorage.removeItem("common_json");
+    }
+
+    if (exportDatasourcePayload.defaultFileName) {
+      localStorage.setItem("common_json_file_name", exportDatasourcePayload.defaultFileName);
+    } else {
+      localStorage.removeItem("common_json_file_name");
+    }
+
+    if (exportDatasourcePayload.fileNames.length) {
+      localStorage.setItem("common_json_files", exportDatasourcePayload.fileNames.join(", "));
+    } else {
+      localStorage.removeItem("common_json_files");
+    }
+
+    exportDatasourcePayload.files.forEach(function(entry) {
+      localStorage.setItem("common_json_" + entry.name, JSON.stringify(entry.data));
+    });
+  } catch (storageErr) {
+    console.warn("Export datasource bootstrap failed:", storageErr);
+  }
+})();
+</script>
+        
+<script>
+  
+  if (window.parent) {
+    window.parent.postMessage({
+      type: 'pageCountUpdate',
+      totalPages: 1
+    }, '*');
+  }
+  
+  const chartSelector = '[data-i_designer-type="custom_line_chart"], [data-gjs-type="custom_line_chart"], .highchart-live-areaspline';
+
+  function areChartsReady() {
+    const charts = Array.from(document.querySelectorAll(chartSelector));
+    if (!charts.length) return true;
+
+    return charts.every((chart) => {
+      const text = (chart.textContent || '').trim();
+      if (/Failed to load chart library|Chart could not be rendered/i.test(text)) {
+        return true;
+      }
+
+      if (chart.getAttribute('data-chart-ready') === 'true') {
+        return true;
+      }
+
+      return Boolean(
+        chart.querySelector('svg, canvas, .highcharts-container, .highcharts-root')
+      );
+    });
+  }
+
+  function waitForChartsBeforePagination(timeoutMs) {
+    return new Promise((resolve) => {
+      const start = Date.now();
+
+      function check() {
+        if (areChartsReady()) {
+          resolve(true);
+          return;
+        }
+
+        if (Date.now() - start >= timeoutMs) {
+          resolve(false);
+          return;
+        }
+
+        setTimeout(check, 250);
+      }
+
+      check();
+    });
+  }
+
+  window.addEventListener('load', function() {
+    waitForChartsBeforePagination(15000).then(function() {
+      setTimeout(function() {
+        paginatePreview();
+      }, 250);
+    });
+  });
+  function findDecorationsInDocument() {
+    const allWatermarks = document.querySelectorAll('.watermark, [data-watermark]');
+    const allPageNumbers = document.querySelectorAll('.page-number, [data-page-number]');
+
+    return {
+      watermark: allWatermarks.length > 0 ? allWatermarks[0] : null,
+      pageNumber: allPageNumbers.length > 0 ? allPageNumbers[0] : null
+    };
+  }
+
+ function paginatePreview() {
+  const documentDecorations = findDecorationsInDocument();
+const pageContainers = document.querySelectorAll('.page-container');
+
+if (pageContainers.length === 0) {
+  if (window.parent) {
+    window.parent.postMessage({
+      type: 'pageCountUpdate',
+      totalPages: 1
+    }, '*');
+  }
+  return;
+}
+
+const firstPage = pageContainers[0];
+const firstPageContent = firstPage.querySelector('.page-content');
+
+if (!firstPageContent) {
+  if (window.parent) {
+    window.parent.postMessage({
+      type: 'pageCountUpdate',
+      totalPages: pageContainers.length
+    }, '*');
+  }
+  return;
+}
+
+const pageSettings = extractPageSettings(firstPage);
+  if (!pageSettings.watermark && documentDecorations.watermark) {
+  pageSettings.watermark = {
+    content: documentDecorations.watermark.textContent || documentDecorations.watermark.getAttribute('data-watermark'),
+    style: documentDecorations.watermark.style.cssText,
+    element: documentDecorations.watermark.cloneNode(true)
+  };
+}
+
+if (!pageSettings.pageNumberFormat && documentDecorations.pageNumber) {
+  const text = documentDecorations.pageNumber.textContent.trim();
+  const format = documentDecorations.pageNumber.getAttribute('data-format') || text.replace(/d+/g, '{n}') || 'Page {n}';
+  
+  pageSettings.pageNumberFormat = format;
+  pageSettings.pageNumberPosition = {
+    style: documentDecorations.pageNumber.style.cssText,
+    classList: Array.from(documentDecorations.pageNumber.classList),
+    element: documentDecorations.pageNumber.cloneNode(true)
+  };
+}
+
+const pageHeight = parseInt(window.getComputedStyle(firstPageContent).height) || 1027;
+
+const allNewPages = [];
+let globalPageNumber = 1;
+
+for (let i = 0; i < pageContainers.length; i++) {
+  const pageContainer = pageContainers[i];
+  const mainContent = pageContainer.querySelector('.main-content-area');
+
+  const skipPageNumber = pageContainer.getAttribute('data-skip-page-number') === 'true';
+
+  if (!mainContent) {
+    if (!skipPageNumber) {
+      applyPageSettings(pageContainer, pageSettings, globalPageNumber);
+      globalPageNumber++;
+    } else {
+      applyPageSettings(pageContainer, pageSettings, null);
+    }
+    allNewPages.push(pageContainer.outerHTML);
+    continue;
+  }
+
+  const headerWrapper = pageContainer.querySelector('.header-wrapper');
+  const footerWrapper = pageContainer.querySelector('.footer-wrapper');
+  const headerHeight = headerWrapper ? headerWrapper.offsetHeight : 0;
+  const footerHeight = footerWrapper ? footerWrapper.offsetHeight : 0;
+  const availableHeight = pageHeight - headerHeight - footerHeight - 40;
+  const contentHeight = mainContent.scrollHeight;
+
+  if (contentHeight <= availableHeight) {
+    if (!skipPageNumber) {
+      applyPageSettings(pageContainer, pageSettings, globalPageNumber);
+      globalPageNumber++;
+    } else {
+      applyPageSettings(pageContainer, pageSettings, null);
+    }
+
+    allNewPages.push(pageContainer.outerHTML);
+    continue;
+  }
+
+  const tableRows = extractTableRows(mainContent);
+  if (tableRows.length > 0) {
+    const contentAboveTable = [];
+    const contentBelowTable = [];
+    const firstTable = mainContent.querySelector('table');
+    if (firstTable) {
+      const tableContainer = firstTable.closest('.json-table-container') || firstTable.closest('.json-table-wrapper') || firstTable.parentElement;
+      let passedTable = false;
+      for (let child of mainContent.children) {
+        if (child === tableContainer || (tableContainer && tableContainer.contains(child))) {
+          passedTable = true;
+          continue;
+        }
+        if (!passedTable) {
+          contentAboveTable.push(child.cloneNode(true));
+        } else {
+          contentBelowTable.push(child.cloneNode(true));
+        }
+      }
+    }
+    const newPages = splitTableIntoPages(
+      pageContainer,
+      tableRows,
+      availableHeight,
+      headerWrapper,
+      footerWrapper,
+      pageSettings,
+      globalPageNumber,
+      skipPageNumber,
+      contentAboveTable,
+      contentBelowTable
+    );
+
+    allNewPages.push(...newPages);
+
+    if (!skipPageNumber) {
+      globalPageNumber += newPages.length;
+    }
+ } else {
+    const children = Array.from(mainContent.children);
+
+    const newPages = splitIntoPages(
+      pageContainer,
+      children,
+      availableHeight,
+      headerWrapper,
+      footerWrapper,
+      pageSettings,
+      globalPageNumber,
+      skipPageNumber
+    );
+
+    allNewPages.push(...newPages);
+
+    if (!skipPageNumber) {
+      globalPageNumber += newPages.length;
+    }
+}
+}
+
+document.body.innerHTML = '';
+allNewPages.forEach(html => {
+  const wrapper = document.createElement("div");
+  wrapper.innerHTML = html;
+  document.body.appendChild(wrapper.firstElementChild);
+});
+
+if (window.parent) {
+  window.parent.postMessage({
+    type: 'pageCountUpdate',
+    totalPages: allNewPages.length
+  }, '*');
+}
+}
+
+
+function extractPageSettings(pageContainer) {
+    const settings = {
+      backgroundColor: window.getComputedStyle(pageContainer).backgroundColor || '#ffffff',
+      margin: window.getComputedStyle(pageContainer).margin || '0',
+      padding: window.getComputedStyle(pageContainer).padding || '0',
+      watermark: null,
+      pageNumberFormat: null,
+      pageNumberPosition: null,
+      containerStyle: pageContainer.style.cssText,
+      containerClasses: Array.from(pageContainer.classList)
+    };
+
+    const watermark = pageContainer.querySelector('.watermark, [data-watermark]');
+    if (watermark) {
+      settings.watermark = {
+        content: watermark.textContent || watermark.getAttribute('data-watermark'),
+        style: watermark.style.cssText,
+        element: watermark.cloneNode(true)
+      };
+    } else {
+    }
+
+    const pageNumber = pageContainer.querySelector('.page-number, [data-page-number]');
+    if (pageNumber) {
+      let format = pageNumber.getAttribute('data-format');
+      if (!format) {
+        const text = pageNumber.textContent.trim();
+        format = text.replace(/d+/g, '{n}');
+        if (!format.includes('{n}')) {
+          format = 'Page {n}'; // Default fallback
+        }
+      }
+      
+      settings.pageNumberFormat = format;
+      settings.pageNumberPosition = {
+        style: pageNumber.style.cssText,
+        classList: Array.from(pageNumber.classList),
+        element: pageNumber.cloneNode(true)
+      };
+
+    } else {
+    }
+    return settings;
+  }
+
+function applyPageSettings(pageContainer, settings, pageNumber) {
+    if (settings.containerStyle) {
+      pageContainer.style.cssText = settings.containerStyle;
+    }
+    
+    if (settings.backgroundColor) {
+      pageContainer.style.backgroundColor = settings.backgroundColor;
+    }
+
+    if (settings.margin) {
+      pageContainer.style.margin = settings.margin;
+    }
+
+    if (settings.padding) {
+      pageContainer.style.padding = settings.padding;
+    }
+
+    if (settings.watermark && settings.watermark.element) {
+      let existing = pageContainer.querySelector('.watermark');
+      if (!existing) {
+        const watermarkEl = settings.watermark.element.cloneNode(true);
+        pageContainer.appendChild(watermarkEl);
+      }
+    }
+
+    if (settings.pageNumberFormat && pageNumber !== null && settings.pageNumberPosition && settings.pageNumberPosition.element) {
+      const numberText = settings.pageNumberFormat.replace('{n}', pageNumber);
+      let pageNumEl = pageContainer.querySelector('.page-number, [data-page-number]');
+  
+      if (!pageNumEl) {
+        pageNumEl = settings.pageNumberPosition.element.cloneNode(true);
+        pageContainer.appendChild(pageNumEl);
+      }
+  
+      pageNumEl.textContent = numberText;
+      pageNumEl.setAttribute('data-page-number', pageNumber);
+    } else if (settings.pageNumberFormat && pageNumber === null) {
+      const pageNumEl = pageContainer.querySelector('.page-number, [data-page-number]');
+      if (pageNumEl) {
+        pageNumEl.remove();
+      }
+    }
+  }
+
+  function extractTableRows(mainContent) {
+    const rows = [];
+    const subreports = mainContent.querySelectorAll('.subreport-block, .subreport-container, .expanded-subreport');
+
+    if (subreports.length > 0) {
+      subreports.forEach(function(subreport) {
+        const tables = subreport.querySelectorAll('table');
+    
+        tables.forEach(function(table) {
+          const tbody = table.querySelector('tbody');
+          if (tbody) {
+            const tableRows = Array.from(tbody.querySelectorAll('tr'));
+            const tableStructure = {
+              table: table.cloneNode(false),
+              thead: table.querySelector('thead') ? table.querySelector('thead').cloneNode(true) : null,
+              tfoot: table.querySelector('tfoot') ? table.querySelector('tfoot').cloneNode(true) : null,
+              rows: tableRows
+            };
+            rows.push(tableStructure);
+          }
+        });
+      });
+    } else {
+      const tables = mainContent.querySelectorAll('table');
+      tables.forEach(function(table) {
+        const tbody = table.querySelector('tbody');
+        if (tbody) {
+          const tableRows = Array.from(tbody.querySelectorAll('tr'));
+          const tableStructure = {
+            table: table.cloneNode(false),
+            thead: table.querySelector('thead') ? table.querySelector('thead').cloneNode(true) : null,
+            tfoot: table.querySelector('tfoot') ? table.querySelector('tfoot').cloneNode(true) : null,
+            rows: tableRows
+          };
+          rows.push(tableStructure);
+        }
+      });
+    }
+
+    return rows;
+  }
+
+function splitTableIntoPages(templatePage, tableStructures, availableHeight, headerWrapper, footerWrapper, pageSettings, startPageNumber, skipPageNumber, contentAboveTable, contentBelowTable) {
+    const pages = [];
+    let currentPageNumber = startPageNumber;
+    contentAboveTable = contentAboveTable || [];
+    contentBelowTable = contentBelowTable || [];
+
+    tableStructures.forEach(function(tableStructure, structureIndex) {
+      const rows = tableStructure.rows;
+      const tableTemplate = tableStructure.table;
+      const thead = tableStructure.thead;
+      const tfoot = tableStructure.tfoot;
+      const theadHeight = thead ? thead.offsetHeight : 0;
+      const tfootHeight = tfoot ? tfoot.offsetHeight : 0;
+      const tableOverhead = theadHeight + tfootHeight;
+      let currentPage = templatePage.cloneNode(true);
+      let mainContent = currentPage.querySelector('.main-content-area');
+      mainContent.innerHTML = '';
+      if (structureIndex === 0 && contentAboveTable.length > 0) {
+        contentAboveTable.forEach(function(cloned) {
+          mainContent.appendChild(cloned.cloneNode(true));
+        });
+      }
+  
+      let currentTable = tableTemplate.cloneNode(false);
+      if (thead) currentTable.appendChild(thead.cloneNode(true));
+  
+      let currentTbody = document.createElement('tbody');
+      currentTable.appendChild(currentTbody);
+  
+      let currentHeight = tableOverhead;
+  
+      for (let i = 0; i < rows.length; i++) {
+        const row = rows[i];
+        const rowHeight = row.offsetHeight || 40;
+    
+        if (currentHeight + rowHeight > availableHeight && currentHeight > tableOverhead) {
+          if (tfoot) currentTable.appendChild(tfoot.cloneNode(true));
+          mainContent.appendChild(currentTable);
+      
+          if (!skipPageNumber) {
+            applyPageSettings(currentPage, pageSettings, currentPageNumber);
+            currentPageNumber++;
+          } else {
+            applyPageSettings(currentPage, pageSettings, null);
+          }
+          
+          pages.push(currentPage.outerHTML);
+
+          currentPage = templatePage.cloneNode(true);
+          mainContent = currentPage.querySelector('.main-content-area');
+          mainContent.innerHTML = '';
+      
+          currentTable = tableTemplate.cloneNode(false);
+          if (thead) currentTable.appendChild(thead.cloneNode(true));
+          currentTbody = document.createElement('tbody');
+          currentTable.appendChild(currentTbody);
+      
+          currentHeight = tableOverhead;
+        }
+    
+        currentTbody.appendChild(row.cloneNode(true));
+        currentHeight += rowHeight;
+      }
+  
+      if (tfoot) currentTable.appendChild(tfoot.cloneNode(true));
+      mainContent.appendChild(currentTable);
+
+      const isLastStructure = structureIndex === tableStructures.length - 1;
+      if (isLastStructure && contentBelowTable.length > 0) {
+        contentBelowTable.forEach(function(cloned) {
+          mainContent.appendChild(cloned.cloneNode(true));
+        });
+      }
+  
+      if (!skipPageNumber) {
+        applyPageSettings(currentPage, pageSettings, currentPageNumber);
+        currentPageNumber++;
+      } else {
+        applyPageSettings(currentPage, pageSettings, null);
+      }
+      
+      pages.push(currentPage.outerHTML);
+    });
+
+    return pages;
+  }
+
+  function splitIntoPages(templatePage, children, availableHeight, headerWrapper, footerWrapper, pageSettings, startPageNumber, skipPageNumber) {
+    const pages = [];
+    let currentPageNumber = startPageNumber;
+    let currentPage = templatePage.cloneNode(true);
+    let mainContent = currentPage.querySelector('.main-content-area');
+    mainContent.innerHTML = '';
+    
+    let currentHeight = 0;
+
+    for (let i = 0; i < children.length; i++) {
+      const child = children[i];
+      const childHeight = child.offsetHeight || 50;
+  
+      if (currentHeight + childHeight > availableHeight && currentHeight > 0) {
+        if (!skipPageNumber) {
+          applyPageSettings(currentPage, pageSettings, currentPageNumber);
+          currentPageNumber++;
+        } else {
+          applyPageSettings(currentPage, pageSettings, null);
+        }
+        
+        pages.push(currentPage.outerHTML);
+        currentPage = templatePage.cloneNode(true);
+        mainContent = currentPage.querySelector('.main-content-area');
+        mainContent.innerHTML = ''; // Clear only main-content
+        
+        currentHeight = 0;
+      }
+  
+      mainContent.appendChild(child.cloneNode(true));
+      currentHeight += childHeight;
+    }
+
+    if (!skipPageNumber) {
+      applyPageSettings(currentPage, pageSettings, currentPageNumber);
+    } else {
+      applyPageSettings(currentPage, pageSettings, null);
+    }
+    
+    pages.push(currentPage.outerHTML);
+
+    return pages;
+  }
+    
+function createNewPage(templatePage, headerWrapper, footerWrapper) {
+    const newPage = templatePage.cloneNode(true);
+    const newMainContent = newPage.querySelector('.main-content-area');
+    if (newMainContent) {
+      newMainContent.innerHTML = '';
+    }
+    
+    return newPage;
+  }
+
+  function clonePageDecoration(sourcePageContainer, targetPageContainer) {
+    const watermark = sourcePageContainer.querySelector('.watermark, [data-watermark]');
+    if (watermark && !targetPageContainer.querySelector('.watermark, [data-watermark]')) {
+      const clonedWatermark = watermark.cloneNode(true);
+      targetPageContainer.appendChild(clonedWatermark);
+    }
+
+    const pageNum = sourcePageContainer.querySelector('.page-number, [data-page-number]');
+    if (pageNum && !targetPageContainer.querySelector('.page-number, [data-page-number]')) {
+      const clonedPageNum = pageNum.cloneNode(true);
+      targetPageContainer.appendChild(clonedPageNum);
+    }
+
+    targetPageContainer.style.backgroundColor = sourcePageContainer.style.backgroundColor;
+    targetPageContainer.style.margin = sourcePageContainer.style.margin;
+    targetPageContainer.style.padding = sourcePageContainer.style.padding;
+  }
+</script>
+  
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+<script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.24/build/pdfmake.min.js"></script>
+<script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.24/build/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.2.1/js/buttons.print.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.2.4/js/dataTables.buttons.min.js"></script>
+<script src="https://code.highcharts.com/stock/highstock.js"></script>
+<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bwip-js/dist/bwip-js-min.js"></script>
+<script src="https://code.highcharts.com/modules/drilldown.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/hot-formula-parser@4.0.0/dist/formula-parser.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html-docx-js/dist/html-docx.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html-to-rtf@2.1.0/app/browser/bundle.min.js"></script>
+      </head>
+      <body>
+        <h1 class="custom-heading">New Heading</h1><section id="iv09" data-json-file-index="0" class="bdg-sect"><h1 class="heading">Insert title here</h1><p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></section>
+        
+      </body>
+      </html>
+        

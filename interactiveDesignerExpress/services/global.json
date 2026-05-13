@@ -1,0 +1,13 @@
+{
+    "paymentAmounts":{
+        "chargeFull":100,
+        "chargeHalf":50
+    },
+    "referralAmount":{
+        "amount":100
+    },
+    "equifaxAmount":{
+        "chargeFull":200,
+        "chargeHalf":100
+    }
+}

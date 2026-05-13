@@ -1,0 +1,109 @@
+
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <meta charset="utf-8" />
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.2.4/css/buttons.dataTables.min.css">
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" defer></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js" defer></script>
+<script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.24/build/pdfmake.min.js" defer></script>
+<script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.24/build/vfs_fonts.js" defer></script>
+<script src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.html5.min.js" defer></script>
+<script src="https://cdn.datatables.net/buttons/1.2.4/js/dataTables.buttons.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bwip-js/dist/bwip-js-min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/hot-formula-parser@4.0.0/dist/formula-parser.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/html-to-rtf@2.1.0/app/browser/bundle.min.js" defer></script>
+          <style>
+* { box-sizing: border-box; } body {margin: 0;}#iupi{height:1123px;margin:0px 0px 0px 0px;position:relative;overflow:hidden;background-color:#ffffff;display:flex;flex-direction:column;box-sizing:border-box;-webkit-print-color-adjust:exact;color-adjust:exact;print-color-adjust:exact;}#ip9h{width:100%;height:48px;flex-shrink:0;}#i17t{flex:1;display:flex;flex-direction:column;height:1027px;}#iupd{width:100%;height:100%;border:2px dashed transparent;transition:border-color 0.2s ease;overflow:hidden;position:relative;}#iw78{width:100%;height:48px;flex-shrink:0;}#ijrx{width:794px;height:1123px;background:#ffffff;margin:20px auto;box-shadow:0 4px 12px rgba(0, 0, 0, 0.15);border:2px solid transparent;position:relative;overflow:hidden;box-sizing:border-box;transition:border-color 0.2s ease;-webkit-print-color-adjust:exact;color-adjust:exact;print-color-adjust:exact;}#igxdh{height:1123px;margin:0px 0px 0px 0px;position:relative;overflow:hidden;background-color:#ffffff;display:flex;flex-direction:column;}#ip77z{width:100%;height:48px;flex-shrink:0;}#iryr5{flex:1;display:flex;flex-direction:column;height:1027px;}#iqvz8{width:100%;height:100%;border:2px dashed transparent;transition:border-color 0.2s ease;overflow:hidden;position:relative;}#ieay6{width:100%;height:48px;flex-shrink:0;}#i96u1{width:100%;height:100%;display:flex;justify-content:center;align-items:center;border:2px dashed transparent;transition:border-color 0.2s ease;}#i735{width:794px;height:1123px;background:#ffffff;margin:20px auto;box-shadow:0 4px 12px rgba(0, 0, 0, 0.15);border:2px solid transparent;position:relative;overflow:hidden;box-sizing:border-box;transition:border-color 0.2s ease;}#is89i{width:100%;height:100%;display:flex;justify-content:center;align-items:center;border:2px dashed transparent;transition:border-color 0.2s ease;}#iv1ni{width:100%;height:100%;display:flex;justify-content:center;align-items:center;border:2px dashed transparent;transition:border-color 0.2s ease;}#ibdbz{width:100%;height:100%;display:flex;justify-content:center;align-items:center;border:2px dashed transparent;transition:border-color 0.2s ease;} 
+      @page {
+        margin: 12mm !important;
+      }
+      html, body {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: none !important;
+        overflow: visible !important;
+      }
+      body {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      .page-container,
+      .page-content,
+      .header-wrapper,
+      .page-header-element,
+      .content-wrapper,
+      .main-content-area,
+      .footer-wrapper,
+      .page-footer-element {
+        position: static !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: none !important;
+        overflow: visible !important;
+        transform: none !important;
+        page-break-before: auto !important;
+        page-break-after: auto !important;
+        break-before: auto !important;
+        break-after: auto !important;
+      }
+      .page-break,
+      [class*="page-break"] {
+        display: none !important;
+        height: 0 !important;
+      }
+      figure,
+      table,
+      img,
+      svg,
+      canvas {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        max-width: 100% !important;
+      }
+      img {
+        display: block !important;
+        max-width: 375pt !important;
+        margin: 8pt 0 !important;
+      }
+      table {
+        width: 100% !important;
+        table-layout: fixed !important;
+        border-collapse: collapse !important;
+        margin: 8pt 0 !important;
+      }
+      td, th {
+        word-break: break-word !important;
+        white-space: normal !important;
+      }
+      p, div, section, article, table, figure, ul, ol, li {
+        page-break-before: auto !important;
+        page-break-after: auto !important;
+        margin-top: 0 !important;
+        margin-bottom: 8pt !important;
+      }
+    </style>
+        </head>
+        <body><div data-page-id="page-1" data-page-index="0" class="page-container"><div data-i_designer-highlightable="true" data-i_designer-type="default" draggable="true" class="page-content"><div data-i_designer-highlightable="true" data-i_designer-type="default" draggable="true" data-shared-region="header" data-condition="all" class="header-wrapper" style=""><div data-i_designer-highlightable="true" data-i_designer-type="default" class="page-header-element"></div></div><div data-i_designer-highlightable="true" data-i_designer-type="default" draggable="true" class="content-wrapper"><div data-i_designer-highlightable="true" data-i_designer-type="default" draggable="true" data-json-file-index="0" class="main-content-area" style=""></div></div><div data-i_designer-highlightable="true" data-i_designer-type="default" draggable="true" data-shared-region="footer" data-condition="all" class="footer-wrapper"><div data-i_designer-highlightable="true" data-i_designer-type="default" class="page-footer-element"></div></div></div></div><div data-page-id="page-1778244591895-6j2jomo1i" data-page-index="1" class="page-container"><div data-i_designer-highlightable="true" data-i_designer-type="default" draggable="true" class="page-content"><div data-i_designer-highlightable="true" data-i_designer-type="default" draggable="true" data-shared-region="header" data-condition="all" class="header-wrapper"><div data-i_designer-highlightable="true" data-i_designer-type="default" draggable="true" class="page-header-element"></div></div><div data-i_designer-highlightable="true" data-i_designer-type="default" draggable="true" class="content-wrapper"><div data-i_designer-highlightable="true" data-i_designer-type="default" draggable="true" class="main-content-area" style=""></div></div><div data-i_designer-highlightable="true" data-i_designer-type="default" draggable="true" data-shared-region="footer" class="footer-wrapper"><div data-i_designer-highlightable="true" data-i_designer-type="default" draggable="true" class="page-footer-element"></div></div></div></div></body>
+      </html>
+    

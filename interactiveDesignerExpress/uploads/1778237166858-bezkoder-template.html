@@ -1,0 +1,839 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.2.4/css/buttons.dataTables.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" defer></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+  <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js" defer></script>
+  <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.24/build/pdfmake.min.js" defer></script>
+  <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.24/build/vfs_fonts.js" defer></script>
+  <script src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.html5.min.js" defer></script>
+  <script src="https://cdn.datatables.net/buttons/1.2.4/js/dataTables.buttons.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bwip-js/dist/bwip-js-min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/hot-formula-parser@4.0.0/dist/formula-parser.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/html-to-rtf@2.1.0/app/browser/bundle.min.js" defer></script>
+  <style>@page { size: A4 portrait; margin: 10mm 10mm 10mm 10mm; }
+* { box-sizing: border-box; } body {margin: 0;}#i2u2{height:1047px;margin:38px 38px 38px 38px;position:relative;overflow:hidden;background-color:#ffffff;display:flex;flex-direction:column;box-sizing:border-box;-webkit-print-color-adjust:exact;color-adjust:exact;print-color-adjust:exact;}#ip0y{width:100%;height:48px;flex-shrink:0;}#i6rd{flex:1;display:flex;flex-direction:column;height:951px;}#i8og{width:100%;height:100%;border:2px dashed transparent;transition:border-color 0.2s ease;overflow:hidden;position:relative;}#i1w1{width:100%;height:48px;flex-shrink:0;}#i7n6{width:794px;height:1123px;background:#ffffff;box-shadow:0 4px 12px rgba(0, 0, 0, 0.15);border:2px solid transparent;position:relative;page-break-after:always;overflow:hidden;box-sizing:border-box;transition:border-color 0.2s ease;-webkit-print-color-adjust:exact;color-adjust:exact;print-color-adjust:exact;}h1.custom-heading{font-size:32px;font-weight:bold;margin:16px 0;}h2.custom-heading{font-size:24px;font-weight:bold;margin:14px 0;}h3.custom-heading{font-size:18px;font-weight:bold;margin:12px 0;}h4.custom-heading{font-size:16px;font-weight:bold;margin:10px 0;}h5.custom-heading{font-size:14px;font-weight:bold;margin:8px 0;}h6.custom-heading{font-size:12px;font-weight:bold;margin:6px 0;}h7.custom-heading{font-size:11px;font-weight:bold;margin:4px 0;}#isrw6{margin-top:5px;}#i7lm5{width:99.5%;padding-top:10px;padding-bottom:10px;}#json-table-c2021{width:100%;border-collapse:collapse;font-family:Arial, sans-serif;background-color:#ffffff;border:none;}#ia02t{background-color:#f8f9fa;}#json-table-c2021-header-Qty{padding:8px;font-weight:bold;width:auto;text-align:left;box-sizing:border-box;position:relative;my-input-json:english.transactions1Tbl.heading.Qty;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;}#json-table-c2021-header-Description{padding:8px;font-weight:bold;width:auto;text-align:left;box-sizing:border-box;position:relative;my-input-json:english.transactions1Tbl.heading.Description;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;}#json-table-c2021-header-GrossAmount{padding:8px;font-weight:bold;width:auto;text-align:left;box-sizing:border-box;position:relative;my-input-json:english.transactions1Tbl.heading.GrossAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;}#json-table-c2021-header-Discount{padding:8px;font-weight:bold;width:auto;text-align:left;box-sizing:border-box;position:relative;my-input-json:english.transactions1Tbl.heading.Discount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;}#json-table-c2021-header-TaxRate{padding:8px;font-weight:bold;width:auto;text-align:left;box-sizing:border-box;position:relative;my-input-json:english.transactions1Tbl.heading.TaxRate;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;}#json-table-c2021-header-TaxAmount{padding:8px;font-weight:bold;width:auto;text-align:left;box-sizing:border-box;position:relative;my-input-json:english.transactions1Tbl.heading.TaxAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;}#i03oh{background-color:#ffffff;}#json-table-c2021-cell-0-Qty{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[0].Qty;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-0-Description{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[0].Description;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-0-GrossAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[0].GrossAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-0-Discount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[0].Discount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-0-TaxRate{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[0].TaxRate;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-0-TaxAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[0].TaxAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#iqu9f{background-color:#f8f9fa;}#json-table-c2021-cell-1-Qty{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[1].Qty;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-1-Description{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[1].Description;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-1-GrossAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[1].GrossAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-1-Discount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[1].Discount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-1-TaxRate{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[1].TaxRate;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-1-TaxAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[1].TaxAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#i3xbj{background-color:#ffffff;}#json-table-c2021-cell-2-Qty{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[2].Qty;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-2-Description{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[2].Description;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-2-GrossAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[2].GrossAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-2-Discount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[2].Discount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-2-TaxRate{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[2].TaxRate;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-2-TaxAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[2].TaxAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#ixuxg{background-color:#f8f9fa;}#json-table-c2021-cell-3-Qty{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[3].Qty;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-3-Description{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[3].Description;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-3-GrossAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[3].GrossAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-3-Discount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[3].Discount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-3-TaxRate{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[3].TaxRate;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-3-TaxAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[3].TaxAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#ilj1c{background-color:#ffffff;}#json-table-c2021-cell-4-Qty{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[4].Qty;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-4-Description{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[4].Description;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-4-GrossAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[4].GrossAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-4-Discount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[4].Discount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-4-TaxRate{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[4].TaxRate;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-4-TaxAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[4].TaxAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#iz9nj{background-color:#f8f9fa;}#json-table-c2021-cell-5-Qty{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[5].Qty;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-5-Description{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[5].Description;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-5-GrossAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[5].GrossAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-5-Discount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[5].Discount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-5-TaxRate{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[5].TaxRate;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-5-TaxAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[5].TaxAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#iy1d9{background-color:#ffffff;}#json-table-c2021-cell-6-Qty{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[6].Qty;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-6-Description{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[6].Description;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-6-GrossAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[6].GrossAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-6-Discount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[6].Discount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-6-TaxRate{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[6].TaxRate;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-6-TaxAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[6].TaxAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#igiw3{background-color:#f8f9fa;}#json-table-c2021-cell-7-Qty{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[7].Qty;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-7-Description{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[7].Description;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-7-GrossAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[7].GrossAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-7-Discount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[7].Discount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-7-TaxRate{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[7].TaxRate;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c2021-cell-7-TaxAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[7].TaxAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#irt3hx{height:1047px;margin:38px 38px 38px 38px;position:relative;overflow:hidden;background-color:#ffffff;display:flex;flex-direction:column;}#icjqyl{width:100%;height:48px;flex-shrink:0;}#i6w3qm{width:100%;height:100%;display:flex;justify-content:center;align-items:center;border:2px dashed transparent;transition:border-color 0.2s ease;}#ipkj49{flex:1;display:flex;flex-direction:column;height:951px;}#i6fcet{width:100%;height:100%;border:2px dashed transparent;transition:border-color 0.2s ease;overflow:hidden;position:relative;}#iklxxn{width:100%;height:48px;flex-shrink:0;}#ixl05u{width:100%;height:100%;display:flex;justify-content:center;align-items:center;border:2px dashed transparent;transition:border-color 0.2s ease;}#izz898{width:794px;height:1123px;background:#ffffff;box-shadow:0 4px 12px rgba(0, 0, 0, 0.15);border:2px solid transparent;position:relative;page-break-after:always;overflow:hidden;box-sizing:border-box;transition:border-color 0.2s ease;}#ipid1j{json-file-index:1;my-input-json:english.VI[0].name;}#ivh691{width:100%;height:100%;display:flex;justify-content:center;align-items:center;border:2px dashed transparent;transition:border-color 0.2s ease;}#igrg1k{json-file-index:1;my-input-json:english.VI[0].name;}#iw9cly{width:100%;height:100%;display:flex;justify-content:center;align-items:center;border:2px dashed transparent;transition:border-color 0.2s ease;}#ibdezh{width:99.5%;padding-top:10px;padding-bottom:10px;}#json-table-c10375{width:100%;border-collapse:collapse;font-family:Arial, sans-serif;background-color:#ffffff;border:none;}#imvxof{background-color:#f8f9fa;}#json-table-c10375-header-Qty{padding:8px;font-weight:bold;width:auto;text-align:left;box-sizing:border-box;position:relative;my-input-json:english.transactions1Tbl.heading.Qty;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;}#json-table-c10375-header-Description{padding:8px;font-weight:bold;width:auto;text-align:left;box-sizing:border-box;position:relative;my-input-json:english.transactions1Tbl.heading.Description;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;}#json-table-c10375-header-GrossAmount{padding:8px;font-weight:bold;width:auto;text-align:left;box-sizing:border-box;position:relative;my-input-json:english.transactions1Tbl.heading.GrossAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;}#json-table-c10375-header-Discount{padding:8px;font-weight:bold;width:auto;text-align:left;box-sizing:border-box;position:relative;my-input-json:english.transactions1Tbl.heading.Discount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;}#json-table-c10375-header-TaxRate{padding:8px;font-weight:bold;width:auto;text-align:left;box-sizing:border-box;position:relative;my-input-json:english.transactions1Tbl.heading.TaxRate;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;}#json-table-c10375-header-TaxAmount{padding:8px;font-weight:bold;width:auto;text-align:left;box-sizing:border-box;position:relative;my-input-json:english.transactions1Tbl.heading.TaxAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;}#ic6uac{background-color:#ffffff;}#json-table-c10375-cell-0-Qty{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[0].Qty;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-0-Description{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[0].Description;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-0-GrossAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[0].GrossAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-0-Discount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[0].Discount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-0-TaxRate{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[0].TaxRate;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-0-TaxAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[0].TaxAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#i1luqr{background-color:#f8f9fa;}#json-table-c10375-cell-1-Qty{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[1].Qty;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-1-Description{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[1].Description;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-1-GrossAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[1].GrossAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-1-Discount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[1].Discount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-1-TaxRate{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[1].TaxRate;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-1-TaxAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[1].TaxAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#i9tftc{background-color:#ffffff;}#json-table-c10375-cell-2-Qty{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[2].Qty;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-2-Description{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[2].Description;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-2-GrossAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[2].GrossAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-2-Discount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[2].Discount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-2-TaxRate{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[2].TaxRate;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-2-TaxAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[2].TaxAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#iday5m{background-color:#f8f9fa;}#json-table-c10375-cell-3-Qty{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[3].Qty;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-3-Description{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[3].Description;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-3-GrossAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[3].GrossAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-3-Discount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[3].Discount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-3-TaxRate{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[3].TaxRate;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-3-TaxAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[3].TaxAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#itl64i{background-color:#ffffff;}#json-table-c10375-cell-4-Qty{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[4].Qty;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-4-Description{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[4].Description;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-4-GrossAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[4].GrossAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-4-Discount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[4].Discount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-4-TaxRate{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[4].TaxRate;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}#json-table-c10375-cell-4-TaxAmount{padding:8px;position:relative;width:auto;box-sizing:border-box;my-input-json:english.transactions1Tbl.data[4].TaxAmount;border:none;color:#000000;font-family:Arial, sans-serif;vertical-align:middle;text-align:left;}</style>
+ </head>
+ <body>
+  <div data-page-id="page-1" data-page-index="0" class="page-container" id="i7n6">
+   <div class="page-content" id="i2u2">
+    <div data-shared-region="header" data-condition="all" id="ip0y" class="header-wrapper">
+     <div class="page-header-element" id="iw9cly">
+      <h1 class="custom-heading" data-i_designer-highlightable="true" data-json-file-index="1" my-input-json="VI[0].name" id="igrg1k" data-i_designer-type="custom-heading">Mr Manmeet</h1>
+     </div>
+    </div>
+    <div class="content-wrapper" id="i6rd">
+     <div id="i8og" data-json-file-index="1" class="main-content-area" data-i_designer-type="default" data-i_designer-highlightable="true">
+      <section class="bdg-sect" id="i3qws">
+       <h1 class="heading" data-i_designer-type="text" data-i_designer-highlightable="true">Insert title here</h1>
+       <p class="paragraph" data-i_designer-type="text" data-i_designer-highlightable="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      </section>
+      <section class="bdg-sect" id="ifpu5">
+       <h1 class="heading" data-i_designer-type="text" data-i_designer-highlightable="true">Insert title here</h1>
+       <p class="paragraph" data-i_designer-type="text" data-i_designer-highlightable="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      </section>
+      <section class="bdg-sect" id="inqhr">
+       <h1 class="heading" data-i_designer-type="text" data-i_designer-highlightable="true">Insert title here</h1>
+       <p class="paragraph" data-i_designer-type="text" data-i_designer-highlightable="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      </section>
+      <div data-gjs-type="json-table" data-json-state="%7B%22headers%22%3A%7B%22Qty%22%3A%22Qty%22%2C%22Description%22%3A%22Description%22%2C%22GrossAmount%22%3A%22Gross%20Amount%22%2C%22Discount%22%3A%22Discount%22%2C%22NetAmount(MRP)%22%3A%22Net%20Amount(MRP)%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22%D0%A2%D0%B0%D1%85%20%D0%A2%D1%83%D1%80%D0%B5%22%2C%22TaxRate%22%3A%22Tax%20Rate%22%2C%22TaxAmount%22%3A%22Tax%20Amount%22%7D%2C%22data%22%3A%5B%7B%22Qty%22%3A%221%22%2C%22Description%22%3A%22Levi's%20Fluorescent%20Green%20Pure%20Cotton%20Printed%20T-Shirt%22%2C%22Gross%20mount%22%3A%221056.00%22%2C%22Discount%22%3A%221143.00%22%2C%22NetAmount(MRP)%22%3A%222199.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%221108.80%22%7D%2C%7B%22Qty%22%3A%222%22%2C%22Description%22%3A%22Levi's%20Light%20Green%20Levi's%20Light%20Green%22%2C%22GrossAmount%22%3A%221488.00%22%2C%22Discount%22%3A%221611.00%22%2C%22NetAmount(MRP)%22%3A%223099.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%221562.40%22%7D%2C%7B%22Qty%22%3A%223%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%224%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%225%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%226%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%227%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%228%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%229%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%2210%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%2211%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%2212%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%22%22%2C%22Description%22%3A%22Shipping%22%2C%22GrossAmount%22%3A%2200.00%22%2C%22Discount%22%3A%222754.00%22%2C%22NetAmount(MRP)%22%3A%2200.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%2200.00%22%7D%5D%2C%22styles%22%3Anull%2C%22highlights%22%3A%5B%5D%2C%22filter%22%3A%7B%22column%22%3A%22none%22%2C%22value%22%3Anull%7D%2C%22meta%22%3A%7B%22tableType%22%3A%22standard%22%2C%22caption%22%3A%22no%22%2C%22pageLength%22%3A10%2C%22pagination%22%3A%22no%22%2C%22search%22%3A%22no%22%2C%22fileDownload%22%3A%22%22%7D%7D" data-source-table-id="json-table-source-c2021" id="isrw6" my-input-json="transactions1Tbl" data-json-file-index="1" class="json-table-container standard">
+       <div my-input-json="transactions1Tbl" data-json-file-index="1" data-json-state="%7B%22headers%22%3A%7B%22Qty%22%3A%22Qty%22%2C%22Description%22%3A%22Description%22%2C%22GrossAmount%22%3A%22Gross%20Amount%22%2C%22Discount%22%3A%22Discount%22%2C%22NetAmount(MRP)%22%3A%22Net%20Amount(MRP)%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22%D0%A2%D0%B0%D1%85%20%D0%A2%D1%83%D1%80%D0%B5%22%2C%22TaxRate%22%3A%22Tax%20Rate%22%2C%22TaxAmount%22%3A%22Tax%20Amount%22%7D%2C%22data%22%3A%5B%7B%22Qty%22%3A%221%22%2C%22Description%22%3A%22Levi's%20Fluorescent%20Green%20Pure%20Cotton%20Printed%20T-Shirt%22%2C%22Gross%20mount%22%3A%221056.00%22%2C%22Discount%22%3A%221143.00%22%2C%22NetAmount(MRP)%22%3A%222199.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%221108.80%22%7D%2C%7B%22Qty%22%3A%222%22%2C%22Description%22%3A%22Levi's%20Light%20Green%20Levi's%20Light%20Green%22%2C%22GrossAmount%22%3A%221488.00%22%2C%22Discount%22%3A%221611.00%22%2C%22NetAmount(MRP)%22%3A%223099.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%221562.40%22%7D%2C%7B%22Qty%22%3A%223%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%224%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%225%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%226%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%227%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%228%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%229%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%2210%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%2211%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%2212%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%22%22%2C%22Description%22%3A%22Shipping%22%2C%22GrossAmount%22%3A%2200.00%22%2C%22Discount%22%3A%222754.00%22%2C%22NetAmount(MRP)%22%3A%2200.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%2200.00%22%7D%5D%2C%22styles%22%3Anull%2C%22highlights%22%3A%5B%5D%2C%22filter%22%3A%7B%22column%22%3A%22none%22%2C%22value%22%3Anull%7D%2C%22meta%22%3A%7B%22tableType%22%3A%22standard%22%2C%22caption%22%3A%22no%22%2C%22pageLength%22%3A10%2C%22pagination%22%3A%22no%22%2C%22search%22%3A%22no%22%2C%22fileDownload%22%3A%22%22%7D%7D" data-source-table-id="json-table-source-c2021" class="json-table-wrapper" id="i7lm5">
+        <table id="json-table-c2021" width="100%" data-source-table-id="json-table-source-c2021" my-input-json="transactions1Tbl" data-json-file-index="1" data-json-state="%7B%22headers%22%3A%7B%22Qty%22%3A%22Qty%22%2C%22Description%22%3A%22Description%22%2C%22GrossAmount%22%3A%22Gross%20Amount%22%2C%22Discount%22%3A%22Discount%22%2C%22NetAmount(MRP)%22%3A%22Net%20Amount(MRP)%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22%D0%A2%D0%B0%D1%85%20%D0%A2%D1%83%D1%80%D0%B5%22%2C%22TaxRate%22%3A%22Tax%20Rate%22%2C%22TaxAmount%22%3A%22Tax%20Amount%22%7D%2C%22data%22%3A%5B%7B%22Qty%22%3A%221%22%2C%22Description%22%3A%22Levi's%20Fluorescent%20Green%20Pure%20Cotton%20Printed%20T-Shirt%22%2C%22Gross%20mount%22%3A%221056.00%22%2C%22Discount%22%3A%221143.00%22%2C%22NetAmount(MRP)%22%3A%222199.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%221108.80%22%7D%2C%7B%22Qty%22%3A%222%22%2C%22Description%22%3A%22Levi's%20Light%20Green%20Levi's%20Light%20Green%22%2C%22GrossAmount%22%3A%221488.00%22%2C%22Discount%22%3A%221611.00%22%2C%22NetAmount(MRP)%22%3A%223099.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%221562.40%22%7D%2C%7B%22Qty%22%3A%223%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%224%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%225%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%226%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%227%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%228%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%229%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%2210%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%2211%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%2212%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%22%22%2C%22Description%22%3A%22Shipping%22%2C%22GrossAmount%22%3A%2200.00%22%2C%22Discount%22%3A%222754.00%22%2C%22NetAmount(MRP)%22%3A%2200.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%2200.00%22%7D%5D%2C%22styles%22%3Anull%2C%22highlights%22%3A%5B%5D%2C%22filter%22%3A%7B%22column%22%3A%22none%22%2C%22value%22%3Anull%7D%2C%22meta%22%3A%7B%22tableType%22%3A%22standard%22%2C%22caption%22%3A%22no%22%2C%22pageLength%22%3A10%2C%22pagination%22%3A%22no%22%2C%22search%22%3A%22no%22%2C%22fileDownload%22%3A%22%22%7D%7D" class="json-data-table">
+         <thead id="ia02t">
+          <tr>
+           <th data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-header-Qty" data-column-key="Qty" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-header" my-input-json="transactions1Tbl.heading.Qty" data-json-file-index="0">Qty</th>
+           <th data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-header-Description" data-column-key="Description" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-header" my-input-json="transactions1Tbl.heading.Description" data-json-file-index="0">Description</th>
+           <th data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-header-GrossAmount" data-column-key="GrossAmount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-header" my-input-json="transactions1Tbl.heading.GrossAmount" data-json-file-index="0">Gross Amount</th>
+           <th data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-header-Discount" data-column-key="Discount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-header" my-input-json="transactions1Tbl.heading.Discount" data-json-file-index="0">Discount</th>
+           <th data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-header-NetAmount(MRP)" data-column-key="NetAmount(MRP)" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-header">Net Amount(MRP)</th>
+           <th data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-header-ТахТуре" data-column-key="ТахТуре" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-header">Тах Туре</th>
+           <th data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-header-TaxRate" data-column-key="TaxRate" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-header" my-input-json="transactions1Tbl.heading.TaxRate" data-json-file-index="0">Tax Rate</th>
+           <th data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-header-TaxAmount" data-column-key="TaxAmount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-header" my-input-json="transactions1Tbl.heading.TaxAmount" data-json-file-index="0">Tax Amount</th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr class="even-row" id="i03oh">
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-0-Qty" data-row="0" data-column-key="Qty" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[0].Qty" data-json-file-index="0">1</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-0-Description" data-row="0" data-column-key="Description" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[0].Description" data-json-file-index="0">Levi's Fluorescent Green Pure Cotton Printed T-Shirt</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-0-GrossAmount" data-row="0" data-column-key="GrossAmount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[0].GrossAmount" data-json-file-index="0"></td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-0-Discount" data-row="0" data-column-key="Discount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[0].Discount" data-json-file-index="0">1143.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-0-NetAmount(MRP)" data-row="0" data-column-key="NetAmount(MRP)" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell">2199.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-0-ТахТуре" data-row="0" data-column-key="ТахТуре" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell">GST</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-0-TaxRate" data-row="0" data-column-key="TaxRate" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[0].TaxRate" data-json-file-index="0">5%</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-0-TaxAmount" data-row="0" data-column-key="TaxAmount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[0].TaxAmount" data-json-file-index="0">1108.80</td>
+          </tr>
+          <tr class="odd-row" id="iqu9f">
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-1-Qty" data-row="1" data-column-key="Qty" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[1].Qty" data-json-file-index="0">2</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-1-Description" data-row="1" data-column-key="Description" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[1].Description" data-json-file-index="0">Levi's Light Green Levi's Light Green</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-1-GrossAmount" data-row="1" data-column-key="GrossAmount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[1].GrossAmount" data-json-file-index="0">1488.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-1-Discount" data-row="1" data-column-key="Discount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[1].Discount" data-json-file-index="0">1611.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-1-NetAmount(MRP)" data-row="1" data-column-key="NetAmount(MRP)" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell">3099.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-1-ТахТуре" data-row="1" data-column-key="ТахТуре" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell">GST</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-1-TaxRate" data-row="1" data-column-key="TaxRate" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[1].TaxRate" data-json-file-index="0">5%</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-1-TaxAmount" data-row="1" data-column-key="TaxAmount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[1].TaxAmount" data-json-file-index="0">1562.40</td>
+          </tr>
+          <tr class="even-row" id="i3xbj">
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-2-Qty" data-row="2" data-column-key="Qty" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[2].Qty" data-json-file-index="0">3</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-2-Description" data-row="2" data-column-key="Description" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[2].Description" data-json-file-index="0">Utsa Kids by Westside Green Floral Print Dress</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-2-GrossAmount" data-row="2" data-column-key="GrossAmount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[2].GrossAmount" data-json-file-index="0">799.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-2-Discount" data-row="2" data-column-key="Discount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[2].Discount" data-json-file-index="0">00.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-2-NetAmount(MRP)" data-row="2" data-column-key="NetAmount(MRP)" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell">799.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-2-ТахТуре" data-row="2" data-column-key="ТахТуре" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell">GST</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-2-TaxRate" data-row="2" data-column-key="TaxRate" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[2].TaxRate" data-json-file-index="0">5%</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-2-TaxAmount" data-row="2" data-column-key="TaxAmount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[2].TaxAmount" data-json-file-index="0">838.95</td>
+          </tr>
+          <tr class="odd-row" id="ixuxg">
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-3-Qty" data-row="3" data-column-key="Qty" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[3].Qty" data-json-file-index="0">4</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-3-Description" data-row="3" data-column-key="Description" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[3].Description" data-json-file-index="0">Utsa Kids by Westside Green Floral Print Dress</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-3-GrossAmount" data-row="3" data-column-key="GrossAmount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[3].GrossAmount" data-json-file-index="0">799.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-3-Discount" data-row="3" data-column-key="Discount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[3].Discount" data-json-file-index="0">00.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-3-NetAmount(MRP)" data-row="3" data-column-key="NetAmount(MRP)" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell">799.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-3-ТахТуре" data-row="3" data-column-key="ТахТуре" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell">GST</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-3-TaxRate" data-row="3" data-column-key="TaxRate" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[3].TaxRate" data-json-file-index="0">5%</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-3-TaxAmount" data-row="3" data-column-key="TaxAmount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[3].TaxAmount" data-json-file-index="0">838.95</td>
+          </tr>
+          <tr class="even-row" id="ilj1c">
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-4-Qty" data-row="4" data-column-key="Qty" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[4].Qty" data-json-file-index="0">5</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-4-Description" data-row="4" data-column-key="Description" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[4].Description" data-json-file-index="0">Utsa Kids by Westside Green Floral Print Dress</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-4-GrossAmount" data-row="4" data-column-key="GrossAmount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[4].GrossAmount" data-json-file-index="0">799.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-4-Discount" data-row="4" data-column-key="Discount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[4].Discount" data-json-file-index="0">00.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-4-NetAmount(MRP)" data-row="4" data-column-key="NetAmount(MRP)" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell">799.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-4-ТахТуре" data-row="4" data-column-key="ТахТуре" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell">GST</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-4-TaxRate" data-row="4" data-column-key="TaxRate" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[4].TaxRate" data-json-file-index="0">5%</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-4-TaxAmount" data-row="4" data-column-key="TaxAmount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[4].TaxAmount" data-json-file-index="0">838.95</td>
+          </tr>
+          <tr class="odd-row" id="iz9nj">
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-5-Qty" data-row="5" data-column-key="Qty" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[5].Qty" data-json-file-index="0">6</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-5-Description" data-row="5" data-column-key="Description" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[5].Description" data-json-file-index="0">Utsa Kids by Westside Green Floral Print Dress</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-5-GrossAmount" data-row="5" data-column-key="GrossAmount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[5].GrossAmount" data-json-file-index="0">799.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-5-Discount" data-row="5" data-column-key="Discount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[5].Discount" data-json-file-index="0">00.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-5-NetAmount(MRP)" data-row="5" data-column-key="NetAmount(MRP)" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell">799.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-5-ТахТуре" data-row="5" data-column-key="ТахТуре" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell">GST</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-5-TaxRate" data-row="5" data-column-key="TaxRate" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[5].TaxRate" data-json-file-index="0">5%</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-5-TaxAmount" data-row="5" data-column-key="TaxAmount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[5].TaxAmount" data-json-file-index="0">838.95</td>
+          </tr>
+          <tr class="even-row" id="iy1d9">
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-6-Qty" data-row="6" data-column-key="Qty" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[6].Qty" data-json-file-index="0">7</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-6-Description" data-row="6" data-column-key="Description" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[6].Description" data-json-file-index="0">Utsa Kids by Westside Green Floral Print Dress</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-6-GrossAmount" data-row="6" data-column-key="GrossAmount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[6].GrossAmount" data-json-file-index="0">799.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-6-Discount" data-row="6" data-column-key="Discount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[6].Discount" data-json-file-index="0">00.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-6-NetAmount(MRP)" data-row="6" data-column-key="NetAmount(MRP)" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell">799.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-6-ТахТуре" data-row="6" data-column-key="ТахТуре" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell">GST</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-6-TaxRate" data-row="6" data-column-key="TaxRate" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[6].TaxRate" data-json-file-index="0">5%</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-6-TaxAmount" data-row="6" data-column-key="TaxAmount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[6].TaxAmount" data-json-file-index="0">838.95</td>
+          </tr>
+          <tr class="odd-row" id="igiw3">
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-7-Qty" data-row="7" data-column-key="Qty" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[7].Qty" data-json-file-index="0">8</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-7-Description" data-row="7" data-column-key="Description" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[7].Description" data-json-file-index="0">Utsa Kids by Westside Green Floral Print Dress</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-7-GrossAmount" data-row="7" data-column-key="GrossAmount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[7].GrossAmount" data-json-file-index="0">799.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-7-Discount" data-row="7" data-column-key="Discount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[7].Discount" data-json-file-index="0">00.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-7-NetAmount(MRP)" data-row="7" data-column-key="NetAmount(MRP)" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell">799.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-7-ТахТуре" data-row="7" data-column-key="ТахТуре" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell">GST</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-7-TaxRate" data-row="7" data-column-key="TaxRate" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[7].TaxRate" data-json-file-index="0">5%</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c2021-cell-7-TaxAmount" data-row="7" data-column-key="TaxAmount" data-gjs-hoverable="true" contenteditable="true" class="json-table-cell cell-content editable-cell" my-input-json="transactions1Tbl.data[7].TaxAmount" data-json-file-index="0">838.95</td>
+          </tr>
+         </tbody>
+        </table>
+        <script type="text/javascript">
+                (function() {
+                    function initTable() {
+
+                        if (typeof $ === 'undefined') {
+                            const jqueryScript = document.createElement('script');
+                            jqueryScript.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
+                            jqueryScript.onload = () => setTimeout(initTable, 100);
+                            document.head.appendChild(jqueryScript);
+                            return;
+                        }
+                        
+                        if (typeof $.fn.DataTable === 'undefined') {
+                            const dtCSS = document.createElement('link');
+                            dtCSS.rel = 'stylesheet';
+                            dtCSS.href = 'https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap4.min.css';
+                            document.head.appendChild(dtCSS);
+                            
+                            const dtScript = document.createElement('script');
+                            dtScript.src = 'https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js';
+                            dtScript.onload = () => setTimeout(initTable, 100);
+                            document.head.appendChild(dtScript);
+                            return;
+                        }
+                        
+                        const tableElement = document.getElementById('json-table-c2021');
+                        if (!tableElement) {
+                            setTimeout(initTable, 100);
+                            return;
+                        }
+                        
+                        const formulaCells = tableElement.querySelectorAll('[data-formula]');
+                        const formulaData = Array.from(formulaCells).map(cell => ({
+                            cell: cell,
+                            formula: cell.getAttribute('data-formula'),
+                            calculatedValue: cell.getAttribute('data-calculated-value'),
+                            id: cell.id || cell.getAttribute('data-row') + '-' + cell.getAttribute('data-column-key')
+                        }));
+                        
+                        if ($.fn.DataTable.isDataTable(tableElement)) {
+                            $(tableElement).DataTable().destroy();
+                        }
+                        
+                        const isInPageSystem = tableElement.closest('.page-container');
+                        
+                        const dtOptions = {
+                            dom: 'Bfrtip',
+                            paging: false,
+                            info: false,
+                            lengthChange: false,
+                            pageLength: 10,
+                            fixedHeader: false,
+                            scrollX: true,
+                            fixedColumns: true,
+                            searching: false,
+                            buttons: [],
+                            ordering: false,
+                            order: [],
+                            drawCallback: function() {
+                                setTimeout(() => {
+                                    formulaData.forEach(data => {
+                                        const cell = document.getElementById(data.id) ||
+                                                tableElement.querySelector('[data-row="' + data.id.split('-')[0] + '"][data-column-key="' + data.id.split('-')[1] + '"]');
+                                        if (cell) {
+                                            if (data.formula) cell.setAttribute('data-formula', data.formula);
+                                            if (data.calculatedValue) {
+                                                cell.setAttribute('data-calculated-value', data.calculatedValue);
+                                                const cellContent = cell.querySelector('div');
+                                                if (cellContent) {
+                                                    cellContent.textContent = data.calculatedValue;
+                                                }
+                                            }
+                                        }
+                                    });
+                                    
+                                    const event = new CustomEvent('datatableRedrawn', {
+                                        detail: { tableId: 'json-table-c2021', formulaData: formulaData }
+                                    });
+                                    document.dispatchEvent(event);
+                                }, 100);
+                                
+                                if (isInPageSystem) {
+                                    const wrapper = this.closest('.dataTables_wrapper');
+                                    if (wrapper) {
+                                        wrapper.style.maxWidth = '100%';
+                                        wrapper.style.overflow = 'hidden';
+                                    }
+                                }
+                            },
+                            responsive: isInPageSystem ? {
+                                details: {
+                                    display: $.fn.dataTable.Responsive.display.childRowImmediate,
+                                    type: 'none',
+                                    target: ''
+                                }
+                            } : false
+                        };
+                        
+                        try {
+                            const dataTable = $(tableElement).DataTable(dtOptions);
+                            
+                            const initEvent = new CustomEvent('datatableInitialized', {
+                                detail: { tableId: 'json-table-c2021' }
+                            });
+                            document.dispatchEvent(initEvent);
+
+                        } catch (error) {
+                            console.error('Failed to initialize DataTable:', error);
+                        }
+                    }
+                    
+
+                    if (document.readyState === 'loading') {
+                        document.addEventListener('DOMContentLoaded', initTable);
+                    } else {
+                        initTable();
+                    }
+                })();
+                </script>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div data-shared-region="footer" data-condition="all" id="i1w1" class="footer-wrapper">
+     <div class="page-footer-element" id="ivh691"></div>
+    </div>
+   </div>
+  </div>
+  <div data-page-id="page-1778236814219-rh5f6iquw" data-page-index="1" class="page-container" id="izz898">
+   <div class="page-content" id="irt3hx">
+    <div data-shared-region="header" class="header-wrapper" id="icjqyl">
+     <div class="page-header-element" id="i6w3qm">
+      <h1 class="custom-heading" data-i_designer-highlightable="true" data-json-file-index="1" my-input-json="VI[0].name" id="ipid1j" data-i_designer-type="custom-heading">Mr Manmeet</h1>
+     </div>
+    </div>
+    <div class="content-wrapper" id="ipkj49">
+     <div class="main-content-area" id="i6fcet">
+      <div data-gjs-type="json-table" data-json-state="%7B%22headers%22%3A%7B%22Qty%22%3A%22Qty%22%2C%22Description%22%3A%22Description%22%2C%22GrossAmount%22%3A%22Gross%20Amount%22%2C%22Discount%22%3A%22Discount%22%2C%22NetAmount(MRP)%22%3A%22Net%20Amount(MRP)%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22%D0%A2%D0%B0%D1%85%20%D0%A2%D1%83%D1%80%D0%B5%22%2C%22TaxRate%22%3A%22Tax%20Rate%22%2C%22TaxAmount%22%3A%22Tax%20Amount%22%7D%2C%22data%22%3A%5B%7B%22Qty%22%3A%229%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%2210%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%2211%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%2212%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%22%22%2C%22Description%22%3A%22Shipping%22%2C%22GrossAmount%22%3A%2200.00%22%2C%22Discount%22%3A%222754.00%22%2C%22NetAmount(MRP)%22%3A%2200.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%2200.00%22%7D%5D%2C%22styles%22%3Anull%2C%22highlights%22%3A%5B%5D%2C%22filter%22%3A%7B%22column%22%3A%22none%22%2C%22value%22%3Anull%7D%2C%22meta%22%3A%7B%22tableType%22%3A%22standard%22%2C%22caption%22%3A%22no%22%2C%22pageLength%22%3A10%2C%22pagination%22%3A%22no%22%2C%22search%22%3A%22no%22%2C%22fileDownload%22%3A%22%22%7D%7D" data-i_designer-highlightable="true" data-i_designer-type="json-table" draggable="true" data-source-table-id="json-table-source-c2021" my-input-json="english.transactions1Tbl" data-json-file-index="undefined" data-continuation-table="true" data-original-table-id="json-table-source-c2021" data-rows-kept="8" data-split-table="continuation" data-copy-header="true" class="json-table-container standard i_designer-selected">
+       <div my-input-json="transactions1Tbl" data-json-file-index="undefined" data-json-state="%7B%22headers%22%3A%7B%22Qty%22%3A%22Qty%22%2C%22Description%22%3A%22Description%22%2C%22GrossAmount%22%3A%22Gross%20Amount%22%2C%22Discount%22%3A%22Discount%22%2C%22NetAmount(MRP)%22%3A%22Net%20Amount(MRP)%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22%D0%A2%D0%B0%D1%85%20%D0%A2%D1%83%D1%80%D0%B5%22%2C%22TaxRate%22%3A%22Tax%20Rate%22%2C%22TaxAmount%22%3A%22Tax%20Amount%22%7D%2C%22data%22%3A%5B%7B%22Qty%22%3A%229%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%2210%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%2211%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%2212%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%22%22%2C%22Description%22%3A%22Shipping%22%2C%22GrossAmount%22%3A%2200.00%22%2C%22Discount%22%3A%222754.00%22%2C%22NetAmount(MRP)%22%3A%2200.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%2200.00%22%7D%5D%2C%22styles%22%3Anull%2C%22highlights%22%3A%5B%5D%2C%22filter%22%3A%7B%22column%22%3A%22none%22%2C%22value%22%3Anull%7D%2C%22meta%22%3A%7B%22tableType%22%3A%22standard%22%2C%22caption%22%3A%22no%22%2C%22pageLength%22%3A10%2C%22pagination%22%3A%22no%22%2C%22search%22%3A%22no%22%2C%22fileDownload%22%3A%22%22%7D%7D" data-source-table-id="json-table-source-c2021" class="json-table-wrapper" id="ibdezh">
+        <table id="json-table-c10375" width="100%" data-source-table-id="json-table-source-c2021" my-input-json="transactions1Tbl" data-json-file-index="undefined" data-json-state="%7B%22headers%22%3A%7B%22Qty%22%3A%22Qty%22%2C%22Description%22%3A%22Description%22%2C%22GrossAmount%22%3A%22Gross%20Amount%22%2C%22Discount%22%3A%22Discount%22%2C%22NetAmount(MRP)%22%3A%22Net%20Amount(MRP)%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22%D0%A2%D0%B0%D1%85%20%D0%A2%D1%83%D1%80%D0%B5%22%2C%22TaxRate%22%3A%22Tax%20Rate%22%2C%22TaxAmount%22%3A%22Tax%20Amount%22%7D%2C%22data%22%3A%5B%7B%22Qty%22%3A%229%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%2210%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%2211%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%2212%22%2C%22Description%22%3A%22Utsa%20Kids%20by%20Westside%20Green%20Floral%20Print%20Dress%22%2C%22GrossAmount%22%3A%22799.00%22%2C%22Discount%22%3A%2200.00%22%2C%22NetAmount(MRP)%22%3A%22799.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%22838.95%22%7D%2C%7B%22Qty%22%3A%22%22%2C%22Description%22%3A%22Shipping%22%2C%22GrossAmount%22%3A%2200.00%22%2C%22Discount%22%3A%222754.00%22%2C%22NetAmount(MRP)%22%3A%2200.00%22%2C%22%D0%A2%D0%B0%D1%85%D0%A2%D1%83%D1%80%D0%B5%22%3A%22GST%22%2C%22TaxRate%22%3A%225%25%22%2C%22TaxAmount%22%3A%2200.00%22%7D%5D%2C%22styles%22%3Anull%2C%22highlights%22%3A%5B%5D%2C%22filter%22%3A%7B%22column%22%3A%22none%22%2C%22value%22%3Anull%7D%2C%22meta%22%3A%7B%22tableType%22%3A%22standard%22%2C%22caption%22%3A%22no%22%2C%22pageLength%22%3A10%2C%22pagination%22%3A%22no%22%2C%22search%22%3A%22no%22%2C%22fileDownload%22%3A%22%22%7D%7D" class="json-data-table">
+         <thead id="imvxof">
+          <tr>
+           <th data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-header-Qty" data-column-key="Qty" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.heading.Qty" data-json-file-index="0">Qty</th>
+           <th data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-header-Description" data-column-key="Description" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.heading.Description" data-json-file-index="0">Description</th>
+           <th data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-header-GrossAmount" data-column-key="GrossAmount" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.heading.GrossAmount" data-json-file-index="0">Gross Amount</th>
+           <th data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-header-Discount" data-column-key="Discount" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.heading.Discount" data-json-file-index="0">Discount</th>
+           <th data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-header-NetAmount(MRP)" data-column-key="NetAmount(MRP)" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell">Net Amount(MRP)</th>
+           <th data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-header-ТахТуре" data-column-key="ТахТуре" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell">Тах Туре</th>
+           <th data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-header-TaxRate" data-column-key="TaxRate" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.heading.TaxRate" data-json-file-index="0">Tax Rate</th>
+           <th data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-header-TaxAmount" data-column-key="TaxAmount" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.heading.TaxAmount" data-json-file-index="0">Tax Amount</th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr class="even-row" id="ic6uac">
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-0-Qty" data-row="0" data-column-key="Qty" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[0].Qty" data-json-file-index="0">1</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-0-Description" data-row="0" data-column-key="Description" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[0].Description" data-json-file-index="0">Levi's Fluorescent Green Pure Cotton Printed T-Shirt</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-0-GrossAmount" data-row="0" data-column-key="GrossAmount" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[0].GrossAmount" data-json-file-index="0">799.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-0-Discount" data-row="0" data-column-key="Discount" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[0].Discount" data-json-file-index="0">1143.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-0-NetAmount(MRP)" data-row="0" data-column-key="NetAmount(MRP)" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell">799.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-0-ТахТуре" data-row="0" data-column-key="ТахТуре" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell">GST</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-0-TaxRate" data-row="0" data-column-key="TaxRate" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[0].TaxRate" data-json-file-index="0">5%</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-0-TaxAmount" data-row="0" data-column-key="TaxAmount" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[0].TaxAmount" data-json-file-index="0">1108.80</td>
+          </tr>
+          <tr class="odd-row" id="i1luqr">
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-1-Qty" data-row="1" data-column-key="Qty" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[1].Qty" data-json-file-index="0">2</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-1-Description" data-row="1" data-column-key="Description" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[1].Description" data-json-file-index="0">Levi's Light Green Levi's Light Green</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-1-GrossAmount" data-row="1" data-column-key="GrossAmount" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[1].GrossAmount" data-json-file-index="0">1488.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-1-Discount" data-row="1" data-column-key="Discount" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[1].Discount" data-json-file-index="0">1611.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-1-NetAmount(MRP)" data-row="1" data-column-key="NetAmount(MRP)" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell">799.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-1-ТахТуре" data-row="1" data-column-key="ТахТуре" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell">GST</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-1-TaxRate" data-row="1" data-column-key="TaxRate" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[1].TaxRate" data-json-file-index="0">5%</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-1-TaxAmount" data-row="1" data-column-key="TaxAmount" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[1].TaxAmount" data-json-file-index="0">1562.40</td>
+          </tr>
+          <tr class="even-row" id="i9tftc">
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-2-Qty" data-row="2" data-column-key="Qty" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[2].Qty" data-json-file-index="0">3</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-2-Description" data-row="2" data-column-key="Description" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[2].Description" data-json-file-index="0">Utsa Kids by Westside Green Floral Print Dress</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-2-GrossAmount" data-row="2" data-column-key="GrossAmount" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[2].GrossAmount" data-json-file-index="0">799.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-2-Discount" data-row="2" data-column-key="Discount" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[2].Discount" data-json-file-index="0">00.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-2-NetAmount(MRP)" data-row="2" data-column-key="NetAmount(MRP)" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell">799.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-2-ТахТуре" data-row="2" data-column-key="ТахТуре" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell">GST</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-2-TaxRate" data-row="2" data-column-key="TaxRate" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[2].TaxRate" data-json-file-index="0">5%</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-2-TaxAmount" data-row="2" data-column-key="TaxAmount" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[2].TaxAmount" data-json-file-index="0">838.95</td>
+          </tr>
+          <tr class="odd-row" id="iday5m">
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-3-Qty" data-row="3" data-column-key="Qty" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[3].Qty" data-json-file-index="0">4</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-3-Description" data-row="3" data-column-key="Description" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[3].Description" data-json-file-index="0">Utsa Kids by Westside Green Floral Print Dress</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-3-GrossAmount" data-row="3" data-column-key="GrossAmount" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[3].GrossAmount" data-json-file-index="0">799.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-3-Discount" data-row="3" data-column-key="Discount" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[3].Discount" data-json-file-index="0">00.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-3-NetAmount(MRP)" data-row="3" data-column-key="NetAmount(MRP)" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell">799.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-3-ТахТуре" data-row="3" data-column-key="ТахТуре" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell">GST</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-3-TaxRate" data-row="3" data-column-key="TaxRate" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[3].TaxRate" data-json-file-index="0">5%</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-3-TaxAmount" data-row="3" data-column-key="TaxAmount" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[3].TaxAmount" data-json-file-index="0">838.95</td>
+          </tr>
+          <tr class="even-row" id="itl64i">
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-4-Qty" data-row="4" data-column-key="Qty" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[4].Qty" data-json-file-index="0">5</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-4-Description" data-row="4" data-column-key="Description" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[4].Description" data-json-file-index="0">Utsa Kids by Westside Green Floral Print Dress</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-4-GrossAmount" data-row="4" data-column-key="GrossAmount" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[4].GrossAmount" data-json-file-index="0">799.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-4-Discount" data-row="4" data-column-key="Discount" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[4].Discount" data-json-file-index="0">00.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-4-NetAmount(MRP)" data-row="4" data-column-key="NetAmount(MRP)" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell">00.00</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-4-ТахТуре" data-row="4" data-column-key="ТахТуре" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell">GST</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-4-TaxRate" data-row="4" data-column-key="TaxRate" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[4].TaxRate" data-json-file-index="0">5%</td>
+           <td data-gjs-type="json-table-cell" data-gjs-draggable="false" id="json-table-c10375-cell-4-TaxAmount" data-row="4" data-column-key="TaxAmount" data-gjs-hoverable="true" contenteditable="false" class="json-table-cell cell-content readonly-cell" my-input-json="transactions1Tbl.data[4].TaxAmount" data-json-file-index="0">838.95</td>
+          </tr>
+         </tbody>
+        </table>
+        <script type="text/javascript">
+                (function() {
+                    function initTable() {
+
+                        if (typeof $ === 'undefined') {
+                            const jqueryScript = document.createElement('script');
+                            jqueryScript.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
+                            jqueryScript.onload = () => setTimeout(initTable, 100);
+                            document.head.appendChild(jqueryScript);
+                            return;
+                        }
+                        
+                        if (typeof $.fn.DataTable === 'undefined') {
+                            const dtCSS = document.createElement('link');
+                            dtCSS.rel = 'stylesheet';
+                            dtCSS.href = 'https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap4.min.css';
+                            document.head.appendChild(dtCSS);
+                            
+                            const dtScript = document.createElement('script');
+                            dtScript.src = 'https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js';
+                            dtScript.onload = () => setTimeout(initTable, 100);
+                            document.head.appendChild(dtScript);
+                            return;
+                        }
+                        
+                        const tableElement = document.getElementById('json-table-c10375');
+                        if (!tableElement) {
+                            setTimeout(initTable, 100);
+                            return;
+                        }
+                        
+                        const formulaCells = tableElement.querySelectorAll('[data-formula]');
+                        const formulaData = Array.from(formulaCells).map(cell => ({
+                            cell: cell,
+                            formula: cell.getAttribute('data-formula'),
+                            calculatedValue: cell.getAttribute('data-calculated-value'),
+                            id: cell.id || cell.getAttribute('data-row') + '-' + cell.getAttribute('data-column-key')
+                        }));
+                        
+                        if ($.fn.DataTable.isDataTable(tableElement)) {
+                            $(tableElement).DataTable().destroy();
+                        }
+                        
+                        const isInPageSystem = tableElement.closest('.page-container');
+                        
+                        const dtOptions = {
+                            dom: 'Bfrtip',
+                            paging: false,
+                            info: false,
+                            lengthChange: false,
+                            pageLength: 10,
+                            fixedHeader: false,
+                            scrollX: true,
+                            fixedColumns: true,
+                            searching: false,
+                            buttons: [],
+                            ordering: false,
+                            order: [],
+                            drawCallback: function() {
+                                setTimeout(() => {
+                                    formulaData.forEach(data => {
+                                        const cell = document.getElementById(data.id) ||
+                                                tableElement.querySelector('[data-row="' + data.id.split('-')[0] + '"][data-column-key="' + data.id.split('-')[1] + '"]');
+                                        if (cell) {
+                                            if (data.formula) cell.setAttribute('data-formula', data.formula);
+                                            if (data.calculatedValue) {
+                                                cell.setAttribute('data-calculated-value', data.calculatedValue);
+                                                const cellContent = cell.querySelector('div');
+                                                if (cellContent) {
+                                                    cellContent.textContent = data.calculatedValue;
+                                                }
+                                            }
+                                        }
+                                    });
+                                    
+                                    const event = new CustomEvent('datatableRedrawn', {
+                                        detail: { tableId: 'json-table-c10375', formulaData: formulaData }
+                                    });
+                                    document.dispatchEvent(event);
+                                }, 100);
+                                
+                                if (isInPageSystem) {
+                                    const wrapper = this.closest('.dataTables_wrapper');
+                                    if (wrapper) {
+                                        wrapper.style.maxWidth = '100%';
+                                        wrapper.style.overflow = 'hidden';
+                                    }
+                                }
+                            },
+                            responsive: isInPageSystem ? {
+                                details: {
+                                    display: $.fn.dataTable.Responsive.display.childRowImmediate,
+                                    type: 'none',
+                                    target: ''
+                                }
+                            } : false
+                        };
+                        
+                        try {
+                            const dataTable = $(tableElement).DataTable(dtOptions);
+                            
+                            const initEvent = new CustomEvent('datatableInitialized', {
+                                detail: { tableId: 'json-table-c10375' }
+                            });
+                            document.dispatchEvent(initEvent);
+
+                        } catch (error) {
+                            console.error('Failed to initialize DataTable:', error);
+                        }
+                    }
+                    
+
+                    if (document.readyState === 'loading') {
+                        document.addEventListener('DOMContentLoaded', initTable);
+                    } else {
+                        initTable();
+                    }
+                })();
+                </script>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div data-shared-region="footer" class="footer-wrapper" id="iklxxn">
+     <div class="page-footer-element" id="ixl05u"></div>
+    </div>
+   </div>
+  </div>
+  <script>
+      (function resolveBulkJsonBindings() {
+        window.__BULK_JSON_BINDINGS_READY__ = false;
+        function tokenizePath(pathExpression) {
+          return String(pathExpression || '')
+            .replace(/\[(\d+)\]/g, '.$1')
+            .split('.')
+            .map(function(part) { return part.trim(); })
+            .filter(Boolean);
+        }
+
+        function readValueByPath(input, pathExpression) {
+          var parts = tokenizePath(pathExpression);
+          var current = input;
+          for (var i = 0; i < parts.length; i++) {
+            if (current == null) return undefined;
+            current = current[parts[i]];
+          }
+          return current;
+        }
+
+	        function getJsonDataArray() {
+	          if (Array.isArray(window.__BULK_EXPORT_JSON__)) {
+	            return window.__BULK_EXPORT_JSON__;
+	          }
+	          if (window.__BULK_EXPORT_JSON__ && typeof window.__BULK_EXPORT_JSON__ === 'object') {
+	            return [window.__BULK_EXPORT_JSON__];
+	          }
+	          if (Array.isArray(window.jsonData1) && window.jsonData1.length) {
+	            return window.jsonData1;
+	          }
+
+          try {
+            return [JSON.parse(localStorage.getItem('common_json') || '{}')];
+          } catch (err) {
+            return [{}];
+          }
+        }
+
+        function getCurrentJsonObject(node) {
+          var jsonArray = getJsonDataArray();
+          if (!node || typeof node.getAttribute !== 'function') {
+            return jsonArray[0] || {};
+          }
+
+          var indexValue = node.getAttribute('data-json-file-index') || node.getAttribute('data-json-file-index');
+          var parsedIndex = parseInt(String(indexValue || '0').trim(), 10);
+          if (!isNaN(parsedIndex) && parsedIndex >= 0 && parsedIndex < jsonArray.length) {
+            return jsonArray[parsedIndex] || {};
+          }
+
+          return jsonArray[0] || {};
+        }
+
+        function resolveFromAnyLanguage(jsonObject, pathExpression, selectedLanguage) {
+          var directValue = readValueByPath(jsonObject, pathExpression);
+          if (directValue !== undefined && directValue !== null) return directValue;
+
+          var preferredLanguage =
+            selectedLanguage ||
+            localStorage.getItem('custom_language') ||
+            localStorage.getItem('language') ||
+            '';
+          if (preferredLanguage && jsonObject && typeof jsonObject[preferredLanguage] === 'object') {
+            var preferredValue = readValueByPath(jsonObject[preferredLanguage], pathExpression);
+            if (preferredValue !== undefined && preferredValue !== null) return preferredValue;
+          }
+
+          if (jsonObject && typeof jsonObject === 'object') {
+            var keys = Object.keys(jsonObject);
+            for (var i = 0; i < keys.length; i++) {
+              var languageValue = jsonObject[keys[i]];
+              if (!languageValue || typeof languageValue !== 'object') continue;
+              var nestedValue = readValueByPath(languageValue, pathExpression);
+              if (nestedValue !== undefined && nestedValue !== null) return nestedValue;
+            }
+          }
+
+          return undefined;
+        }
+
+        function decodeTemplateText(value) {
+          try {
+            return decodeURIComponent(String(value == null ? '' : value));
+          } catch (err) {
+            return String(value == null ? '' : value);
+          }
+        }
+
+        function escapeRegExp(value) {
+          return String(value || '').replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+        }
+
+	        function getPlaceholderTokens(pathExpression) {
+          var tokens = tokenizePath(pathExpression);
+          if (!tokens.length) return [];
+          var originalPath = String(pathExpression || '').trim().replace(/^\.+/, '');
+
+          var lastNamedToken = '';
+          for (var i = tokens.length - 1; i >= 0; i--) {
+            if (!/^\d+$/.test(String(tokens[i]))) {
+              lastNamedToken = String(tokens[i]);
+              break;
+            }
+          }
+
+          var candidates = [];
+          if (lastNamedToken) candidates.push(lastNamedToken);
+          candidates.push(tokens.join('.'));
+          if (originalPath) {
+            candidates.push(originalPath);
+            var firstDotIndex = originalPath.indexOf('.');
+            if (firstDotIndex > 0) {
+              var firstToken = originalPath.slice(0, firstDotIndex);
+              if (/^(english|hindi|marathi|gujarati|tamil|telugu|kannada|malayalam|bengali|punjabi|urdu|arabic|french|german|spanish|italian|portuguese|russian|chinese|japanese|korean|[a-z]{2}(?:-[a-z]{2})?)$/i.test(firstToken)) {
+                candidates.push(originalPath.slice(firstDotIndex + 1));
+              }
+            }
+          }
+
+	          return candidates.filter(function(value, index, arr) {
+	            return value && arr.indexOf(value) === index;
+	          });
+	        }
+
+	        function formatBulkScalar(value, allowJson) {
+	          if (value === undefined || value === null) return '';
+	          if (typeof value === 'object') {
+	            if (!allowJson) return undefined;
+	            try {
+	              return JSON.stringify(value);
+	            } catch (err) {
+	              return undefined;
+	            }
+	          }
+	          return String(value);
+	        }
+
+	        function decodeJsonState(node) {
+	          var raw = node && node.getAttribute && node.getAttribute('data-json-state');
+	          if (!raw) return null;
+	          try {
+	            return JSON.parse(decodeURIComponent(raw));
+	          } catch (err) {
+	            return null;
+	          }
+	        }
+
+	        function copyStyle(source, target) {
+	          if (!source || !target) return;
+	          var style = source.getAttribute('style');
+	          if (style) target.setAttribute('style', style);
+	          var className = source.getAttribute('class');
+	          if (className) target.setAttribute('class', className);
+	        }
+
+	        function normalizeTableData(rawValue) {
+	          var tableData = rawValue;
+	          if (typeof tableData === 'string') {
+	            try {
+	              tableData = JSON.parse(tableData);
+	            } catch (jsonErr) {
+	              try {
+	                tableData = (new Function('return ' + tableData))();
+	              } catch (evalErr) {
+	                tableData = null;
+	              }
+	            }
+	          }
+	          if (!tableData || typeof tableData !== 'object') return null;
+	          var headers = tableData.heading || tableData.headers;
+	          var rows = tableData.data || tableData.rows;
+	          if (!headers || typeof headers !== 'object' || !Array.isArray(rows)) return null;
+	          return { headers: headers, rows: rows };
+	        }
+
+	        function applyJsonTableBindings() {
+	          var candidates = document.querySelectorAll('.json-data-table[my-input-json], .json-table-wrapper[my-input-json], .json-table-container[my-input-json]');
+	          candidates.forEach(function(candidate) {
+	            if (!candidate || !candidate.getAttribute) return;
+	            var table = candidate.matches && candidate.matches('table')
+	              ? candidate
+	              : candidate.querySelector && candidate.querySelector('table.json-data-table, table');
+	            if (!table) return;
+
+	            var jsonPath = candidate.getAttribute('my-input-json') || table.getAttribute('my-input-json') || '';
+	            if (!jsonPath) return;
+
+	            if (!table.getAttribute('my-input-json')) table.setAttribute('my-input-json', jsonPath);
+	            if (!table.getAttribute('data-json-file-index') && candidate.getAttribute('data-json-file-index')) {
+	              table.setAttribute('data-json-file-index', candidate.getAttribute('data-json-file-index'));
+	            }
+
+	            var jsonObject = getCurrentJsonObject(table);
+	            var resolved = resolveFromAnyLanguage(jsonObject, jsonPath, '');
+	            var normalized = normalizeTableData(resolved);
+	            if (!normalized) return;
+
+	            var oldHeader = table.querySelector('thead th');
+	            var oldCell = table.querySelector('tbody td') || table.querySelector('td');
+	            var state = decodeJsonState(candidate) || decodeJsonState(table) || {};
+	            var keys = Object.keys(normalized.headers);
+	            if (!keys.length) return;
+
+	            table.innerHTML = '';
+
+	            var thead = document.createElement('thead');
+	            var headerRow = document.createElement('tr');
+	            keys.forEach(function(key) {
+	              var th = document.createElement('th');
+	              copyStyle(oldHeader, th);
+	              th.textContent = formatBulkScalar(normalized.headers[key], true) || '';
+	              headerRow.appendChild(th);
+	            });
+	            thead.appendChild(headerRow);
+	            table.appendChild(thead);
+
+	            var tbody = document.createElement('tbody');
+	            normalized.rows.forEach(function(row) {
+	              var tr = document.createElement('tr');
+	              keys.forEach(function(key) {
+	                var td = document.createElement('td');
+	                copyStyle(oldCell, td);
+	                var value = row && Object.prototype.hasOwnProperty.call(row, key) ? row[key] : '';
+	                td.textContent = formatBulkScalar(value, true) || '';
+	                tr.appendChild(td);
+	              });
+	              tbody.appendChild(tr);
+	            });
+	            table.appendChild(tbody);
+	            table.setAttribute('data-json-state', encodeURIComponent(JSON.stringify({
+	              headers: normalized.headers,
+	              data: normalized.rows,
+	              styles: state.styles || null,
+	              highlights: state.highlights || null,
+	              meta: state.meta || null
+	            })));
+	          });
+	        }
+
+	        function renderTemplateValue(templateText, pathExpression, value) {
+	          var rendered = String(templateText || '');
+	          var valueText = formatBulkScalar(value, false);
+	          if (valueText === undefined) return rendered;
+	          if (String(pathExpression || '').indexOf('__i_designer_template_values.') === 0) {
+	            return valueText;
+	          }
+          var tokens = getPlaceholderTokens(pathExpression);
+
+          if (!tokens.length) return valueText;
+
+          var beforeReplace = rendered;
+          tokens.forEach(function(token) {
+            rendered = rendered.replace(new RegExp(escapeRegExp('{' + token + '}'), 'g'), valueText);
+          });
+
+          return rendered === beforeReplace ? valueText : rendered;
+        }
+
+	        function applyTextBindingValues() {
+	          document.querySelectorAll('[my-input-json]').forEach(function(node) {
+	            var jsonObject = getCurrentJsonObject(node);
+
+	            if (!node || /^(SCRIPT|STYLE|LINK|META)$/i.test(node.tagName || '')) return;
+	            if (node.closest && node.closest('[data-watermark-json-path]')) return;
+	            if (node.closest && node.closest('.json-table-container, .json-table-wrapper, .json-data-table, table, [data-i_designer-type="custom_line_chart"], [data-gjs-type="custom_line_chart"], .highchart-live-areaspline')) return;
+
+            var rawPathExpression = node.getAttribute('my-input-json') || '';
+            var paths = rawPathExpression.split(',').map(function(path) {
+              return path.trim();
+            }).filter(Boolean);
+            if (!paths.length) return;
+
+            var templateText = decodeTemplateText(node.getAttribute('data-template-text') || '');
+            var hasTemplate = /\{[^{}]+\}/.test(templateText);
+            var rendered = hasTemplate ? templateText : null;
+            var directValue;
+
+            if (String(rawPathExpression || '').indexOf('__i_designer_template_values.') === 0) {
+              var templateValues = jsonObject && jsonObject.__i_designer_template_values;
+              var templateId = rawPathExpression.slice('__i_designer_template_values.'.length);
+	              if (templateValues && templateId && Object.prototype.hasOwnProperty.call(templateValues, templateId)) {
+	                directValue = templateValues[templateId];
+	                if (hasTemplate) {
+	                  var directScalar = formatBulkScalar(directValue, false);
+	                  if (directScalar !== undefined) rendered = directScalar;
+	                }
+	              }
+            }
+
+            paths.forEach(function(pathExpression, index) {
+              if (directValue !== undefined && directValue !== null && hasTemplate) {
+                return;
+              }
+              var value = resolveFromAnyLanguage(jsonObject, pathExpression, '');
+              if (value === undefined || value === null) return;
+
+              if (hasTemplate) {
+                rendered = renderTemplateValue(rendered, pathExpression, value);
+              } else if (index === 0 && directValue === undefined) {
+                directValue = value;
+              }
+            });
+
+	            var finalValue = hasTemplate ? rendered : directValue;
+	            if (finalValue === undefined || finalValue === null) return;
+	            var normalizedValue = hasTemplate ? String(finalValue) : formatBulkScalar(finalValue, false);
+	            if (normalizedValue === undefined) return;
+
+	            if (/^(INPUT|TEXTAREA|SELECT)$/i.test(node.tagName || '')) {
+	              node.value = normalizedValue;
+	              node.setAttribute('value', normalizedValue);
+	            } else if (hasTemplate) {
+	              node.innerHTML = normalizedValue;
+	            } else {
+	              node.textContent = normalizedValue;
+	            }
+	          });
+	        }
+
+        function applyWatermarkValues() {
+          document.querySelectorAll('[data-watermark-json-path]').forEach(function(node) {
+            var jsonObject = getCurrentJsonObject(node);
+            var pathExpression = node.getAttribute('data-watermark-json-path') || '';
+            var selectedLanguage = node.getAttribute('data-watermark-json-language') || '';
+            var value = resolveFromAnyLanguage(jsonObject, pathExpression, selectedLanguage);
+            if (value === undefined || value === null || String(value).trim() === '') {
+              value = node.getAttribute('data-watermark-static-text') || node.textContent || '';
+            }
+            node.textContent = String(value);
+          });
+        }
+
+	        if (document.readyState === 'loading') {
+	          document.addEventListener('DOMContentLoaded', function() {
+	            applyJsonTableBindings();
+	            applyTextBindingValues();
+	            applyWatermarkValues();
+	            window.__BULK_JSON_BINDINGS_READY__ = true;
+	          });
+	        } else {
+	          applyJsonTableBindings();
+	          applyTextBindingValues();
+	          applyWatermarkValues();
+	          window.__BULK_JSON_BINDINGS_READY__ = true;
+        }
+      })();
+    </script>
+ </body>
+</html>

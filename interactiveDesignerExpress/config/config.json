@@ -1,0 +1,10 @@
+{
+  "jwt": {
+    "expiry": "365d",
+    "algorithm": "HS256",
+    "secret": "7bc78545b1a3923cc1e1e19523fd5c3f20b51060as9"
+  },
+  "bcrypt": {
+    "saltRounds": 10
+  }
+}
