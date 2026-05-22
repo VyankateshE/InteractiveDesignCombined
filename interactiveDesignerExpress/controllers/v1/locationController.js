@@ -582,6 +582,7 @@ var fs = require("fs");
 const fs1 = require("fs").promises;
 const puppeteer = require("puppeteer");
 const path = require("path");
+const getBrowser = require("../../browser");
 
 // const { _sendResponse, _errorResponse, _validationErrors } = require("../../app/helper/global");
 
@@ -1286,6 +1287,177 @@ await page.evaluateOnNewDocument((data, name) => {
     _errorResponse(res, 500, "Internal Server Error :: " + err.message);
   }
 }
+
+
+
+async uploadHTML6(req, res) {
+  let page = null;
+  let filePath = null;
+
+  try {
+    if (!req.file) {
+      return res.status(400).send("HTML missing");
+    }
+
+    const payload = req.body?.payload ? JSON.parse(req.body.payload) : {};
+    const pageSize = payload.pageSize || "A4";
+    const orientation = payload.orientation || "portrait";
+    const customSize = payload.customSize || {};
+    const isCustomSize =
+      String(pageSize).toLowerCase() === "custom" &&
+      customSize.width &&
+      customSize.height;
+
+    filePath = __basedir + "/uploads/" + req.file.filename;
+
+    const browser = await getBrowser();
+    page = await browser.newPage();
+
+    await page.setCacheEnabled(false);
+    await page.setDefaultNavigationTimeout(0);
+    await page.setDefaultTimeout(0);
+
+    const chartData = req.body?.chartData || "{}";
+    const chartName = req.body?.name || "default";
+
+    await page.evaluateOnNewDocument((data, name) => {
+      try {
+        localStorage.setItem(`common_json_${name}`, data);
+        localStorage.setItem("common_json_files", name);
+        localStorage.setItem("common_json", data);
+      } catch (e) {}
+    }, chartData, chartName);
+
+    const viewports = {
+      A5: { portrait: { width: 420, height: 595 }, landscape: { width: 595, height: 420 } },
+      A4: { portrait: { width: 794, height: 1123 }, landscape: { width: 1123, height: 794 } },
+      A3: { portrait: { width: 1123, height: 1587 }, landscape: { width: 1587, height: 1123 } },
+      A2: { portrait: { width: 1587, height: 2245 }, landscape: { width: 2245, height: 1587 } },
+      A1: { portrait: { width: 2245, height: 3179 }, landscape: { width: 3179, height: 2245 } },
+      A0: { portrait: { width: 3179, height: 4494 }, landscape: { width: 4494, height: 3179 } },
+      Letter: { portrait: { width: 816, height: 1056 }, landscape: { width: 1056, height: 816 } },
+      Legal: { portrait: { width: 816, height: 1344 }, landscape: { width: 1344, height: 816 } },
+    };
+
+    let vp;
+    if (isCustomSize) {
+      vp =
+        orientation === "landscape"
+          ? { width: customSize.height, height: customSize.width }
+          : { width: customSize.width, height: customSize.height };
+    } else {
+      vp = viewports[pageSize]?.[orientation] || viewports["A4"]["portrait"];
+    }
+
+    await page.setViewport(vp);
+
+    await page.goto(`file://${filePath}`, {
+      waitUntil: "networkidle0",
+      timeout: 0,
+    });
+
+    await page.evaluate(() => {
+      if (document.fonts && document.fonts.ready) {
+        return document.fonts.ready;
+      }
+      return Promise.resolve();
+    }).catch(() => {});
+
+    await page.waitForFunction(() => {
+      const charts = document.querySelectorAll(".highcharts-container");
+      if (charts.length === 0) return true;
+      return Array.from(charts).every(c => c.querySelector("svg"));
+    }, { timeout: 20000 }).catch(() => {});
+
+    const hasPageContainer = !!(await page.$(".page-container"));
+    const adjustedHeight = orientation === "landscape" ? vp.height - 4 : vp.height;
+    const cssPageSize = isCustomSize
+      ? `${vp.width}px ${vp.height}px`
+      : `${pageSize} ${orientation}`;
+
+    await page.addStyleTag({
+      content: `
+        html, body {
+          margin: 0 !important;
+          padding: 0 !important;
+          background: white !important;
+          width: ${vp.width}px !important;
+          overflow: hidden !important;
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+        }
+
+        ${
+          hasPageContainer
+            ? `
+        .page-container {
+          width: ${vp.width}px !important;
+          height: ${adjustedHeight}px !important;
+          overflow: hidden !important;
+          page-break-after: always !important;
+          page-break-inside: avoid !important;
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+        }
+
+        .page-container:last-child {
+          page-break-after: avoid !important;
+        }
+        `
+            : ""
+        }
+
+        @page {
+          size: ${cssPageSize};
+          margin: 0;
+        }
+      `,
+    });
+
+    await page.emulateMediaType("screen");
+
+    const pdf = await page.pdf({
+      format: isCustomSize ? undefined : pageSize,
+      width: isCustomSize ? `${vp.width}px` : undefined,
+      height: isCustomSize ? `${vp.height}px` : undefined,
+      landscape: orientation === "landscape",
+      printBackground: true,
+      margin: { top: 0, bottom: 0, left: 0, right: 0 },
+      preferCSSPageSize: true,
+      scale: 0.999,
+    });
+
+    res.setHeader("Content-Type", "application/pdf");
+    res.setHeader(
+      "Content-Disposition",
+      `attachment; filename=uploadHTML_${Date.now()}.pdf`
+    );
+    res.setHeader("Content-Length", pdf.length);
+    return res.status(200).end(pdf);
+  } catch (err) {
+    console.error("PDF ERROR:", err);
+    if (!res.headersSent) {
+      res.status(500).send(err.message);
+    }
+  } finally {
+    try {
+      if (page && !page.isClosed()) {
+        await page.close();
+      }
+    } catch (e) {
+      console.error("PAGE CLOSE ERROR:", e);
+    }
+
+    try {
+      if (filePath) {
+        await fs1.unlink(filePath);
+      }
+    } catch (e) {
+      console.error("FILE DELETE ERROR:", e);
+    }
+  }
+}
+
 
 }
 

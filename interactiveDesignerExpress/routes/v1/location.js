@@ -9,6 +9,7 @@ router.post('/uploadHtml', locationController.uploadHTML);
 router.post('/uploadHTML5', locationController.uploadHTML5);
 router.post('/uploadHtmlSinglePage', locationController.uploadHtmlSinglePage);
 router.post('/uploadNoramlPdf', locationController.uploadNoramlPdf);
+router.post('/uploadHTML6', locationController.uploadHTML6);
 
 
 // router.post('/uploadHTMLWithElementSize', locationController.uploadHTMLWithElementSize);

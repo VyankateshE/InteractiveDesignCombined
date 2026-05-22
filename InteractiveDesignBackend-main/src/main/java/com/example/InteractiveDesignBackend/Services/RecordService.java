@@ -35,6 +35,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -46,6 +47,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.zip.ZipEntry;
+import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
 
 import javax.crypto.Cipher;
@@ -67,20 +69,18 @@ public class RecordService {
 	
 	
 	
-	public List<String> SingleHtmlToPdf(MultipartFile htmlFile) throws IOException {
+	
+	
+	
+	public byte[] SingleHtmlToPdf(MultipartFile htmlFile) throws IOException {
 
-	    String outputDir = "output/";
-	    Files.createDirectories(Path.of(outputDir));
-
-	    List<String> pdfPaths = new ArrayList<>();
 	    RestTemplate restTemplate = new RestTemplate();
-
-	    String pdfFileName = outputDir + UUID.randomUUID() + ".pdf";
 
 	    HttpHeaders headers = new HttpHeaders();
 	    headers.setContentType(MediaType.MULTIPART_FORM_DATA);
 
 	    MultiValueMap<String, Object> body = new LinkedMultiValueMap<>();
+
 	    body.add("file", new ByteArrayResource(htmlFile.getBytes()) {
 	        @Override
 	        public String getFilename() {
@@ -88,29 +88,36 @@ public class RecordService {
 	        }
 	    });
 
-	    HttpEntity<MultiValueMap<String, Object>> requestEntity = new HttpEntity<>(body, headers);
+	    HttpEntity<MultiValueMap<String, Object>> requestEntity =
+	            new HttpEntity<>(body, headers);
 
-	    String apiUrl = "http://192.168.0.188:3010/api/v1/s3Upload/uploadHtmlSinglePage";
-//	    String apiUrl = "http://api.ariantechsolutions.in/interactive-server/api/v1/s3Upload/uploadHtmlSinglePage";
+	    String apiUrl =
+	            "http://192.168.0.188:3010/api/v1/s3Upload/uploadHtmlSinglePage";
+
+//	    String apiUrl =
+//	    "http://api.ariantechsolutions.in/interactive-server/api/v1/s3Upload/uploadHtmlSinglePage";
 
 	    try {
 
-	    	ResponseEntity<byte[]> response = restTemplate.exchange(apiUrl, HttpMethod.POST, requestEntity, byte[].class);
+	        ResponseEntity<byte[]> response = restTemplate.exchange(
+	                apiUrl,
+	                HttpMethod.POST,
+	                requestEntity,
+	                byte[].class
+	        );
 
-			if (response.getBody() == null || response.getBody().length == 0) {
+	        if (response.getBody() == null || response.getBody().length == 0) {
 
-			    logService.logActivity(
-			            "FAILURE",
-			            "Error while calling remote API",
-			            new Date()
-			    );
+	            logService.logActivity(
+	                    "FAILURE",
+	                    "Error while calling remote API",
+	                    new Date()
+	            );
 
-			    throw new IOException("Error API returned empty response");
-			}
+	            throw new IOException("Error API returned empty response");
+	        }
 
-			// Save on success
-			Files.write(Path.of(pdfFileName), response.getBody());
-			pdfPaths.add(pdfFileName);
+	        return response.getBody();
 
 	    } catch (Exception ex) {
 
@@ -122,29 +129,22 @@ public class RecordService {
 
 	        throw new IOException("Error API call failed: " + ex.getMessage());
 	    }
-
-	    return pdfPaths;
 	}
 
+	public byte[] processAndGeneratePdf(
+	        MultipartFile htmlFile,
+	        String payload) throws IOException {
 
-
-	public List<String> processAndGeneratePdf(MultipartFile htmlFile, String payload)
-	        throws IOException {
-
-	    String outputDir = "output/";
-	    Files.createDirectories(Path.of(outputDir));
-
-	    List<String> pdfPaths = new ArrayList<>();
 	    RestTemplate restTemplate = new RestTemplate();
-
-	    String pdfFileName = outputDir + UUID.randomUUID() + ".pdf";
 
 	    HttpHeaders headers = new HttpHeaders();
 	    headers.setContentType(MediaType.MULTIPART_FORM_DATA);
 
-	    MultiValueMap<String, Object> body = new LinkedMultiValueMap<>();
+	    MultiValueMap<String, Object> body =
+	            new LinkedMultiValueMap<>();
 
 	    body.add("file", new ByteArrayResource(htmlFile.getBytes()) {
+
 	        @Override
 	        public String getFilename() {
 	            return htmlFile.getOriginalFilename();
@@ -156,599 +156,411 @@ public class RecordService {
 	    HttpEntity<MultiValueMap<String, Object>> requestEntity =
 	            new HttpEntity<>(body, headers);
 
-	    String apiUrl = "http://localhost:3010/api/v1/s3Upload/uploadNoramlPdf";
+	    String apiUrl =
+	            "http://localhost:3010/api/v1/s3Upload/uploadNoramlPdf";
 
 	    try {
 
 	        ResponseEntity<byte[]> response =
-	                restTemplate.exchange(apiUrl, HttpMethod.POST, requestEntity, byte[].class);
+	                restTemplate.exchange(
+	                        apiUrl,
+	                        HttpMethod.POST,
+	                        requestEntity,
+	                        byte[].class
+	                );
 
-	        if (response.getBody() == null || response.getBody().length == 0) {
+	        if (response.getBody() == null ||
+	                response.getBody().length == 0) {
 
-	            logService.logActivity("FAILURE","Empty response from Node", new Date());
+	            logService.logActivity(
+	                    "FAILURE",
+	                    "Empty response from Node",
+	                    new Date()
+	            );
 
 	            throw new IOException("Node returned empty PDF");
 	        }
 
-	        Files.write(Path.of(pdfFileName), response.getBody());
-	        pdfPaths.add(pdfFileName);
+	        return response.getBody();
 
 	    } catch (Exception ex) {
 
-	        logService.logActivity("ERROR",
+	        logService.logActivity(
+	                "ERROR",
 	                "Node API error: " + ex.getMessage(),
-	                new Date());
+	                new Date()
+	        );
 
-	        throw new IOException("Remote API failed");
+	        throw new IOException(
+	                "Remote API failed: " + ex.getMessage()
+	        );
 	    }
-
-	    return pdfPaths;
 	}
-	
-	// ---------------------- SERVICE IMPLEMENTATION ----------------------
-//	public List<String> processAndGeneratePdf(String payloadJson, MultipartFile[] files, MultipartFile htmlFile)
-//			throws IOException {
-//
-//		Date startTime = new Date();
-//		ObjectMapper mapper = new ObjectMapper();
-//		JsonNode payloadNode = mapper.readTree(payloadJson);
-//
-//		JsonNode mappingNode;
-//		String pageSize = "A4";
-//		String orientation = "portrait";
-//
-//		if (payloadNode.isArray()) {
-//			mappingNode = payloadNode;
-//		} else if (payloadNode.has("mapping")) {
-//			mappingNode = payloadNode.get("mapping");
-//			if (payloadNode.has("pageSize"))
-//				pageSize = payloadNode.get("pageSize").asText();
-//			if (payloadNode.has("orientation"))
-//				orientation = payloadNode.get("orientation").asText();
-//		} else {
-//			throw new IllegalArgumentException("Invalid payload format. Must contain 'mapping' or be an array.");
-//		}
-//
-//		Map<String, JsonNode> htmlIdToJsonField = new LinkedHashMap<>();
-//		for (JsonNode obj : mappingNode) {
-//			obj.fields().forEachRemaining(entry -> htmlIdToJsonField.put(entry.getKey(), entry.getValue()));
-//		}
-//
-//		List<String> fileNameFields = new ArrayList<>();
-//		JsonNode fileNameNode = htmlIdToJsonField.get("file_name");
-//		if (fileNameNode != null) {
-//			if (fileNameNode.isTextual())
-//				fileNameFields.addAll(Arrays.asList(fileNameNode.asText().split(",")));
-//			else if (fileNameNode.isArray())
-//				fileNameNode.forEach(n -> fileNameFields.add(n.asText()));
-//		}
-//
-//		List<String> passwordFields = new ArrayList<>();
-//		JsonNode passwordNode = htmlIdToJsonField.get("password");
-//		if (passwordNode != null) {
-//			if (passwordNode.isTextual())
-//				passwordFields.addAll(Arrays.asList(passwordNode.asText().split(",")));
-//			else if (passwordNode.isArray())
-//				passwordNode.forEach(n -> passwordFields.add(n.asText()));
-//		}
-//
-//		String htmlContent = new String(htmlFile.getBytes(), StandardCharsets.UTF_8).replaceFirst("^\uFEFF", "");
-//
-//		String outputDir = Mypath.getPath() + "DownloadHTMLANDPDF" + File.separator;
-//		Files.createDirectories(Path.of(outputDir));
-//		List<String> pdfPaths = new ArrayList<>();
-//
-//		RestTemplate restTemplate = new RestTemplate();
-//
-//		for (MultipartFile file : files) {
-//			JsonNode dataJson = mapper.readTree(file.getInputStream());
-//			boolean anyMatchFound = false;
-//
-//			for (Iterator<Map.Entry<String, JsonNode>> users = dataJson.fields(); users.hasNext();) {
-//				Map.Entry<String, JsonNode> entry = users.next();
-//				JsonNode userNode = entry.getValue();
-//
-//				for (JsonNode nodeRef : htmlIdToJsonField.values()) {
-//					if (nodeRef.isTextual()) {
-//						String refField = nodeRef.asText();
-//						String cleanField = refField.contains(".") ? refField.split("\\.")[1] : refField;
-//						if (userNode.has(cleanField)) {
-//							anyMatchFound = true;
-//							break;
-//						}
-//					}
-//				}
-//				if (anyMatchFound)
-//					break;
-//			}
-//
-////			if (!anyMatchFound) {
-////				System.out.println(
-////						"⚠️ Skipping JSON file '" + file.getOriginalFilename() + "' — no matching data found.");
-////				logService.logActivity("SKIPPED",
-////						"Skipped JSON file '" + file.getOriginalFilename() + "' — no matching data found.", startTime);
-////				continue;
-////			}
-//
-//			for (Iterator<Map.Entry<String, JsonNode>> users = dataJson.fields(); users.hasNext();) {
-//				Map.Entry<String, JsonNode> entry = users.next();
-//				String userKey = entry.getKey();
-//				JsonNode userNode = entry.getValue();
-//
-//				Map<String, JsonNode> normalizedFieldMap = new HashMap<>();
-//				normalizedFieldMap.put(userKey.toLowerCase(), userNode);
-//				userNode.fieldNames()
-//						.forEachRemaining(field -> normalizedFieldMap.put(field.toLowerCase(), userNode.get(field)));
-//
-//				Document doc = Jsoup.parse(htmlContent);
-//				AtomicBoolean hasValidData = new AtomicBoolean(false);
-//				doc.outputSettings().syntax(Document.OutputSettings.Syntax.xml);
-//
-//				htmlIdToJsonField.forEach((id, nodeRef) -> {
-//					String fieldRef = nodeRef.isTextual() ? nodeRef.asText() : null;
-////					if (fieldRef != null && fieldRef.contains("__i_designer_template_values")) {
-////					    return; // skip this mapping completely
-////					}
-//					
-//					if (fieldRef == null)
-//						return;
-//					String fullPath = fieldRef;
-//					if (!fieldRef.startsWith(userKey + ".")) {
-//						fullPath = userKey + "." + fieldRef;
-//					}
-//
-//					String value = resolveFieldValueWithIndexes(normalizedFieldMap, fullPath.trim());
-//					Element elem = doc.getElementById(id);
-////					if (elem != null && value != null && !value.isEmpty()) {
-////						elem.text(value);
-////					}
-//					
-//					  if (elem != null) {
-//					        if (value != null && !value.isEmpty()) {
-//					            elem.text(value);
-//					            hasValidData.set(true); 
-//					        }
-//					    }
-//					  
-//					  
-//				});
-//                
-//				if (!hasValidData.get()) {
-//				    System.out.println("⚠️ Skipping user " + userKey + " — no valid mapped data found");
-////				    continue;
-//				}
-//				
-//				String fileType;
-//				if (!fileNameFields.isEmpty()) {
-//					StringBuilder fnBuilder = new StringBuilder();
-//					for (String fnExpr : fileNameFields) {
-//						String fnValue = resolveFieldValueWithIndexes(normalizedFieldMap,
-//								userKey + "." + fnExpr.trim());
-//						if (fnValue != null && !fnValue.isEmpty())
-//							fnBuilder.append(fnValue);
-//						else
-//							fnBuilder.append("file_").append(UUID.randomUUID()).append("_");
-//					}
-//					fileType = fnBuilder.toString().replaceAll("_$", "");
-//				} else {
-//					fileType = "file_" + userKey + "_" + UUID.randomUUID();
-//				}
-//
-//				String pdfFileName = outputDir + fileType + ".pdf";
-//
-//				try {
-//					HttpHeaders headers = new HttpHeaders();
-//					headers.setContentType(MediaType.MULTIPART_FORM_DATA);
-//
-//					MultiValueMap<String, Object> body = new LinkedMultiValueMap<>();
-//					
-//					String chartDataJson = mapper.writeValueAsString(dataJson);
-//
-//					String debugHtmlPath = "C:/temp/debug_template.html";
-//					Files.write(Path.of(debugHtmlPath), doc.outerHtml().getBytes(StandardCharsets.UTF_8));
-//					System.out.println("DEBUG HTML SAVED AT: " + debugHtmlPath);
-//					
-//					body.add("file", new ByteArrayResource(doc.outerHtml().getBytes(StandardCharsets.UTF_8)) {
-//						@Override
-//						public String getFilename() {
-//							return "template.html";
-//						}
-//					});
-//					body.add("name", fileType);
-//					body.add("chartData", chartDataJson);  // ✅ ADD THIS LINE
-//
-//					Map<String, Object> pdfConfig = new HashMap<>();
-//					pdfConfig.put("pageSize", pageSize);
-//					pdfConfig.put("orientation", orientation);
-//					body.add("payload", mapper.writeValueAsString(pdfConfig));
-////					body.add("chartData", mapper.writeValueAsString(dataJson));
-//					HttpEntity<MultiValueMap<String, Object>> requestEntity = new HttpEntity<>(body, headers);
-//					String apiUrl = "http://192.168.0.188:3010/api/v1/s3Upload/uploadHTML5";
-////					String apiUrl = "http://api.ariantechsolutions.in/interactive-server/api/v1/s3Upload/uploadHTML5";
-//
-//					ResponseEntity<byte[]> response = restTemplate.exchange(apiUrl, HttpMethod.POST, requestEntity,
-//							byte[].class);
-//				    if (response.getBody() == null || response.getBody().length == 0) {
-//
-//				        logService.logActivity(
-//				                "FAILURE",
-//					            "Error while calling remote API",
-//				                new Date()
-//				        );
-//
-//				        throw new IOException("Error API returned no PDF for " + fileType);
-//				    }
-//
-//				    Files.write(Path.of(pdfFileName), response.getBody());
-//
-//				}catch (Exception ex) {
-//
-//				    logService.logActivity(
-//				            "ERROR",
-//			                "Error while calling remote API: " + ex.getMessage(),
-//				            new Date()
-//				    );
-//
-//			        throw new IOException("Error API call failed");
-//				}
-//
-//				if (!passwordFields.isEmpty()) {
-//					StringBuilder pwBuilder = new StringBuilder();
-//					for (String pwExpr : passwordFields) {
-//						String pwValue = resolveFieldValueWithIndexes(normalizedFieldMap,
-//								userKey + "." + pwExpr.trim());
-//						pwBuilder.append(pwValue != null ? pwValue : pwExpr.trim());
-//					}
-//					String userPassword = pwBuilder.toString();
-//
-//					System.out.println("---------------------------------------------------");
-//					System.out.println("Generated PDF for user: " + userKey);
-//					System.out.println("File Name: " + pdfFileName);
-//					System.out.println("Password:  " + userPassword);
-//					System.out.println("Page Size: " + pageSize);
-//					System.out.println("Orientation: " + orientation);
-//					System.out.println("---------------------------------------------------");
-//
-//					try (PDDocument document = PDDocument.load(new File(pdfFileName))) {
-//						String ownerPassword = UUID.randomUUID().toString();
-//						AccessPermission permissions = new AccessPermission();
-//						StandardProtectionPolicy policy = new StandardProtectionPolicy(ownerPassword, userPassword,
-//								permissions);
-//						policy.setEncryptionKeyLength(128);
-//						policy.setPermissions(permissions);
-//						document.protect(policy);
-//						document.save(pdfFileName);
-//					}
-//				}
-//
-//				RecordEntity record = RecordEntity.builder().fileName(fileType + ".pdf").build();
-//				repository.save(record);
-//				pdfPaths.add(pdfFileName);
-//			}
-//		}
-//
-//		return pdfPaths;
-//	}
 
-	public List<String> processAndGeneratePdf(String payloadJson, MultipartFile[] files, MultipartFile htmlFile)
-	        throws IOException {
+	
+	
+	public Map<String, byte[]> processAndGeneratePdf(
+	        String payloadJson,
+	        MultipartFile[] files,
+	        MultipartFile htmlFile) throws IOException {
 
 	    Date startTime = new Date();
+
 	    ObjectMapper mapper = new ObjectMapper();
+
 	    JsonNode payloadNode = mapper.readTree(payloadJson);
 
 	    JsonNode mappingNode;
+
 	    String pageSize = "A4";
+
 	    String orientation = "portrait";
 
 	    if (payloadNode.isArray()) {
+
 	        mappingNode = payloadNode;
+
 	    } else if (payloadNode.has("mapping")) {
+
 	        mappingNode = payloadNode.get("mapping");
+
 	        if (payloadNode.has("pageSize"))
 	            pageSize = payloadNode.get("pageSize").asText();
+
 	        if (payloadNode.has("orientation"))
 	            orientation = payloadNode.get("orientation").asText();
+
 	    } else {
+
 	        throw new IllegalArgumentException("Invalid payload format.");
 	    }
 
-	    Map<String, JsonNode> htmlIdToJsonField = new LinkedHashMap<>();
+	    Map<String, JsonNode> htmlIdToJsonField =
+	            new LinkedHashMap<>();
+
 	    for (JsonNode obj : mappingNode) {
+
 	        obj.fields().forEachRemaining(entry ->
-	                htmlIdToJsonField.put(entry.getKey(), entry.getValue()));
+	                htmlIdToJsonField.put(
+	                        entry.getKey(),
+	                        entry.getValue()
+	                ));
 	    }
 
-	    // ✅ filename fields
+	    // filename fields
 	    List<String> fileNameFields = new ArrayList<>();
-	    
-	 // ✅ password fields (ADD THIS)
+
+	    JsonNode fileNameNode =
+	            htmlIdToJsonField.get("file_name");
+
+	    if (fileNameNode != null) {
+
+	        if (fileNameNode.isTextual()) {
+
+	            fileNameFields.addAll(
+	                    Arrays.asList(fileNameNode.asText().split(","))
+	            );
+
+	        } else if (fileNameNode.isArray()) {
+
+	            fileNameNode.forEach(
+	                    n -> fileNameFields.add(n.asText())
+	            );
+	        }
+	    }
+
+	    // password fields
 	    List<String> passwordFields = new ArrayList<>();
-	    JsonNode passwordNode = htmlIdToJsonField.get("password");
+
+	    JsonNode passwordNode =
+	            htmlIdToJsonField.get("password");
 
 	    if (passwordNode != null) {
-	        if (passwordNode.isTextual())
-	            passwordFields.addAll(Arrays.asList(passwordNode.asText().split(",")));
-	        else if (passwordNode.isArray())
-	            passwordNode.forEach(n -> passwordFields.add(n.asText()));
+
+	        if (passwordNode.isTextual()) {
+
+	            passwordFields.addAll(
+	                    Arrays.asList(passwordNode.asText().split(","))
+	            );
+
+	        } else if (passwordNode.isArray()) {
+
+	            passwordNode.forEach(
+	                    n -> passwordFields.add(n.asText())
+	            );
+	        }
 	    }
-	    
-	    JsonNode fileNameNode = htmlIdToJsonField.get("file_name");
-	    if (fileNameNode != null) {
-	        if (fileNameNode.isTextual())
-	            fileNameFields.addAll(Arrays.asList(fileNameNode.asText().split(",")));
-	        else if (fileNameNode.isArray())
-	            fileNameNode.forEach(n -> fileNameFields.add(n.asText()));
-	    }
-	    
-	    
-	    
 
-	    String htmlContent = new String(htmlFile.getBytes(), StandardCharsets.UTF_8)
-	            .replaceFirst("^\uFEFF", "");
+	    String htmlContent =
+	            new String(
+	                    htmlFile.getBytes(),
+	                    StandardCharsets.UTF_8
+	            ).replaceFirst("^\uFEFF", "");
 
-	    String outputDir = Mypath.getPath() + "DownloadHTMLANDPDF" + File.separator;
-	    Files.createDirectories(Path.of(outputDir));
+	    // UPDATED
+	    Map<String, byte[]> pdfMap = new LinkedHashMap<>();
 
-	    List<String> pdfPaths = new ArrayList<>();
 	    RestTemplate restTemplate = new RestTemplate();
 
 	    for (MultipartFile file : files) {
 
-	        JsonNode dataJson = mapper.readTree(file.getInputStream());
+	        JsonNode dataJson =
+	                mapper.readTree(file.getInputStream());
 
-	        // ✅ ONLY FIRST USER (fix duplicate PDFs)
-	        Iterator<Map.Entry<String, JsonNode>> users = dataJson.fields();
-	        if (!users.hasNext()) continue;
+	        Iterator<Map.Entry<String, JsonNode>> users =
+	                dataJson.fields();
 
-	        Map.Entry<String, JsonNode> entry = users.next();
+	        if (!users.hasNext())
+	            continue;
+
+	        Map.Entry<String, JsonNode> entry =
+	                users.next();
+
 	        String userKey = entry.getKey();
+
 	        JsonNode userNode = entry.getValue();
 
-	        Map<String, JsonNode> normalizedFieldMap = new HashMap<>();
-	        normalizedFieldMap.put(userKey.toLowerCase(), userNode);
+	        Map<String, JsonNode> normalizedFieldMap =
+	                new HashMap<>();
+
+	        normalizedFieldMap.put(
+	                userKey.toLowerCase(),
+	                userNode
+	        );
+
 	        userNode.fieldNames().forEachRemaining(field ->
-	                normalizedFieldMap.put(field.toLowerCase(), userNode.get(field)));
+	                normalizedFieldMap.put(
+	                        field.toLowerCase(),
+	                        userNode.get(field)
+	                ));
 
 	        Document doc = Jsoup.parse(htmlContent);
-	        AtomicBoolean hasValidData = new AtomicBoolean(false);
+
+	        AtomicBoolean hasValidData =
+	                new AtomicBoolean(false);
 
 	        htmlIdToJsonField.forEach((id, nodeRef) -> {
 
-	            String fieldRef = nodeRef.isTextual() ? nodeRef.asText() : null;
+	            String fieldRef =
+	                    nodeRef.isTextual()
+	                            ? nodeRef.asText()
+	                            : null;
+
 	            Element elem = doc.getElementById(id);
 
-	            if (elem == null) return;
-
-//	            // ✅ HANDLE TEMPLATE VALUES
-//	            if (fieldRef != null && fieldRef.contains("__i_designer_template_values")) {
-//
-//	                String templateText = elem.attr("data-template-text");
-//	                
-//	                if (templateText != null && !templateText.isEmpty()) {
-//	                    try {
-//	                        templateText = java.net.URLDecoder.decode(templateText, StandardCharsets.UTF_8.name());
-//	                    } catch (Exception e) {
-//	                        // ignore decoding error
-//	                    }
-//	                }
-//
-//	                if (templateText != null && !templateText.isEmpty()) {
-//
-//	                    String dynamicValue = "";
-//
-//	                    // 🔥 pick any valid mapped value
-//	                    for (Map.Entry<String, JsonNode> mapEntry : htmlIdToJsonField.entrySet()) {
-//	                        String ref = mapEntry.getValue().asText();
-//
-//	                        if (!ref.contains("__i_designer_template_values")) {
-//
-//	                            String fullPath = ref.startsWith(userKey + ".")
-//	                                    ? ref
-//	                                    : userKey + "." + ref;
-//
-//	                            dynamicValue = resolveFieldValueWithIndexes(normalizedFieldMap, fullPath);
-//
-//	                            if (dynamicValue != null && !dynamicValue.isEmpty()) break;
-//	                        }
-//	                    }
-//
-//	                    String finalText = templateText.replace("{name}",
-//	                            dynamicValue != null ? dynamicValue : "");
-//
-//	                    elem.text(finalText);
-//	                    hasValidData.set(true);
-//	                }
-//
-//	                return;
-//	            }
-	            
-//	            Element elem = doc.getElementById(id);
-	            if (elem == null) return;
-
-	            // 🔥 detect template using HTML attribute (NOT payload)
-	            String templateText = elem.attr("data-template-text");
-
-	            if (templateText != null && !templateText.isEmpty()) {
-
-	                // ✅ decode if encoded
-	                try {
-	                    templateText = java.net.URLDecoder.decode(templateText, StandardCharsets.UTF_8.name());
-	                } catch (Exception e) {}
-
-	                // 🔥 dynamic placeholder replacement
-	                Pattern pattern = Pattern.compile("\\{(.*?)\\}");
-	                Matcher matcher = pattern.matcher(templateText);
-
-	                StringBuffer finalTextBuffer = new StringBuffer();
-
-	                while (matcher.find()) {
-
-	                    String placeholder = matcher.group(1); // e.g. name, city
-
-	                    String value = "";
-
-	                    // 🔥 find value dynamically from mappings
-	                    for (Map.Entry<String, JsonNode> mapEntry : htmlIdToJsonField.entrySet()) {
-
-	                        String ref = mapEntry.getValue().asText();
-
-	                        String fullPath = ref.startsWith(userKey + ".")
-	                                ? ref
-	                                : userKey + "." + ref;
-
-	                        value = resolveFieldValueWithIndexes(normalizedFieldMap, fullPath);
-
-	                        if (value != null && !value.isEmpty()) break;
-	                    }
-
-	                    if (value == null) value = "";
-
-	                    matcher.appendReplacement(finalTextBuffer, Matcher.quoteReplacement(value));
-	                }
-
-	                matcher.appendTail(finalTextBuffer);
-
-	                elem.text(finalTextBuffer.toString());
-	                hasValidData.set(true);
-
+	            if (elem == null)
 	                return;
-	            }
 
-	            // ✅ NORMAL FIELD MAPPING
 	            if (fieldRef != null) {
 
-	                String fullPath = fieldRef.startsWith(userKey + ".")
-	                        ? fieldRef
-	                        : userKey + "." + fieldRef;
+	                String fullPath =
+	                        fieldRef.startsWith(userKey + ".")
+	                                ? fieldRef
+	                                : userKey + "." + fieldRef;
 
-	                String value = resolveFieldValueWithIndexes(normalizedFieldMap, fullPath);
+	                String value =
+	                        resolveFieldValueWithIndexes(
+	                                normalizedFieldMap,
+	                                fullPath
+	                        );
 
 	                if (value != null && !value.isEmpty()) {
+
 	                    elem.text(value);
+
 	                    hasValidData.set(true);
 	                }
 	            }
 	        });
 
-	        if (!hasValidData.get()) {
-	            System.out.println("⚠️ No valid data for: " + userKey);
-//	            continue;
-	        }
-
-	        // ✅ FILE NAME FIX
-	        String fileType = "file_" + UUID.randomUUID();
+	        String fileType =
+	                "file_" + UUID.randomUUID();
 
 	        if (!fileNameFields.isEmpty()) {
+
 	            for (String fnExpr : fileNameFields) {
 
-	                String fullPath = userKey + "." + fnExpr.trim();
-	                String fnValue = resolveFieldValueWithIndexes(normalizedFieldMap, fullPath);
+	                String fullPath =
+	                        userKey + "." + fnExpr.trim();
+
+	                String fnValue =
+	                        resolveFieldValueWithIndexes(
+	                                normalizedFieldMap,
+	                                fullPath
+	                        );
 
 	                if (fnValue != null && !fnValue.isEmpty()) {
+
 	                    fileType = fnValue;
+
 	                    break;
 	                }
 	            }
 	        }
 
-	        String pdfFileName = outputDir + fileType + ".pdf";
-
 	        try {
 
 	            HttpHeaders headers = new HttpHeaders();
-	            headers.setContentType(MediaType.MULTIPART_FORM_DATA);
 
-	            MultiValueMap<String, Object> body = new LinkedMultiValueMap<>();
+	            headers.setContentType(
+	                    MediaType.MULTIPART_FORM_DATA
+	            );
 
-	            body.add("file", new ByteArrayResource(doc.outerHtml().getBytes(StandardCharsets.UTF_8)) {
-	                @Override
-	                public String getFilename() {
-	                    return "template.html";
-	                }
-	            });
+	            MultiValueMap<String, Object> body =
+	                    new LinkedMultiValueMap<>();
+
+	            body.add(
+	                    "file",
+	                    new ByteArrayResource(
+	                            doc.outerHtml()
+	                                    .getBytes(StandardCharsets.UTF_8)
+	                    ) {
+
+	                        @Override
+	                        public String getFilename() {
+
+	                            return "template.html";
+	                        }
+	                    }
+	            );
 
 	            body.add("name", fileType);
-	            body.add("chartData", mapper.writeValueAsString(dataJson));
 
-	            Map<String, Object> pdfConfig = new HashMap<>();
+	            body.add(
+	                    "chartData",
+	                    mapper.writeValueAsString(dataJson)
+	            );
+
+	            Map<String, Object> pdfConfig =
+	                    new HashMap<>();
+
 	            pdfConfig.put("pageSize", pageSize);
+
 	            pdfConfig.put("orientation", orientation);
 
-	            body.add("payload", mapper.writeValueAsString(pdfConfig));
+	            body.add(
+	                    "payload",
+	                    mapper.writeValueAsString(pdfConfig)
+	            );
 
-	            HttpEntity<MultiValueMap<String, Object>> requestEntity =
+	            HttpEntity<MultiValueMap<String, Object>>
+	                    requestEntity =
 	                    new HttpEntity<>(body, headers);
 
-	            String apiUrl = "http://192.168.0.188:3010/api/v1/s3Upload/uploadHTML5";
+	            String apiUrl =
+	                    "http://192.168.0.188:3010/api/v1/s3Upload/uploadHTML5";
 
-	            ResponseEntity<byte[]> response = restTemplate.exchange(
-	                    apiUrl, HttpMethod.POST, requestEntity, byte[].class);
+	            ResponseEntity<byte[]> response =
+	                    restTemplate.exchange(
+	                            apiUrl,
+	                            HttpMethod.POST,
+	                            requestEntity,
+	                            byte[].class
+	                    );
 
-	            if (response.getBody() == null || response.getBody().length == 0) {
+	            if (response.getBody() == null
+	                    || response.getBody().length == 0) {
+
 	                throw new IOException("Empty PDF response");
 	            }
 
-	            Files.write(Path.of(pdfFileName), response.getBody());
-	            
-	         // 🔐 APPLY PASSWORD (OLD WORKING LOGIC)
+	            // UPDATED
+	            byte[] pdfBytes = response.getBody();
+
+	            // PASSWORD PROTECTION
 	            if (!passwordFields.isEmpty()) {
 
-	                StringBuilder pwBuilder = new StringBuilder();
+	                StringBuilder pwBuilder =
+	                        new StringBuilder();
 
 	                for (String pwExpr : passwordFields) {
 
 	                    String pwValue;
 
-	                    // dynamic field
 	                    if (pwExpr.contains(".")) {
-	                        String fullPath = userKey + "." + pwExpr.trim();
-	                        pwValue = resolveFieldValueWithIndexes(normalizedFieldMap, fullPath);
+
+	                        String fullPath =
+	                                userKey + "." + pwExpr.trim();
+
+	                        pwValue =
+	                                resolveFieldValueWithIndexes(
+	                                        normalizedFieldMap,
+	                                        fullPath
+	                                );
+
 	                    } else {
-	                        // static
+
 	                        pwValue = pwExpr.trim();
 	                    }
 
 	                    if (pwValue != null) {
-	                        pwBuilder.append(pwValue.trim());
+
+	                        pwBuilder.append(
+	                                pwValue.trim()
+	                        );
 	                    }
 	                }
 
-	                String userPassword = pwBuilder.toString().trim();
-
-	                System.out.println("FINAL PASSWORD = [" + userPassword + "]");
+	                String userPassword =
+	                        pwBuilder.toString().trim();
 
 	                if (!userPassword.isEmpty()) {
 
-	                    try (PDDocument document = PDDocument.load(new File(pdfFileName))) {
+	                    try (
+	                            PDDocument document =
+	                                    PDDocument.load(pdfBytes);
 
-	                        String ownerPassword = userPassword; // ✅ IMPORTANT FIX
+	                            ByteArrayOutputStream securedOut =
+	                                    new ByteArrayOutputStream()
+	                    ) {
 
-	                        AccessPermission permissions = new AccessPermission();
+	                        AccessPermission permissions =
+	                                new AccessPermission();
 
 	                        StandardProtectionPolicy policy =
-	                                new StandardProtectionPolicy(ownerPassword, userPassword, permissions);
+	                                new StandardProtectionPolicy(
+	                                        userPassword,
+	                                        userPassword,
+	                                        permissions
+	                                );
 
 	                        policy.setEncryptionKeyLength(128);
+
 	                        policy.setPermissions(permissions);
 
 	                        document.protect(policy);
-	                        document.save(pdfFileName);
+
+	                        document.save(securedOut);
+
+	                        pdfBytes = securedOut.toByteArray();
 	                    }
 	                }
 	            }
 
-	        } catch (Exception ex) {
-	            throw new IOException("PDF generation failed: " + ex.getMessage());
-	        }
+	            // UPDATED
+	            pdfMap.put(
+	                    fileType + ".pdf",
+	                    pdfBytes
+	            );
 
-	        repository.save(RecordEntity.builder().fileName(fileType + ".pdf").build());
-	        pdfPaths.add(pdfFileName);
+	            repository.save(
+	                    RecordEntity.builder()
+	                            .fileName(fileType + ".pdf")
+	                            .build()
+	            );
+
+	        } catch (Exception ex) {
+
+	            throw new IOException(
+	                    "PDF generation failed: "
+	                            + ex.getMessage()
+	            );
+	        }
 	    }
 
-	    return pdfPaths;
+	    return pdfMap;
 	}
-	
+
 	private String resolveFieldValueWithIndexes(Map<String, JsonNode> normalizedFieldMap, String expression) {
 		if (expression == null || expression.isEmpty())
 			return null;
@@ -825,247 +637,470 @@ public class RecordService {
 		}
 	}
 
-	public byte[] createZipFromFiles(List<String> filePaths) throws IOException {
-		ByteArrayOutputStream baos = new ByteArrayOutputStream();
-		try (ZipOutputStream zos = new ZipOutputStream(baos)) {
-			for (String filePath : filePaths) {
-				File file = new File(filePath);
-				if (!file.exists())
-					continue;
+	
+//	public byte[] createZipFromFiles(List<String> filePaths) throws IOException {
+//		ByteArrayOutputStream baos = new ByteArrayOutputStream();
+//		try (ZipOutputStream zos = new ZipOutputStream(baos)) {
+//			for (String filePath : filePaths) {
+//				File file = new File(filePath);
+//				if (!file.exists())
+//					continue;
+//
+//				try (FileInputStream fis = new FileInputStream(file)) {
+//					ZipEntry zipEntry = new ZipEntry(file.getName());
+//					zos.putNextEntry(zipEntry);
+//
+//					byte[] buffer = new byte[1024];
+//					int length;
+//					while ((length = fis.read(buffer)) >= 0) {
+//						zos.write(buffer, 0, length);
+//					}
+//					zos.closeEntry();
+//				}
+//			}
+//		}
+//		return baos.toByteArray();
+//	}
 
-				try (FileInputStream fis = new FileInputStream(file)) {
-					ZipEntry zipEntry = new ZipEntry(file.getName());
-					zos.putNextEntry(zipEntry);
+	public byte[] createZipFromFiles(
+	        Map<String, byte[]> pdfMap) throws IOException {
 
-					byte[] buffer = new byte[1024];
-					int length;
-					while ((length = fis.read(buffer)) >= 0) {
-						zos.write(buffer, 0, length);
-					}
-					zos.closeEntry();
-				}
-			}
-		}
-		return baos.toByteArray();
+	    ByteArrayOutputStream baos =
+	            new ByteArrayOutputStream();
+
+	    try (ZipOutputStream zos =
+	                 new ZipOutputStream(baos)) {
+
+	        for (Map.Entry<String, byte[]> entry
+	                : pdfMap.entrySet()) {
+
+	            ZipEntry zipEntry =
+	                    new ZipEntry(entry.getKey());
+
+	            zos.putNextEntry(zipEntry);
+
+	            zos.write(entry.getValue());
+
+	            zos.closeEntry();
+	        }
+	    }
+
+	    return baos.toByteArray();
 	}
-
 	@Data
 	@AllArgsConstructor
 	private static class GeneratedPdf {
 		private String fileName;
 		private byte[] bytes;
+		
+		
 	}
 
-	public List<String> processAndGenerateHtml(String payloadJson, MultipartFile[] files, MultipartFile htmlFile)
-			throws Exception {
-		Date startTime = new Date();
-		ObjectMapper mapper = new ObjectMapper();
-		JsonNode payloadNode;
-		try {
-			payloadNode = mapper.readTree(payloadJson);
-		} catch (Exception e) {
-			logToDatabase(null, "FAILURE", "JSON parsing error: " + e.getMessage(), startTime);
-			throw e;
-		}
+	//old uploadhtml code
 
-		Map<String, JsonNode> htmlIdToJsonField = new LinkedHashMap<>();
-		for (JsonNode obj : payloadNode) {
-			obj.fields().forEachRemaining(entry -> htmlIdToJsonField.put(entry.getKey(), entry.getValue()));
-		}
+	public Map<String, byte[]> processAndGenerateHtml(
+	        String payloadJson,
+	        MultipartFile[] files,
+	        MultipartFile htmlFile) throws Exception {
 
-		List<String> fileNameFields = new ArrayList<>();
-		JsonNode fileNameNode = htmlIdToJsonField.get("file_name");
-		if (fileNameNode != null) {
-			if (fileNameNode.isTextual())
-				fileNameFields.addAll(Arrays.asList(fileNameNode.asText().split(",")));
-			else if (fileNameNode.isArray())
-				fileNameNode.forEach(n -> fileNameFields.add(n.asText()));
-		}
+	    Date startTime = new Date();
 
-		List<String> passwordFields = new ArrayList<>();
-		JsonNode passwordNode = htmlIdToJsonField.get("password");
-		if (passwordNode != null) {
-			if (passwordNode.isTextual())
-				passwordFields.addAll(Arrays.asList(passwordNode.asText().split(",")));
-			else if (passwordNode.isArray())
-				passwordNode.forEach(n -> passwordFields.add(n.asText()));
-		}
+	    ObjectMapper mapper = new ObjectMapper();
 
-		String htmlTemplate = new String(htmlFile.getBytes(), StandardCharsets.UTF_8).replaceFirst("^\uFEFF", "");
+	    JsonNode payloadNode;
 
-		String outputDir = "DownloadHTMLANDPDF" + File.separator;
-		Files.createDirectories(Path.of(outputDir));
-		List<String> htmlPaths = new ArrayList<>();
-		for (MultipartFile file : files) {
-			JsonNode dataJson = mapper.readTree(file.getInputStream());
-			boolean anyMatchFound = false;
+	    try {
 
-			for (Iterator<Map.Entry<String, JsonNode>> users = dataJson.fields(); users.hasNext();) {
-				Map.Entry<String, JsonNode> entry = users.next();
-				JsonNode userNode = entry.getValue();
+	        payloadNode = mapper.readTree(payloadJson);
 
-				for (JsonNode nodeRef : htmlIdToJsonField.values()) {
-					if (nodeRef.isTextual()) {
-						String refField = nodeRef.asText();
-						String cleanField = refField.contains(".") ? refField.split("\\.")[1] : refField;
-						if (userNode.has(cleanField)) {
-							anyMatchFound = true;
-							break;
-						}
-					}
-				}
-				if (anyMatchFound)
-					break;
-			}
+	    } catch (Exception e) {
 
-//			if (!anyMatchFound) {
-//				System.out.println(
-//						"⚠️ Skipping JSON file '" + file.getOriginalFilename() + "' — no matching data found.");
-//				logService.logActivity("SKIPPED",
-//						"Skipped JSON file '" + file.getOriginalFilename() + "' — no matching data found.", startTime);
-//				continue;
-//			}
+	        logToDatabase(
+	                null,
+	                "FAILURE",
+	                "JSON parsing error: " + e.getMessage(),
+	                startTime
+	        );
 
-			for (Iterator<Map.Entry<String, JsonNode>> users = dataJson.fields(); users.hasNext();) {
-				Map.Entry<String, JsonNode> entry = users.next();
-				String userKey = entry.getKey();
-				JsonNode userNode = entry.getValue();
+	        throw e;
+	    }
 
-				Map<String, JsonNode> normalizedFieldMap = new HashMap<>();
-				normalizedFieldMap.put(userKey.toLowerCase(), userNode);
-				userNode.fieldNames()
-						.forEachRemaining(field -> normalizedFieldMap.put(field.toLowerCase(), userNode.get(field)));
+	    Map<String, JsonNode> htmlIdToJsonField =
+	            new LinkedHashMap<>();
 
-				Document doc = Jsoup.parse(htmlTemplate);
-				AtomicBoolean hasValidData = new AtomicBoolean(false);   // ✅ ADD THIS
-				doc.outputSettings().syntax(Document.OutputSettings.Syntax.xml);
-				
-				
+	    for (JsonNode obj : payloadNode) {
 
-				htmlIdToJsonField.forEach((id, nodeRef) -> {
-					String fieldRef = nodeRef.isTextual() ? nodeRef.asText() : null;
-					if (fieldRef == null)
-						return;
-					String fullPath = fieldRef;
-					if (!fieldRef.startsWith(userKey + ".")) {
-						fullPath = userKey + "." + fieldRef;
-					}
-					String value = resolveFieldValueWithIndexes(normalizedFieldMap, fullPath.trim());
-					Element elem = doc.getElementById(id);
-//					if (elem != null && value != null && !value.isEmpty()) {
-//						elem.text(value);
-//					}
-					
-					if (elem != null) {
-					    if (value != null && !value.isEmpty()) {
-					        elem.text(value);
-					        hasValidData.set(true);   // ✅ mark valid data
-					    }
-					}
-				});
+	        obj.fields().forEachRemaining(entry ->
+	                htmlIdToJsonField.put(
+	                        entry.getKey(),
+	                        entry.getValue()
+	                ));
+	    }
 
-				if (!hasValidData.get()) {
-				    System.out.println("⚠️ Skipping user " + userKey + " — no valid mapped data found");
-//				    continue;
-				}
-				
-				String fileType;
-				if (!fileNameFields.isEmpty()) {
-					StringBuilder fnBuilder = new StringBuilder();
-					for (String fnExpr : fileNameFields) {
-						String fnValue = resolveFieldValueWithIndexes(normalizedFieldMap,
-								userKey + "." + fnExpr.trim());
-						if (fnValue != null && !fnValue.isEmpty())
-							fnBuilder.append(fnValue);
-						else
-							fnBuilder.append("file_").append(UUID.randomUUID()).append("_");
-					}
-					fileType = fnBuilder.toString().replaceAll("_$", "");
-				} else {
-					fileType = "file_" + userKey + "_" + UUID.randomUUID();
-				}
+	    List<String> fileNameFields =
+	            new ArrayList<>();
 
-				// 3. ✅ NOW inject JSON into <head> using fileType as the key
-				String userJsonStr = mapper.writeValueAsString(dataJson);
-				String injectionScript = String.format(
-				    "<script id='__injected_json__'>" +
-				    "(function(){try{" +
-				    "var d=%s;" +
-				    "var n='%s';" +
-				    "localStorage.setItem('common_json',JSON.stringify(d));" +
-				    "localStorage.setItem('common_json_'+n,JSON.stringify(d));" +
-				    "localStorage.setItem('common_json_files',n);" +
-				    "}catch(e){}})();" +
-				    "</script>",
-				    userJsonStr, fileType
-				);
-				doc.head().prepend(injectionScript);
-				
-				String htmlFileName = outputDir + fileType + ".html";
+	    JsonNode fileNameNode =
+	            htmlIdToJsonField.get("file_name");
 
-				String userPassword = null;
-				if (!passwordFields.isEmpty()) {
-					StringBuilder pwBuilder = new StringBuilder();
-					for (String pwExpr : passwordFields) {
-						String pwValue = resolveFieldValueWithIndexes(normalizedFieldMap,
-								userKey + "." + pwExpr.trim());
-						pwBuilder.append(pwValue != null ? pwValue : pwExpr.trim());
-					}
-					userPassword = pwBuilder.toString();
-				}
+	    if (fileNameNode != null) {
 
-				String finalHtml = doc.outerHtml();
-				String encryptionKey = (userPassword != null && !userPassword.isEmpty()) ? userPassword
-						: "AutoEncryptHTMLFixedKey";
+	        if (fileNameNode.isTextual()) {
 
-				String encryptedFullHtml = encryptAES(finalHtml, encryptionKey);
+	            fileNameFields.addAll(
+	                    Arrays.asList(
+	                            fileNameNode.asText().split(",")
+	                    )
+	            );
 
-				StringBuilder decryptWrapper = new StringBuilder();
-				decryptWrapper.append(
-						"<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Encrypted Page</title></head><body>")
-						.append("<div id='encrypted-content' style='display:none;'>").append(encryptedFullHtml)
-						.append("</div>").append("<script>\n")
-						.append("async function decryptAES(encryptedBase64, keyString) {\n")
-						.append("  function base64ToArrayBuffer(base64) {\n")
-						.append("    var binary_string = atob(base64);\n")
-						.append("    var len = binary_string.length;\n")
-						.append("    var bytes = new Uint8Array(len);\n")
-						.append("    for (var i = 0; i < len; i++) bytes[i] = binary_string.charCodeAt(i);\n")
-						.append("    return bytes;\n").append("  }\n")
-						.append("  const encryptedBytes = base64ToArrayBuffer(encryptedBase64);\n")
-						.append("  const iv = encryptedBytes.slice(0, 12);\n")
-						.append("  const data = encryptedBytes.slice(12);\n")
-						.append("  const keyBytes = new Uint8Array(32);\n")
-						.append("  const passwordBytes = new TextEncoder().encode(keyString);\n")
-						.append("  keyBytes.set(passwordBytes.slice(0, Math.min(32, passwordBytes.length)));\n")
-						.append("  const cryptoKey = await crypto.subtle.importKey('raw', keyBytes, {name:'AES-GCM'}, false, ['decrypt']);\n")
-						.append("  const decrypted = await crypto.subtle.decrypt({name:'AES-GCM', iv: iv}, cryptoKey, data);\n")
-						.append("  return new TextDecoder().decode(decrypted);\n").append("}\n")
-						.append("(async()=>{\n");
+	        } else if (fileNameNode.isArray()) {
 
-				if (userPassword != null && !userPassword.isEmpty()) {
-					decryptWrapper.append("  try {\n")
-							.append("    var pass = prompt('Enter password to view content:');\n")
-							.append("    var decrypted = await decryptAES(document.getElementById('encrypted-content').textContent, pass);\n")
-							.append("    document.open(); document.write(decrypted); document.close();\n")
-							.append("  } catch(e){ document.body.innerHTML='<h2>Access Denied</h2>'; console.error(e); }\n");
-				} else {
-					decryptWrapper.append("  try {\n").append(
-							"    var decrypted = await decryptAES(document.getElementById('encrypted-content').textContent, 'AutoEncryptHTMLFixedKey');\n")
-							.append("    document.open(); document.write(decrypted); document.close();\n")
-							.append("  } catch(e){ document.body.innerHTML='<h2>Decryption Error</h2>'; console.error(e); }\n");
-				}
+	            fileNameNode.forEach(
+	                    n -> fileNameFields.add(n.asText())
+	            );
+	        }
+	    }
 
-				decryptWrapper.append("})();\n</script></body></html>");
+	    List<String> passwordFields =
+	            new ArrayList<>();
 
-				Files.write(Path.of(htmlFileName), decryptWrapper.toString().getBytes(StandardCharsets.UTF_8));
-				htmlPaths.add(htmlFileName);
-			}
-		}
+	    JsonNode passwordNode =
+	            htmlIdToJsonField.get("password");
 
-		return htmlPaths;
+	    if (passwordNode != null) {
+
+	        if (passwordNode.isTextual()) {
+
+	            passwordFields.addAll(
+	                    Arrays.asList(
+	                            passwordNode.asText().split(",")
+	                    )
+	            );
+
+	        } else if (passwordNode.isArray()) {
+
+	            passwordNode.forEach(
+	                    n -> passwordFields.add(n.asText())
+	            );
+	        }
+	    }
+
+	    String htmlTemplate =
+	            new String(
+	                    htmlFile.getBytes(),
+	                    StandardCharsets.UTF_8
+	            ).replaceFirst("^\uFEFF", "");
+
+	    // UPDATED
+	    Map<String, byte[]> htmlMap =
+	            new LinkedHashMap<>();
+
+	    for (MultipartFile file : files) {
+
+	        JsonNode dataJson =
+	                mapper.readTree(file.getInputStream());
+
+	        for (Iterator<Map.Entry<String, JsonNode>> users =
+	                dataJson.fields();
+	             users.hasNext(); ) {
+
+	            Map.Entry<String, JsonNode> entry =
+	                    users.next();
+
+	            String userKey = entry.getKey();
+
+	            JsonNode userNode = entry.getValue();
+
+	            Map<String, JsonNode> normalizedFieldMap =
+	                    new HashMap<>();
+
+	            normalizedFieldMap.put(
+	                    userKey.toLowerCase(),
+	                    userNode
+	            );
+
+	            userNode.fieldNames().forEachRemaining(field ->
+	                    normalizedFieldMap.put(
+	                            field.toLowerCase(),
+	                            userNode.get(field)
+	                    )
+	            );
+
+	            Document doc = Jsoup.parse(htmlTemplate);
+
+	            AtomicBoolean hasValidData =
+	                    new AtomicBoolean(false);
+
+	            doc.outputSettings().syntax(
+	                    Document.OutputSettings.Syntax.xml
+	            );
+
+	            htmlIdToJsonField.forEach((id, nodeRef) -> {
+
+	                String fieldRef =
+	                        nodeRef.isTextual()
+	                                ? nodeRef.asText()
+	                                : null;
+
+	                if (fieldRef == null)
+	                    return;
+
+	                String fullPath = fieldRef;
+
+	                if (!fieldRef.startsWith(userKey + ".")) {
+
+	                    fullPath =
+	                            userKey + "." + fieldRef;
+	                }
+
+	                String value =
+	                        resolveFieldValueWithIndexes(
+	                                normalizedFieldMap,
+	                                fullPath.trim()
+	                        );
+
+	                Element elem =
+	                        doc.getElementById(id);
+
+	                if (elem != null) {
+
+	                    if (value != null
+	                            && !value.isEmpty()) {
+
+	                        elem.text(value);
+
+	                        hasValidData.set(true);
+	                    }
+	                }
+	            });
+
+	            String fileType;
+
+	            if (!fileNameFields.isEmpty()) {
+
+	                StringBuilder fnBuilder =
+	                        new StringBuilder();
+
+	                for (String fnExpr : fileNameFields) {
+
+	                    String fnValue =
+	                            resolveFieldValueWithIndexes(
+	                                    normalizedFieldMap,
+	                                    userKey + "."
+	                                            + fnExpr.trim()
+	                            );
+
+	                    if (fnValue != null
+	                            && !fnValue.isEmpty()) {
+
+	                        fnBuilder.append(fnValue);
+
+	                    } else {
+
+	                        fnBuilder.append("file_")
+	                                .append(UUID.randomUUID())
+	                                .append("_");
+	                    }
+	                }
+
+	                fileType =
+	                        fnBuilder.toString()
+	                                .replaceAll("_$", "");
+
+	            } else {
+
+	                fileType =
+	                        "file_" + userKey + "_"
+	                                + UUID.randomUUID();
+	            }
+
+	            // JSON injection
+	            String userJsonStr =
+	                    mapper.writeValueAsString(dataJson);
+
+	            String injectionScript = String.format(
+	                    "<script id='__injected_json__'>"
+	                            + "(function(){try{"
+	                            + "var d=%s;"
+	                            + "var n='%s';"
+	                            + "localStorage.setItem('common_json',JSON.stringify(d));"
+	                            + "localStorage.setItem('common_json_'+n,JSON.stringify(d));"
+	                            + "localStorage.setItem('common_json_files',n);"
+	                            + "}catch(e){}})();"
+	                            + "</script>",
+	                    userJsonStr,
+	                    fileType
+	            );
+
+	            doc.head().prepend(injectionScript);
+
+	            String userPassword = null;
+
+	            if (!passwordFields.isEmpty()) {
+
+	                StringBuilder pwBuilder =
+	                        new StringBuilder();
+
+	                for (String pwExpr : passwordFields) {
+
+	                    String pwValue =
+	                            resolveFieldValueWithIndexes(
+	                                    normalizedFieldMap,
+	                                    userKey + "."
+	                                            + pwExpr.trim()
+	                            );
+
+	                    pwBuilder.append(
+	                            pwValue != null
+	                                    ? pwValue
+	                                    : pwExpr.trim()
+	                    );
+	                }
+
+	                userPassword =
+	                        pwBuilder.toString();
+	            }
+
+	            String finalHtml = doc.outerHtml();
+
+	            String encryptionKey =
+	                    (userPassword != null
+	                            && !userPassword.isEmpty())
+	                            ? userPassword
+	                            : "AutoEncryptHTMLFixedKey";
+
+	            String encryptedFullHtml =
+	                    encryptAES(
+	                            finalHtml,
+	                            encryptionKey
+	                    );
+
+	            StringBuilder decryptWrapper =
+	                    new StringBuilder();
+
+	            decryptWrapper.append(
+	                    "<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Encrypted Page</title></head><body>"
+	            );
+
+	            decryptWrapper.append(
+	                    "<div id='encrypted-content' style='display:none;'>"
+	            );
+
+	            decryptWrapper.append(encryptedFullHtml);
+
+	            decryptWrapper.append("</div>");
+
+	            decryptWrapper.append("<script>");
+
+	            decryptWrapper.append(
+	                    "async function decryptAES(encryptedBase64,keyString){"
+	            );
+
+	            decryptWrapper.append(
+	                    "function base64ToArrayBuffer(base64){"
+	            );
+
+	            decryptWrapper.append(
+	                    "var binary_string=atob(base64);"
+	            );
+
+	            decryptWrapper.append(
+	                    "var len=binary_string.length;"
+	            );
+
+	            decryptWrapper.append(
+	                    "var bytes=new Uint8Array(len);"
+	            );
+
+	            decryptWrapper.append(
+	                    "for(var i=0;i<len;i++)bytes[i]=binary_string.charCodeAt(i);"
+	            );
+
+	            decryptWrapper.append(
+	                    "return bytes;}"
+	            );
+
+	            decryptWrapper.append(
+	                    "const encryptedBytes=base64ToArrayBuffer(encryptedBase64);"
+	            );
+
+	            decryptWrapper.append(
+	                    "const iv=encryptedBytes.slice(0,12);"
+	            );
+
+	            decryptWrapper.append(
+	                    "const data=encryptedBytes.slice(12);"
+	            );
+
+	            decryptWrapper.append(
+	                    "const keyBytes=new Uint8Array(32);"
+	            );
+
+	            decryptWrapper.append(
+	                    "const passwordBytes=new TextEncoder().encode(keyString);"
+	            );
+
+	            decryptWrapper.append(
+	                    "keyBytes.set(passwordBytes.slice(0,Math.min(32,passwordBytes.length)));"
+	            );
+
+	            decryptWrapper.append(
+	                    "const cryptoKey=await crypto.subtle.importKey('raw',keyBytes,{name:'AES-GCM'},false,['decrypt']);"
+	            );
+
+	            decryptWrapper.append(
+	                    "const decrypted=await crypto.subtle.decrypt({name:'AES-GCM',iv:iv},cryptoKey,data);"
+	            );
+
+	            decryptWrapper.append(
+	                    "return new TextDecoder().decode(decrypted);}"
+	            );
+
+	            decryptWrapper.append("(async()=>{");
+
+	            if (userPassword != null
+	                    && !userPassword.isEmpty()) {
+
+	                decryptWrapper.append(
+	                        "try{"
+	                                + "var pass=prompt('Enter password to view content:');"
+	                                + "var decrypted=await decryptAES(document.getElementById('encrypted-content').textContent,pass);"
+	                                + "document.open();document.write(decrypted);document.close();"
+	                                + "}catch(e){document.body.innerHTML='<h2>Access Denied</h2>';}"
+	                );
+
+	            } else {
+
+	                decryptWrapper.append(
+	                        "try{"
+	                                + "var decrypted=await decryptAES(document.getElementById('encrypted-content').textContent,'AutoEncryptHTMLFixedKey');"
+	                                + "document.open();document.write(decrypted);document.close();"
+	                                + "}catch(e){document.body.innerHTML='<h2>Decryption Error</h2>';}"
+	                );
+	            }
+
+	            decryptWrapper.append("})();");
+
+	            decryptWrapper.append("</script>");
+
+	            decryptWrapper.append("</body></html>");
+
+	            // UPDATED
+	            byte[] htmlBytes =
+	                    decryptWrapper.toString()
+	                            .getBytes(StandardCharsets.UTF_8);
+
+	            // UPDATED
+	            htmlMap.put(
+	                    fileType + ".html",
+	                    htmlBytes
+	            );
+	        }
+	    }
+
+	    return htmlMap;
 	}
-
+	
 	
 	private String encryptAES(String plaintext, String password) throws Exception {
 		byte[] keyBytes = Arrays.copyOf(password.getBytes(StandardCharsets.UTF_8), 32); // 256-bit key
@@ -1109,42 +1144,595 @@ public class RecordService {
 		logRepository.save(info);
 	}
 
+
 }
 
-//body.add("chartData", userNode.toString());
-//body.add("chartData", dataJson.toString());  // FULL JSON
 
-//sdds
-//public List<String> processAndGeneratePdf(MultipartFile htmlFile) throws IOException {
-//	String outputDir = "output/";
-//	Files.createDirectories(Path.of(outputDir));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//public List<String> processAndGenerateHtml(String payloadJson, MultipartFile[] files, MultipartFile htmlFile)
+//throws Exception {
+//Date startTime = new Date();
+//ObjectMapper mapper = new ObjectMapper();
+//JsonNode payloadNode;
+//try {
+//payloadNode = mapper.readTree(payloadJson);
+//} catch (Exception e) {
+//logToDatabase(null, "FAILURE", "JSON parsing error: " + e.getMessage(), startTime);
+//throw e;
+//}
 //
-//	List<String> pdfPaths = new ArrayList<>();
-//	RestTemplate restTemplate = new RestTemplate();
+//Map<String, JsonNode> htmlIdToJsonField = new LinkedHashMap<>();
+//for (JsonNode obj : payloadNode) {
+//obj.fields().forEachRemaining(entry -> htmlIdToJsonField.put(entry.getKey(), entry.getValue()));
+//}
 //
-//	String pdfFileName = outputDir + UUID.randomUUID() + ".pdf";
+//List<String> fileNameFields = new ArrayList<>();
+//JsonNode fileNameNode = htmlIdToJsonField.get("file_name");
+//if (fileNameNode != null) {
+//if (fileNameNode.isTextual())
+//	fileNameFields.addAll(Arrays.asList(fileNameNode.asText().split(",")));
+//else if (fileNameNode.isArray())
+//	fileNameNode.forEach(n -> fileNameFields.add(n.asText()));
+//}
 //
-//	HttpHeaders headers = new HttpHeaders();
-//	headers.setContentType(MediaType.MULTIPART_FORM_DATA);
+//List<String> passwordFields = new ArrayList<>();
+//JsonNode passwordNode = htmlIdToJsonField.get("password");
+//if (passwordNode != null) {
+//if (passwordNode.isTextual())
+//	passwordFields.addAll(Arrays.asList(passwordNode.asText().split(",")));
+//else if (passwordNode.isArray())
+//	passwordNode.forEach(n -> passwordFields.add(n.asText()));
+//}
 //
-//	MultiValueMap<String, Object> body = new LinkedMultiValueMap<>();
-//	body.add("file", new ByteArrayResource(htmlFile.getBytes()) {
-//		@Override
-//		public String getFilename() {
-//			return htmlFile.getOriginalFilename();
+//String htmlTemplate = new String(htmlFile.getBytes(), StandardCharsets.UTF_8).replaceFirst("^\uFEFF", "");
+//
+//String outputDir = "DownloadHTMLANDPDF" + File.separator;
+//Files.createDirectories(Path.of(outputDir));
+//List<String> htmlPaths = new ArrayList<>();
+//for (MultipartFile file : files) {
+//JsonNode dataJson = mapper.readTree(file.getInputStream());
+//boolean anyMatchFound = false;
+//
+//for (Iterator<Map.Entry<String, JsonNode>> users = dataJson.fields(); users.hasNext();) {
+//	Map.Entry<String, JsonNode> entry = users.next();
+//	JsonNode userNode = entry.getValue();
+//
+//	for (JsonNode nodeRef : htmlIdToJsonField.values()) {
+//		if (nodeRef.isTextual()) {
+//			String refField = nodeRef.asText();
+//			String cleanField = refField.contains(".") ? refField.split("\\.")[1] : refField;
+//			if (userNode.has(cleanField)) {
+//				anyMatchFound = true;
+//				break;
+//			}
+//		}
+//	}
+//	if (anyMatchFound)
+//		break;
+//}
+//
+////if (!anyMatchFound) {
+////	System.out.println(
+////			"⚠️ Skipping JSON file '" + file.getOriginalFilename() + "' — no matching data found.");
+////	logService.logActivity("SKIPPED",
+////			"Skipped JSON file '" + file.getOriginalFilename() + "' — no matching data found.", startTime);
+////	continue;
+////}
+//
+//for (Iterator<Map.Entry<String, JsonNode>> users = dataJson.fields(); users.hasNext();) {
+//	Map.Entry<String, JsonNode> entry = users.next();
+//	String userKey = entry.getKey();
+//	JsonNode userNode = entry.getValue();
+//
+//	Map<String, JsonNode> normalizedFieldMap = new HashMap<>();
+//	normalizedFieldMap.put(userKey.toLowerCase(), userNode);
+//	userNode.fieldNames()
+//			.forEachRemaining(field -> normalizedFieldMap.put(field.toLowerCase(), userNode.get(field)));
+//
+//	Document doc = Jsoup.parse(htmlTemplate);
+//	AtomicBoolean hasValidData = new AtomicBoolean(false);   // ✅ ADD THIS
+//	doc.outputSettings().syntax(Document.OutputSettings.Syntax.xml);
+//	
+//	
+//
+//	htmlIdToJsonField.forEach((id, nodeRef) -> {
+//		String fieldRef = nodeRef.isTextual() ? nodeRef.asText() : null;
+//		if (fieldRef == null)
+//			return;
+//		String fullPath = fieldRef;
+//		if (!fieldRef.startsWith(userKey + ".")) {
+//			fullPath = userKey + "." + fieldRef;
+//		}
+//		String value = resolveFieldValueWithIndexes(normalizedFieldMap, fullPath.trim());
+//		Element elem = doc.getElementById(id);
+////		if (elem != null && value != null && !value.isEmpty()) {
+////			elem.text(value);
+////		}
+//		
+//		if (elem != null) {
+//		    if (value != null && !value.isEmpty()) {
+//		        elem.text(value);
+//		        hasValidData.set(true);   // ✅ mark valid data
+//		    }
 //		}
 //	});
 //
-//	HttpEntity<MultiValueMap<String, Object>> requestEntity = new HttpEntity<>(body, headers);
+//	if (!hasValidData.get()) {
+//	    System.out.println("⚠️ Skipping user " + userKey + " — no valid mapped data found");
+////	    continue;
+//	}
+//	
+//	String fileType;
+//	if (!fileNameFields.isEmpty()) {
+//		StringBuilder fnBuilder = new StringBuilder();
+//		for (String fnExpr : fileNameFields) {
+//			String fnValue = resolveFieldValueWithIndexes(normalizedFieldMap,
+//					userKey + "." + fnExpr.trim());
+//			if (fnValue != null && !fnValue.isEmpty())
+//				fnBuilder.append(fnValue);
+//			else
+//				fnBuilder.append("file_").append(UUID.randomUUID()).append("_");
+//		}
+//		fileType = fnBuilder.toString().replaceAll("_$", "");
+//	} else {
+//		fileType = "file_" + userKey + "_" + UUID.randomUUID();
+//	}
 //
-//	String apiUrl = "http://192.168.0.188:3010/api/v1/s3Upload/uploadHtml5";
-////	String apiUrl = "http://api.ariantechsolutions.in/interactive-server/api/v1/s3Upload/uploadHtml5";
+//	// 3. ✅ NOW inject JSON into <head> using fileType as the key
+//	String userJsonStr = mapper.writeValueAsString(dataJson);
+//	String injectionScript = String.format(
+//	    "<script id='__injected_json__'>" +
+//	    "(function(){try{" +
+//	    "var d=%s;" +
+//	    "var n='%s';" +
+//	    "localStorage.setItem('common_json',JSON.stringify(d));" +
+//	    "localStorage.setItem('common_json_'+n,JSON.stringify(d));" +
+//	    "localStorage.setItem('common_json_files',n);" +
+//	    "}catch(e){}})();" +
+//	    "</script>",
+//	    userJsonStr, fileType
+//	);
+//	doc.head().prepend(injectionScript);
+//	
+//	String htmlFileName = outputDir + fileType + ".html";
 //
-//	try {
-//		
-//		ResponseEntity<byte[]> response = restTemplate.exchange(apiUrl, HttpMethod.POST, requestEntity, byte[].class);
+//	String userPassword = null;
+//	if (!passwordFields.isEmpty()) {
+//		StringBuilder pwBuilder = new StringBuilder();
+//		for (String pwExpr : passwordFields) {
+//			String pwValue = resolveFieldValueWithIndexes(normalizedFieldMap,
+//					userKey + "." + pwExpr.trim());
+//			pwBuilder.append(pwValue != null ? pwValue : pwExpr.trim());
+//		}
+//		userPassword = pwBuilder.toString();
+//	}
 //
-//		// Validate body
+//	String finalHtml = doc.outerHtml();
+//	String encryptionKey = (userPassword != null && !userPassword.isEmpty()) ? userPassword
+//			: "AutoEncryptHTMLFixedKey";
+//
+//	String encryptedFullHtml = encryptAES(finalHtml, encryptionKey);
+//
+//	StringBuilder decryptWrapper = new StringBuilder();
+//	decryptWrapper.append(
+//			"<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Encrypted Page</title></head><body>")
+//			.append("<div id='encrypted-content' style='display:none;'>").append(encryptedFullHtml)
+//			.append("</div>").append("<script>\n")
+//			.append("async function decryptAES(encryptedBase64, keyString) {\n")
+//			.append("  function base64ToArrayBuffer(base64) {\n")
+//			.append("    var binary_string = atob(base64);\n")
+//			.append("    var len = binary_string.length;\n")
+//			.append("    var bytes = new Uint8Array(len);\n")
+//			.append("    for (var i = 0; i < len; i++) bytes[i] = binary_string.charCodeAt(i);\n")
+//			.append("    return bytes;\n").append("  }\n")
+//			.append("  const encryptedBytes = base64ToArrayBuffer(encryptedBase64);\n")
+//			.append("  const iv = encryptedBytes.slice(0, 12);\n")
+//			.append("  const data = encryptedBytes.slice(12);\n")
+//			.append("  const keyBytes = new Uint8Array(32);\n")
+//			.append("  const passwordBytes = new TextEncoder().encode(keyString);\n")
+//			.append("  keyBytes.set(passwordBytes.slice(0, Math.min(32, passwordBytes.length)));\n")
+//			.append("  const cryptoKey = await crypto.subtle.importKey('raw', keyBytes, {name:'AES-GCM'}, false, ['decrypt']);\n")
+//			.append("  const decrypted = await crypto.subtle.decrypt({name:'AES-GCM', iv: iv}, cryptoKey, data);\n")
+//			.append("  return new TextDecoder().decode(decrypted);\n").append("}\n")
+//			.append("(async()=>{\n");
+//
+//	if (userPassword != null && !userPassword.isEmpty()) {
+//		decryptWrapper.append("  try {\n")
+//				.append("    var pass = prompt('Enter password to view content:');\n")
+//				.append("    var decrypted = await decryptAES(document.getElementById('encrypted-content').textContent, pass);\n")
+//				.append("    document.open(); document.write(decrypted); document.close();\n")
+//				.append("  } catch(e){ document.body.innerHTML='<h2>Access Denied</h2>'; console.error(e); }\n");
+//	} else {
+//		decryptWrapper.append("  try {\n").append(
+//				"    var decrypted = await decryptAES(document.getElementById('encrypted-content').textContent, 'AutoEncryptHTMLFixedKey');\n")
+//				.append("    document.open(); document.write(decrypted); document.close();\n")
+//				.append("  } catch(e){ document.body.innerHTML='<h2>Decryption Error</h2>'; console.error(e); }\n");
+//	}
+//
+//	decryptWrapper.append("})();\n</script></body></html>");
+//
+//	Files.write(Path.of(htmlFileName), decryptWrapper.toString().getBytes(StandardCharsets.UTF_8));
+//	htmlPaths.add(htmlFileName);
+//}
+//}
+//
+//return htmlPaths;
+//}
+
+
+//old uploadPdf code
+//public List<String> processAndGeneratePdf(String payloadJson, MultipartFile[] files, MultipartFile htmlFile)
+//        throws IOException {
+//
+//    Date startTime = new Date();
+//    ObjectMapper mapper = new ObjectMapper();
+//    JsonNode payloadNode = mapper.readTree(payloadJson);
+//
+//    JsonNode mappingNode;
+//    String pageSize = "A4";
+//    String orientation = "portrait";
+//
+//    if (payloadNode.isArray()) {
+//        mappingNode = payloadNode;
+//    } else if (payloadNode.has("mapping")) {
+//        mappingNode = payloadNode.get("mapping");
+//        if (payloadNode.has("pageSize"))
+//            pageSize = payloadNode.get("pageSize").asText();
+//        if (payloadNode.has("orientation"))
+//            orientation = payloadNode.get("orientation").asText();
+//    } else {
+//        throw new IllegalArgumentException("Invalid payload format.");
+//    }
+//
+//    Map<String, JsonNode> htmlIdToJsonField = new LinkedHashMap<>();
+//    for (JsonNode obj : mappingNode) {
+//        obj.fields().forEachRemaining(entry ->
+//                htmlIdToJsonField.put(entry.getKey(), entry.getValue()));
+//    }
+//
+//    // ✅ filename fields
+//    List<String> fileNameFields = new ArrayList<>();
+//    
+// // ✅ password fields (ADD THIS)
+//    List<String> passwordFields = new ArrayList<>();
+//    JsonNode passwordNode = htmlIdToJsonField.get("password");
+//
+//    if (passwordNode != null) {
+//        if (passwordNode.isTextual())
+//            passwordFields.addAll(Arrays.asList(passwordNode.asText().split(",")));
+//        else if (passwordNode.isArray())
+//            passwordNode.forEach(n -> passwordFields.add(n.asText()));
+//    }
+//    
+//    JsonNode fileNameNode = htmlIdToJsonField.get("file_name");
+//    if (fileNameNode != null) {
+//        if (fileNameNode.isTextual())
+//            fileNameFields.addAll(Arrays.asList(fileNameNode.asText().split(",")));
+//        else if (fileNameNode.isArray())
+//            fileNameNode.forEach(n -> fileNameFields.add(n.asText()));
+//    }
+//    
+//
+//    String htmlContent = new String(htmlFile.getBytes(), StandardCharsets.UTF_8)
+//            .replaceFirst("^\uFEFF", "");
+//
+//    String outputDir = Mypath.getPath() + "DownloadHTMLANDPDF" + File.separator;
+//    Files.createDirectories(Path.of(outputDir));
+//
+//    List<String> pdfPaths = new ArrayList<>();
+//    RestTemplate restTemplate = new RestTemplate();
+//
+//    for (MultipartFile file : files) {
+//
+//        JsonNode dataJson = mapper.readTree(file.getInputStream());
+//
+//        // ✅ ONLY FIRST USER (fix duplicate PDFs)
+//        Iterator<Map.Entry<String, JsonNode>> users = dataJson.fields();
+//        if (!users.hasNext()) continue;
+//
+//        Map.Entry<String, JsonNode> entry = users.next();
+//        String userKey = entry.getKey();
+//        JsonNode userNode = entry.getValue();
+//
+//        Map<String, JsonNode> normalizedFieldMap = new HashMap<>();
+//        normalizedFieldMap.put(userKey.toLowerCase(), userNode);
+//        userNode.fieldNames().forEachRemaining(field ->
+//                normalizedFieldMap.put(field.toLowerCase(), userNode.get(field)));
+//
+//        Document doc = Jsoup.parse(htmlContent);
+//        AtomicBoolean hasValidData = new AtomicBoolean(false);
+//
+//        htmlIdToJsonField.forEach((id, nodeRef) -> {
+//
+//            String fieldRef = nodeRef.isTextual() ? nodeRef.asText() : null;
+//            Element elem = doc.getElementById(id);
+//
+//            if (elem == null) return;
+//
+////            // ✅ HANDLE TEMPLATE VALUES
+////            if (fieldRef != null && fieldRef.contains("__i_designer_template_values")) {
+////
+////                String templateText = elem.attr("data-template-text");
+////                
+////                if (templateText != null && !templateText.isEmpty()) {
+////                    try {
+////                        templateText = java.net.URLDecoder.decode(templateText, StandardCharsets.UTF_8.name());
+////                    } catch (Exception e) {
+////                        // ignore decoding error
+////                    }
+////                }
+////
+////                if (templateText != null && !templateText.isEmpty()) {
+////
+////                    String dynamicValue = "";
+////
+////                    // 🔥 pick any valid mapped value
+////                    for (Map.Entry<String, JsonNode> mapEntry : htmlIdToJsonField.entrySet()) {
+////                        String ref = mapEntry.getValue().asText();
+////
+////                        if (!ref.contains("__i_designer_template_values")) {
+////
+////                            String fullPath = ref.startsWith(userKey + ".")
+////                                    ? ref
+////                                    : userKey + "." + ref;
+////
+////                            dynamicValue = resolveFieldValueWithIndexes(normalizedFieldMap, fullPath);
+////
+////                            if (dynamicValue != null && !dynamicValue.isEmpty()) break;
+////                        }
+////                    }
+////
+////                    String finalText = templateText.replace("{name}",
+////                            dynamicValue != null ? dynamicValue : "");
+////
+////                    elem.text(finalText);
+////                    hasValidData.set(true);
+////                }
+////
+////                return;
+////            }
+//            
+////            Element elem = doc.getElementById(id);
+//            if (elem == null) return;
+//
+//            // 🔥 detect template using HTML attribute (NOT payload)
+//            String templateText = elem.attr("data-template-text");
+//
+//            if (templateText != null && !templateText.isEmpty()) {
+//
+//                // ✅ decode if encoded
+//                try {
+//                    templateText = java.net.URLDecoder.decode(templateText, StandardCharsets.UTF_8.name());
+//                } catch (Exception e) {}
+//
+//                // 🔥 dynamic placeholder replacement
+//                Pattern pattern = Pattern.compile("\\{(.*?)\\}");
+//                Matcher matcher = pattern.matcher(templateText);
+//
+//                StringBuffer finalTextBuffer = new StringBuffer();
+//
+//                while (matcher.find()) {
+//
+//                    String placeholder = matcher.group(1); // e.g. name, city
+//
+//                    String value = "";
+//
+//                    // 🔥 find value dynamically from mappings
+//                    for (Map.Entry<String, JsonNode> mapEntry : htmlIdToJsonField.entrySet()) {
+//
+//                        String ref = mapEntry.getValue().asText();
+//
+//                        String fullPath = ref.startsWith(userKey + ".")
+//                                ? ref
+//                                : userKey + "." + ref;
+//
+//                        value = resolveFieldValueWithIndexes(normalizedFieldMap, fullPath);
+//
+//                        if (value != null && !value.isEmpty()) break;
+//                    }
+//
+//                    if (value == null) value = "";
+//
+//                    matcher.appendReplacement(finalTextBuffer, Matcher.quoteReplacement(value));
+//                }
+//
+//                matcher.appendTail(finalTextBuffer);
+//
+//                elem.text(finalTextBuffer.toString());
+//                hasValidData.set(true);
+//
+//                return;
+//            }
+//
+//            // ✅ NORMAL FIELD MAPPING
+//            if (fieldRef != null) {
+//
+//                String fullPath = fieldRef.startsWith(userKey + ".")
+//                        ? fieldRef
+//                        : userKey + "." + fieldRef;
+//
+//                String value = resolveFieldValueWithIndexes(normalizedFieldMap, fullPath);
+//
+//                if (value != null && !value.isEmpty()) {
+//                    elem.text(value);
+//                    hasValidData.set(true);
+//                }
+//            }
+//        });
+//
+//        if (!hasValidData.get()) {
+//            System.out.println("⚠️ No valid data for: " + userKey);
+////            continue;
+//        }
+//
+//        // ✅ FILE NAME FIX
+//        String fileType = "file_" + UUID.randomUUID();
+//
+//        if (!fileNameFields.isEmpty()) {
+//            for (String fnExpr : fileNameFields) {
+//
+//                String fullPath = userKey + "." + fnExpr.trim();
+//                String fnValue = resolveFieldValueWithIndexes(normalizedFieldMap, fullPath);
+//
+//                if (fnValue != null && !fnValue.isEmpty()) {
+//                    fileType = fnValue;
+//                    break;
+//                }
+//            }
+//        }
+//
+//        String pdfFileName = outputDir + fileType + ".pdf";
+//
+//        try {
+//
+//            HttpHeaders headers = new HttpHeaders();
+//            headers.setContentType(MediaType.MULTIPART_FORM_DATA);
+//
+//            MultiValueMap<String, Object> body = new LinkedMultiValueMap<>();
+//
+//            body.add("file", new ByteArrayResource(doc.outerHtml().getBytes(StandardCharsets.UTF_8)) {
+//                @Override
+//                public String getFilename() {
+//                    return "template.html";
+//                }
+//            });
+//
+//            body.add("name", fileType);
+//            body.add("chartData", mapper.writeValueAsString(dataJson));
+//
+//            Map<String, Object> pdfConfig = new HashMap<>();
+//            pdfConfig.put("pageSize", pageSize);
+//            pdfConfig.put("orientation", orientation);
+//
+//            body.add("payload", mapper.writeValueAsString(pdfConfig));
+//
+//            HttpEntity<MultiValueMap<String, Object>> requestEntity =
+//                    new HttpEntity<>(body, headers);
+//
+//            String apiUrl = "http://192.168.0.188:3010/api/v1/s3Upload/uploadHTML5";
+//
+//            ResponseEntity<byte[]> response = restTemplate.exchange(
+//                    apiUrl, HttpMethod.POST, requestEntity, byte[].class);
+//
+//            if (response.getBody() == null || response.getBody().length == 0) {
+//                throw new IOException("Empty PDF response");
+//            }
+//
+//            Files.write(Path.of(pdfFileName), response.getBody());
+//            
+//         // 🔐 APPLY PASSWORD (OLD WORKING LOGIC)
+//            if (!passwordFields.isEmpty()) {
+//
+//                StringBuilder pwBuilder = new StringBuilder();
+//
+//                for (String pwExpr : passwordFields) {
+//
+//                    String pwValue;
+//
+//                    // dynamic field
+//                    if (pwExpr.contains(".")) {
+//                        String fullPath = userKey + "." + pwExpr.trim();
+//                        pwValue = resolveFieldValueWithIndexes(normalizedFieldMap, fullPath);
+//                    } else {
+//                        // static
+//                        pwValue = pwExpr.trim();
+//                    }
+//
+//                    if (pwValue != null) {
+//                        pwBuilder.append(pwValue.trim());
+//                    }
+//                }
+//
+//                String userPassword = pwBuilder.toString().trim();
+//
+//                System.out.println("FINAL PASSWORD = [" + userPassword + "]");
+//
+//                if (!userPassword.isEmpty()) {
+//
+//                    try (PDDocument document = PDDocument.load(new File(pdfFileName))) {
+//
+//                        String ownerPassword = userPassword; // ✅ IMPORTANT FIX
+//
+//                        AccessPermission permissions = new AccessPermission();
+//
+//                        StandardProtectionPolicy policy =
+//                                new StandardProtectionPolicy(ownerPassword, userPassword, permissions);
+//
+//                        policy.setEncryptionKeyLength(128);
+//                        policy.setPermissions(permissions);
+//
+//                        document.protect(policy);
+//                        document.save(pdfFileName);
+//                    }
+//                }
+//            }
+//
+//        } catch (Exception ex) {
+//            throw new IOException("PDF generation failed: " + ex.getMessage());
+//        }
+//
+//        repository.save(RecordEntity.builder().fileName(fileType + ".pdf").build());
+//        pdfPaths.add(pdfFileName);
+//    }
+//
+//    return pdfPaths;
+//}
+
+
+//old code
+//public List<String> SingleHtmlToPdf(MultipartFile htmlFile) throws IOException {
+//
+//    String outputDir = "output/";
+//    Files.createDirectories(Path.of(outputDir));
+//
+//    List<String> pdfPaths = new ArrayList<>();
+//    RestTemplate restTemplate = new RestTemplate();
+//
+//    String pdfFileName = outputDir + UUID.randomUUID() + ".pdf";
+//
+//    HttpHeaders headers = new HttpHeaders();
+//    headers.setContentType(MediaType.MULTIPART_FORM_DATA);
+//
+//    MultiValueMap<String, Object> body = new LinkedMultiValueMap<>();
+//    body.add("file", new ByteArrayResource(htmlFile.getBytes()) {
+//        @Override
+//        public String getFilename() {
+//            return htmlFile.getOriginalFilename();
+//        }
+//    });
+//
+//    HttpEntity<MultiValueMap<String, Object>> requestEntity = new HttpEntity<>(body, headers);
+//
+//    String apiUrl = "http://192.168.0.188:3010/api/v1/s3Upload/uploadHtmlSinglePage";
+////    String apiUrl = "http://api.ariantechsolutions.in/interactive-server/api/v1/s3Upload/uploadHtmlSinglePage";
+//
+//    try {
+//
+//    	ResponseEntity<byte[]> response = restTemplate.exchange(apiUrl, HttpMethod.POST, requestEntity, byte[].class);
+//
 //		if (response.getBody() == null || response.getBody().length == 0) {
 //
 //		    logService.logActivity(
@@ -1160,19 +1748,324 @@ public class RecordService {
 //		Files.write(Path.of(pdfFileName), response.getBody());
 //		pdfPaths.add(pdfFileName);
 //
-//		
-//	}catch(Exception ex) {
-//		
-//		  logService.logActivity(
-//	                "ERROR",
-//	                "Error while calling remote API: " + ex.getMessage(),
-//	                new Date()
-//	        );
+//    } catch (Exception ex) {
 //
-//	        throw new IOException("Error API call failed");
-//		
+//        logService.logActivity(
+//                "ERROR",
+//                "Error while calling remote API: " + ex.getMessage(),
+//                new Date()
+//        );
+//
+//        throw new IOException("Error API call failed: " + ex.getMessage());
+//    }
+//
+//    return pdfPaths;
+//}
+
+//old code
+//public List<String> processAndGeneratePdf(MultipartFile htmlFile, String payload)
+//        throws IOException {
+//
+//    String outputDir = "output/";
+//    Files.createDirectories(Path.of(outputDir));
+//
+//    List<String> pdfPaths = new ArrayList<>();
+//    RestTemplate restTemplate = new RestTemplate();
+//
+//    String pdfFileName = outputDir + UUID.randomUUID() + ".pdf";
+//
+//    HttpHeaders headers = new HttpHeaders();
+//    headers.setContentType(MediaType.MULTIPART_FORM_DATA);
+//
+//    MultiValueMap<String, Object> body = new LinkedMultiValueMap<>();
+//
+//    body.add("file", new ByteArrayResource(htmlFile.getBytes()) {
+//        @Override
+//        public String getFilename() {
+//            return htmlFile.getOriginalFilename();
+//        }
+//    });
+//
+//    body.add("payload", payload);
+//
+//    HttpEntity<MultiValueMap<String, Object>> requestEntity =
+//            new HttpEntity<>(body, headers);
+//
+//    String apiUrl = "http://localhost:3010/api/v1/s3Upload/uploadNoramlPdf";
+//
+//    try {
+//
+//        ResponseEntity<byte[]> response =
+//                restTemplate.exchange(apiUrl, HttpMethod.POST, requestEntity, byte[].class);
+//
+//        if (response.getBody() == null || response.getBody().length == 0) {
+//
+//            logService.logActivity("FAILURE","Empty response from Node", new Date());
+//
+//            throw new IOException("Node returned empty PDF");
+//        }
+//
+//        Files.write(Path.of(pdfFileName), response.getBody());
+//        pdfPaths.add(pdfFileName);
+//
+//    } catch (Exception ex) {
+//
+//        logService.logActivity("ERROR",
+//                "Node API error: " + ex.getMessage(),
+//                new Date());
+//
+//        throw new IOException("Remote API failed");
+//    }
+//
+//    return pdfPaths;
+//}
+
+
+
+
+//old code
+// ---------------------- SERVICE IMPLEMENTATION ----------------------
+//public List<String> processAndGeneratePdf(String payloadJson, MultipartFile[] files, MultipartFile htmlFile)
+//		throws IOException {
+//
+//	Date startTime = new Date();
+//	ObjectMapper mapper = new ObjectMapper();
+//	JsonNode payloadNode = mapper.readTree(payloadJson);
+//
+//	JsonNode mappingNode;
+//	String pageSize = "A4";
+//	String orientation = "portrait";
+//
+//	if (payloadNode.isArray()) {
+//		mappingNode = payloadNode;
+//	} else if (payloadNode.has("mapping")) {
+//		mappingNode = payloadNode.get("mapping");
+//		if (payloadNode.has("pageSize"))
+//			pageSize = payloadNode.get("pageSize").asText();
+//		if (payloadNode.has("orientation"))
+//			orientation = payloadNode.get("orientation").asText();
+//	} else {
+//		throw new IllegalArgumentException("Invalid payload format. Must contain 'mapping' or be an array.");
 //	}
 //
+//	Map<String, JsonNode> htmlIdToJsonField = new LinkedHashMap<>();
+//	for (JsonNode obj : mappingNode) {
+//		obj.fields().forEachRemaining(entry -> htmlIdToJsonField.put(entry.getKey(), entry.getValue()));
+//	}
+//
+//	List<String> fileNameFields = new ArrayList<>();
+//	JsonNode fileNameNode = htmlIdToJsonField.get("file_name");
+//	if (fileNameNode != null) {
+//		if (fileNameNode.isTextual())
+//			fileNameFields.addAll(Arrays.asList(fileNameNode.asText().split(",")));
+//		else if (fileNameNode.isArray())
+//			fileNameNode.forEach(n -> fileNameFields.add(n.asText()));
+//	}
+//
+//	List<String> passwordFields = new ArrayList<>();
+//	JsonNode passwordNode = htmlIdToJsonField.get("password");
+//	if (passwordNode != null) {
+//		if (passwordNode.isTextual())
+//			passwordFields.addAll(Arrays.asList(passwordNode.asText().split(",")));
+//		else if (passwordNode.isArray())
+//			passwordNode.forEach(n -> passwordFields.add(n.asText()));
+//	}
+//
+//	String htmlContent = new String(htmlFile.getBytes(), StandardCharsets.UTF_8).replaceFirst("^\uFEFF", "");
+//
+//	String outputDir = Mypath.getPath() + "DownloadHTMLANDPDF" + File.separator;
+//	Files.createDirectories(Path.of(outputDir));
+//	List<String> pdfPaths = new ArrayList<>();
+//
+//	RestTemplate restTemplate = new RestTemplate();
+//
+//	for (MultipartFile file : files) {
+//		JsonNode dataJson = mapper.readTree(file.getInputStream());
+//		boolean anyMatchFound = false;
+//
+//		for (Iterator<Map.Entry<String, JsonNode>> users = dataJson.fields(); users.hasNext();) {
+//			Map.Entry<String, JsonNode> entry = users.next();
+//			JsonNode userNode = entry.getValue();
+//
+//			for (JsonNode nodeRef : htmlIdToJsonField.values()) {
+//				if (nodeRef.isTextual()) {
+//					String refField = nodeRef.asText();
+//					String cleanField = refField.contains(".") ? refField.split("\\.")[1] : refField;
+//					if (userNode.has(cleanField)) {
+//						anyMatchFound = true;
+//						break;
+//					}
+//				}
+//			}
+//			if (anyMatchFound)
+//				break;
+//		}
+//
+////		if (!anyMatchFound) {
+////			System.out.println(
+////					"⚠️ Skipping JSON file '" + file.getOriginalFilename() + "' — no matching data found.");
+////			logService.logActivity("SKIPPED",
+////					"Skipped JSON file '" + file.getOriginalFilename() + "' — no matching data found.", startTime);
+////			continue;
+////		}
+//
+//		for (Iterator<Map.Entry<String, JsonNode>> users = dataJson.fields(); users.hasNext();) {
+//			Map.Entry<String, JsonNode> entry = users.next();
+//			String userKey = entry.getKey();
+//			JsonNode userNode = entry.getValue();
+//
+//			Map<String, JsonNode> normalizedFieldMap = new HashMap<>();
+//			normalizedFieldMap.put(userKey.toLowerCase(), userNode);
+//			userNode.fieldNames()
+//					.forEachRemaining(field -> normalizedFieldMap.put(field.toLowerCase(), userNode.get(field)));
+//
+//			Document doc = Jsoup.parse(htmlContent);
+//			AtomicBoolean hasValidData = new AtomicBoolean(false);
+//			doc.outputSettings().syntax(Document.OutputSettings.Syntax.xml);
+//
+//			htmlIdToJsonField.forEach((id, nodeRef) -> {
+//				String fieldRef = nodeRef.isTextual() ? nodeRef.asText() : null;
+////				if (fieldRef != null && fieldRef.contains("__i_designer_template_values")) {
+////				    return; // skip this mapping completely
+////				}
+//				
+//				if (fieldRef == null)
+//					return;
+//				String fullPath = fieldRef;
+//				if (!fieldRef.startsWith(userKey + ".")) {
+//					fullPath = userKey + "." + fieldRef;
+//				}
+//
+//				String value = resolveFieldValueWithIndexes(normalizedFieldMap, fullPath.trim());
+//				Element elem = doc.getElementById(id);
+////				if (elem != null && value != null && !value.isEmpty()) {
+////					elem.text(value);
+////				}
+//				
+//				  if (elem != null) {
+//				        if (value != null && !value.isEmpty()) {
+//				            elem.text(value);
+//				            hasValidData.set(true); 
+//				        }
+//				    }
+//				  
+//				  
+//			});
+//            
+//			if (!hasValidData.get()) {
+//			    System.out.println("⚠️ Skipping user " + userKey + " — no valid mapped data found");
+////			    continue;
+//			}
+//			
+//			String fileType;
+//			if (!fileNameFields.isEmpty()) {
+//				StringBuilder fnBuilder = new StringBuilder();
+//				for (String fnExpr : fileNameFields) {
+//					String fnValue = resolveFieldValueWithIndexes(normalizedFieldMap,
+//							userKey + "." + fnExpr.trim());
+//					if (fnValue != null && !fnValue.isEmpty())
+//						fnBuilder.append(fnValue);
+//					else
+//						fnBuilder.append("file_").append(UUID.randomUUID()).append("_");
+//				}
+//				fileType = fnBuilder.toString().replaceAll("_$", "");
+//			} else {
+//				fileType = "file_" + userKey + "_" + UUID.randomUUID();
+//			}
+//
+//			String pdfFileName = outputDir + fileType + ".pdf";
+//
+//			try {
+//				HttpHeaders headers = new HttpHeaders();
+//				headers.setContentType(MediaType.MULTIPART_FORM_DATA);
+//
+//				MultiValueMap<String, Object> body = new LinkedMultiValueMap<>();
+//				
+//				String chartDataJson = mapper.writeValueAsString(dataJson);
+//
+//				String debugHtmlPath = "C:/temp/debug_template.html";
+//				Files.write(Path.of(debugHtmlPath), doc.outerHtml().getBytes(StandardCharsets.UTF_8));
+//				System.out.println("DEBUG HTML SAVED AT: " + debugHtmlPath);
+//				
+//				body.add("file", new ByteArrayResource(doc.outerHtml().getBytes(StandardCharsets.UTF_8)) {
+//					@Override
+//					public String getFilename() {
+//						return "template.html";
+//					}
+//				});
+//				body.add("name", fileType);
+//				body.add("chartData", chartDataJson);  // ✅ ADD THIS LINE
+//
+//				Map<String, Object> pdfConfig = new HashMap<>();
+//				pdfConfig.put("pageSize", pageSize);
+//				pdfConfig.put("orientation", orientation);
+//				body.add("payload", mapper.writeValueAsString(pdfConfig));
+////				body.add("chartData", mapper.writeValueAsString(dataJson));
+//				HttpEntity<MultiValueMap<String, Object>> requestEntity = new HttpEntity<>(body, headers);
+//				String apiUrl = "http://192.168.0.188:3010/api/v1/s3Upload/uploadHTML5";
+////				String apiUrl = "http://api.ariantechsolutions.in/interactive-server/api/v1/s3Upload/uploadHTML5";
+//
+//				ResponseEntity<byte[]> response = restTemplate.exchange(apiUrl, HttpMethod.POST, requestEntity,
+//						byte[].class);
+//			    if (response.getBody() == null || response.getBody().length == 0) {
+//
+//			        logService.logActivity(
+//			                "FAILURE",
+//				            "Error while calling remote API",
+//			                new Date()
+//			        );
+//
+//			        throw new IOException("Error API returned no PDF for " + fileType);
+//			    }
+//
+//			    Files.write(Path.of(pdfFileName), response.getBody());
+//
+//			}catch (Exception ex) {
+//
+//			    logService.logActivity(
+//			            "ERROR",
+//		                "Error while calling remote API: " + ex.getMessage(),
+//			            new Date()
+//			    );
+//
+//		        throw new IOException("Error API call failed");
+//			}
+//
+//			if (!passwordFields.isEmpty()) {
+//				StringBuilder pwBuilder = new StringBuilder();
+//				for (String pwExpr : passwordFields) {
+//					String pwValue = resolveFieldValueWithIndexes(normalizedFieldMap,
+//							userKey + "." + pwExpr.trim());
+//					pwBuilder.append(pwValue != null ? pwValue : pwExpr.trim());
+//				}
+//				String userPassword = pwBuilder.toString();
+//
+//				System.out.println("---------------------------------------------------");
+//				System.out.println("Generated PDF for user: " + userKey);
+//				System.out.println("File Name: " + pdfFileName);
+//				System.out.println("Password:  " + userPassword);
+//				System.out.println("Page Size: " + pageSize);
+//				System.out.println("Orientation: " + orientation);
+//				System.out.println("---------------------------------------------------");
+//
+//				try (PDDocument document = PDDocument.load(new File(pdfFileName))) {
+//					String ownerPassword = UUID.randomUUID().toString();
+//					AccessPermission permissions = new AccessPermission();
+//					StandardProtectionPolicy policy = new StandardProtectionPolicy(ownerPassword, userPassword,
+//							permissions);
+//					policy.setEncryptionKeyLength(128);
+//					policy.setPermissions(permissions);
+//					document.protect(policy);
+//					document.save(pdfFileName);
+//				}
+//			}
+//
+//			RecordEntity record = RecordEntity.builder().fileName(fileType + ".pdf").build();
+//			repository.save(record);
+//			pdfPaths.add(pdfFileName);
+//		}
+//	}
 //
 //	return pdfPaths;
 //}
+
