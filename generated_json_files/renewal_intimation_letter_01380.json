@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 01380",
+                    "letter_date":  "15-04-2026",
+                    "customer_name":  "QUANTUMBYTE SYSTEMS PVT LTD 01380",
+                    "customer_address":  "Plot 520, Industrial Area, Sector 31, 1480 Road, CHENNAI, TAMIL NADU",
+                    "customer_city":  "CHENNAI",
+                    "customer_state":  "TAMIL NADU",
+                    "customer_pincode":  "600111",
+                    "customer_contact_no":  "9710928220",
+                    "customer_gst_number":  "33AABC7940D1Z4",
+                    "customer_id":  "20240001380",
+                    "servicing_branch":  "CHENNAI",
+                    "insurer_name":  "Heritage General Insurance Company 01380",
+                    "branch_office_address":  "Suite 680, 1TH FLOOR, BUSINESS PARK, CHENNAI - 600111, TAMIL NADU",
+                    "branch_phone":  "1800 102 1380",
+                    "insurer_gst_number":  "33AAHCN3460K1Z7",
+                    "imd_code":  "BRC0001880",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 01380",
+                    "imd_aadhar_no":  "100000001380",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 01380",
+                    "policy_number":  "P0142201380/8380/151380",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 01380",
+                    "policy_expiry_date":  "20-03-2027",
+                    "renewal_date":  "20-03-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 1, Corporate District, CHENNAI - 600111, TAMIL NADU, India",
+                    "care_line":  "1800 102 3400",
+                    "email":  "support01380@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance01380.co.in",
+                    "irda_registration_no":  "580",
+                    "cin":  "U6600033MH2011PLC235380",
+                    "uin":  "HERIGP01380V032022",
+                    "signatory":  "Authorised Signatory 01380",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 01380",
+                                                             "Product_Name":  "Product Name 01380",
+                                                             "Risk_Description":  "Risk Description 01380",
+                                                             "Renewal_Date":  "Renewal Date 01380"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142201380/8380/151380",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 01380",
+                                                              "Renewal_Date":  "20-03-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 09821",
+                    "letter_date":  "26-05-2026",
+                    "customer_name":  "TECHVISION INNOVATIONS PVT LTD 09821",
+                    "customer_address":  "Plot 861, Industrial Area, Sector 22, 9921 Road, HYDERABAD, TELANGANA",
+                    "customer_city":  "HYDERABAD",
+                    "customer_state":  "TELANGANA",
+                    "customer_pincode":  "500740",
+                    "customer_contact_no":  "9777772499",
+                    "customer_gst_number":  "36AABC7673D1Z3",
+                    "customer_id":  "20240009821",
+                    "servicing_branch":  "HYDERABAD",
+                    "insurer_name":  "Heritage General Insurance Company 09821",
+                    "branch_office_address":  "Suite 321, 2TH FLOOR, BUSINESS PARK, HYDERABAD - 500740, TELANGANA",
+                    "branch_phone":  "1800 102 9821",
+                    "insurer_gst_number":  "36AAHCN6957K1Z6",
+                    "imd_code":  "BRC0010321",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 09821",
+                    "imd_aadhar_no":  "100000009821",
+                    "reference_subject":  "Renewal of your GroupHealthInsurance Policy Ref 09821",
+                    "policy_number":  "P0142209821/8821/159821",
+                    "product_name":  "GroupHealthInsurance",
+                    "risk_description":  "Corporate employee benefit risk 09821",
+                    "policy_expiry_date":  "05-05-2027",
+                    "renewal_date":  "05-05-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 12, Corporate District, HYDERABAD - 500740, TELANGANA, India",
+                    "care_line":  "1800 102 1841",
+                    "email":  "support09821@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance09821.co.in",
+                    "irda_registration_no":  "921",
+                    "cin":  "U6600036MH2011PLC243821",
+                    "uin":  "HERIGP09821V032022",
+                    "signatory":  "Authorised Signatory 09821",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 09821",
+                                                             "Product_Name":  "Product Name 09821",
+                                                             "Risk_Description":  "Risk Description 09821",
+                                                             "Renewal_Date":  "Renewal Date 09821"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142209821/8821/159821",
+                                                              "Product_Name":  "GroupHealthInsurance",
+                                                              "Risk_Description":  "Corporate employee benefit risk 09821",
+                                                              "Renewal_Date":  "05-05-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

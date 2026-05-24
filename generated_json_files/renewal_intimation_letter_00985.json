@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 00985",
+                    "letter_date":  "10-05-2026",
+                    "customer_name":  "NEXORA TECHNOLOGIES PVT LTD 00985",
+                    "customer_address":  "Plot 125, Industrial Area, Sector 36, 1085 Road, PUNE, MAHARASHTRA",
+                    "customer_city":  "PUNE",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "411481",
+                    "customer_contact_no":  "9707800215",
+                    "customer_gst_number":  "27AABC2805D1Z5",
+                    "customer_id":  "20240000985",
+                    "servicing_branch":  "PUNE",
+                    "insurer_name":  "Heritage General Insurance Company 00985",
+                    "branch_office_address":  "Suite 285, 6TH FLOOR, BUSINESS PARK, PUNE - 411481, MAHARASHTRA",
+                    "branch_phone":  "1800 102 0985",
+                    "insurer_gst_number":  "27AAHCN6745K1Z8",
+                    "imd_code":  "BRC0001485",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 00985",
+                    "imd_aadhar_no":  "100000000985",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 00985",
+                    "policy_number":  "P0142200985/8985/150985",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 00985",
+                    "policy_expiry_date":  "18-02-2027",
+                    "renewal_date":  "18-02-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 26, Corporate District, PUNE - 411481, MAHARASHTRA, India",
+                    "care_line":  "1800 102 3005",
+                    "email":  "support00985@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance00985.co.in",
+                    "irda_registration_no":  "185",
+                    "cin":  "U6600027MH2011PLC234985",
+                    "uin":  "HERIGP00985V032022",
+                    "signatory":  "Authorised Signatory 00985",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 00985",
+                                                             "Product_Name":  "Product Name 00985",
+                                                             "Risk_Description":  "Risk Description 00985",
+                                                             "Renewal_Date":  "Renewal Date 00985"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142200985/8985/150985",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 00985",
+                                                              "Renewal_Date":  "18-02-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

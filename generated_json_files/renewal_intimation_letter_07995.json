@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 07995",
+                    "letter_date":  "30-04-2026",
+                    "customer_name":  "NEXORA NETWORKS PVT LTD 07995",
+                    "customer_address":  "Plot 835, Industrial Area, Sector 46, 8095 Road, BENGALURU, KARNATAKA",
+                    "customer_city":  "BENGALURU",
+                    "customer_state":  "KARNATAKA",
+                    "customer_pincode":  "560111",
+                    "customer_contact_no":  "9763312405",
+                    "customer_gst_number":  "29AABC3935D1Z4",
+                    "customer_id":  "20240007995",
+                    "servicing_branch":  "BENGALURU",
+                    "insurer_name":  "Heritage General Insurance Company 07995",
+                    "branch_office_address":  "Suite 895, 16TH FLOOR, BUSINESS PARK, BENGALURU - 560111, KARNATAKA",
+                    "branch_phone":  "1800 102 7995",
+                    "insurer_gst_number":  "29AAHCN5915K1Z7",
+                    "imd_code":  "BRC0008495",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 07995",
+                    "imd_aadhar_no":  "100000007995",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 07995",
+                    "policy_number":  "P0142207995/8995/157995",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 07995",
+                    "policy_expiry_date":  "04-05-2027",
+                    "renewal_date":  "04-05-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 16, Corporate District, BENGALURU - 560111, KARNATAKA, India",
+                    "care_line":  "1800 102 0015",
+                    "email":  "support07995@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance07995.co.in",
+                    "irda_registration_no":  "895",
+                    "cin":  "U6600029MH2011PLC241995",
+                    "uin":  "HERIGP07995V032022",
+                    "signatory":  "Authorised Signatory 07995",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 07995",
+                                                             "Product_Name":  "Product Name 07995",
+                                                             "Risk_Description":  "Risk Description 07995",
+                                                             "Renewal_Date":  "Renewal Date 07995"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142207995/8995/157995",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 07995",
+                                                              "Renewal_Date":  "04-05-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

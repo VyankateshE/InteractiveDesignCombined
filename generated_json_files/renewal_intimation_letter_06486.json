@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 06486",
+                    "letter_date":  "21-04-2026",
+                    "customer_name":  "FINEDGE SOLUTIONS PVT LTD 06486",
+                    "customer_address":  "Plot 226, Industrial Area, Sector 37, 6586 Road, AHMEDABAD, GUJARAT",
+                    "customer_city":  "AHMEDABAD",
+                    "customer_state":  "GUJARAT",
+                    "customer_pincode":  "380222",
+                    "customer_contact_no":  "9751362634",
+                    "customer_gst_number":  "24AABC4318D1Z7",
+                    "customer_id":  "20240006486",
+                    "servicing_branch":  "AHMEDABAD",
+                    "insurer_name":  "Heritage General Insurance Company 06486",
+                    "branch_office_address":  "Suite 186, 7TH FLOOR, BUSINESS PARK, AHMEDABAD - 380222, GUJARAT",
+                    "branch_phone":  "1800 102 6486",
+                    "insurer_gst_number":  "24AAHCN0262K1Z1",
+                    "imd_code":  "BRC0006986",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 06486",
+                    "imd_aadhar_no":  "100000006486",
+                    "reference_subject":  "Renewal of your GroupHealthInsurance Policy Ref 06486",
+                    "policy_number":  "P0142206486/8486/156486",
+                    "product_name":  "GroupHealthInsurance",
+                    "risk_description":  "Corporate employee benefit risk 06486",
+                    "policy_expiry_date":  "16-03-2027",
+                    "renewal_date":  "16-03-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 7, Corporate District, AHMEDABAD - 380222, GUJARAT, India",
+                    "care_line":  "1800 102 8506",
+                    "email":  "support06486@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance06486.co.in",
+                    "irda_registration_no":  "286",
+                    "cin":  "U6600024MH2011PLC240486",
+                    "uin":  "HERIGP06486V032022",
+                    "signatory":  "Authorised Signatory 06486",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 06486",
+                                                             "Product_Name":  "Product Name 06486",
+                                                             "Risk_Description":  "Risk Description 06486",
+                                                             "Renewal_Date":  "Renewal Date 06486"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142206486/8486/156486",
+                                                              "Product_Name":  "GroupHealthInsurance",
+                                                              "Risk_Description":  "Corporate employee benefit risk 06486",
+                                                              "Renewal_Date":  "16-03-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

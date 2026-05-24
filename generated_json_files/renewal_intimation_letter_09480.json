@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 09480",
+                    "letter_date":  "15-04-2026",
+                    "customer_name":  "QUANTUMBYTE SERVICES PVT LTD 09480",
+                    "customer_address":  "Plot 520, Industrial Area, Sector 31, 9580 Road, LUCKNOW, UTTAR PRADESH",
+                    "customer_city":  "LUCKNOW",
+                    "customer_state":  "UTTAR PRADESH",
+                    "customer_pincode":  "226111",
+                    "customer_contact_no":  "9775072120",
+                    "customer_gst_number":  "09AABC3240D1Z4",
+                    "customer_id":  "20240009480",
+                    "servicing_branch":  "LUCKNOW",
+                    "insurer_name":  "Heritage General Insurance Company 09480",
+                    "branch_office_address":  "Suite 780, 1TH FLOOR, BUSINESS PARK, LUCKNOW - 226111, UTTAR PRADESH",
+                    "branch_phone":  "1800 102 9480",
+                    "insurer_gst_number":  "09AAHCN1160K1Z7",
+                    "imd_code":  "BRC0009980",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 09480",
+                    "imd_aadhar_no":  "100000009480",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 09480",
+                    "policy_number":  "P0142209480/8480/159480",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 09480",
+                    "policy_expiry_date":  "29-05-2027",
+                    "renewal_date":  "29-05-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 1, Corporate District, LUCKNOW - 226111, UTTAR PRADESH, India",
+                    "care_line":  "1800 102 1500",
+                    "email":  "support09480@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance09480.co.in",
+                    "irda_registration_no":  "580",
+                    "cin":  "U6600009MH2011PLC243480",
+                    "uin":  "HERIGP09480V032022",
+                    "signatory":  "Authorised Signatory 09480",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 09480",
+                                                             "Product_Name":  "Product Name 09480",
+                                                             "Risk_Description":  "Risk Description 09480",
+                                                             "Renewal_Date":  "Renewal Date 09480"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142209480/8480/159480",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 09480",
+                                                              "Renewal_Date":  "29-05-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

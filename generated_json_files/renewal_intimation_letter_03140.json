@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 03140",
+                    "letter_date":  "05-05-2026",
+                    "customer_name":  "QUANTUMBYTE SYSTEMS PVT LTD 03140",
+                    "customer_address":  "Plot 480, Industrial Area, Sector 41, 3240 Road, CHENNAI, TAMIL NADU",
+                    "customer_city":  "CHENNAI",
+                    "customer_state":  "TAMIL NADU",
+                    "customer_pincode":  "600296",
+                    "customer_contact_no":  "9724865660",
+                    "customer_gst_number":  "33AABC0820D1Z9",
+                    "customer_id":  "20240003140",
+                    "servicing_branch":  "CHENNAI",
+                    "insurer_name":  "Heritage General Insurance Company 03140",
+                    "branch_office_address":  "Suite 840, 1TH FLOOR, BUSINESS PARK, CHENNAI - 600296, TAMIL NADU",
+                    "branch_phone":  "1800 102 3140",
+                    "insurer_gst_number":  "33AAHCN3380K1Z3",
+                    "imd_code":  "BRC0003640",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 03140",
+                    "imd_aadhar_no":  "100000003140",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 03140",
+                    "policy_number":  "P0142203140/8140/153140",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 03140",
+                    "policy_expiry_date":  "14-01-2027",
+                    "renewal_date":  "14-01-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 21, Corporate District, CHENNAI - 600296, TAMIL NADU, India",
+                    "care_line":  "1800 102 5160",
+                    "email":  "support03140@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance03140.co.in",
+                    "irda_registration_no":  "540",
+                    "cin":  "U6600033MH2011PLC237140",
+                    "uin":  "HERIGP03140V032022",
+                    "signatory":  "Authorised Signatory 03140",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 03140",
+                                                             "Product_Name":  "Product Name 03140",
+                                                             "Risk_Description":  "Risk Description 03140",
+                                                             "Renewal_Date":  "Renewal Date 03140"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142203140/8140/153140",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 03140",
+                                                              "Renewal_Date":  "14-01-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

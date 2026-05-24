@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 09478",
+                    "letter_date":  "12-06-2026",
+                    "customer_name":  "URBANCORE SERVICES PVT LTD 09478",
+                    "customer_address":  "Plot 518, Industrial Area, Sector 29, 9578 Road, AHMEDABAD, GUJARAT",
+                    "customer_city":  "AHMEDABAD",
+                    "customer_state":  "GUJARAT",
+                    "customer_pincode":  "380037",
+                    "customer_contact_no":  "9775056282",
+                    "customer_gst_number":  "24AABC3214D1Z2",
+                    "customer_id":  "20240009478",
+                    "servicing_branch":  "AHMEDABAD",
+                    "insurer_name":  "Heritage General Insurance Company 09478",
+                    "branch_office_address":  "Suite 778, 19TH FLOOR, BUSINESS PARK, AHMEDABAD - 380037, GUJARAT",
+                    "branch_phone":  "1800 102 9478",
+                    "insurer_gst_number":  "24AAHCN1126K1Z5",
+                    "imd_code":  "BRC0009978",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 09478",
+                    "imd_aadhar_no":  "100000009478",
+                    "reference_subject":  "Renewal of your Group Mediclaim Policy Ref 09478",
+                    "policy_number":  "P0142209478/8478/159478",
+                    "product_name":  "Group Mediclaim",
+                    "risk_description":  "Corporate employee benefit risk 09478",
+                    "policy_expiry_date":  "27-05-2027",
+                    "renewal_date":  "27-05-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 29, Corporate District, AHMEDABAD - 380037, GUJARAT, India",
+                    "care_line":  "1800 102 1498",
+                    "email":  "support09478@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance09478.co.in",
+                    "irda_registration_no":  "578",
+                    "cin":  "U6600024MH2011PLC243478",
+                    "uin":  "HERIGP09478V032022",
+                    "signatory":  "Authorised Signatory 09478",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 09478",
+                                                             "Product_Name":  "Product Name 09478",
+                                                             "Risk_Description":  "Risk Description 09478",
+                                                             "Renewal_Date":  "Renewal Date 09478"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142209478/8478/159478",
+                                                              "Product_Name":  "Group Mediclaim",
+                                                              "Risk_Description":  "Corporate employee benefit risk 09478",
+                                                              "Renewal_Date":  "27-05-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

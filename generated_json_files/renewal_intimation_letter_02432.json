@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 02432",
+                    "letter_date":  "17-05-2026",
+                    "customer_name":  "INFONOVA SERVICES PVT LTD 02432",
+                    "customer_address":  "Plot 672, Industrial Area, Sector 33, 2532 Road, LUCKNOW, UTTAR PRADESH",
+                    "customer_city":  "LUCKNOW",
+                    "customer_state":  "UTTAR PRADESH",
+                    "customer_pincode":  "226074",
+                    "customer_contact_no":  "9719259008",
+                    "customer_gst_number":  "09AABC1616D1Z3",
+                    "customer_id":  "20240002432",
+                    "servicing_branch":  "LUCKNOW",
+                    "insurer_name":  "Heritage General Insurance Company 02432",
+                    "branch_office_address":  "Suite 132, 13TH FLOOR, BUSINESS PARK, LUCKNOW - 226074, UTTAR PRADESH",
+                    "branch_phone":  "1800 102 2432",
+                    "insurer_gst_number":  "09AAHCN1344K1Z6",
+                    "imd_code":  "BRC0002932",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 02432",
+                    "imd_aadhar_no":  "100000002432",
+                    "reference_subject":  "Renewal of your Group Personal Accident Policy Ref 02432",
+                    "policy_number":  "P0142202432/8432/152432",
+                    "product_name":  "Group Personal Accident",
+                    "risk_description":  "Corporate employee benefit risk 02432",
+                    "policy_expiry_date":  "05-02-2027",
+                    "renewal_date":  "05-02-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 3, Corporate District, LUCKNOW - 226074, UTTAR PRADESH, India",
+                    "care_line":  "1800 102 4452",
+                    "email":  "support02432@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance02432.co.in",
+                    "irda_registration_no":  "732",
+                    "cin":  "U6600009MH2011PLC236432",
+                    "uin":  "HERIGP02432V032022",
+                    "signatory":  "Authorised Signatory 02432",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 02432",
+                                                             "Product_Name":  "Product Name 02432",
+                                                             "Risk_Description":  "Risk Description 02432",
+                                                             "Renewal_Date":  "Renewal Date 02432"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142202432/8432/152432",
+                                                              "Product_Name":  "Group Personal Accident",
+                                                              "Risk_Description":  "Corporate employee benefit risk 02432",
+                                                              "Renewal_Date":  "05-02-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

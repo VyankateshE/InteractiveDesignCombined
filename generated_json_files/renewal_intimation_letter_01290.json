@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 01290",
+                    "letter_date":  "15-05-2026",
+                    "customer_name":  "QUANTUMBYTE SOLUTIONS PVT LTD 01290",
+                    "customer_address":  "Plot 430, Industrial Area, Sector 41, 1390 Road, MUMBAI, MAHARASHTRA",
+                    "customer_city":  "MUMBAI",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "400777",
+                    "customer_contact_no":  "9710215510",
+                    "customer_gst_number":  "27AABC6770D1Z4",
+                    "customer_id":  "20240001290",
+                    "servicing_branch":  "MUMBAI",
+                    "insurer_name":  "Heritage General Insurance Company 01290",
+                    "branch_office_address":  "Suite 590, 11TH FLOOR, BUSINESS PARK, MUMBAI - 400777, MAHARASHTRA",
+                    "branch_phone":  "1800 102 1290",
+                    "insurer_gst_number":  "27AAHCN1930K1Z7",
+                    "imd_code":  "BRC0001790",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 01290",
+                    "imd_aadhar_no":  "100000001290",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 01290",
+                    "policy_number":  "P0142201290/8290/151290",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 01290",
+                    "policy_expiry_date":  "20-12-2026",
+                    "renewal_date":  "20-12-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 1, Corporate District, MUMBAI - 400777, MAHARASHTRA, India",
+                    "care_line":  "1800 102 3310",
+                    "email":  "support01290@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance01290.co.in",
+                    "irda_registration_no":  "490",
+                    "cin":  "U6600027MH2011PLC235290",
+                    "uin":  "HERIGP01290V032022",
+                    "signatory":  "Authorised Signatory 01290",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 01290",
+                                                             "Product_Name":  "Product Name 01290",
+                                                             "Risk_Description":  "Risk Description 01290",
+                                                             "Renewal_Date":  "Renewal Date 01290"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142201290/8290/151290",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 01290",
+                                                              "Renewal_Date":  "20-12-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

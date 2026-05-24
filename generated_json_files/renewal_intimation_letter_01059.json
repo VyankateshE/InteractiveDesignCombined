@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 01059",
+                    "letter_date":  "24-05-2026",
+                    "customer_name":  "SOFTBRIDGE SYSTEMS PVT LTD 01059",
+                    "customer_address":  "Plot 199, Industrial Area, Sector 10, 1159 Road, BENGALURU, KARNATAKA",
+                    "customer_city":  "BENGALURU",
+                    "customer_state":  "KARNATAKA",
+                    "customer_pincode":  "560222",
+                    "customer_contact_no":  "9708386221",
+                    "customer_gst_number":  "29AABC3767D1Z7",
+                    "customer_id":  "20240001059",
+                    "servicing_branch":  "BENGALURU",
+                    "insurer_name":  "Heritage General Insurance Company 01059",
+                    "branch_office_address":  "Suite 359, 20TH FLOOR, BUSINESS PARK, BENGALURU - 560222, KARNATAKA",
+                    "branch_phone":  "1800 102 1059",
+                    "insurer_gst_number":  "29AAHCN8003K1Z1",
+                    "imd_code":  "BRC0001559",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 01059",
+                    "imd_aadhar_no":  "100000001059",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 01059",
+                    "policy_number":  "P0142201059/8059/151059",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 01059",
+                    "policy_expiry_date":  "03-05-2027",
+                    "renewal_date":  "03-05-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 10, Corporate District, BENGALURU - 560222, KARNATAKA, India",
+                    "care_line":  "1800 102 3079",
+                    "email":  "support01059@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance01059.co.in",
+                    "irda_registration_no":  "259",
+                    "cin":  "U6600029MH2011PLC235059",
+                    "uin":  "HERIGP01059V032022",
+                    "signatory":  "Authorised Signatory 01059",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 01059",
+                                                             "Product_Name":  "Product Name 01059",
+                                                             "Risk_Description":  "Risk Description 01059",
+                                                             "Renewal_Date":  "Renewal Date 01059"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142201059/8059/151059",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 01059",
+                                                              "Renewal_Date":  "03-05-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

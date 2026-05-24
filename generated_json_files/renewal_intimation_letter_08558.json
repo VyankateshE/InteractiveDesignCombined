@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 08558",
+                    "letter_date":  "23-05-2026",
+                    "customer_name":  "URBANCORE NETWORKS PVT LTD 08558",
+                    "customer_address":  "Plot 498, Industrial Area, Sector 9, 8658 Road, AHMEDABAD, GUJARAT",
+                    "customer_city":  "AHMEDABAD",
+                    "customer_state":  "GUJARAT",
+                    "customer_pincode":  "380962",
+                    "customer_contact_no":  "9767770802",
+                    "customer_gst_number":  "24AABC1254D1Z9",
+                    "customer_id":  "20240008558",
+                    "servicing_branch":  "AHMEDABAD",
+                    "insurer_name":  "Heritage General Insurance Company 08558",
+                    "branch_office_address":  "Suite 658, 19TH FLOOR, BUSINESS PARK, AHMEDABAD - 380962, GUJARAT",
+                    "branch_phone":  "1800 102 8558",
+                    "insurer_gst_number":  "24AAHCN5486K1Z3",
+                    "imd_code":  "BRC0009058",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 08558",
+                    "imd_aadhar_no":  "100000008558",
+                    "reference_subject":  "Renewal of your Group Mediclaim Policy Ref 08558",
+                    "policy_number":  "P0142208558/8558/158558",
+                    "product_name":  "Group Mediclaim",
+                    "risk_description":  "Corporate employee benefit risk 08558",
+                    "policy_expiry_date":  "18-11-2026",
+                    "renewal_date":  "18-11-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 9, Corporate District, AHMEDABAD - 380962, GUJARAT, India",
+                    "care_line":  "1800 102 0578",
+                    "email":  "support08558@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance08558.co.in",
+                    "irda_registration_no":  "558",
+                    "cin":  "U6600024MH2011PLC242558",
+                    "uin":  "HERIGP08558V032022",
+                    "signatory":  "Authorised Signatory 08558",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 08558",
+                                                             "Product_Name":  "Product Name 08558",
+                                                             "Risk_Description":  "Risk Description 08558",
+                                                             "Renewal_Date":  "Renewal Date 08558"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142208558/8558/158558",
+                                                              "Product_Name":  "Group Mediclaim",
+                                                              "Risk_Description":  "Corporate employee benefit risk 08558",
+                                                              "Renewal_Date":  "18-11-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 03745",
+                    "letter_date":  "10-05-2026",
+                    "customer_name":  "NEXORA INNOVATIONS PVT LTD 03745",
+                    "customer_address":  "Plot 185, Industrial Area, Sector 46, 3845 Road, PUNE, MAHARASHTRA",
+                    "customer_city":  "PUNE",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "411703",
+                    "customer_contact_no":  "9729656655",
+                    "customer_gst_number":  "27AABC8685D1Z2",
+                    "customer_id":  "20240003745",
+                    "servicing_branch":  "PUNE",
+                    "insurer_name":  "Heritage General Insurance Company 03745",
+                    "branch_office_address":  "Suite 645, 6TH FLOOR, BUSINESS PARK, PUNE - 411703, MAHARASHTRA",
+                    "branch_phone":  "1800 102 3745",
+                    "insurer_gst_number":  "27AAHCN3665K1Z5",
+                    "imd_code":  "BRC0004245",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 03745",
+                    "imd_aadhar_no":  "100000003745",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 03745",
+                    "policy_number":  "P0142203745/8745/153745",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 03745",
+                    "policy_expiry_date":  "11-09-2026",
+                    "renewal_date":  "11-09-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 26, Corporate District, PUNE - 411703, MAHARASHTRA, India",
+                    "care_line":  "1800 102 5765",
+                    "email":  "support03745@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance03745.co.in",
+                    "irda_registration_no":  "245",
+                    "cin":  "U6600027MH2011PLC237745",
+                    "uin":  "HERIGP03745V032022",
+                    "signatory":  "Authorised Signatory 03745",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 03745",
+                                                             "Product_Name":  "Product Name 03745",
+                                                             "Risk_Description":  "Risk Description 03745",
+                                                             "Renewal_Date":  "Renewal Date 03745"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142203745/8745/153745",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 03745",
+                                                              "Renewal_Date":  "11-09-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

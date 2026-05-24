@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 09566",
+                    "letter_date":  "11-05-2026",
+                    "customer_name":  "FINEDGE INDUSTRIES PVT LTD 09566",
+                    "customer_address":  "Plot 606, Industrial Area, Sector 17, 9666 Road, AHMEDABAD, GUJARAT",
+                    "customer_city":  "AHMEDABAD",
+                    "customer_state":  "GUJARAT",
+                    "customer_pincode":  "380296",
+                    "customer_contact_no":  "9775753154",
+                    "customer_gst_number":  "24AABC4358D1Z9",
+                    "customer_id":  "20240009566",
+                    "servicing_branch":  "AHMEDABAD",
+                    "insurer_name":  "Heritage General Insurance Company 09566",
+                    "branch_office_address":  "Suite 866, 7TH FLOOR, BUSINESS PARK, AHMEDABAD - 380296, GUJARAT",
+                    "branch_phone":  "1800 102 9566",
+                    "insurer_gst_number":  "24AAHCN2622K1Z3",
+                    "imd_code":  "BRC0010066",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 09566",
+                    "imd_aadhar_no":  "100000009566",
+                    "reference_subject":  "Renewal of your GroupHealthInsurance Policy Ref 09566",
+                    "policy_number":  "P0142209566/8566/159566",
+                    "product_name":  "GroupHealthInsurance",
+                    "risk_description":  "Corporate employee benefit risk 09566",
+                    "policy_expiry_date":  "23-08-2026",
+                    "renewal_date":  "23-08-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 27, Corporate District, AHMEDABAD - 380296, GUJARAT, India",
+                    "care_line":  "1800 102 1586",
+                    "email":  "support09566@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance09566.co.in",
+                    "irda_registration_no":  "666",
+                    "cin":  "U6600024MH2011PLC243566",
+                    "uin":  "HERIGP09566V032022",
+                    "signatory":  "Authorised Signatory 09566",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 09566",
+                                                             "Product_Name":  "Product Name 09566",
+                                                             "Risk_Description":  "Risk Description 09566",
+                                                             "Renewal_Date":  "Renewal Date 09566"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142209566/8566/159566",
+                                                              "Product_Name":  "GroupHealthInsurance",
+                                                              "Risk_Description":  "Corporate employee benefit risk 09566",
+                                                              "Renewal_Date":  "23-08-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

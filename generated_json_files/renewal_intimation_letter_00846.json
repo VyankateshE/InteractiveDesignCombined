@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 00846",
+                    "letter_date":  "21-04-2026",
+                    "customer_name":  "FINEDGE INDUSTRIES PVT LTD 00846",
+                    "customer_address":  "Plot 886, Industrial Area, Sector 47, 946 Road, AHMEDABAD, GUJARAT",
+                    "customer_city":  "AHMEDABAD",
+                    "customer_state":  "GUJARAT",
+                    "customer_pincode":  "380333",
+                    "customer_contact_no":  "9706699474",
+                    "customer_gst_number":  "24AABC0998D1Z1",
+                    "customer_id":  "20240000846",
+                    "servicing_branch":  "AHMEDABAD",
+                    "insurer_name":  "Heritage General Insurance Company 00846",
+                    "branch_office_address":  "Suite 146, 7TH FLOOR, BUSINESS PARK, AHMEDABAD - 380333, GUJARAT",
+                    "branch_phone":  "1800 102 0846",
+                    "insurer_gst_number":  "24AAHCN4382K1Z4",
+                    "imd_code":  "BRC0001346",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 00846",
+                    "imd_aadhar_no":  "100000000846",
+                    "reference_subject":  "Renewal of your GroupHealthInsurance Policy Ref 00846",
+                    "policy_number":  "P0142200846/8846/150846",
+                    "product_name":  "GroupHealthInsurance",
+                    "risk_description":  "Corporate employee benefit risk 00846",
+                    "policy_expiry_date":  "02-10-2026",
+                    "renewal_date":  "02-10-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 7, Corporate District, AHMEDABAD - 380333, GUJARAT, India",
+                    "care_line":  "1800 102 2866",
+                    "email":  "support00846@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance00846.co.in",
+                    "irda_registration_no":  "946",
+                    "cin":  "U6600024MH2011PLC234846",
+                    "uin":  "HERIGP00846V032022",
+                    "signatory":  "Authorised Signatory 00846",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 00846",
+                                                             "Product_Name":  "Product Name 00846",
+                                                             "Risk_Description":  "Risk Description 00846",
+                                                             "Renewal_Date":  "Renewal Date 00846"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142200846/8846/150846",
+                                                              "Product_Name":  "GroupHealthInsurance",
+                                                              "Risk_Description":  "Corporate employee benefit risk 00846",
+                                                              "Renewal_Date":  "02-10-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

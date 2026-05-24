@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 09256",
+                    "letter_date":  "01-05-2026",
+                    "customer_name":  "FINEDGE ENTERPRISES PVT LTD 09256",
+                    "customer_address":  "Plot 296, Industrial Area, Sector 7, 9356 Road, LUCKNOW, UTTAR PRADESH",
+                    "customer_city":  "LUCKNOW",
+                    "customer_state":  "UTTAR PRADESH",
+                    "customer_pincode":  "226814",
+                    "customer_contact_no":  "9773298264",
+                    "customer_gst_number":  "09AABC0328D1Z5",
+                    "customer_id":  "20240009256",
+                    "servicing_branch":  "LUCKNOW",
+                    "insurer_name":  "Heritage General Insurance Company 09256",
+                    "branch_office_address":  "Suite 556, 17TH FLOOR, BUSINESS PARK, LUCKNOW - 226814, UTTAR PRADESH",
+                    "branch_phone":  "1800 102 9256",
+                    "insurer_gst_number":  "09AAHCN7352K1Z8",
+                    "imd_code":  "BRC0009756",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 09256",
+                    "imd_aadhar_no":  "100000009256",
+                    "reference_subject":  "Renewal of your GroupHealthInsurance Policy Ref 09256",
+                    "policy_number":  "P0142209256/8256/159256",
+                    "product_name":  "GroupHealthInsurance",
+                    "risk_description":  "Corporate employee benefit risk 09256",
+                    "policy_expiry_date":  "17-10-2026",
+                    "renewal_date":  "17-10-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 17, Corporate District, LUCKNOW - 226814, UTTAR PRADESH, India",
+                    "care_line":  "1800 102 1276",
+                    "email":  "support09256@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance09256.co.in",
+                    "irda_registration_no":  "356",
+                    "cin":  "U6600009MH2011PLC243256",
+                    "uin":  "HERIGP09256V032022",
+                    "signatory":  "Authorised Signatory 09256",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 09256",
+                                                             "Product_Name":  "Product Name 09256",
+                                                             "Risk_Description":  "Risk Description 09256",
+                                                             "Renewal_Date":  "Renewal Date 09256"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142209256/8256/159256",
+                                                              "Product_Name":  "GroupHealthInsurance",
+                                                              "Risk_Description":  "Corporate employee benefit risk 09256",
+                                                              "Renewal_Date":  "17-10-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

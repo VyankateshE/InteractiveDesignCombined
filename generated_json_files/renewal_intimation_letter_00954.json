@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 00954",
+                    "letter_date":  "08-06-2026",
+                    "customer_name":  "CLOUDMATRIX NETWORKS PVT LTD 00954",
+                    "customer_address":  "Plot 94, Industrial Area, Sector 5, 1054 Road, MUMBAI, MAHARASHTRA",
+                    "customer_city":  "MUMBAI",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "400333",
+                    "customer_contact_no":  "9707554726",
+                    "customer_gst_number":  "27AABC2402D1Z1",
+                    "customer_id":  "20240000954",
+                    "servicing_branch":  "MUMBAI",
+                    "insurer_name":  "Heritage General Insurance Company 00954",
+                    "branch_office_address":  "Suite 254, 15TH FLOOR, BUSINESS PARK, MUMBAI - 400333, MAHARASHTRA",
+                    "branch_phone":  "1800 102 0954",
+                    "insurer_gst_number":  "27AAHCN6218K1Z4",
+                    "imd_code":  "BRC0001454",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 00954",
+                    "imd_aadhar_no":  "100000000954",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 00954",
+                    "policy_number":  "P0142200954/8954/150954",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 00954",
+                    "policy_expiry_date":  "18-01-2027",
+                    "renewal_date":  "18-01-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 25, Corporate District, MUMBAI - 400333, MAHARASHTRA, India",
+                    "care_line":  "1800 102 2974",
+                    "email":  "support00954@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance00954.co.in",
+                    "irda_registration_no":  "154",
+                    "cin":  "U6600027MH2011PLC234954",
+                    "uin":  "HERIGP00954V032022",
+                    "signatory":  "Authorised Signatory 00954",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 00954",
+                                                             "Product_Name":  "Product Name 00954",
+                                                             "Risk_Description":  "Risk Description 00954",
+                                                             "Renewal_Date":  "Renewal Date 00954"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142200954/8954/150954",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 00954",
+                                                              "Renewal_Date":  "18-01-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 08549",
+                    "letter_date":  "14-05-2026",
+                    "customer_name":  "SOFTBRIDGE INNOVATIONS PVT LTD 08549",
+                    "customer_address":  "Plot 489, Industrial Area, Sector 50, 8649 Road, HYDERABAD, TELANGANA",
+                    "customer_city":  "HYDERABAD",
+                    "customer_state":  "TELANGANA",
+                    "customer_pincode":  "500629",
+                    "customer_contact_no":  "9767699531",
+                    "customer_gst_number":  "36AABC1137D1Z9",
+                    "customer_id":  "20240008549",
+                    "servicing_branch":  "HYDERABAD",
+                    "insurer_name":  "Heritage General Insurance Company 08549",
+                    "branch_office_address":  "Suite 649, 10TH FLOOR, BUSINESS PARK, HYDERABAD - 500629, TELANGANA",
+                    "branch_phone":  "1800 102 8549",
+                    "insurer_gst_number":  "36AAHCN5333K1Z3",
+                    "imd_code":  "BRC0009049",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 08549",
+                    "imd_aadhar_no":  "100000008549",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 08549",
+                    "policy_number":  "P0142208549/8549/158549",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 08549",
+                    "policy_expiry_date":  "09-11-2026",
+                    "renewal_date":  "09-11-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 30, Corporate District, HYDERABAD - 500629, TELANGANA, India",
+                    "care_line":  "1800 102 0569",
+                    "email":  "support08549@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance08549.co.in",
+                    "irda_registration_no":  "549",
+                    "cin":  "U6600036MH2011PLC242549",
+                    "uin":  "HERIGP08549V032022",
+                    "signatory":  "Authorised Signatory 08549",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 08549",
+                                                             "Product_Name":  "Product Name 08549",
+                                                             "Risk_Description":  "Risk Description 08549",
+                                                             "Renewal_Date":  "Renewal Date 08549"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142208549/8549/158549",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 08549",
+                                                              "Renewal_Date":  "09-11-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

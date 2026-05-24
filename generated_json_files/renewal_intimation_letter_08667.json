@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 08667",
+                    "letter_date":  "12-05-2026",
+                    "customer_name":  "MEDILINK TECHNOLOGIES PVT LTD 08667",
+                    "customer_address":  "Plot 607, Industrial Area, Sector 18, 8767 Road, BENGALURU, KARNATAKA",
+                    "customer_city":  "BENGALURU",
+                    "customer_state":  "KARNATAKA",
+                    "customer_pincode":  "560000",
+                    "customer_contact_no":  "9768633973",
+                    "customer_gst_number":  "29AABC2671D1Z1",
+                    "customer_id":  "20240008667",
+                    "servicing_branch":  "BENGALURU",
+                    "insurer_name":  "Heritage General Insurance Company 08667",
+                    "branch_office_address":  "Suite 767, 8TH FLOOR, BUSINESS PARK, BENGALURU - 560000, KARNATAKA",
+                    "branch_phone":  "1800 102 8667",
+                    "insurer_gst_number":  "29AAHCN7339K1Z4",
+                    "imd_code":  "BRC0009167",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 08667",
+                    "imd_aadhar_no":  "100000008667",
+                    "reference_subject":  "Renewal of your Group Personal Accident Policy Ref 08667",
+                    "policy_number":  "P0142208667/8667/158667",
+                    "product_name":  "Group Personal Accident",
+                    "risk_description":  "Corporate employee benefit risk 08667",
+                    "policy_expiry_date":  "07-03-2027",
+                    "renewal_date":  "07-03-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 28, Corporate District, BENGALURU - 560000, KARNATAKA, India",
+                    "care_line":  "1800 102 0687",
+                    "email":  "support08667@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance08667.co.in",
+                    "irda_registration_no":  "667",
+                    "cin":  "U6600029MH2011PLC242667",
+                    "uin":  "HERIGP08667V032022",
+                    "signatory":  "Authorised Signatory 08667",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 08667",
+                                                             "Product_Name":  "Product Name 08667",
+                                                             "Risk_Description":  "Risk Description 08667",
+                                                             "Renewal_Date":  "Renewal Date 08667"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142208667/8667/158667",
+                                                              "Product_Name":  "Group Personal Accident",
+                                                              "Risk_Description":  "Corporate employee benefit risk 08667",
+                                                              "Renewal_Date":  "07-03-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

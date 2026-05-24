@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 04500",
+                    "letter_date":  "15-04-2026",
+                    "customer_name":  "QUANTUMBYTE SYSTEMS PVT LTD 04500",
+                    "customer_address":  "Plot 40, Industrial Area, Sector 1, 4600 Road, CHENNAI, TAMIL NADU",
+                    "customer_city":  "CHENNAI",
+                    "customer_state":  "TAMIL NADU",
+                    "customer_pincode":  "600666",
+                    "customer_contact_no":  "9735635500",
+                    "customer_gst_number":  "33AABC8500D1Z1",
+                    "customer_id":  "20240004500",
+                    "servicing_branch":  "CHENNAI",
+                    "insurer_name":  "Heritage General Insurance Company 04500",
+                    "branch_office_address":  "Suite 600, 1TH FLOOR, BUSINESS PARK, CHENNAI - 600666, TAMIL NADU",
+                    "branch_phone":  "1800 102 4500",
+                    "insurer_gst_number":  "33AAHCN6500K1Z4",
+                    "imd_code":  "BRC0005000",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 04500",
+                    "imd_aadhar_no":  "100000004500",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 04500",
+                    "policy_number":  "P0142204500/8500/154500",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 04500",
+                    "policy_expiry_date":  "06-10-2026",
+                    "renewal_date":  "06-10-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 1, Corporate District, CHENNAI - 600666, TAMIL NADU, India",
+                    "care_line":  "1800 102 6520",
+                    "email":  "support04500@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance04500.co.in",
+                    "irda_registration_no":  "100",
+                    "cin":  "U6600033MH2011PLC238500",
+                    "uin":  "HERIGP04500V032022",
+                    "signatory":  "Authorised Signatory 04500",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 04500",
+                                                             "Product_Name":  "Product Name 04500",
+                                                             "Risk_Description":  "Risk Description 04500",
+                                                             "Renewal_Date":  "Renewal Date 04500"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142204500/8500/154500",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 04500",
+                                                              "Renewal_Date":  "06-10-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

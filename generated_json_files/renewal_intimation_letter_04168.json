@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 04168",
+                    "letter_date":  "13-05-2026",
+                    "customer_name":  "URBANCORE SOLUTIONS PVT LTD 04168",
+                    "customer_address":  "Plot 608, Industrial Area, Sector 19, 4268 Road, LUCKNOW, UTTAR PRADESH",
+                    "customer_city":  "LUCKNOW",
+                    "customer_state":  "UTTAR PRADESH",
+                    "customer_pincode":  "226370",
+                    "customer_contact_no":  "9733006392",
+                    "customer_gst_number":  "09AABC4184D1Z2",
+                    "customer_id":  "20240004168",
+                    "servicing_branch":  "LUCKNOW",
+                    "insurer_name":  "Heritage General Insurance Company 04168",
+                    "branch_office_address":  "Suite 268, 9TH FLOOR, BUSINESS PARK, LUCKNOW - 226370, UTTAR PRADESH",
+                    "branch_phone":  "1800 102 4168",
+                    "insurer_gst_number":  "09AAHCN0856K1Z5",
+                    "imd_code":  "BRC0004668",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 04168",
+                    "imd_aadhar_no":  "100000004168",
+                    "reference_subject":  "Renewal of your Group Mediclaim Policy Ref 04168",
+                    "policy_number":  "P0142204168/8168/154168",
+                    "product_name":  "Group Mediclaim",
+                    "risk_description":  "Corporate employee benefit risk 04168",
+                    "policy_expiry_date":  "08-11-2026",
+                    "renewal_date":  "08-11-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 29, Corporate District, LUCKNOW - 226370, UTTAR PRADESH, India",
+                    "care_line":  "1800 102 6188",
+                    "email":  "support04168@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance04168.co.in",
+                    "irda_registration_no":  "668",
+                    "cin":  "U6600009MH2011PLC238168",
+                    "uin":  "HERIGP04168V032022",
+                    "signatory":  "Authorised Signatory 04168",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 04168",
+                                                             "Product_Name":  "Product Name 04168",
+                                                             "Risk_Description":  "Risk Description 04168",
+                                                             "Renewal_Date":  "Renewal Date 04168"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142204168/8168/154168",
+                                                              "Product_Name":  "Group Mediclaim",
+                                                              "Risk_Description":  "Corporate employee benefit risk 04168",
+                                                              "Renewal_Date":  "08-11-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

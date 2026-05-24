@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 07980",
+                    "letter_date":  "15-04-2026",
+                    "customer_name":  "QUANTUMBYTE ENTERPRISES PVT LTD 07980",
+                    "customer_address":  "Plot 820, Industrial Area, Sector 31, 8080 Road, CHENNAI, TAMIL NADU",
+                    "customer_city":  "CHENNAI",
+                    "customer_state":  "TAMIL NADU",
+                    "customer_pincode":  "600555",
+                    "customer_contact_no":  "9763193620",
+                    "customer_gst_number":  "33AABC3740D1Z7",
+                    "customer_id":  "20240007980",
+                    "servicing_branch":  "CHENNAI",
+                    "insurer_name":  "Heritage General Insurance Company 07980",
+                    "branch_office_address":  "Suite 880, 1TH FLOOR, BUSINESS PARK, CHENNAI - 600555, TAMIL NADU",
+                    "branch_phone":  "1800 102 7980",
+                    "insurer_gst_number":  "33AAHCN5660K1Z1",
+                    "imd_code":  "BRC0008480",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 07980",
+                    "imd_aadhar_no":  "100000007980",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 07980",
+                    "policy_number":  "P0142207980/8980/157980",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 07980",
+                    "policy_expiry_date":  "19-04-2027",
+                    "renewal_date":  "19-04-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 1, Corporate District, CHENNAI - 600555, TAMIL NADU, India",
+                    "care_line":  "1800 102 0000",
+                    "email":  "support07980@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance07980.co.in",
+                    "irda_registration_no":  "880",
+                    "cin":  "U6600033MH2011PLC241980",
+                    "uin":  "HERIGP07980V032022",
+                    "signatory":  "Authorised Signatory 07980",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 07980",
+                                                             "Product_Name":  "Product Name 07980",
+                                                             "Risk_Description":  "Risk Description 07980",
+                                                             "Renewal_Date":  "Renewal Date 07980"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142207980/8980/157980",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 07980",
+                                                              "Renewal_Date":  "19-04-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

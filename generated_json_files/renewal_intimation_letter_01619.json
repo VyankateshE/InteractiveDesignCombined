@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 01619",
+                    "letter_date":  "13-06-2026",
+                    "customer_name":  "SOFTBRIDGE SYSTEMS PVT LTD 01619",
+                    "customer_address":  "Plot 759, Industrial Area, Sector 20, 1719 Road, BENGALURU, KARNATAKA",
+                    "customer_city":  "BENGALURU",
+                    "customer_state":  "KARNATAKA",
+                    "customer_pincode":  "560962",
+                    "customer_contact_no":  "9712820861",
+                    "customer_gst_number":  "29AABC1047D1Z9",
+                    "customer_id":  "20240001619",
+                    "servicing_branch":  "BENGALURU",
+                    "insurer_name":  "Heritage General Insurance Company 01619",
+                    "branch_office_address":  "Suite 119, 20TH FLOOR, BUSINESS PARK, BENGALURU - 560962, KARNATAKA",
+                    "branch_phone":  "1800 102 1619",
+                    "insurer_gst_number":  "29AAHCN7523K1Z3",
+                    "imd_code":  "BRC0002119",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 01619",
+                    "imd_aadhar_no":  "100000001619",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 01619",
+                    "policy_number":  "P0142201619/8619/151619",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 01619",
+                    "policy_expiry_date":  "14-11-2026",
+                    "renewal_date":  "14-11-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 30, Corporate District, BENGALURU - 560962, KARNATAKA, India",
+                    "care_line":  "1800 102 3639",
+                    "email":  "support01619@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance01619.co.in",
+                    "irda_registration_no":  "819",
+                    "cin":  "U6600029MH2011PLC235619",
+                    "uin":  "HERIGP01619V032022",
+                    "signatory":  "Authorised Signatory 01619",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 01619",
+                                                             "Product_Name":  "Product Name 01619",
+                                                             "Risk_Description":  "Risk Description 01619",
+                                                             "Renewal_Date":  "Renewal Date 01619"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142201619/8619/151619",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 01619",
+                                                              "Renewal_Date":  "14-11-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

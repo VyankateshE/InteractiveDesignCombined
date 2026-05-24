@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 07407",
+                    "letter_date":  "12-05-2026",
+                    "customer_name":  "MEDILINK INDUSTRIES PVT LTD 07407",
+                    "customer_address":  "Plot 247, Industrial Area, Sector 8, 7507 Road, JAIPUR, RAJASTHAN",
+                    "customer_city":  "JAIPUR",
+                    "customer_state":  "RAJASTHAN",
+                    "customer_pincode":  "302333",
+                    "customer_contact_no":  "9758656033",
+                    "customer_gst_number":  "08AABC6291D1Z1",
+                    "customer_id":  "20240007407",
+                    "servicing_branch":  "JAIPUR",
+                    "insurer_name":  "Heritage General Insurance Company 07407",
+                    "branch_office_address":  "Suite 307, 8TH FLOOR, BUSINESS PARK, JAIPUR - 302333, RAJASTHAN",
+                    "branch_phone":  "1800 102 7407",
+                    "insurer_gst_number":  "08AAHCN5919K1Z4",
+                    "imd_code":  "BRC0007907",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 07407",
+                    "imd_aadhar_no":  "100000007407",
+                    "reference_subject":  "Renewal of your Group Personal Accident Policy Ref 07407",
+                    "policy_number":  "P0142207407/8407/157407",
+                    "product_name":  "Group Personal Accident",
+                    "risk_description":  "Corporate employee benefit risk 07407",
+                    "policy_expiry_date":  "23-09-2026",
+                    "renewal_date":  "23-09-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 28, Corporate District, JAIPUR - 302333, RAJASTHAN, India",
+                    "care_line":  "1800 102 9427",
+                    "email":  "support07407@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance07407.co.in",
+                    "irda_registration_no":  "307",
+                    "cin":  "U6600008MH2011PLC241407",
+                    "uin":  "HERIGP07407V032022",
+                    "signatory":  "Authorised Signatory 07407",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 07407",
+                                                             "Product_Name":  "Product Name 07407",
+                                                             "Risk_Description":  "Risk Description 07407",
+                                                             "Renewal_Date":  "Renewal Date 07407"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142207407/8407/157407",
+                                                              "Product_Name":  "Group Personal Accident",
+                                                              "Risk_Description":  "Corporate employee benefit risk 07407",
+                                                              "Renewal_Date":  "23-09-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

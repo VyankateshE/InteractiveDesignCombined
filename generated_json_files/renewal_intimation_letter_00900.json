@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 00900",
+                    "letter_date":  "15-04-2026",
+                    "customer_name":  "QUANTUMBYTE SYSTEMS PVT LTD 00900",
+                    "customer_address":  "Plot 40, Industrial Area, Sector 1, 1000 Road, CHENNAI, TAMIL NADU",
+                    "customer_city":  "CHENNAI",
+                    "customer_state":  "TAMIL NADU",
+                    "customer_pincode":  "600333",
+                    "customer_contact_no":  "9707127100",
+                    "customer_gst_number":  "33AABC1700D1Z1",
+                    "customer_id":  "20240000900",
+                    "servicing_branch":  "CHENNAI",
+                    "insurer_name":  "Heritage General Insurance Company 00900",
+                    "branch_office_address":  "Suite 200, 1TH FLOOR, BUSINESS PARK, CHENNAI - 600333, TAMIL NADU",
+                    "branch_phone":  "1800 102 0900",
+                    "insurer_gst_number":  "33AAHCN5300K1Z4",
+                    "imd_code":  "BRC0001400",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 00900",
+                    "imd_aadhar_no":  "100000000900",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 00900",
+                    "policy_number":  "P0142200900/8900/150900",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 00900",
+                    "policy_expiry_date":  "25-11-2026",
+                    "renewal_date":  "25-11-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 1, Corporate District, CHENNAI - 600333, TAMIL NADU, India",
+                    "care_line":  "1800 102 2920",
+                    "email":  "support00900@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance00900.co.in",
+                    "irda_registration_no":  "100",
+                    "cin":  "U6600033MH2011PLC234900",
+                    "uin":  "HERIGP00900V032022",
+                    "signatory":  "Authorised Signatory 00900",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 00900",
+                                                             "Product_Name":  "Product Name 00900",
+                                                             "Risk_Description":  "Risk Description 00900",
+                                                             "Renewal_Date":  "Renewal Date 00900"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142200900/8900/150900",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 00900",
+                                                              "Renewal_Date":  "25-11-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

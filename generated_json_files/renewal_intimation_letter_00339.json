@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 00339",
+                    "letter_date":  "24-05-2026",
+                    "customer_name":  "SOFTBRIDGE SYSTEMS PVT LTD 00339",
+                    "customer_address":  "Plot 379, Industrial Area, Sector 40, 439 Road, BENGALURU, KARNATAKA",
+                    "customer_city":  "BENGALURU",
+                    "customer_state":  "KARNATAKA",
+                    "customer_pincode":  "560555",
+                    "customer_contact_no":  "9702684541",
+                    "customer_gst_number":  "29AABC4407D1Z7",
+                    "customer_id":  "20240000339",
+                    "servicing_branch":  "BENGALURU",
+                    "insurer_name":  "Heritage General Insurance Company 00339",
+                    "branch_office_address":  "Suite 439, 20TH FLOOR, BUSINESS PARK, BENGALURU - 560555, KARNATAKA",
+                    "branch_phone":  "1800 102 0339",
+                    "insurer_gst_number":  "29AAHCN5763K1Z1",
+                    "imd_code":  "BRC0000839",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 00339",
+                    "imd_aadhar_no":  "100000000339",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 00339",
+                    "policy_number":  "P0142200339/8339/150339",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 00339",
+                    "policy_expiry_date":  "13-05-2027",
+                    "renewal_date":  "13-05-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 10, Corporate District, BENGALURU - 560555, KARNATAKA, India",
+                    "care_line":  "1800 102 2359",
+                    "email":  "support00339@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance00339.co.in",
+                    "irda_registration_no":  "439",
+                    "cin":  "U6600029MH2011PLC234339",
+                    "uin":  "HERIGP00339V032022",
+                    "signatory":  "Authorised Signatory 00339",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 00339",
+                                                             "Product_Name":  "Product Name 00339",
+                                                             "Risk_Description":  "Risk Description 00339",
+                                                             "Renewal_Date":  "Renewal Date 00339"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142200339/8339/150339",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 00339",
+                                                              "Renewal_Date":  "13-05-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

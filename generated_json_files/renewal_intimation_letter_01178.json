@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 01178",
+                    "letter_date":  "23-05-2026",
+                    "customer_name":  "URBANCORE ENTERPRISES PVT LTD 01178",
+                    "customer_address":  "Plot 318, Industrial Area, Sector 29, 1278 Road, MUMBAI, MAHARASHTRA",
+                    "customer_city":  "MUMBAI",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "400629",
+                    "customer_contact_no":  "9709328582",
+                    "customer_gst_number":  "27AABC5314D1Z9",
+                    "customer_id":  "20240001178",
+                    "servicing_branch":  "MUMBAI",
+                    "insurer_name":  "Heritage General Insurance Company 01178",
+                    "branch_office_address":  "Suite 478, 19TH FLOOR, BUSINESS PARK, MUMBAI - 400629, MAHARASHTRA",
+                    "branch_phone":  "1800 102 1178",
+                    "insurer_gst_number":  "27AAHCN0026K1Z3",
+                    "imd_code":  "BRC0001678",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 01178",
+                    "imd_aadhar_no":  "100000001178",
+                    "reference_subject":  "Renewal of your Group Mediclaim Policy Ref 01178",
+                    "policy_number":  "P0142201178/8178/151178",
+                    "product_name":  "Group Mediclaim",
+                    "risk_description":  "Corporate employee benefit risk 01178",
+                    "policy_expiry_date":  "30-08-2026",
+                    "renewal_date":  "30-08-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 9, Corporate District, MUMBAI - 400629, MAHARASHTRA, India",
+                    "care_line":  "1800 102 3198",
+                    "email":  "support01178@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance01178.co.in",
+                    "irda_registration_no":  "378",
+                    "cin":  "U6600027MH2011PLC235178",
+                    "uin":  "HERIGP01178V032022",
+                    "signatory":  "Authorised Signatory 01178",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 01178",
+                                                             "Product_Name":  "Product Name 01178",
+                                                             "Risk_Description":  "Risk Description 01178",
+                                                             "Renewal_Date":  "Renewal Date 01178"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142201178/8178/151178",
+                                                              "Product_Name":  "Group Mediclaim",
+                                                              "Risk_Description":  "Corporate employee benefit risk 01178",
+                                                              "Renewal_Date":  "30-08-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

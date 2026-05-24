@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 03842",
+                    "letter_date":  "17-04-2026",
+                    "customer_name":  "INFONOVA SOLUTIONS PVT LTD 03842",
+                    "customer_address":  "Plot 282, Industrial Area, Sector 43, 3942 Road, MUMBAI, MAHARASHTRA",
+                    "customer_city":  "MUMBAI",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "400296",
+                    "customer_contact_no":  "9730424798",
+                    "customer_gst_number":  "27AABC9946D1Z9",
+                    "customer_id":  "20240003842",
+                    "servicing_branch":  "MUMBAI",
+                    "insurer_name":  "Heritage General Insurance Company 03842",
+                    "branch_office_address":  "Suite 742, 3TH FLOOR, BUSINESS PARK, MUMBAI - 400296, MAHARASHTRA",
+                    "branch_phone":  "1800 102 3842",
+                    "insurer_gst_number":  "27AAHCN5314K1Z3",
+                    "imd_code":  "BRC0004342",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 03842",
+                    "imd_aadhar_no":  "100000003842",
+                    "reference_subject":  "Renewal of your Group Personal Accident Policy Ref 03842",
+                    "policy_number":  "P0142203842/8842/153842",
+                    "product_name":  "Group Personal Accident",
+                    "risk_description":  "Corporate employee benefit risk 03842",
+                    "policy_expiry_date":  "17-12-2026",
+                    "renewal_date":  "17-12-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 3, Corporate District, MUMBAI - 400296, MAHARASHTRA, India",
+                    "care_line":  "1800 102 5862",
+                    "email":  "support03842@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance03842.co.in",
+                    "irda_registration_no":  "342",
+                    "cin":  "U6600027MH2011PLC237842",
+                    "uin":  "HERIGP03842V032022",
+                    "signatory":  "Authorised Signatory 03842",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 03842",
+                                                             "Product_Name":  "Product Name 03842",
+                                                             "Risk_Description":  "Risk Description 03842",
+                                                             "Renewal_Date":  "Renewal Date 03842"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142203842/8842/153842",
+                                                              "Product_Name":  "Group Personal Accident",
+                                                              "Risk_Description":  "Corporate employee benefit risk 03842",
+                                                              "Renewal_Date":  "17-12-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

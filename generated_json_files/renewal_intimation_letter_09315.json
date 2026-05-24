@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 09315",
+                    "letter_date":  "30-04-2026",
+                    "customer_name":  "NEXORA SERVICES PVT LTD 09315",
+                    "customer_address":  "Plot 355, Industrial Area, Sector 16, 9415 Road, BENGALURU, KARNATAKA",
+                    "customer_city":  "BENGALURU",
+                    "customer_state":  "KARNATAKA",
+                    "customer_pincode":  "560000",
+                    "customer_contact_no":  "9773765485",
+                    "customer_gst_number":  "29AABC1095D1Z1",
+                    "customer_id":  "20240009315",
+                    "servicing_branch":  "BENGALURU",
+                    "insurer_name":  "Heritage General Insurance Company 09315",
+                    "branch_office_address":  "Suite 615, 16TH FLOOR, BUSINESS PARK, BENGALURU - 560000, KARNATAKA",
+                    "branch_phone":  "1800 102 9315",
+                    "insurer_gst_number":  "29AAHCN8355K1Z4",
+                    "imd_code":  "BRC0009815",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 09315",
+                    "imd_aadhar_no":  "100000009315",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 09315",
+                    "policy_number":  "P0142209315/8315/159315",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 09315",
+                    "policy_expiry_date":  "15-12-2026",
+                    "renewal_date":  "15-12-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 16, Corporate District, BENGALURU - 560000, KARNATAKA, India",
+                    "care_line":  "1800 102 1335",
+                    "email":  "support09315@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance09315.co.in",
+                    "irda_registration_no":  "415",
+                    "cin":  "U6600029MH2011PLC243315",
+                    "uin":  "HERIGP09315V032022",
+                    "signatory":  "Authorised Signatory 09315",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 09315",
+                                                             "Product_Name":  "Product Name 09315",
+                                                             "Risk_Description":  "Risk Description 09315",
+                                                             "Renewal_Date":  "Renewal Date 09315"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142209315/8315/159315",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 09315",
+                                                              "Renewal_Date":  "15-12-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

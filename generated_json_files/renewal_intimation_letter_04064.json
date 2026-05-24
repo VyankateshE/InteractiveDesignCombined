@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 04064",
+                    "letter_date":  "29-05-2026",
+                    "customer_name":  "CLOUDMATRIX INNOVATIONS PVT LTD 04064",
+                    "customer_address":  "Plot 504, Industrial Area, Sector 15, 4164 Road, LUCKNOW, UTTAR PRADESH",
+                    "customer_city":  "LUCKNOW",
+                    "customer_state":  "UTTAR PRADESH",
+                    "customer_pincode":  "226518",
+                    "customer_contact_no":  "9732182816",
+                    "customer_gst_number":  "09AABC2832D1Z6",
+                    "customer_id":  "20240004064",
+                    "servicing_branch":  "LUCKNOW",
+                    "insurer_name":  "Heritage General Insurance Company 04064",
+                    "branch_office_address":  "Suite 164, 5TH FLOOR, BUSINESS PARK, LUCKNOW - 226518, UTTAR PRADESH",
+                    "branch_phone":  "1800 102 4064",
+                    "insurer_gst_number":  "09AAHCN9088K1Z9",
+                    "imd_code":  "BRC0004564",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 04064",
+                    "imd_aadhar_no":  "100000004064",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 04064",
+                    "policy_number":  "P0142204064/8064/154064",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 04064",
+                    "policy_expiry_date":  "27-07-2026",
+                    "renewal_date":  "27-07-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 15, Corporate District, LUCKNOW - 226518, UTTAR PRADESH, India",
+                    "care_line":  "1800 102 6084",
+                    "email":  "support04064@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance04064.co.in",
+                    "irda_registration_no":  "564",
+                    "cin":  "U6600009MH2011PLC238064",
+                    "uin":  "HERIGP04064V032022",
+                    "signatory":  "Authorised Signatory 04064",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 04064",
+                                                             "Product_Name":  "Product Name 04064",
+                                                             "Risk_Description":  "Risk Description 04064",
+                                                             "Renewal_Date":  "Renewal Date 04064"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142204064/8064/154064",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 04064",
+                                                              "Renewal_Date":  "27-07-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 02909",
+                    "letter_date":  "14-05-2026",
+                    "customer_name":  "SOFTBRIDGE TECHNOLOGIES PVT LTD 02909",
+                    "customer_address":  "Plot 249, Industrial Area, Sector 10, 3009 Road, HYDERABAD, TELANGANA",
+                    "customer_city":  "HYDERABAD",
+                    "customer_state":  "TELANGANA",
+                    "customer_pincode":  "500740",
+                    "customer_contact_no":  "9723036371",
+                    "customer_gst_number":  "36AABC7817D1Z3",
+                    "customer_id":  "20240002909",
+                    "servicing_branch":  "HYDERABAD",
+                    "insurer_name":  "Heritage General Insurance Company 02909",
+                    "branch_office_address":  "Suite 609, 10TH FLOOR, BUSINESS PARK, HYDERABAD - 500740, TELANGANA",
+                    "branch_phone":  "1800 102 2909",
+                    "insurer_gst_number":  "36AAHCN9453K1Z6",
+                    "imd_code":  "BRC0003409",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 02909",
+                    "imd_aadhar_no":  "100000002909",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 02909",
+                    "policy_number":  "P0142202909/8909/152909",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 02909",
+                    "policy_expiry_date":  "28-05-2027",
+                    "renewal_date":  "28-05-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 30, Corporate District, HYDERABAD - 500740, TELANGANA, India",
+                    "care_line":  "1800 102 4929",
+                    "email":  "support02909@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance02909.co.in",
+                    "irda_registration_no":  "309",
+                    "cin":  "U6600036MH2011PLC236909",
+                    "uin":  "HERIGP02909V032022",
+                    "signatory":  "Authorised Signatory 02909",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 02909",
+                                                             "Product_Name":  "Product Name 02909",
+                                                             "Risk_Description":  "Risk Description 02909",
+                                                             "Renewal_Date":  "Renewal Date 02909"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142202909/8909/152909",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 02909",
+                                                              "Renewal_Date":  "28-05-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

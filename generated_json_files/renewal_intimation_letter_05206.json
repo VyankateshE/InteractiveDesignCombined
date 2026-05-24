@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 05206",
+                    "letter_date":  "31-05-2026",
+                    "customer_name":  "FINEDGE SOLUTIONS PVT LTD 05206",
+                    "customer_address":  "Plot 746, Industrial Area, Sector 7, 5306 Road, AHMEDABAD, GUJARAT",
+                    "customer_city":  "AHMEDABAD",
+                    "customer_state":  "GUJARAT",
+                    "customer_pincode":  "380814",
+                    "customer_contact_no":  "9741226314",
+                    "customer_gst_number":  "24AABC7678D1Z5",
+                    "customer_id":  "20240005206",
+                    "servicing_branch":  "AHMEDABAD",
+                    "insurer_name":  "Heritage General Insurance Company 05206",
+                    "branch_office_address":  "Suite 506, 7TH FLOOR, BUSINESS PARK, AHMEDABAD - 380814, GUJARAT",
+                    "branch_phone":  "1800 102 5206",
+                    "insurer_gst_number":  "24AAHCN8502K1Z8",
+                    "imd_code":  "BRC0005706",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 05206",
+                    "imd_aadhar_no":  "100000005206",
+                    "reference_subject":  "Renewal of your GroupHealthInsurance Policy Ref 05206",
+                    "policy_number":  "P0142205206/8206/155206",
+                    "product_name":  "GroupHealthInsurance",
+                    "risk_description":  "Corporate employee benefit risk 05206",
+                    "policy_expiry_date":  "12-09-2026",
+                    "renewal_date":  "12-09-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 17, Corporate District, AHMEDABAD - 380814, GUJARAT, India",
+                    "care_line":  "1800 102 7226",
+                    "email":  "support05206@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance05206.co.in",
+                    "irda_registration_no":  "806",
+                    "cin":  "U6600024MH2011PLC239206",
+                    "uin":  "HERIGP05206V032022",
+                    "signatory":  "Authorised Signatory 05206",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 05206",
+                                                             "Product_Name":  "Product Name 05206",
+                                                             "Risk_Description":  "Risk Description 05206",
+                                                             "Renewal_Date":  "Renewal Date 05206"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142205206/8206/155206",
+                                                              "Product_Name":  "GroupHealthInsurance",
+                                                              "Risk_Description":  "Corporate employee benefit risk 05206",
+                                                              "Renewal_Date":  "12-09-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

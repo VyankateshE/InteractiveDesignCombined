@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 01096",
+                    "letter_date":  "01-05-2026",
+                    "customer_name":  "FINEDGE ENTERPRISES PVT LTD 01096",
+                    "customer_address":  "Plot 236, Industrial Area, Sector 47, 1196 Road, LUCKNOW, UTTAR PRADESH",
+                    "customer_city":  "LUCKNOW",
+                    "customer_state":  "UTTAR PRADESH",
+                    "customer_pincode":  "226592",
+                    "customer_contact_no":  "9708679224",
+                    "customer_gst_number":  "09AABC4248D1Z8",
+                    "customer_id":  "20240001096",
+                    "servicing_branch":  "LUCKNOW",
+                    "insurer_name":  "Heritage General Insurance Company 01096",
+                    "branch_office_address":  "Suite 396, 17TH FLOOR, BUSINESS PARK, LUCKNOW - 226592, UTTAR PRADESH",
+                    "branch_phone":  "1800 102 1096",
+                    "insurer_gst_number":  "09AAHCN8632K1Z2",
+                    "imd_code":  "BRC0001596",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 01096",
+                    "imd_aadhar_no":  "100000001096",
+                    "reference_subject":  "Renewal of your GroupHealthInsurance Policy Ref 01096",
+                    "policy_number":  "P0142201096/8096/151096",
+                    "product_name":  "GroupHealthInsurance",
+                    "risk_description":  "Corporate employee benefit risk 01096",
+                    "policy_expiry_date":  "09-06-2026",
+                    "renewal_date":  "09-06-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 17, Corporate District, LUCKNOW - 226592, UTTAR PRADESH, India",
+                    "care_line":  "1800 102 3116",
+                    "email":  "support01096@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance01096.co.in",
+                    "irda_registration_no":  "296",
+                    "cin":  "U6600009MH2011PLC235096",
+                    "uin":  "HERIGP01096V032022",
+                    "signatory":  "Authorised Signatory 01096",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 01096",
+                                                             "Product_Name":  "Product Name 01096",
+                                                             "Risk_Description":  "Risk Description 01096",
+                                                             "Renewal_Date":  "Renewal Date 01096"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142201096/8096/151096",
+                                                              "Product_Name":  "GroupHealthInsurance",
+                                                              "Risk_Description":  "Corporate employee benefit risk 01096",
+                                                              "Renewal_Date":  "09-06-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

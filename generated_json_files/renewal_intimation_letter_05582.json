@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 05582",
+                    "letter_date":  "17-04-2026",
+                    "customer_name":  "INFONOVA INNOVATIONS PVT LTD 05582",
+                    "customer_address":  "Plot 222, Industrial Area, Sector 33, 5682 Road, AHMEDABAD, GUJARAT",
+                    "customer_city":  "AHMEDABAD",
+                    "customer_state":  "GUJARAT",
+                    "customer_pincode":  "380740",
+                    "customer_contact_no":  "9744203858",
+                    "customer_gst_number":  "24AABC2566D1Z3",
+                    "customer_id":  "20240005582",
+                    "servicing_branch":  "AHMEDABAD",
+                    "insurer_name":  "Heritage General Insurance Company 05582",
+                    "branch_office_address":  "Suite 882, 3TH FLOOR, BUSINESS PARK, AHMEDABAD - 380740, GUJARAT",
+                    "branch_phone":  "1800 102 5582",
+                    "insurer_gst_number":  "24AAHCN4894K1Z6",
+                    "imd_code":  "BRC0006082",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 05582",
+                    "imd_aadhar_no":  "100000005582",
+                    "reference_subject":  "Renewal of your Group Personal Accident Policy Ref 05582",
+                    "policy_number":  "P0142205582/8582/155582",
+                    "product_name":  "Group Personal Accident",
+                    "risk_description":  "Corporate employee benefit risk 05582",
+                    "policy_expiry_date":  "23-09-2026",
+                    "renewal_date":  "23-09-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 3, Corporate District, AHMEDABAD - 380740, GUJARAT, India",
+                    "care_line":  "1800 102 7602",
+                    "email":  "support05582@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance05582.co.in",
+                    "irda_registration_no":  "282",
+                    "cin":  "U6600024MH2011PLC239582",
+                    "uin":  "HERIGP05582V032022",
+                    "signatory":  "Authorised Signatory 05582",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 05582",
+                                                             "Product_Name":  "Product Name 05582",
+                                                             "Risk_Description":  "Risk Description 05582",
+                                                             "Renewal_Date":  "Renewal Date 05582"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142205582/8582/155582",
+                                                              "Product_Name":  "Group Personal Accident",
+                                                              "Risk_Description":  "Corporate employee benefit risk 05582",
+                                                              "Renewal_Date":  "23-09-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

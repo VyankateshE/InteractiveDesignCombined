@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 04681",
+                    "letter_date":  "16-04-2026",
+                    "customer_name":  "TECHVISION INDUSTRIES PVT LTD 04681",
+                    "customer_address":  "Plot 221, Industrial Area, Sector 32, 4781 Road, PUNE, MAHARASHTRA",
+                    "customer_city":  "PUNE",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "411370",
+                    "customer_contact_no":  "9737068839",
+                    "customer_gst_number":  "27AABC0853D1Z2",
+                    "customer_id":  "20240004681",
+                    "servicing_branch":  "PUNE",
+                    "insurer_name":  "Heritage General Insurance Company 04681",
+                    "branch_office_address":  "Suite 781, 2TH FLOOR, BUSINESS PARK, PUNE - 411370, MAHARASHTRA",
+                    "branch_phone":  "1800 102 4681",
+                    "insurer_gst_number":  "27AAHCN9577K1Z5",
+                    "imd_code":  "BRC0005181",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 04681",
+                    "imd_aadhar_no":  "100000004681",
+                    "reference_subject":  "Renewal of your GroupHealthInsurance Policy Ref 04681",
+                    "policy_number":  "P0142204681/8681/154681",
+                    "product_name":  "GroupHealthInsurance",
+                    "risk_description":  "Corporate employee benefit risk 04681",
+                    "policy_expiry_date":  "05-04-2027",
+                    "renewal_date":  "05-04-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 2, Corporate District, PUNE - 411370, MAHARASHTRA, India",
+                    "care_line":  "1800 102 6701",
+                    "email":  "support04681@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance04681.co.in",
+                    "irda_registration_no":  "281",
+                    "cin":  "U6600027MH2011PLC238681",
+                    "uin":  "HERIGP04681V032022",
+                    "signatory":  "Authorised Signatory 04681",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 04681",
+                                                             "Product_Name":  "Product Name 04681",
+                                                             "Risk_Description":  "Risk Description 04681",
+                                                             "Renewal_Date":  "Renewal Date 04681"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142204681/8681/154681",
+                                                              "Product_Name":  "GroupHealthInsurance",
+                                                              "Risk_Description":  "Corporate employee benefit risk 04681",
+                                                              "Renewal_Date":  "05-04-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

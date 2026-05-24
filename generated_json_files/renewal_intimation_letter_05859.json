@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 05859",
+                    "letter_date":  "24-05-2026",
+                    "customer_name":  "SOFTBRIDGE SYSTEMS PVT LTD 05859",
+                    "customer_address":  "Plot 499, Industrial Area, Sector 10, 5959 Road, BENGALURU, KARNATAKA",
+                    "customer_city":  "BENGALURU",
+                    "customer_state":  "KARNATAKA",
+                    "customer_pincode":  "560000",
+                    "customer_contact_no":  "9746397421",
+                    "customer_gst_number":  "29AABC6167D1Z1",
+                    "customer_id":  "20240005859",
+                    "servicing_branch":  "BENGALURU",
+                    "insurer_name":  "Heritage General Insurance Company 05859",
+                    "branch_office_address":  "Suite 359, 20TH FLOOR, BUSINESS PARK, BENGALURU - 560000, KARNATAKA",
+                    "branch_phone":  "1800 102 5859",
+                    "insurer_gst_number":  "29AAHCN9603K1Z4",
+                    "imd_code":  "BRC0006359",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 05859",
+                    "imd_aadhar_no":  "100000005859",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 05859",
+                    "policy_number":  "P0142205859/8859/155859",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 05859",
+                    "policy_expiry_date":  "27-06-2026",
+                    "renewal_date":  "27-06-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 10, Corporate District, BENGALURU - 560000, KARNATAKA, India",
+                    "care_line":  "1800 102 7879",
+                    "email":  "support05859@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance05859.co.in",
+                    "irda_registration_no":  "559",
+                    "cin":  "U6600029MH2011PLC239859",
+                    "uin":  "HERIGP05859V032022",
+                    "signatory":  "Authorised Signatory 05859",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 05859",
+                                                             "Product_Name":  "Product Name 05859",
+                                                             "Risk_Description":  "Risk Description 05859",
+                                                             "Renewal_Date":  "Renewal Date 05859"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142205859/8859/155859",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 05859",
+                                                              "Renewal_Date":  "27-06-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

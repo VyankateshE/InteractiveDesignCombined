@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 04605",
+                    "letter_date":  "30-05-2026",
+                    "customer_name":  "NEXORA INDUSTRIES PVT LTD 04605",
+                    "customer_address":  "Plot 145, Industrial Area, Sector 6, 4705 Road, HYDERABAD, TELANGANA",
+                    "customer_city":  "HYDERABAD",
+                    "customer_state":  "TELANGANA",
+                    "customer_pincode":  "500555",
+                    "customer_contact_no":  "9736466995",
+                    "customer_gst_number":  "36AABC9865D1Z7",
+                    "customer_id":  "20240004605",
+                    "servicing_branch":  "HYDERABAD",
+                    "insurer_name":  "Heritage General Insurance Company 04605",
+                    "branch_office_address":  "Suite 705, 6TH FLOOR, BUSINESS PARK, HYDERABAD - 500555, TELANGANA",
+                    "branch_phone":  "1800 102 4605",
+                    "insurer_gst_number":  "36AAHCN8285K1Z1",
+                    "imd_code":  "BRC0005105",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 04605",
+                    "imd_aadhar_no":  "100000004605",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 04605",
+                    "policy_number":  "P0142204605/8605/154605",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 04605",
+                    "policy_expiry_date":  "19-01-2027",
+                    "renewal_date":  "19-01-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 16, Corporate District, HYDERABAD - 500555, TELANGANA, India",
+                    "care_line":  "1800 102 6625",
+                    "email":  "support04605@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance04605.co.in",
+                    "irda_registration_no":  "205",
+                    "cin":  "U6600036MH2011PLC238605",
+                    "uin":  "HERIGP04605V032022",
+                    "signatory":  "Authorised Signatory 04605",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 04605",
+                                                             "Product_Name":  "Product Name 04605",
+                                                             "Risk_Description":  "Risk Description 04605",
+                                                             "Renewal_Date":  "Renewal Date 04605"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142204605/8605/154605",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 04605",
+                                                              "Renewal_Date":  "19-01-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

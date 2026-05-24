@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 02789",
+                    "letter_date":  "14-05-2026",
+                    "customer_name":  "SOFTBRIDGE INNOVATIONS PVT LTD 02789",
+                    "customer_address":  "Plot 129, Industrial Area, Sector 40, 2889 Road, HYDERABAD, TELANGANA",
+                    "customer_city":  "HYDERABAD",
+                    "customer_state":  "TELANGANA",
+                    "customer_pincode":  "500296",
+                    "customer_contact_no":  "9722086091",
+                    "customer_gst_number":  "36AABC6257D1Z9",
+                    "customer_id":  "20240002789",
+                    "servicing_branch":  "HYDERABAD",
+                    "insurer_name":  "Heritage General Insurance Company 02789",
+                    "branch_office_address":  "Suite 489, 10TH FLOOR, BUSINESS PARK, HYDERABAD - 500296, TELANGANA",
+                    "branch_phone":  "1800 102 2789",
+                    "insurer_gst_number":  "36AAHCN7413K1Z3",
+                    "imd_code":  "BRC0003289",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 02789",
+                    "imd_aadhar_no":  "100000002789",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 02789",
+                    "policy_number":  "P0142202789/8789/152789",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 02789",
+                    "policy_expiry_date":  "28-01-2027",
+                    "renewal_date":  "28-01-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 30, Corporate District, HYDERABAD - 500296, TELANGANA, India",
+                    "care_line":  "1800 102 4809",
+                    "email":  "support02789@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance02789.co.in",
+                    "irda_registration_no":  "189",
+                    "cin":  "U6600036MH2011PLC236789",
+                    "uin":  "HERIGP02789V032022",
+                    "signatory":  "Authorised Signatory 02789",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 02789",
+                                                             "Product_Name":  "Product Name 02789",
+                                                             "Risk_Description":  "Risk Description 02789",
+                                                             "Renewal_Date":  "Renewal Date 02789"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142202789/8789/152789",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 02789",
+                                                              "Renewal_Date":  "28-01-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

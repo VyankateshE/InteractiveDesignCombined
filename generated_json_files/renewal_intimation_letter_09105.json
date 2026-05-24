@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 09105",
+                    "letter_date":  "30-05-2026",
+                    "customer_name":  "NEXORA INNOVATIONS PVT LTD 09105",
+                    "customer_address":  "Plot 145, Industrial Area, Sector 6, 9205 Road, PUNE, MAHARASHTRA",
+                    "customer_city":  "PUNE",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "411222",
+                    "customer_contact_no":  "9772102495",
+                    "customer_gst_number":  "27AABC8365D1Z7",
+                    "customer_id":  "20240009105",
+                    "servicing_branch":  "PUNE",
+                    "insurer_name":  "Heritage General Insurance Company 09105",
+                    "branch_office_address":  "Suite 405, 6TH FLOOR, BUSINESS PARK, PUNE - 411222, MAHARASHTRA",
+                    "branch_phone":  "1800 102 9105",
+                    "insurer_gst_number":  "27AAHCN4785K1Z1",
+                    "imd_code":  "BRC0009605",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 09105",
+                    "imd_aadhar_no":  "100000009105",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 09105",
+                    "policy_number":  "P0142209105/8105/159105",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 09105",
+                    "policy_expiry_date":  "19-05-2027",
+                    "renewal_date":  "19-05-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 16, Corporate District, PUNE - 411222, MAHARASHTRA, India",
+                    "care_line":  "1800 102 1125",
+                    "email":  "support09105@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance09105.co.in",
+                    "irda_registration_no":  "205",
+                    "cin":  "U6600027MH2011PLC243105",
+                    "uin":  "HERIGP09105V032022",
+                    "signatory":  "Authorised Signatory 09105",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 09105",
+                                                             "Product_Name":  "Product Name 09105",
+                                                             "Risk_Description":  "Risk Description 09105",
+                                                             "Renewal_Date":  "Renewal Date 09105"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142209105/8105/159105",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 09105",
+                                                              "Renewal_Date":  "19-05-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 09253",
+                    "letter_date":  "28-04-2026",
+                    "customer_name":  "DATAPRIME ENTERPRISES PVT LTD 09253",
+                    "customer_address":  "Plot 293, Industrial Area, Sector 4, 9353 Road, HYDERABAD, TELANGANA",
+                    "customer_city":  "HYDERABAD",
+                    "customer_state":  "TELANGANA",
+                    "customer_pincode":  "500703",
+                    "customer_contact_no":  "9773274507",
+                    "customer_gst_number":  "36AABC0289D1Z2",
+                    "customer_id":  "20240009253",
+                    "servicing_branch":  "HYDERABAD",
+                    "insurer_name":  "Heritage General Insurance Company 09253",
+                    "branch_office_address":  "Suite 553, 14TH FLOOR, BUSINESS PARK, HYDERABAD - 500703, TELANGANA",
+                    "branch_phone":  "1800 102 9253",
+                    "insurer_gst_number":  "36AAHCN7301K1Z5",
+                    "imd_code":  "BRC0009753",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 09253",
+                    "imd_aadhar_no":  "100000009253",
+                    "reference_subject":  "Renewal of your Group Mediclaim Policy Ref 09253",
+                    "policy_number":  "P0142209253/8253/159253",
+                    "product_name":  "Group Mediclaim",
+                    "risk_description":  "Corporate employee benefit risk 09253",
+                    "policy_expiry_date":  "14-10-2026",
+                    "renewal_date":  "14-10-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 14, Corporate District, HYDERABAD - 500703, TELANGANA, India",
+                    "care_line":  "1800 102 1273",
+                    "email":  "support09253@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance09253.co.in",
+                    "irda_registration_no":  "353",
+                    "cin":  "U6600036MH2011PLC243253",
+                    "uin":  "HERIGP09253V032022",
+                    "signatory":  "Authorised Signatory 09253",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 09253",
+                                                             "Product_Name":  "Product Name 09253",
+                                                             "Risk_Description":  "Risk Description 09253",
+                                                             "Renewal_Date":  "Renewal Date 09253"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142209253/8253/159253",
+                                                              "Product_Name":  "Group Mediclaim",
+                                                              "Risk_Description":  "Corporate employee benefit risk 09253",
+                                                              "Renewal_Date":  "14-10-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 04497",
+                    "letter_date":  "11-06-2026",
+                    "customer_name":  "MEDILINK SYSTEMS PVT LTD 04497",
+                    "customer_address":  "Plot 937, Industrial Area, Sector 48, 4597 Road, PUNE, MAHARASHTRA",
+                    "customer_city":  "PUNE",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "411555",
+                    "customer_contact_no":  "9735611743",
+                    "customer_gst_number":  "27AABC8461D1Z7",
+                    "customer_id":  "20240004497",
+                    "servicing_branch":  "PUNE",
+                    "insurer_name":  "Heritage General Insurance Company 04497",
+                    "branch_office_address":  "Suite 597, 18TH FLOOR, BUSINESS PARK, PUNE - 411555, MAHARASHTRA",
+                    "branch_phone":  "1800 102 4497",
+                    "insurer_gst_number":  "27AAHCN6449K1Z1",
+                    "imd_code":  "BRC0004997",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 04497",
+                    "imd_aadhar_no":  "100000004497",
+                    "reference_subject":  "Renewal of your Group Personal Accident Policy Ref 04497",
+                    "policy_number":  "P0142204497/8497/154497",
+                    "product_name":  "Group Personal Accident",
+                    "risk_description":  "Corporate employee benefit risk 04497",
+                    "policy_expiry_date":  "03-10-2026",
+                    "renewal_date":  "03-10-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 28, Corporate District, PUNE - 411555, MAHARASHTRA, India",
+                    "care_line":  "1800 102 6517",
+                    "email":  "support04497@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance04497.co.in",
+                    "irda_registration_no":  "997",
+                    "cin":  "U6600027MH2011PLC238497",
+                    "uin":  "HERIGP04497V032022",
+                    "signatory":  "Authorised Signatory 04497",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 04497",
+                                                             "Product_Name":  "Product Name 04497",
+                                                             "Risk_Description":  "Risk Description 04497",
+                                                             "Renewal_Date":  "Renewal Date 04497"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142204497/8497/154497",
+                                                              "Product_Name":  "Group Personal Accident",
+                                                              "Risk_Description":  "Corporate employee benefit risk 04497",
+                                                              "Renewal_Date":  "03-10-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 02169",
+                    "letter_date":  "24-04-2026",
+                    "customer_name":  "SOFTBRIDGE SOLUTIONS PVT LTD 02169",
+                    "customer_address":  "Plot 409, Industrial Area, Sector 20, 2269 Road, PUNE, MAHARASHTRA",
+                    "customer_city":  "PUNE",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "411333",
+                    "customer_contact_no":  "9717176311",
+                    "customer_gst_number":  "27AABC8197D1Z1",
+                    "customer_id":  "20240002169",
+                    "servicing_branch":  "PUNE",
+                    "insurer_name":  "Heritage General Insurance Company 02169",
+                    "branch_office_address":  "Suite 669, 10TH FLOOR, BUSINESS PARK, PUNE - 411333, MAHARASHTRA",
+                    "branch_phone":  "1800 102 2169",
+                    "insurer_gst_number":  "27AAHCN6873K1Z4",
+                    "imd_code":  "BRC0002669",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 02169",
+                    "imd_aadhar_no":  "100000002169",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 02169",
+                    "policy_number":  "P0142202169/8169/152169",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 02169",
+                    "policy_expiry_date":  "18-05-2027",
+                    "renewal_date":  "18-05-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 10, Corporate District, PUNE - 411333, MAHARASHTRA, India",
+                    "care_line":  "1800 102 4189",
+                    "email":  "support02169@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance02169.co.in",
+                    "irda_registration_no":  "469",
+                    "cin":  "U6600027MH2011PLC236169",
+                    "uin":  "HERIGP02169V032022",
+                    "signatory":  "Authorised Signatory 02169",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 02169",
+                                                             "Product_Name":  "Product Name 02169",
+                                                             "Risk_Description":  "Risk Description 02169",
+                                                             "Renewal_Date":  "Renewal Date 02169"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142202169/8169/152169",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 02169",
+                                                              "Renewal_Date":  "18-05-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

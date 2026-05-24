@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 03228",
+                    "letter_date":  "02-06-2026",
+                    "customer_name":  "URBANCORE TECHNOLOGIES PVT LTD 03228",
+                    "customer_address":  "Plot 568, Industrial Area, Sector 29, 3328 Road, CHENNAI, TAMIL NADU",
+                    "customer_city":  "CHENNAI",
+                    "customer_state":  "TAMIL NADU",
+                    "customer_pincode":  "600555",
+                    "customer_contact_no":  "9725562532",
+                    "customer_gst_number":  "33AABC1964D1Z7",
+                    "customer_id":  "20240003228",
+                    "servicing_branch":  "CHENNAI",
+                    "insurer_name":  "Heritage General Insurance Company 03228",
+                    "branch_office_address":  "Suite 128, 9TH FLOOR, BUSINESS PARK, CHENNAI - 600555, TAMIL NADU",
+                    "branch_phone":  "1800 102 3228",
+                    "insurer_gst_number":  "33AAHCN4876K1Z1",
+                    "imd_code":  "BRC0003728",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 03228",
+                    "imd_aadhar_no":  "100000003228",
+                    "reference_subject":  "Renewal of your Group Mediclaim Policy Ref 03228",
+                    "policy_number":  "P0142203228/8228/153228",
+                    "product_name":  "Group Mediclaim",
+                    "risk_description":  "Corporate employee benefit risk 03228",
+                    "policy_expiry_date":  "12-04-2027",
+                    "renewal_date":  "12-04-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 19, Corporate District, CHENNAI - 600555, TAMIL NADU, India",
+                    "care_line":  "1800 102 5248",
+                    "email":  "support03228@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance03228.co.in",
+                    "irda_registration_no":  "628",
+                    "cin":  "U6600033MH2011PLC237228",
+                    "uin":  "HERIGP03228V032022",
+                    "signatory":  "Authorised Signatory 03228",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 03228",
+                                                             "Product_Name":  "Product Name 03228",
+                                                             "Risk_Description":  "Risk Description 03228",
+                                                             "Renewal_Date":  "Renewal Date 03228"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142203228/8228/153228",
+                                                              "Product_Name":  "Group Mediclaim",
+                                                              "Risk_Description":  "Corporate employee benefit risk 03228",
+                                                              "Renewal_Date":  "12-04-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

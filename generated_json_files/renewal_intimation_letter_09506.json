@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 09506",
+                    "letter_date":  "11-05-2026",
+                    "customer_name":  "FINEDGE INNOVATIONS PVT LTD 09506",
+                    "customer_address":  "Plot 546, Industrial Area, Sector 7, 9606 Road, MUMBAI, MAHARASHTRA",
+                    "customer_city":  "MUMBAI",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "400074",
+                    "customer_contact_no":  "9775278014",
+                    "customer_gst_number":  "27AABC3578D1Z3",
+                    "customer_id":  "20240009506",
+                    "servicing_branch":  "MUMBAI",
+                    "insurer_name":  "Heritage General Insurance Company 09506",
+                    "branch_office_address":  "Suite 806, 7TH FLOOR, BUSINESS PARK, MUMBAI - 400074, MAHARASHTRA",
+                    "branch_phone":  "1800 102 9506",
+                    "insurer_gst_number":  "27AAHCN1602K1Z6",
+                    "imd_code":  "BRC0010006",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 09506",
+                    "imd_aadhar_no":  "100000009506",
+                    "reference_subject":  "Renewal of your GroupHealthInsurance Policy Ref 09506",
+                    "policy_number":  "P0142209506/8506/159506",
+                    "product_name":  "GroupHealthInsurance",
+                    "risk_description":  "Corporate employee benefit risk 09506",
+                    "policy_expiry_date":  "24-06-2026",
+                    "renewal_date":  "24-06-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 27, Corporate District, MUMBAI - 400074, MAHARASHTRA, India",
+                    "care_line":  "1800 102 1526",
+                    "email":  "support09506@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance09506.co.in",
+                    "irda_registration_no":  "606",
+                    "cin":  "U6600027MH2011PLC243506",
+                    "uin":  "HERIGP09506V032022",
+                    "signatory":  "Authorised Signatory 09506",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 09506",
+                                                             "Product_Name":  "Product Name 09506",
+                                                             "Risk_Description":  "Risk Description 09506",
+                                                             "Renewal_Date":  "Renewal Date 09506"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142209506/8506/159506",
+                                                              "Product_Name":  "GroupHealthInsurance",
+                                                              "Risk_Description":  "Corporate employee benefit risk 09506",
+                                                              "Renewal_Date":  "24-06-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

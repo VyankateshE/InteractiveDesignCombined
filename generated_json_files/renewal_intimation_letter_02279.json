@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 02279",
+                    "letter_date":  "13-06-2026",
+                    "customer_name":  "SOFTBRIDGE SERVICES PVT LTD 02279",
+                    "customer_address":  "Plot 519, Industrial Area, Sector 30, 2379 Road, JAIPUR, RAJASTHAN",
+                    "customer_city":  "JAIPUR",
+                    "customer_state":  "RAJASTHAN",
+                    "customer_pincode":  "302407",
+                    "customer_contact_no":  "9718047401",
+                    "customer_gst_number":  "08AABC9627D1Z3",
+                    "customer_id":  "20240002279",
+                    "servicing_branch":  "JAIPUR",
+                    "insurer_name":  "Heritage General Insurance Company 02279",
+                    "branch_office_address":  "Suite 779, 20TH FLOOR, BUSINESS PARK, JAIPUR - 302407, RAJASTHAN",
+                    "branch_phone":  "1800 102 2279",
+                    "insurer_gst_number":  "08AAHCN8743K1Z6",
+                    "imd_code":  "BRC0002779",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 02279",
+                    "imd_aadhar_no":  "100000002279",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 02279",
+                    "policy_number":  "P0142202279/8279/152279",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 02279",
+                    "policy_expiry_date":  "05-09-2026",
+                    "renewal_date":  "05-09-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 30, Corporate District, JAIPUR - 302407, RAJASTHAN, India",
+                    "care_line":  "1800 102 4299",
+                    "email":  "support02279@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance02279.co.in",
+                    "irda_registration_no":  "579",
+                    "cin":  "U6600008MH2011PLC236279",
+                    "uin":  "HERIGP02279V032022",
+                    "signatory":  "Authorised Signatory 02279",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 02279",
+                                                             "Product_Name":  "Product Name 02279",
+                                                             "Risk_Description":  "Risk Description 02279",
+                                                             "Renewal_Date":  "Renewal Date 02279"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142202279/8279/152279",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 02279",
+                                                              "Renewal_Date":  "05-09-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

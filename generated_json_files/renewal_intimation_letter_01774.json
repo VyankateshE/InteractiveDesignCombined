@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 01774",
+                    "letter_date":  "19-05-2026",
+                    "customer_name":  "CLOUDMATRIX SYSTEMS PVT LTD 01774",
+                    "customer_address":  "Plot 914, Industrial Area, Sector 25, 1874 Road, AHMEDABAD, GUJARAT",
+                    "customer_city":  "AHMEDABAD",
+                    "customer_state":  "GUJARAT",
+                    "customer_pincode":  "380703",
+                    "customer_contact_no":  "9714048306",
+                    "customer_gst_number":  "24AABC3062D1Z2",
+                    "customer_id":  "20240001774",
+                    "servicing_branch":  "AHMEDABAD",
+                    "insurer_name":  "Heritage General Insurance Company 01774",
+                    "branch_office_address":  "Suite 274, 15TH FLOOR, BUSINESS PARK, AHMEDABAD - 380703, GUJARAT",
+                    "branch_phone":  "1800 102 1774",
+                    "insurer_gst_number":  "24AAHCN0158K1Z5",
+                    "imd_code":  "BRC0002274",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 01774",
+                    "imd_aadhar_no":  "100000001774",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 01774",
+                    "policy_number":  "P0142201774/8774/151774",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 01774",
+                    "policy_expiry_date":  "18-04-2027",
+                    "renewal_date":  "18-04-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 5, Corporate District, AHMEDABAD - 380703, GUJARAT, India",
+                    "care_line":  "1800 102 3794",
+                    "email":  "support01774@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance01774.co.in",
+                    "irda_registration_no":  "974",
+                    "cin":  "U6600024MH2011PLC235774",
+                    "uin":  "HERIGP01774V032022",
+                    "signatory":  "Authorised Signatory 01774",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 01774",
+                                                             "Product_Name":  "Product Name 01774",
+                                                             "Risk_Description":  "Risk Description 01774",
+                                                             "Renewal_Date":  "Renewal Date 01774"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142201774/8774/151774",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 01774",
+                                                              "Renewal_Date":  "18-04-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

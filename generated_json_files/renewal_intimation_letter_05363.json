@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 05363",
+                    "letter_date":  "08-05-2026",
+                    "customer_name":  "DATAPRIME SOLUTIONS PVT LTD 05363",
+                    "customer_address":  "Plot 903, Industrial Area, Sector 14, 5463 Road, BENGALURU, KARNATAKA",
+                    "customer_city":  "BENGALURU",
+                    "customer_state":  "KARNATAKA",
+                    "customer_pincode":  "560629",
+                    "customer_contact_no":  "9742469597",
+                    "customer_gst_number":  "29AABC9719D1Z9",
+                    "customer_id":  "20240005363",
+                    "servicing_branch":  "BENGALURU",
+                    "insurer_name":  "Heritage General Insurance Company 05363",
+                    "branch_office_address":  "Suite 663, 4TH FLOOR, BUSINESS PARK, BENGALURU - 560629, KARNATAKA",
+                    "branch_phone":  "1800 102 5363",
+                    "insurer_gst_number":  "29AAHCN1171K1Z3",
+                    "imd_code":  "BRC0005863",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 05363",
+                    "imd_aadhar_no":  "100000005363",
+                    "reference_subject":  "Renewal of your Group Mediclaim Policy Ref 05363",
+                    "policy_number":  "P0142205363/8363/155363",
+                    "product_name":  "Group Mediclaim",
+                    "risk_description":  "Corporate employee benefit risk 05363",
+                    "policy_expiry_date":  "16-02-2027",
+                    "renewal_date":  "16-02-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 24, Corporate District, BENGALURU - 560629, KARNATAKA, India",
+                    "care_line":  "1800 102 7383",
+                    "email":  "support05363@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance05363.co.in",
+                    "irda_registration_no":  "963",
+                    "cin":  "U6600029MH2011PLC239363",
+                    "uin":  "HERIGP05363V032022",
+                    "signatory":  "Authorised Signatory 05363",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 05363",
+                                                             "Product_Name":  "Product Name 05363",
+                                                             "Risk_Description":  "Risk Description 05363",
+                                                             "Renewal_Date":  "Renewal Date 05363"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142205363/8363/155363",
+                                                              "Product_Name":  "Group Mediclaim",
+                                                              "Risk_Description":  "Corporate employee benefit risk 05363",
+                                                              "Renewal_Date":  "16-02-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

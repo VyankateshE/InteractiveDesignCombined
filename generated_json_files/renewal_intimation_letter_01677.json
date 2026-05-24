@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 01677",
+                    "letter_date":  "11-06-2026",
+                    "customer_name":  "MEDILINK NETWORKS PVT LTD 01677",
+                    "customer_address":  "Plot 817, Industrial Area, Sector 28, 1777 Road, HYDERABAD, TELANGANA",
+                    "customer_city":  "HYDERABAD",
+                    "customer_state":  "TELANGANA",
+                    "customer_pincode":  "500111",
+                    "customer_contact_no":  "9713280163",
+                    "customer_gst_number":  "36AABC1801D1Z4",
+                    "customer_id":  "20240001677",
+                    "servicing_branch":  "HYDERABAD",
+                    "insurer_name":  "Heritage General Insurance Company 01677",
+                    "branch_office_address":  "Suite 177, 18TH FLOOR, BUSINESS PARK, HYDERABAD - 500111, TELANGANA",
+                    "branch_phone":  "1800 102 1677",
+                    "insurer_gst_number":  "36AAHCN8509K1Z7",
+                    "imd_code":  "BRC0002177",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 01677",
+                    "imd_aadhar_no":  "100000001677",
+                    "reference_subject":  "Renewal of your Group Personal Accident Policy Ref 01677",
+                    "policy_number":  "P0142201677/8677/151677",
+                    "product_name":  "Group Personal Accident",
+                    "risk_description":  "Corporate employee benefit risk 01677",
+                    "policy_expiry_date":  "11-01-2027",
+                    "renewal_date":  "11-01-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 28, Corporate District, HYDERABAD - 500111, TELANGANA, India",
+                    "care_line":  "1800 102 3697",
+                    "email":  "support01677@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance01677.co.in",
+                    "irda_registration_no":  "877",
+                    "cin":  "U6600036MH2011PLC235677",
+                    "uin":  "HERIGP01677V032022",
+                    "signatory":  "Authorised Signatory 01677",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 01677",
+                                                             "Product_Name":  "Product Name 01677",
+                                                             "Risk_Description":  "Risk Description 01677",
+                                                             "Renewal_Date":  "Renewal Date 01677"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142201677/8677/151677",
+                                                              "Product_Name":  "Group Personal Accident",
+                                                              "Risk_Description":  "Corporate employee benefit risk 01677",
+                                                              "Renewal_Date":  "11-01-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

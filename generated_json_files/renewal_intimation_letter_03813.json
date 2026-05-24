@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 03813",
+                    "letter_date":  "18-05-2026",
+                    "customer_name":  "DATAPRIME ENTERPRISES PVT LTD 03813",
+                    "customer_address":  "Plot 253, Industrial Area, Sector 14, 3913 Road, HYDERABAD, TELANGANA",
+                    "customer_city":  "HYDERABAD",
+                    "customer_state":  "TELANGANA",
+                    "customer_pincode":  "500222",
+                    "customer_contact_no":  "9730195147",
+                    "customer_gst_number":  "36AABC9569D1Z7",
+                    "customer_id":  "20240003813",
+                    "servicing_branch":  "HYDERABAD",
+                    "insurer_name":  "Heritage General Insurance Company 03813",
+                    "branch_office_address":  "Suite 713, 14TH FLOOR, BUSINESS PARK, HYDERABAD - 500222, TELANGANA",
+                    "branch_phone":  "1800 102 3813",
+                    "insurer_gst_number":  "36AAHCN4821K1Z1",
+                    "imd_code":  "BRC0004313",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 03813",
+                    "imd_aadhar_no":  "100000003813",
+                    "reference_subject":  "Renewal of your Group Mediclaim Policy Ref 03813",
+                    "policy_number":  "P0142203813/8813/153813",
+                    "product_name":  "Group Mediclaim",
+                    "risk_description":  "Corporate employee benefit risk 03813",
+                    "policy_expiry_date":  "18-11-2026",
+                    "renewal_date":  "18-11-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 4, Corporate District, HYDERABAD - 500222, TELANGANA, India",
+                    "care_line":  "1800 102 5833",
+                    "email":  "support03813@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance03813.co.in",
+                    "irda_registration_no":  "313",
+                    "cin":  "U6600036MH2011PLC237813",
+                    "uin":  "HERIGP03813V032022",
+                    "signatory":  "Authorised Signatory 03813",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 03813",
+                                                             "Product_Name":  "Product Name 03813",
+                                                             "Risk_Description":  "Risk Description 03813",
+                                                             "Renewal_Date":  "Renewal Date 03813"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142203813/8813/153813",
+                                                              "Product_Name":  "Group Mediclaim",
+                                                              "Risk_Description":  "Corporate employee benefit risk 03813",
+                                                              "Renewal_Date":  "18-11-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

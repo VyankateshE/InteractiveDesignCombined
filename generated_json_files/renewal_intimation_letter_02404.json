@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 02404",
+                    "letter_date":  "19-04-2026",
+                    "customer_name":  "CLOUDMATRIX SOLUTIONS PVT LTD 02404",
+                    "customer_address":  "Plot 644, Industrial Area, Sector 5, 2504 Road, CHENNAI, TAMIL NADU",
+                    "customer_city":  "CHENNAI",
+                    "customer_state":  "TAMIL NADU",
+                    "customer_pincode":  "600037",
+                    "customer_contact_no":  "9719037276",
+                    "customer_gst_number":  "33AABC1252D1Z2",
+                    "customer_id":  "20240002404",
+                    "servicing_branch":  "CHENNAI",
+                    "insurer_name":  "Heritage General Insurance Company 02404",
+                    "branch_office_address":  "Suite 104, 5TH FLOOR, BUSINESS PARK, CHENNAI - 600037, TAMIL NADU",
+                    "branch_phone":  "1800 102 2404",
+                    "insurer_gst_number":  "33AAHCN0868K1Z5",
+                    "imd_code":  "BRC0002904",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 02404",
+                    "imd_aadhar_no":  "100000002404",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 02404",
+                    "policy_number":  "P0142202404/8404/152404",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 02404",
+                    "policy_expiry_date":  "08-01-2027",
+                    "renewal_date":  "08-01-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 5, Corporate District, CHENNAI - 600037, TAMIL NADU, India",
+                    "care_line":  "1800 102 4424",
+                    "email":  "support02404@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance02404.co.in",
+                    "irda_registration_no":  "704",
+                    "cin":  "U6600033MH2011PLC236404",
+                    "uin":  "HERIGP02404V032022",
+                    "signatory":  "Authorised Signatory 02404",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 02404",
+                                                             "Product_Name":  "Product Name 02404",
+                                                             "Risk_Description":  "Risk Description 02404",
+                                                             "Renewal_Date":  "Renewal Date 02404"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142202404/8404/152404",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 02404",
+                                                              "Renewal_Date":  "08-01-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

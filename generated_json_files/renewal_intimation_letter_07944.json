@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 07944",
+                    "letter_date":  "09-05-2026",
+                    "customer_name":  "CLOUDMATRIX TECHNOLOGIES PVT LTD 07944",
+                    "customer_address":  "Plot 784, Industrial Area, Sector 45, 8044 Road, LUCKNOW, UTTAR PRADESH",
+                    "customer_city":  "LUCKNOW",
+                    "customer_state":  "UTTAR PRADESH",
+                    "customer_pincode":  "226222",
+                    "customer_contact_no":  "9762908536",
+                    "customer_gst_number":  "09AABC3272D1Z7",
+                    "customer_id":  "20240007944",
+                    "servicing_branch":  "LUCKNOW",
+                    "insurer_name":  "Heritage General Insurance Company 07944",
+                    "branch_office_address":  "Suite 844, 5TH FLOOR, BUSINESS PARK, LUCKNOW - 226222, UTTAR PRADESH",
+                    "branch_phone":  "1800 102 7944",
+                    "insurer_gst_number":  "09AAHCN5048K1Z1",
+                    "imd_code":  "BRC0008444",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 07944",
+                    "imd_aadhar_no":  "100000007944",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 07944",
+                    "policy_number":  "P0142207944/8944/157944",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 07944",
+                    "policy_expiry_date":  "14-03-2027",
+                    "renewal_date":  "14-03-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 25, Corporate District, LUCKNOW - 226222, UTTAR PRADESH, India",
+                    "care_line":  "1800 102 9964",
+                    "email":  "support07944@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance07944.co.in",
+                    "irda_registration_no":  "844",
+                    "cin":  "U6600009MH2011PLC241944",
+                    "uin":  "HERIGP07944V032022",
+                    "signatory":  "Authorised Signatory 07944",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 07944",
+                                                             "Product_Name":  "Product Name 07944",
+                                                             "Risk_Description":  "Risk Description 07944",
+                                                             "Renewal_Date":  "Renewal Date 07944"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142207944/8944/157944",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 07944",
+                                                              "Renewal_Date":  "14-03-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

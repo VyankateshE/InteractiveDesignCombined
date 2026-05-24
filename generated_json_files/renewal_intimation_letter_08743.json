@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 08743",
+                    "letter_date":  "28-05-2026",
+                    "customer_name":  "DATAPRIME TECHNOLOGIES PVT LTD 08743",
+                    "customer_address":  "Plot 683, Industrial Area, Sector 44, 8843 Road, JAIPUR, RAJASTHAN",
+                    "customer_city":  "JAIPUR",
+                    "customer_state":  "RAJASTHAN",
+                    "customer_pincode":  "302814",
+                    "customer_contact_no":  "9769235817",
+                    "customer_gst_number":  "08AABC3659D1Z5",
+                    "customer_id":  "20240008743",
+                    "servicing_branch":  "JAIPUR",
+                    "insurer_name":  "Heritage General Insurance Company 08743",
+                    "branch_office_address":  "Suite 843, 4TH FLOOR, BUSINESS PARK, JAIPUR - 302814, RAJASTHAN",
+                    "branch_phone":  "1800 102 8743",
+                    "insurer_gst_number":  "08AAHCN8631K1Z8",
+                    "imd_code":  "BRC0009243",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 08743",
+                    "imd_aadhar_no":  "100000008743",
+                    "reference_subject":  "Renewal of your Group Mediclaim Policy Ref 08743",
+                    "policy_number":  "P0142208743/8743/158743",
+                    "product_name":  "Group Mediclaim",
+                    "risk_description":  "Corporate employee benefit risk 08743",
+                    "policy_expiry_date":  "22-05-2027",
+                    "renewal_date":  "22-05-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 14, Corporate District, JAIPUR - 302814, RAJASTHAN, India",
+                    "care_line":  "1800 102 0763",
+                    "email":  "support08743@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance08743.co.in",
+                    "irda_registration_no":  "743",
+                    "cin":  "U6600008MH2011PLC242743",
+                    "uin":  "HERIGP08743V032022",
+                    "signatory":  "Authorised Signatory 08743",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 08743",
+                                                             "Product_Name":  "Product Name 08743",
+                                                             "Risk_Description":  "Risk Description 08743",
+                                                             "Renewal_Date":  "Renewal Date 08743"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142208743/8743/158743",
+                                                              "Product_Name":  "Group Mediclaim",
+                                                              "Risk_Description":  "Corporate employee benefit risk 08743",
+                                                              "Renewal_Date":  "22-05-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

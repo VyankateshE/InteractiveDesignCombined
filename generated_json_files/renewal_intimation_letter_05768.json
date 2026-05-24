@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 05768",
+                    "letter_date":  "23-04-2026",
+                    "customer_name":  "URBANCORE SOLUTIONS PVT LTD 05768",
+                    "customer_address":  "Plot 408, Industrial Area, Sector 19, 5868 Road, LUCKNOW, UTTAR PRADESH",
+                    "customer_city":  "LUCKNOW",
+                    "customer_state":  "UTTAR PRADESH",
+                    "customer_pincode":  "226629",
+                    "customer_contact_no":  "9745676792",
+                    "customer_gst_number":  "09AABC4984D1Z9",
+                    "customer_id":  "20240005768",
+                    "servicing_branch":  "LUCKNOW",
+                    "insurer_name":  "Heritage General Insurance Company 05768",
+                    "branch_office_address":  "Suite 268, 9TH FLOOR, BUSINESS PARK, LUCKNOW - 226629, UTTAR PRADESH",
+                    "branch_phone":  "1800 102 5768",
+                    "insurer_gst_number":  "09AAHCN8056K1Z3",
+                    "imd_code":  "BRC0006268",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 05768",
+                    "imd_aadhar_no":  "100000005768",
+                    "reference_subject":  "Renewal of your Group Mediclaim Policy Ref 05768",
+                    "policy_number":  "P0142205768/8768/155768",
+                    "product_name":  "Group Mediclaim",
+                    "risk_description":  "Corporate employee benefit risk 05768",
+                    "policy_expiry_date":  "28-03-2027",
+                    "renewal_date":  "28-03-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 9, Corporate District, LUCKNOW - 226629, UTTAR PRADESH, India",
+                    "care_line":  "1800 102 7788",
+                    "email":  "support05768@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance05768.co.in",
+                    "irda_registration_no":  "468",
+                    "cin":  "U6600009MH2011PLC239768",
+                    "uin":  "HERIGP05768V032022",
+                    "signatory":  "Authorised Signatory 05768",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 05768",
+                                                             "Product_Name":  "Product Name 05768",
+                                                             "Risk_Description":  "Risk Description 05768",
+                                                             "Renewal_Date":  "Renewal Date 05768"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142205768/8768/155768",
+                                                              "Product_Name":  "Group Mediclaim",
+                                                              "Risk_Description":  "Corporate employee benefit risk 05768",
+                                                              "Renewal_Date":  "28-03-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}
