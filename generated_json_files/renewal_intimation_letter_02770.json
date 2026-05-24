@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 02770",
+                    "letter_date":  "25-04-2026",
+                    "customer_name":  "QUANTUMBYTE INDUSTRIES PVT LTD 02770",
+                    "customer_address":  "Plot 110, Industrial Area, Sector 21, 2870 Road, MUMBAI, MAHARASHTRA",
+                    "customer_city":  "MUMBAI",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "400592",
+                    "customer_contact_no":  "9721935630",
+                    "customer_gst_number":  "27AABC6010D1Z8",
+                    "customer_id":  "20240002770",
+                    "servicing_branch":  "MUMBAI",
+                    "insurer_name":  "Heritage General Insurance Company 02770",
+                    "branch_office_address":  "Suite 470, 11TH FLOOR, BUSINESS PARK, MUMBAI - 400592, MAHARASHTRA",
+                    "branch_phone":  "1800 102 2770",
+                    "insurer_gst_number":  "27AAHCN7090K1Z2",
+                    "imd_code":  "BRC0003270",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 02770",
+                    "imd_aadhar_no":  "100000002770",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 02770",
+                    "policy_number":  "P0142202770/8770/152770",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 02770",
+                    "policy_expiry_date":  "09-01-2027",
+                    "renewal_date":  "09-01-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 11, Corporate District, MUMBAI - 400592, MAHARASHTRA, India",
+                    "care_line":  "1800 102 4790",
+                    "email":  "support02770@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance02770.co.in",
+                    "irda_registration_no":  "170",
+                    "cin":  "U6600027MH2011PLC236770",
+                    "uin":  "HERIGP02770V032022",
+                    "signatory":  "Authorised Signatory 02770",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 02770",
+                                                             "Product_Name":  "Product Name 02770",
+                                                             "Risk_Description":  "Risk Description 02770",
+                                                             "Renewal_Date":  "Renewal Date 02770"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142202770/8770/152770",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 02770",
+                                                              "Renewal_Date":  "09-01-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

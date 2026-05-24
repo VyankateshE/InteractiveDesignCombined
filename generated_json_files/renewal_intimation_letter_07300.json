@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 07300",
+                    "letter_date":  "25-05-2026",
+                    "customer_name":  "QUANTUMBYTE SYSTEMS PVT LTD 07300",
+                    "customer_address":  "Plot 140, Industrial Area, Sector 1, 7400 Road, CHENNAI, TAMIL NADU",
+                    "customer_city":  "CHENNAI",
+                    "customer_state":  "TAMIL NADU",
+                    "customer_pincode":  "600370",
+                    "customer_contact_no":  "9757808700",
+                    "customer_gst_number":  "33AABC4900D1Z2",
+                    "customer_id":  "20240007300",
+                    "servicing_branch":  "CHENNAI",
+                    "insurer_name":  "Heritage General Insurance Company 07300",
+                    "branch_office_address":  "Suite 200, 1TH FLOOR, BUSINESS PARK, CHENNAI - 600370, TAMIL NADU",
+                    "branch_phone":  "1800 102 7300",
+                    "insurer_gst_number":  "33AAHCN4100K1Z5",
+                    "imd_code":  "BRC0007800",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 07300",
+                    "imd_aadhar_no":  "100000007300",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 07300",
+                    "policy_number":  "P0142207300/8300/157300",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 07300",
+                    "policy_expiry_date":  "08-06-2026",
+                    "renewal_date":  "08-06-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 11, Corporate District, CHENNAI - 600370, TAMIL NADU, India",
+                    "care_line":  "1800 102 9320",
+                    "email":  "support07300@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance07300.co.in",
+                    "irda_registration_no":  "200",
+                    "cin":  "U6600033MH2011PLC241300",
+                    "uin":  "HERIGP07300V032022",
+                    "signatory":  "Authorised Signatory 07300",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 07300",
+                                                             "Product_Name":  "Product Name 07300",
+                                                             "Risk_Description":  "Risk Description 07300",
+                                                             "Renewal_Date":  "Renewal Date 07300"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142207300/8300/157300",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 07300",
+                                                              "Renewal_Date":  "08-06-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

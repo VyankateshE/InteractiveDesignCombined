@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 05009",
+                    "letter_date":  "14-05-2026",
+                    "customer_name":  "SOFTBRIDGE INDUSTRIES PVT LTD 05009",
+                    "customer_address":  "Plot 549, Industrial Area, Sector 10, 5109 Road, PUNE, MAHARASHTRA",
+                    "customer_city":  "PUNE",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "411518",
+                    "customer_contact_no":  "9739666271",
+                    "customer_gst_number":  "27AABC5117D1Z6",
+                    "customer_id":  "20240005009",
+                    "servicing_branch":  "PUNE",
+                    "insurer_name":  "Heritage General Insurance Company 05009",
+                    "branch_office_address":  "Suite 309, 10TH FLOOR, BUSINESS PARK, PUNE - 411518, MAHARASHTRA",
+                    "branch_phone":  "1800 102 5009",
+                    "insurer_gst_number":  "27AAHCN5153K1Z9",
+                    "imd_code":  "BRC0005509",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 05009",
+                    "imd_aadhar_no":  "100000005009",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 05009",
+                    "policy_number":  "P0142205009/8009/155009",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 05009",
+                    "policy_expiry_date":  "27-02-2027",
+                    "renewal_date":  "27-02-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 30, Corporate District, PUNE - 411518, MAHARASHTRA, India",
+                    "care_line":  "1800 102 7029",
+                    "email":  "support05009@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance05009.co.in",
+                    "irda_registration_no":  "609",
+                    "cin":  "U6600027MH2011PLC239009",
+                    "uin":  "HERIGP05009V032022",
+                    "signatory":  "Authorised Signatory 05009",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 05009",
+                                                             "Product_Name":  "Product Name 05009",
+                                                             "Risk_Description":  "Risk Description 05009",
+                                                             "Renewal_Date":  "Renewal Date 05009"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142205009/8009/155009",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 05009",
+                                                              "Renewal_Date":  "27-02-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

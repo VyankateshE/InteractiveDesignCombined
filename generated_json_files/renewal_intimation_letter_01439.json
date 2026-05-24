@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 01439",
+                    "letter_date":  "13-06-2026",
+                    "customer_name":  "SOFTBRIDGE NETWORKS PVT LTD 01439",
+                    "customer_address":  "Plot 579, Industrial Area, Sector 40, 1539 Road, JAIPUR, RAJASTHAN",
+                    "customer_city":  "JAIPUR",
+                    "customer_state":  "RAJASTHAN",
+                    "customer_pincode":  "302296",
+                    "customer_contact_no":  "9711395441",
+                    "customer_gst_number":  "08AABC8707D1Z9",
+                    "customer_id":  "20240001439",
+                    "servicing_branch":  "JAIPUR",
+                    "insurer_name":  "Heritage General Insurance Company 01439",
+                    "branch_office_address":  "Suite 739, 20TH FLOOR, BUSINESS PARK, JAIPUR - 302296, RAJASTHAN",
+                    "branch_phone":  "1800 102 1439",
+                    "insurer_gst_number":  "08AAHCN4463K1Z3",
+                    "imd_code":  "BRC0001939",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 01439",
+                    "imd_aadhar_no":  "100000001439",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 01439",
+                    "policy_number":  "P0142201439/8439/151439",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 01439",
+                    "policy_expiry_date":  "18-05-2027",
+                    "renewal_date":  "18-05-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 30, Corporate District, JAIPUR - 302296, RAJASTHAN, India",
+                    "care_line":  "1800 102 3459",
+                    "email":  "support01439@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance01439.co.in",
+                    "irda_registration_no":  "639",
+                    "cin":  "U6600008MH2011PLC235439",
+                    "uin":  "HERIGP01439V032022",
+                    "signatory":  "Authorised Signatory 01439",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 01439",
+                                                             "Product_Name":  "Product Name 01439",
+                                                             "Risk_Description":  "Risk Description 01439",
+                                                             "Renewal_Date":  "Renewal Date 01439"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142201439/8439/151439",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 01439",
+                                                              "Renewal_Date":  "18-05-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

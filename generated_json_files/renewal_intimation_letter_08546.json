@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 08546",
+                    "letter_date":  "11-05-2026",
+                    "customer_name":  "FINEDGE INNOVATIONS PVT LTD 08546",
+                    "customer_address":  "Plot 486, Industrial Area, Sector 47, 8646 Road, MUMBAI, MAHARASHTRA",
+                    "customer_city":  "MUMBAI",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "400518",
+                    "customer_contact_no":  "9767675774",
+                    "customer_gst_number":  "27AABC1098D1Z6",
+                    "customer_id":  "20240008546",
+                    "servicing_branch":  "MUMBAI",
+                    "insurer_name":  "Heritage General Insurance Company 08546",
+                    "branch_office_address":  "Suite 646, 7TH FLOOR, BUSINESS PARK, MUMBAI - 400518, MAHARASHTRA",
+                    "branch_phone":  "1800 102 8546",
+                    "insurer_gst_number":  "27AAHCN5282K1Z9",
+                    "imd_code":  "BRC0009046",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 08546",
+                    "imd_aadhar_no":  "100000008546",
+                    "reference_subject":  "Renewal of your GroupHealthInsurance Policy Ref 08546",
+                    "policy_number":  "P0142208546/8546/158546",
+                    "product_name":  "GroupHealthInsurance",
+                    "risk_description":  "Corporate employee benefit risk 08546",
+                    "policy_expiry_date":  "06-11-2026",
+                    "renewal_date":  "06-11-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 27, Corporate District, MUMBAI - 400518, MAHARASHTRA, India",
+                    "care_line":  "1800 102 0566",
+                    "email":  "support08546@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance08546.co.in",
+                    "irda_registration_no":  "546",
+                    "cin":  "U6600027MH2011PLC242546",
+                    "uin":  "HERIGP08546V032022",
+                    "signatory":  "Authorised Signatory 08546",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 08546",
+                                                             "Product_Name":  "Product Name 08546",
+                                                             "Risk_Description":  "Risk Description 08546",
+                                                             "Renewal_Date":  "Renewal Date 08546"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142208546/8546/158546",
+                                                              "Product_Name":  "GroupHealthInsurance",
+                                                              "Risk_Description":  "Corporate employee benefit risk 08546",
+                                                              "Renewal_Date":  "06-11-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

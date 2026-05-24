@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 09110",
+                    "letter_date":  "04-06-2026",
+                    "customer_name":  "QUANTUMBYTE INNOVATIONS PVT LTD 09110",
+                    "customer_address":  "Plot 150, Industrial Area, Sector 11, 9210 Road, AHMEDABAD, GUJARAT",
+                    "customer_city":  "AHMEDABAD",
+                    "customer_state":  "GUJARAT",
+                    "customer_pincode":  "380407",
+                    "customer_contact_no":  "9772142090",
+                    "customer_gst_number":  "24AABC8430D1Z3",
+                    "customer_id":  "20240009110",
+                    "servicing_branch":  "AHMEDABAD",
+                    "insurer_name":  "Heritage General Insurance Company 09110",
+                    "branch_office_address":  "Suite 410, 11TH FLOOR, BUSINESS PARK, AHMEDABAD - 380407, GUJARAT",
+                    "branch_phone":  "1800 102 9110",
+                    "insurer_gst_number":  "24AAHCN4870K1Z6",
+                    "imd_code":  "BRC0009610",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 09110",
+                    "imd_aadhar_no":  "100000009110",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 09110",
+                    "policy_number":  "P0142209110/8110/159110",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 09110",
+                    "policy_expiry_date":  "24-05-2027",
+                    "renewal_date":  "24-05-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 21, Corporate District, AHMEDABAD - 380407, GUJARAT, India",
+                    "care_line":  "1800 102 1130",
+                    "email":  "support09110@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance09110.co.in",
+                    "irda_registration_no":  "210",
+                    "cin":  "U6600024MH2011PLC243110",
+                    "uin":  "HERIGP09110V032022",
+                    "signatory":  "Authorised Signatory 09110",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 09110",
+                                                             "Product_Name":  "Product Name 09110",
+                                                             "Risk_Description":  "Risk Description 09110",
+                                                             "Renewal_Date":  "Renewal Date 09110"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142209110/8110/159110",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 09110",
+                                                              "Renewal_Date":  "24-05-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

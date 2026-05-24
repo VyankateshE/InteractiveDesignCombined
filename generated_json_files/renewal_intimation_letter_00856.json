@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 00856",
+                    "letter_date":  "01-05-2026",
+                    "customer_name":  "FINEDGE ENTERPRISES PVT LTD 00856",
+                    "customer_address":  "Plot 896, Industrial Area, Sector 7, 956 Road, LUCKNOW, UTTAR PRADESH",
+                    "customer_city":  "LUCKNOW",
+                    "customer_state":  "UTTAR PRADESH",
+                    "customer_pincode":  "226703",
+                    "customer_contact_no":  "9706778664",
+                    "customer_gst_number":  "09AABC1128D1Z2",
+                    "customer_id":  "20240000856",
+                    "servicing_branch":  "LUCKNOW",
+                    "insurer_name":  "Heritage General Insurance Company 00856",
+                    "branch_office_address":  "Suite 156, 17TH FLOOR, BUSINESS PARK, LUCKNOW - 226703, UTTAR PRADESH",
+                    "branch_phone":  "1800 102 0856",
+                    "insurer_gst_number":  "09AAHCN4552K1Z5",
+                    "imd_code":  "BRC0001356",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 00856",
+                    "imd_aadhar_no":  "100000000856",
+                    "reference_subject":  "Renewal of your GroupHealthInsurance Policy Ref 00856",
+                    "policy_number":  "P0142200856/8856/150856",
+                    "product_name":  "GroupHealthInsurance",
+                    "risk_description":  "Corporate employee benefit risk 00856",
+                    "policy_expiry_date":  "12-10-2026",
+                    "renewal_date":  "12-10-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 17, Corporate District, LUCKNOW - 226703, UTTAR PRADESH, India",
+                    "care_line":  "1800 102 2876",
+                    "email":  "support00856@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance00856.co.in",
+                    "irda_registration_no":  "956",
+                    "cin":  "U6600009MH2011PLC234856",
+                    "uin":  "HERIGP00856V032022",
+                    "signatory":  "Authorised Signatory 00856",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 00856",
+                                                             "Product_Name":  "Product Name 00856",
+                                                             "Risk_Description":  "Risk Description 00856",
+                                                             "Renewal_Date":  "Renewal Date 00856"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142200856/8856/150856",
+                                                              "Product_Name":  "GroupHealthInsurance",
+                                                              "Risk_Description":  "Corporate employee benefit risk 00856",
+                                                              "Renewal_Date":  "12-10-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

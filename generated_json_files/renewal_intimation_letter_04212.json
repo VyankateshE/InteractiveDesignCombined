@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 04212",
+                    "letter_date":  "27-04-2026",
+                    "customer_name":  "INFONOVA ENTERPRISES PVT LTD 04212",
+                    "customer_address":  "Plot 652, Industrial Area, Sector 13, 4312 Road, CHENNAI, TAMIL NADU",
+                    "customer_city":  "CHENNAI",
+                    "customer_state":  "TAMIL NADU",
+                    "customer_pincode":  "600000",
+                    "customer_contact_no":  "9733354828",
+                    "customer_gst_number":  "33AABC4756D1Z1",
+                    "customer_id":  "20240004212",
+                    "servicing_branch":  "CHENNAI",
+                    "insurer_name":  "Heritage General Insurance Company 04212",
+                    "branch_office_address":  "Suite 312, 13TH FLOOR, BUSINESS PARK, CHENNAI - 600000, TAMIL NADU",
+                    "branch_phone":  "1800 102 4212",
+                    "insurer_gst_number":  "33AAHCN1604K1Z4",
+                    "imd_code":  "BRC0004712",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 04212",
+                    "imd_aadhar_no":  "100000004212",
+                    "reference_subject":  "Renewal of your Group Personal Accident Policy Ref 04212",
+                    "policy_number":  "P0142204212/8212/154212",
+                    "product_name":  "Group Personal Accident",
+                    "risk_description":  "Corporate employee benefit risk 04212",
+                    "policy_expiry_date":  "22-12-2026",
+                    "renewal_date":  "22-12-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 13, Corporate District, CHENNAI - 600000, TAMIL NADU, India",
+                    "care_line":  "1800 102 6232",
+                    "email":  "support04212@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance04212.co.in",
+                    "irda_registration_no":  "712",
+                    "cin":  "U6600033MH2011PLC238212",
+                    "uin":  "HERIGP04212V032022",
+                    "signatory":  "Authorised Signatory 04212",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 04212",
+                                                             "Product_Name":  "Product Name 04212",
+                                                             "Risk_Description":  "Risk Description 04212",
+                                                             "Renewal_Date":  "Renewal Date 04212"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142204212/8212/154212",
+                                                              "Product_Name":  "Group Personal Accident",
+                                                              "Risk_Description":  "Corporate employee benefit risk 04212",
+                                                              "Renewal_Date":  "22-12-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

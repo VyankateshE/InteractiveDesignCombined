@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 07299",
+                    "letter_date":  "24-05-2026",
+                    "customer_name":  "SOFTBRIDGE SYSTEMS PVT LTD 07299",
+                    "customer_address":  "Plot 139, Industrial Area, Sector 50, 7399 Road, BENGALURU, KARNATAKA",
+                    "customer_city":  "BENGALURU",
+                    "customer_state":  "KARNATAKA",
+                    "customer_pincode":  "560333",
+                    "customer_contact_no":  "9757800781",
+                    "customer_gst_number":  "29AABC4887D1Z1",
+                    "customer_id":  "20240007299",
+                    "servicing_branch":  "BENGALURU",
+                    "insurer_name":  "Heritage General Insurance Company 07299",
+                    "branch_office_address":  "Suite 199, 20TH FLOOR, BUSINESS PARK, BENGALURU - 560333, KARNATAKA",
+                    "branch_phone":  "1800 102 7299",
+                    "insurer_gst_number":  "29AAHCN4083K1Z4",
+                    "imd_code":  "BRC0007799",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 07299",
+                    "imd_aadhar_no":  "100000007299",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 07299",
+                    "policy_number":  "P0142207299/8299/157299",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 07299",
+                    "policy_expiry_date":  "07-06-2027",
+                    "renewal_date":  "07-06-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 10, Corporate District, BENGALURU - 560333, KARNATAKA, India",
+                    "care_line":  "1800 102 9319",
+                    "email":  "support07299@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance07299.co.in",
+                    "irda_registration_no":  "199",
+                    "cin":  "U6600029MH2011PLC241299",
+                    "uin":  "HERIGP07299V032022",
+                    "signatory":  "Authorised Signatory 07299",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 07299",
+                                                             "Product_Name":  "Product Name 07299",
+                                                             "Risk_Description":  "Risk Description 07299",
+                                                             "Renewal_Date":  "Renewal Date 07299"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142207299/8299/157299",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 07299",
+                                                              "Renewal_Date":  "07-06-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

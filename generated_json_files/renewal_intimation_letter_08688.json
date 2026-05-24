@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 08688",
+                    "letter_date":  "02-06-2026",
+                    "customer_name":  "URBANCORE INDUSTRIES PVT LTD 08688",
+                    "customer_address":  "Plot 628, Industrial Area, Sector 39, 8788 Road, LUCKNOW, UTTAR PRADESH",
+                    "customer_city":  "LUCKNOW",
+                    "customer_state":  "UTTAR PRADESH",
+                    "customer_pincode":  "226777",
+                    "customer_contact_no":  "9768800272",
+                    "customer_gst_number":  "09AABC2944D1Z4",
+                    "customer_id":  "20240008688",
+                    "servicing_branch":  "LUCKNOW",
+                    "insurer_name":  "Heritage General Insurance Company 08688",
+                    "branch_office_address":  "Suite 788, 9TH FLOOR, BUSINESS PARK, LUCKNOW - 226777, UTTAR PRADESH",
+                    "branch_phone":  "1800 102 8688",
+                    "insurer_gst_number":  "09AAHCN7696K1Z7",
+                    "imd_code":  "BRC0009188",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 08688",
+                    "imd_aadhar_no":  "100000008688",
+                    "reference_subject":  "Renewal of your Group Mediclaim Policy Ref 08688",
+                    "policy_number":  "P0142208688/8688/158688",
+                    "product_name":  "Group Mediclaim",
+                    "risk_description":  "Corporate employee benefit risk 08688",
+                    "policy_expiry_date":  "28-03-2027",
+                    "renewal_date":  "28-03-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 19, Corporate District, LUCKNOW - 226777, UTTAR PRADESH, India",
+                    "care_line":  "1800 102 0708",
+                    "email":  "support08688@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance08688.co.in",
+                    "irda_registration_no":  "688",
+                    "cin":  "U6600009MH2011PLC242688",
+                    "uin":  "HERIGP08688V032022",
+                    "signatory":  "Authorised Signatory 08688",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 08688",
+                                                             "Product_Name":  "Product Name 08688",
+                                                             "Risk_Description":  "Risk Description 08688",
+                                                             "Renewal_Date":  "Renewal Date 08688"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142208688/8688/158688",
+                                                              "Product_Name":  "Group Mediclaim",
+                                                              "Risk_Description":  "Corporate employee benefit risk 08688",
+                                                              "Renewal_Date":  "28-03-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

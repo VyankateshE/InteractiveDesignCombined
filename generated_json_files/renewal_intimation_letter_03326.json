@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 03326",
+                    "letter_date":  "11-05-2026",
+                    "customer_name":  "FINEDGE INDUSTRIES PVT LTD 03326",
+                    "customer_address":  "Plot 666, Industrial Area, Sector 27, 3426 Road, AHMEDABAD, GUJARAT",
+                    "customer_city":  "AHMEDABAD",
+                    "customer_state":  "GUJARAT",
+                    "customer_pincode":  "380185",
+                    "customer_contact_no":  "9726338594",
+                    "customer_gst_number":  "24AABC3238D1Z6",
+                    "customer_id":  "20240003326",
+                    "servicing_branch":  "AHMEDABAD",
+                    "insurer_name":  "Heritage General Insurance Company 03326",
+                    "branch_office_address":  "Suite 226, 7TH FLOOR, BUSINESS PARK, AHMEDABAD - 380185, GUJARAT",
+                    "branch_phone":  "1800 102 3326",
+                    "insurer_gst_number":  "24AAHCN6542K1Z9",
+                    "imd_code":  "BRC0003826",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 03326",
+                    "imd_aadhar_no":  "100000003326",
+                    "reference_subject":  "Renewal of your GroupHealthInsurance Policy Ref 03326",
+                    "policy_number":  "P0142203326/8326/153326",
+                    "product_name":  "GroupHealthInsurance",
+                    "risk_description":  "Corporate employee benefit risk 03326",
+                    "policy_expiry_date":  "19-07-2026",
+                    "renewal_date":  "19-07-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 27, Corporate District, AHMEDABAD - 380185, GUJARAT, India",
+                    "care_line":  "1800 102 5346",
+                    "email":  "support03326@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance03326.co.in",
+                    "irda_registration_no":  "726",
+                    "cin":  "U6600024MH2011PLC237326",
+                    "uin":  "HERIGP03326V032022",
+                    "signatory":  "Authorised Signatory 03326",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 03326",
+                                                             "Product_Name":  "Product Name 03326",
+                                                             "Risk_Description":  "Risk Description 03326",
+                                                             "Renewal_Date":  "Renewal Date 03326"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142203326/8326/153326",
+                                                              "Product_Name":  "GroupHealthInsurance",
+                                                              "Risk_Description":  "Corporate employee benefit risk 03326",
+                                                              "Renewal_Date":  "19-07-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

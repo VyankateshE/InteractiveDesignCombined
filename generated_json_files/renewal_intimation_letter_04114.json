@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 04114",
+                    "letter_date":  "19-05-2026",
+                    "customer_name":  "CLOUDMATRIX SERVICES PVT LTD 04114",
+                    "customer_address":  "Plot 554, Industrial Area, Sector 15, 4214 Road, MUMBAI, MAHARASHTRA",
+                    "customer_city":  "MUMBAI",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "400370",
+                    "customer_contact_no":  "9732578766",
+                    "customer_gst_number":  "27AABC3482D1Z2",
+                    "customer_id":  "20240004114",
+                    "servicing_branch":  "MUMBAI",
+                    "insurer_name":  "Heritage General Insurance Company 04114",
+                    "branch_office_address":  "Suite 214, 15TH FLOOR, BUSINESS PARK, MUMBAI - 400370, MAHARASHTRA",
+                    "branch_phone":  "1800 102 4114",
+                    "insurer_gst_number":  "27AAHCN9938K1Z5",
+                    "imd_code":  "BRC0004614",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 04114",
+                    "imd_aadhar_no":  "100000004114",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 04114",
+                    "policy_number":  "P0142204114/8114/154114",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 04114",
+                    "policy_expiry_date":  "15-09-2026",
+                    "renewal_date":  "15-09-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 5, Corporate District, MUMBAI - 400370, MAHARASHTRA, India",
+                    "care_line":  "1800 102 6134",
+                    "email":  "support04114@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance04114.co.in",
+                    "irda_registration_no":  "614",
+                    "cin":  "U6600027MH2011PLC238114",
+                    "uin":  "HERIGP04114V032022",
+                    "signatory":  "Authorised Signatory 04114",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 04114",
+                                                             "Product_Name":  "Product Name 04114",
+                                                             "Risk_Description":  "Risk Description 04114",
+                                                             "Renewal_Date":  "Renewal Date 04114"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142204114/8114/154114",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 04114",
+                                                              "Renewal_Date":  "15-09-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

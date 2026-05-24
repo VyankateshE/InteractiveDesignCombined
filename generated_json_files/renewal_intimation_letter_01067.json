@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 01067",
+                    "letter_date":  "01-06-2026",
+                    "customer_name":  "MEDILINK TECHNOLOGIES PVT LTD 01067",
+                    "customer_address":  "Plot 207, Industrial Area, Sector 18, 1167 Road, BENGALURU, KARNATAKA",
+                    "customer_city":  "BENGALURU",
+                    "customer_state":  "KARNATAKA",
+                    "customer_pincode":  "560518",
+                    "customer_contact_no":  "9708449573",
+                    "customer_gst_number":  "29AABC3871D1Z6",
+                    "customer_id":  "20240001067",
+                    "servicing_branch":  "BENGALURU",
+                    "insurer_name":  "Heritage General Insurance Company 01067",
+                    "branch_office_address":  "Suite 367, 8TH FLOOR, BUSINESS PARK, BENGALURU - 560518, KARNATAKA",
+                    "branch_phone":  "1800 102 1067",
+                    "insurer_gst_number":  "29AAHCN8139K1Z9",
+                    "imd_code":  "BRC0001567",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 01067",
+                    "imd_aadhar_no":  "100000001067",
+                    "reference_subject":  "Renewal of your Group Personal Accident Policy Ref 01067",
+                    "policy_number":  "P0142201067/8067/151067",
+                    "product_name":  "Group Personal Accident",
+                    "risk_description":  "Corporate employee benefit risk 01067",
+                    "policy_expiry_date":  "11-05-2027",
+                    "renewal_date":  "11-05-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 18, Corporate District, BENGALURU - 560518, KARNATAKA, India",
+                    "care_line":  "1800 102 3087",
+                    "email":  "support01067@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance01067.co.in",
+                    "irda_registration_no":  "267",
+                    "cin":  "U6600029MH2011PLC235067",
+                    "uin":  "HERIGP01067V032022",
+                    "signatory":  "Authorised Signatory 01067",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 01067",
+                                                             "Product_Name":  "Product Name 01067",
+                                                             "Risk_Description":  "Risk Description 01067",
+                                                             "Renewal_Date":  "Renewal Date 01067"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142201067/8067/151067",
+                                                              "Product_Name":  "Group Personal Accident",
+                                                              "Risk_Description":  "Corporate employee benefit risk 01067",
+                                                              "Renewal_Date":  "11-05-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 03190",
+                    "letter_date":  "25-04-2026",
+                    "customer_name":  "QUANTUMBYTE INNOVATIONS PVT LTD 03190",
+                    "customer_address":  "Plot 530, Industrial Area, Sector 41, 3290 Road, AHMEDABAD, GUJARAT",
+                    "customer_city":  "AHMEDABAD",
+                    "customer_state":  "GUJARAT",
+                    "customer_pincode":  "380148",
+                    "customer_contact_no":  "9725261610",
+                    "customer_gst_number":  "24AABC1470D1Z5",
+                    "customer_id":  "20240003190",
+                    "servicing_branch":  "AHMEDABAD",
+                    "insurer_name":  "Heritage General Insurance Company 03190",
+                    "branch_office_address":  "Suite 890, 11TH FLOOR, BUSINESS PARK, AHMEDABAD - 380148, GUJARAT",
+                    "branch_phone":  "1800 102 3190",
+                    "insurer_gst_number":  "24AAHCN4230K1Z8",
+                    "imd_code":  "BRC0003690",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 03190",
+                    "imd_aadhar_no":  "100000003190",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 03190",
+                    "policy_number":  "P0142203190/8190/153190",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 03190",
+                    "policy_expiry_date":  "05-03-2027",
+                    "renewal_date":  "05-03-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 11, Corporate District, AHMEDABAD - 380148, GUJARAT, India",
+                    "care_line":  "1800 102 5210",
+                    "email":  "support03190@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance03190.co.in",
+                    "irda_registration_no":  "590",
+                    "cin":  "U6600024MH2011PLC237190",
+                    "uin":  "HERIGP03190V032022",
+                    "signatory":  "Authorised Signatory 03190",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 03190",
+                                                             "Product_Name":  "Product Name 03190",
+                                                             "Risk_Description":  "Risk Description 03190",
+                                                             "Renewal_Date":  "Renewal Date 03190"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142203190/8190/153190",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 03190",
+                                                              "Renewal_Date":  "05-03-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

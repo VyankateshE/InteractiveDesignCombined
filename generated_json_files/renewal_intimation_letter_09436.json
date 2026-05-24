@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 09436",
+                    "letter_date":  "01-05-2026",
+                    "customer_name":  "FINEDGE NETWORKS PVT LTD 09436",
+                    "customer_address":  "Plot 476, Industrial Area, Sector 37, 9536 Road, CHENNAI, TAMIL NADU",
+                    "customer_city":  "CHENNAI",
+                    "customer_state":  "TAMIL NADU",
+                    "customer_pincode":  "600481",
+                    "customer_contact_no":  "9774723684",
+                    "customer_gst_number":  "33AABC2668D1Z5",
+                    "customer_id":  "20240009436",
+                    "servicing_branch":  "CHENNAI",
+                    "insurer_name":  "Heritage General Insurance Company 09436",
+                    "branch_office_address":  "Suite 736, 17TH FLOOR, BUSINESS PARK, CHENNAI - 600481, TAMIL NADU",
+                    "branch_phone":  "1800 102 9436",
+                    "insurer_gst_number":  "33AAHCN0412K1Z8",
+                    "imd_code":  "BRC0009936",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 09436",
+                    "imd_aadhar_no":  "100000009436",
+                    "reference_subject":  "Renewal of your GroupHealthInsurance Policy Ref 09436",
+                    "policy_number":  "P0142209436/8436/159436",
+                    "product_name":  "GroupHealthInsurance",
+                    "risk_description":  "Corporate employee benefit risk 09436",
+                    "policy_expiry_date":  "15-04-2027",
+                    "renewal_date":  "15-04-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 17, Corporate District, CHENNAI - 600481, TAMIL NADU, India",
+                    "care_line":  "1800 102 1456",
+                    "email":  "support09436@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance09436.co.in",
+                    "irda_registration_no":  "536",
+                    "cin":  "U6600033MH2011PLC243436",
+                    "uin":  "HERIGP09436V032022",
+                    "signatory":  "Authorised Signatory 09436",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 09436",
+                                                             "Product_Name":  "Product Name 09436",
+                                                             "Risk_Description":  "Risk Description 09436",
+                                                             "Renewal_Date":  "Renewal Date 09436"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142209436/8436/159436",
+                                                              "Product_Name":  "GroupHealthInsurance",
+                                                              "Risk_Description":  "Corporate employee benefit risk 09436",
+                                                              "Renewal_Date":  "15-04-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

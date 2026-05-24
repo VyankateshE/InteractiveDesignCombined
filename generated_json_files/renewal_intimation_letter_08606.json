@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 08606",
+                    "letter_date":  "11-05-2026",
+                    "customer_name":  "FINEDGE INDUSTRIES PVT LTD 08606",
+                    "customer_address":  "Plot 546, Industrial Area, Sector 7, 8706 Road, AHMEDABAD, GUJARAT",
+                    "customer_city":  "AHMEDABAD",
+                    "customer_state":  "GUJARAT",
+                    "customer_pincode":  "380740",
+                    "customer_contact_no":  "9768150914",
+                    "customer_gst_number":  "24AABC1878D1Z3",
+                    "customer_id":  "20240008606",
+                    "servicing_branch":  "AHMEDABAD",
+                    "insurer_name":  "Heritage General Insurance Company 08606",
+                    "branch_office_address":  "Suite 706, 7TH FLOOR, BUSINESS PARK, AHMEDABAD - 380740, GUJARAT",
+                    "branch_phone":  "1800 102 8606",
+                    "insurer_gst_number":  "24AAHCN6302K1Z6",
+                    "imd_code":  "BRC0009106",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 08606",
+                    "imd_aadhar_no":  "100000008606",
+                    "reference_subject":  "Renewal of your GroupHealthInsurance Policy Ref 08606",
+                    "policy_number":  "P0142208606/8606/158606",
+                    "product_name":  "GroupHealthInsurance",
+                    "risk_description":  "Corporate employee benefit risk 08606",
+                    "policy_expiry_date":  "05-01-2027",
+                    "renewal_date":  "05-01-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 27, Corporate District, AHMEDABAD - 380740, GUJARAT, India",
+                    "care_line":  "1800 102 0626",
+                    "email":  "support08606@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance08606.co.in",
+                    "irda_registration_no":  "606",
+                    "cin":  "U6600024MH2011PLC242606",
+                    "uin":  "HERIGP08606V032022",
+                    "signatory":  "Authorised Signatory 08606",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 08606",
+                                                             "Product_Name":  "Product Name 08606",
+                                                             "Risk_Description":  "Risk Description 08606",
+                                                             "Renewal_Date":  "Renewal Date 08606"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142208606/8606/158606",
+                                                              "Product_Name":  "GroupHealthInsurance",
+                                                              "Risk_Description":  "Corporate employee benefit risk 08606",
+                                                              "Renewal_Date":  "05-01-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

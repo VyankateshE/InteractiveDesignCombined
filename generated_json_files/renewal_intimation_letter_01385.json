@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 01385",
+                    "letter_date":  "20-04-2026",
+                    "customer_name":  "NEXORA TECHNOLOGIES PVT LTD 01385",
+                    "customer_address":  "Plot 525, Industrial Area, Sector 36, 1485 Road, PUNE, MAHARASHTRA",
+                    "customer_city":  "PUNE",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "411296",
+                    "customer_contact_no":  "9710967815",
+                    "customer_gst_number":  "27AABC8005D1Z9",
+                    "customer_id":  "20240001385",
+                    "servicing_branch":  "PUNE",
+                    "insurer_name":  "Heritage General Insurance Company 01385",
+                    "branch_office_address":  "Suite 685, 6TH FLOOR, BUSINESS PARK, PUNE - 411296, MAHARASHTRA",
+                    "branch_phone":  "1800 102 1385",
+                    "insurer_gst_number":  "27AAHCN3545K1Z3",
+                    "imd_code":  "BRC0001885",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 01385",
+                    "imd_aadhar_no":  "100000001385",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 01385",
+                    "policy_number":  "P0142201385/8385/151385",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 01385",
+                    "policy_expiry_date":  "25-03-2027",
+                    "renewal_date":  "25-03-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 6, Corporate District, PUNE - 411296, MAHARASHTRA, India",
+                    "care_line":  "1800 102 3405",
+                    "email":  "support01385@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance01385.co.in",
+                    "irda_registration_no":  "585",
+                    "cin":  "U6600027MH2011PLC235385",
+                    "uin":  "HERIGP01385V032022",
+                    "signatory":  "Authorised Signatory 01385",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 01385",
+                                                             "Product_Name":  "Product Name 01385",
+                                                             "Risk_Description":  "Risk Description 01385",
+                                                             "Renewal_Date":  "Renewal Date 01385"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142201385/8385/151385",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 01385",
+                                                              "Renewal_Date":  "25-03-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

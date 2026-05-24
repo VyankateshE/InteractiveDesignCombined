@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 07476",
+                    "letter_date":  "21-05-2026",
+                    "customer_name":  "FINEDGE SERVICES PVT LTD 07476",
+                    "customer_address":  "Plot 316, Industrial Area, Sector 27, 7576 Road, CHENNAI, TAMIL NADU",
+                    "customer_city":  "CHENNAI",
+                    "customer_state":  "TAMIL NADU",
+                    "customer_pincode":  "600888",
+                    "customer_contact_no":  "9759202444",
+                    "customer_gst_number":  "33AABC7188D1Z7",
+                    "customer_id":  "20240007476",
+                    "servicing_branch":  "CHENNAI",
+                    "insurer_name":  "Heritage General Insurance Company 07476",
+                    "branch_office_address":  "Suite 376, 17TH FLOOR, BUSINESS PARK, CHENNAI - 600888, TAMIL NADU",
+                    "branch_phone":  "1800 102 7476",
+                    "insurer_gst_number":  "33AAHCN7092K1Z1",
+                    "imd_code":  "BRC0007976",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 07476",
+                    "imd_aadhar_no":  "100000007476",
+                    "reference_subject":  "Renewal of your GroupHealthInsurance Policy Ref 07476",
+                    "policy_number":  "P0142207476/8476/157476",
+                    "product_name":  "GroupHealthInsurance",
+                    "risk_description":  "Corporate employee benefit risk 07476",
+                    "policy_expiry_date":  "01-12-2026",
+                    "renewal_date":  "01-12-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 7, Corporate District, CHENNAI - 600888, TAMIL NADU, India",
+                    "care_line":  "1800 102 9496",
+                    "email":  "support07476@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance07476.co.in",
+                    "irda_registration_no":  "376",
+                    "cin":  "U6600033MH2011PLC241476",
+                    "uin":  "HERIGP07476V032022",
+                    "signatory":  "Authorised Signatory 07476",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 07476",
+                                                             "Product_Name":  "Product Name 07476",
+                                                             "Risk_Description":  "Risk Description 07476",
+                                                             "Renewal_Date":  "Renewal Date 07476"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142207476/8476/157476",
+                                                              "Product_Name":  "GroupHealthInsurance",
+                                                              "Risk_Description":  "Corporate employee benefit risk 07476",
+                                                              "Renewal_Date":  "01-12-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

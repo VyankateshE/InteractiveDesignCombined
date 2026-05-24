@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 07149",
+                    "letter_date":  "24-04-2026",
+                    "customer_name":  "SOFTBRIDGE TECHNOLOGIES PVT LTD 07149",
+                    "customer_address":  "Plot 889, Industrial Area, Sector 50, 7249 Road, HYDERABAD, TELANGANA",
+                    "customer_city":  "HYDERABAD",
+                    "customer_state":  "TELANGANA",
+                    "customer_pincode":  "500777",
+                    "customer_contact_no":  "9756612931",
+                    "customer_gst_number":  "36AABC2937D1Z4",
+                    "customer_id":  "20240007149",
+                    "servicing_branch":  "HYDERABAD",
+                    "insurer_name":  "Heritage General Insurance Company 07149",
+                    "branch_office_address":  "Suite 849, 10TH FLOOR, BUSINESS PARK, HYDERABAD - 500777, TELANGANA",
+                    "branch_phone":  "1800 102 7149",
+                    "insurer_gst_number":  "36AAHCN1533K1Z7",
+                    "imd_code":  "BRC0007649",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 07149",
+                    "imd_aadhar_no":  "100000007149",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 07149",
+                    "policy_number":  "P0142207149/8149/157149",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 07149",
+                    "policy_expiry_date":  "08-01-2027",
+                    "renewal_date":  "08-01-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 10, Corporate District, HYDERABAD - 500777, TELANGANA, India",
+                    "care_line":  "1800 102 9169",
+                    "email":  "support07149@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance07149.co.in",
+                    "irda_registration_no":  "949",
+                    "cin":  "U6600036MH2011PLC241149",
+                    "uin":  "HERIGP07149V032022",
+                    "signatory":  "Authorised Signatory 07149",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 07149",
+                                                             "Product_Name":  "Product Name 07149",
+                                                             "Risk_Description":  "Risk Description 07149",
+                                                             "Renewal_Date":  "Renewal Date 07149"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142207149/8149/157149",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 07149",
+                                                              "Renewal_Date":  "08-01-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

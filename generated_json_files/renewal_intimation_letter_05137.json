@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 05137",
+                    "letter_date":  "22-05-2026",
+                    "customer_name":  "MEDILINK SYSTEMS PVT LTD 05137",
+                    "customer_address":  "Plot 677, Industrial Area, Sector 38, 5237 Road, PUNE, MAHARASHTRA",
+                    "customer_city":  "PUNE",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "411259",
+                    "customer_contact_no":  "9740679903",
+                    "customer_gst_number":  "27AABC6781D1Z8",
+                    "customer_id":  "20240005137",
+                    "servicing_branch":  "PUNE",
+                    "insurer_name":  "Heritage General Insurance Company 05137",
+                    "branch_office_address":  "Suite 437, 18TH FLOOR, BUSINESS PARK, PUNE - 411259, MAHARASHTRA",
+                    "branch_phone":  "1800 102 5137",
+                    "insurer_gst_number":  "27AAHCN7329K1Z2",
+                    "imd_code":  "BRC0005637",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 05137",
+                    "imd_aadhar_no":  "100000005137",
+                    "reference_subject":  "Renewal of your Group Personal Accident Policy Ref 05137",
+                    "policy_number":  "P0142205137/8137/155137",
+                    "product_name":  "Group Personal Accident",
+                    "risk_description":  "Corporate employee benefit risk 05137",
+                    "policy_expiry_date":  "05-07-2026",
+                    "renewal_date":  "05-07-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 8, Corporate District, PUNE - 411259, MAHARASHTRA, India",
+                    "care_line":  "1800 102 7157",
+                    "email":  "support05137@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance05137.co.in",
+                    "irda_registration_no":  "737",
+                    "cin":  "U6600027MH2011PLC239137",
+                    "uin":  "HERIGP05137V032022",
+                    "signatory":  "Authorised Signatory 05137",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 05137",
+                                                             "Product_Name":  "Product Name 05137",
+                                                             "Risk_Description":  "Risk Description 05137",
+                                                             "Renewal_Date":  "Renewal Date 05137"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142205137/8137/155137",
+                                                              "Product_Name":  "Group Personal Accident",
+                                                              "Risk_Description":  "Corporate employee benefit risk 05137",
+                                                              "Renewal_Date":  "05-07-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

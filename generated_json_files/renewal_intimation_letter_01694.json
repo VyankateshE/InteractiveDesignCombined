@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 01694",
+                    "letter_date":  "29-04-2026",
+                    "customer_name":  "CLOUDMATRIX SYSTEMS PVT LTD 01694",
+                    "customer_address":  "Plot 834, Industrial Area, Sector 45, 1794 Road, AHMEDABAD, GUJARAT",
+                    "customer_city":  "AHMEDABAD",
+                    "customer_state":  "GUJARAT",
+                    "customer_pincode":  "380740",
+                    "customer_contact_no":  "9713414786",
+                    "customer_gst_number":  "24AABC2022D1Z3",
+                    "customer_id":  "20240001694",
+                    "servicing_branch":  "AHMEDABAD",
+                    "insurer_name":  "Heritage General Insurance Company 01694",
+                    "branch_office_address":  "Suite 194, 15TH FLOOR, BUSINESS PARK, AHMEDABAD - 380740, GUJARAT",
+                    "branch_phone":  "1800 102 1694",
+                    "insurer_gst_number":  "24AAHCN8798K1Z6",
+                    "imd_code":  "BRC0002194",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 01694",
+                    "imd_aadhar_no":  "100000001694",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 01694",
+                    "policy_number":  "P0142201694/8694/151694",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 01694",
+                    "policy_expiry_date":  "28-01-2027",
+                    "renewal_date":  "28-01-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 15, Corporate District, AHMEDABAD - 380740, GUJARAT, India",
+                    "care_line":  "1800 102 3714",
+                    "email":  "support01694@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance01694.co.in",
+                    "irda_registration_no":  "894",
+                    "cin":  "U6600024MH2011PLC235694",
+                    "uin":  "HERIGP01694V032022",
+                    "signatory":  "Authorised Signatory 01694",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 01694",
+                                                             "Product_Name":  "Product Name 01694",
+                                                             "Risk_Description":  "Risk Description 01694",
+                                                             "Renewal_Date":  "Renewal Date 01694"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142201694/8694/151694",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 01694",
+                                                              "Renewal_Date":  "28-01-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

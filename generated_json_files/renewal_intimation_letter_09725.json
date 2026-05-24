@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 09725",
+                    "letter_date":  "20-04-2026",
+                    "customer_name":  "NEXORA INDUSTRIES PVT LTD 09725",
+                    "customer_address":  "Plot 765, Industrial Area, Sector 26, 9825 Road, HYDERABAD, TELANGANA",
+                    "customer_city":  "HYDERABAD",
+                    "customer_state":  "TELANGANA",
+                    "customer_pincode":  "500185",
+                    "customer_contact_no":  "9777012275",
+                    "customer_gst_number":  "36AABC6425D1Z6",
+                    "customer_id":  "20240009725",
+                    "servicing_branch":  "HYDERABAD",
+                    "insurer_name":  "Heritage General Insurance Company 09725",
+                    "branch_office_address":  "Suite 225, 6TH FLOOR, BUSINESS PARK, HYDERABAD - 500185, TELANGANA",
+                    "branch_phone":  "1800 102 9725",
+                    "insurer_gst_number":  "36AAHCN5325K1Z9",
+                    "imd_code":  "BRC0010225",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 09725",
+                    "imd_aadhar_no":  "100000009725",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 09725",
+                    "policy_number":  "P0142209725/8725/159725",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 09725",
+                    "policy_expiry_date":  "29-01-2027",
+                    "renewal_date":  "29-01-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 6, Corporate District, HYDERABAD - 500185, TELANGANA, India",
+                    "care_line":  "1800 102 1745",
+                    "email":  "support09725@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance09725.co.in",
+                    "irda_registration_no":  "825",
+                    "cin":  "U6600036MH2011PLC243725",
+                    "uin":  "HERIGP09725V032022",
+                    "signatory":  "Authorised Signatory 09725",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 09725",
+                                                             "Product_Name":  "Product Name 09725",
+                                                             "Risk_Description":  "Risk Description 09725",
+                                                             "Renewal_Date":  "Renewal Date 09725"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142209725/8725/159725",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 09725",
+                                                              "Renewal_Date":  "29-01-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

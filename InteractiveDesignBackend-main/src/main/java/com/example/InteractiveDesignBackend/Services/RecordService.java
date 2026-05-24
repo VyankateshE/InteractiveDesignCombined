@@ -92,7 +92,7 @@ public class RecordService {
 	            new HttpEntity<>(body, headers);
 
 	    String apiUrl =
-	            "http://192.168.0.188:3010/api/v1/s3Upload/uploadHtmlSinglePage";
+	            "http://localhost:3010/api/v1/s3Upload/uploadHtmlSinglePage";
 
 //	    String apiUrl =
 //	    "http://api.ariantechsolutions.in/interactive-server/api/v1/s3Upload/uploadHtmlSinglePage";
@@ -448,7 +448,7 @@ public class RecordService {
 	                    new HttpEntity<>(body, headers);
 
 	            String apiUrl =
-	                    "http://192.168.0.188:3010/api/v1/s3Upload/uploadHTML5";
+	                    "http://localhost:3010/api/v1/s3Upload/uploadHTML5";
 
 	            ResponseEntity<byte[]> response =
 	                    restTemplate.exchange(
@@ -1145,6 +1145,9 @@ public class RecordService {
 	}
 
 
+
+	
+
 }
 
 
@@ -1632,7 +1635,7 @@ public class RecordService {
 //            HttpEntity<MultiValueMap<String, Object>> requestEntity =
 //                    new HttpEntity<>(body, headers);
 //
-//            String apiUrl = "http://192.168.0.188:3010/api/v1/s3Upload/uploadHTML5";
+//            String apiUrl = "http://localhost:3010/api/v1/s3Upload/uploadHTML5";
 //
 //            ResponseEntity<byte[]> response = restTemplate.exchange(
 //                    apiUrl, HttpMethod.POST, requestEntity, byte[].class);
@@ -1726,7 +1729,7 @@ public class RecordService {
 //
 //    HttpEntity<MultiValueMap<String, Object>> requestEntity = new HttpEntity<>(body, headers);
 //
-//    String apiUrl = "http://192.168.0.188:3010/api/v1/s3Upload/uploadHtmlSinglePage";
+//    String apiUrl = "http://localhost:3010/api/v1/s3Upload/uploadHtmlSinglePage";
 ////    String apiUrl = "http://api.ariantechsolutions.in/interactive-server/api/v1/s3Upload/uploadHtmlSinglePage";
 //
 //    try {
@@ -2002,7 +2005,7 @@ public class RecordService {
 //				body.add("payload", mapper.writeValueAsString(pdfConfig));
 ////				body.add("chartData", mapper.writeValueAsString(dataJson));
 //				HttpEntity<MultiValueMap<String, Object>> requestEntity = new HttpEntity<>(body, headers);
-//				String apiUrl = "http://192.168.0.188:3010/api/v1/s3Upload/uploadHTML5";
+//				String apiUrl = "http://localhost:3010/api/v1/s3Upload/uploadHTML5";
 ////				String apiUrl = "http://api.ariantechsolutions.in/interactive-server/api/v1/s3Upload/uploadHTML5";
 //
 //				ResponseEntity<byte[]> response = restTemplate.exchange(apiUrl, HttpMethod.POST, requestEntity,

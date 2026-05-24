@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 01147",
+                    "letter_date":  "22-04-2026",
+                    "customer_name":  "MEDILINK TECHNOLOGIES PVT LTD 01147",
+                    "customer_address":  "Plot 287, Industrial Area, Sector 48, 1247 Road, BENGALURU, KARNATAKA",
+                    "customer_city":  "BENGALURU",
+                    "customer_state":  "KARNATAKA",
+                    "customer_pincode":  "560481",
+                    "customer_contact_no":  "9709083093",
+                    "customer_gst_number":  "29AABC4911D1Z5",
+                    "customer_id":  "20240001147",
+                    "servicing_branch":  "BENGALURU",
+                    "insurer_name":  "Heritage General Insurance Company 01147",
+                    "branch_office_address":  "Suite 447, 8TH FLOOR, BUSINESS PARK, BENGALURU - 560481, KARNATAKA",
+                    "branch_phone":  "1800 102 1147",
+                    "insurer_gst_number":  "29AAHCN9499K1Z8",
+                    "imd_code":  "BRC0001647",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 01147",
+                    "imd_aadhar_no":  "100000001147",
+                    "reference_subject":  "Renewal of your Group Personal Accident Policy Ref 01147",
+                    "policy_number":  "P0142201147/8147/151147",
+                    "product_name":  "Group Personal Accident",
+                    "risk_description":  "Corporate employee benefit risk 01147",
+                    "policy_expiry_date":  "30-07-2026",
+                    "renewal_date":  "30-07-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 8, Corporate District, BENGALURU - 560481, KARNATAKA, India",
+                    "care_line":  "1800 102 3167",
+                    "email":  "support01147@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance01147.co.in",
+                    "irda_registration_no":  "347",
+                    "cin":  "U6600029MH2011PLC235147",
+                    "uin":  "HERIGP01147V032022",
+                    "signatory":  "Authorised Signatory 01147",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 01147",
+                                                             "Product_Name":  "Product Name 01147",
+                                                             "Risk_Description":  "Risk Description 01147",
+                                                             "Renewal_Date":  "Renewal Date 01147"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142201147/8147/151147",
+                                                              "Product_Name":  "Group Personal Accident",
+                                                              "Risk_Description":  "Corporate employee benefit risk 01147",
+                                                              "Renewal_Date":  "30-07-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

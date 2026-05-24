@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 09940",
+                    "letter_date":  "25-05-2026",
+                    "customer_name":  "QUANTUMBYTE SYSTEMS PVT LTD 09940",
+                    "customer_address":  "Plot 80, Industrial Area, Sector 41, 10040 Road, CHENNAI, TAMIL NADU",
+                    "customer_city":  "CHENNAI",
+                    "customer_state":  "TAMIL NADU",
+                    "customer_pincode":  "600148",
+                    "customer_contact_no":  "9778714860",
+                    "customer_gst_number":  "33AABC9220D1Z5",
+                    "customer_id":  "20240009940",
+                    "servicing_branch":  "CHENNAI",
+                    "insurer_name":  "Heritage General Insurance Company 09940",
+                    "branch_office_address":  "Suite 440, 1TH FLOOR, BUSINESS PARK, CHENNAI - 600148, TAMIL NADU",
+                    "branch_phone":  "1800 102 9940",
+                    "insurer_gst_number":  "33AAHCN8980K1Z8",
+                    "imd_code":  "BRC0010440",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 09940",
+                    "imd_aadhar_no":  "100000009940",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 09940",
+                    "policy_number":  "P0142209940/8940/159940",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 09940",
+                    "policy_expiry_date":  "01-09-2026",
+                    "renewal_date":  "01-09-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 11, Corporate District, CHENNAI - 600148, TAMIL NADU, India",
+                    "care_line":  "1800 102 1960",
+                    "email":  "support09940@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance09940.co.in",
+                    "irda_registration_no":  "140",
+                    "cin":  "U6600033MH2011PLC243940",
+                    "uin":  "HERIGP09940V032022",
+                    "signatory":  "Authorised Signatory 09940",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 09940",
+                                                             "Product_Name":  "Product Name 09940",
+                                                             "Risk_Description":  "Risk Description 09940",
+                                                             "Renewal_Date":  "Renewal Date 09940"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142209940/8940/159940",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 09940",
+                                                              "Renewal_Date":  "01-09-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

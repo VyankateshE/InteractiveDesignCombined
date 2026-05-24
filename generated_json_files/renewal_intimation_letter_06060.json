@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 06060",
+                    "letter_date":  "15-04-2026",
+                    "customer_name":  "QUANTUMBYTE ENTERPRISES PVT LTD 06060",
+                    "customer_address":  "Plot 700, Industrial Area, Sector 11, 6160 Road, CHENNAI, TAMIL NADU",
+                    "customer_city":  "CHENNAI",
+                    "customer_state":  "TAMIL NADU",
+                    "customer_pincode":  "600444",
+                    "customer_contact_no":  "9747989140",
+                    "customer_gst_number":  "33AABC8780D1Z4",
+                    "customer_id":  "20240006060",
+                    "servicing_branch":  "CHENNAI",
+                    "insurer_name":  "Heritage General Insurance Company 06060",
+                    "branch_office_address":  "Suite 560, 1TH FLOOR, BUSINESS PARK, CHENNAI - 600444, TAMIL NADU",
+                    "branch_phone":  "1800 102 6060",
+                    "insurer_gst_number":  "33AAHCN3020K1Z7",
+                    "imd_code":  "BRC0006560",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 06060",
+                    "imd_aadhar_no":  "100000006060",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 06060",
+                    "policy_number":  "P0142206060/8060/156060",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 06060",
+                    "policy_expiry_date":  "14-01-2027",
+                    "renewal_date":  "14-01-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 1, Corporate District, CHENNAI - 600444, TAMIL NADU, India",
+                    "care_line":  "1800 102 8080",
+                    "email":  "support06060@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance06060.co.in",
+                    "irda_registration_no":  "760",
+                    "cin":  "U6600033MH2011PLC240060",
+                    "uin":  "HERIGP06060V032022",
+                    "signatory":  "Authorised Signatory 06060",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 06060",
+                                                             "Product_Name":  "Product Name 06060",
+                                                             "Risk_Description":  "Risk Description 06060",
+                                                             "Renewal_Date":  "Renewal Date 06060"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142206060/8060/156060",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 06060",
+                                                              "Renewal_Date":  "14-01-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

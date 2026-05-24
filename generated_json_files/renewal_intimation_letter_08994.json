@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 08994",
+                    "letter_date":  "08-06-2026",
+                    "customer_name":  "CLOUDMATRIX SERVICES PVT LTD 08994",
+                    "customer_address":  "Plot 934, Industrial Area, Sector 45, 9094 Road, MUMBAI, MAHARASHTRA",
+                    "customer_city":  "MUMBAI",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "400111",
+                    "customer_contact_no":  "9771223486",
+                    "customer_gst_number":  "27AABC6922D1Z4",
+                    "customer_id":  "20240008994",
+                    "servicing_branch":  "MUMBAI",
+                    "insurer_name":  "Heritage General Insurance Company 08994",
+                    "branch_office_address":  "Suite 294, 15TH FLOOR, BUSINESS PARK, MUMBAI - 400111, MAHARASHTRA",
+                    "branch_phone":  "1800 102 8994",
+                    "insurer_gst_number":  "27AAHCN2898K1Z7",
+                    "imd_code":  "BRC0009494",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 08994",
+                    "imd_aadhar_no":  "100000008994",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 08994",
+                    "policy_number":  "P0142208994/8994/158994",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 08994",
+                    "policy_expiry_date":  "28-01-2027",
+                    "renewal_date":  "28-01-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 25, Corporate District, MUMBAI - 400111, MAHARASHTRA, India",
+                    "care_line":  "1800 102 1014",
+                    "email":  "support08994@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance08994.co.in",
+                    "irda_registration_no":  "994",
+                    "cin":  "U6600027MH2011PLC242994",
+                    "uin":  "HERIGP08994V032022",
+                    "signatory":  "Authorised Signatory 08994",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 08994",
+                                                             "Product_Name":  "Product Name 08994",
+                                                             "Risk_Description":  "Risk Description 08994",
+                                                             "Renewal_Date":  "Renewal Date 08994"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142208994/8994/158994",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 08994",
+                                                              "Renewal_Date":  "28-01-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 05784",
+                    "letter_date":  "09-05-2026",
+                    "customer_name":  "CLOUDMATRIX TECHNOLOGIES PVT LTD 05784",
+                    "customer_address":  "Plot 424, Industrial Area, Sector 35, 5884 Road, LUCKNOW, UTTAR PRADESH",
+                    "customer_city":  "LUCKNOW",
+                    "customer_state":  "UTTAR PRADESH",
+                    "customer_pincode":  "226222",
+                    "customer_contact_no":  "9745803496",
+                    "customer_gst_number":  "09AABC5192D1Z7",
+                    "customer_id":  "20240005784",
+                    "servicing_branch":  "LUCKNOW",
+                    "insurer_name":  "Heritage General Insurance Company 05784",
+                    "branch_office_address":  "Suite 284, 5TH FLOOR, BUSINESS PARK, LUCKNOW - 226222, UTTAR PRADESH",
+                    "branch_phone":  "1800 102 5784",
+                    "insurer_gst_number":  "09AAHCN8328K1Z1",
+                    "imd_code":  "BRC0006284",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 05784",
+                    "imd_aadhar_no":  "100000005784",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 05784",
+                    "policy_number":  "P0142205784/8784/155784",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 05784",
+                    "policy_expiry_date":  "13-04-2027",
+                    "renewal_date":  "13-04-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 25, Corporate District, LUCKNOW - 226222, UTTAR PRADESH, India",
+                    "care_line":  "1800 102 7804",
+                    "email":  "support05784@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance05784.co.in",
+                    "irda_registration_no":  "484",
+                    "cin":  "U6600009MH2011PLC239784",
+                    "uin":  "HERIGP05784V032022",
+                    "signatory":  "Authorised Signatory 05784",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 05784",
+                                                             "Product_Name":  "Product Name 05784",
+                                                             "Risk_Description":  "Risk Description 05784",
+                                                             "Renewal_Date":  "Renewal Date 05784"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142205784/8784/155784",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 05784",
+                                                              "Renewal_Date":  "13-04-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

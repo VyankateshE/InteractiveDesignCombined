@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 04660",
+                    "letter_date":  "25-05-2026",
+                    "customer_name":  "QUANTUMBYTE SYSTEMS PVT LTD 04660",
+                    "customer_address":  "Plot 200, Industrial Area, Sector 11, 4760 Road, CHENNAI, TAMIL NADU",
+                    "customer_city":  "CHENNAI",
+                    "customer_state":  "TAMIL NADU",
+                    "customer_pincode":  "600592",
+                    "customer_contact_no":  "9736902540",
+                    "customer_gst_number":  "33AABC0580D1Z8",
+                    "customer_id":  "20240004660",
+                    "servicing_branch":  "CHENNAI",
+                    "insurer_name":  "Heritage General Insurance Company 04660",
+                    "branch_office_address":  "Suite 760, 1TH FLOOR, BUSINESS PARK, CHENNAI - 600592, TAMIL NADU",
+                    "branch_phone":  "1800 102 4660",
+                    "insurer_gst_number":  "33AAHCN9220K1Z2",
+                    "imd_code":  "BRC0005160",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 04660",
+                    "imd_aadhar_no":  "100000004660",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 04660",
+                    "policy_number":  "P0142204660/8660/154660",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 04660",
+                    "policy_expiry_date":  "15-03-2027",
+                    "renewal_date":  "15-03-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 11, Corporate District, CHENNAI - 600592, TAMIL NADU, India",
+                    "care_line":  "1800 102 6680",
+                    "email":  "support04660@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance04660.co.in",
+                    "irda_registration_no":  "260",
+                    "cin":  "U6600033MH2011PLC238660",
+                    "uin":  "HERIGP04660V032022",
+                    "signatory":  "Authorised Signatory 04660",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 04660",
+                                                             "Product_Name":  "Product Name 04660",
+                                                             "Risk_Description":  "Risk Description 04660",
+                                                             "Renewal_Date":  "Renewal Date 04660"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142204660/8660/154660",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 04660",
+                                                              "Renewal_Date":  "15-03-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

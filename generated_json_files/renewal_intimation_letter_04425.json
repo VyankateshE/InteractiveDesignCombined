@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 04425",
+                    "letter_date":  "30-05-2026",
+                    "customer_name":  "NEXORA TECHNOLOGIES PVT LTD 04425",
+                    "customer_address":  "Plot 865, Industrial Area, Sector 26, 4525 Road, PUNE, MAHARASHTRA",
+                    "customer_city":  "PUNE",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "411888",
+                    "customer_contact_no":  "9735041575",
+                    "customer_gst_number":  "27AABC7525D1Z7",
+                    "customer_id":  "20240004425",
+                    "servicing_branch":  "PUNE",
+                    "insurer_name":  "Heritage General Insurance Company 04425",
+                    "branch_office_address":  "Suite 525, 6TH FLOOR, BUSINESS PARK, PUNE - 411888, MAHARASHTRA",
+                    "branch_phone":  "1800 102 4425",
+                    "insurer_gst_number":  "27AAHCN5225K1Z1",
+                    "imd_code":  "BRC0004925",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 04425",
+                    "imd_aadhar_no":  "100000004425",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 04425",
+                    "policy_number":  "P0142204425/8425/154425",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 04425",
+                    "policy_expiry_date":  "23-07-2026",
+                    "renewal_date":  "23-07-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 16, Corporate District, PUNE - 411888, MAHARASHTRA, India",
+                    "care_line":  "1800 102 6445",
+                    "email":  "support04425@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance04425.co.in",
+                    "irda_registration_no":  "925",
+                    "cin":  "U6600027MH2011PLC238425",
+                    "uin":  "HERIGP04425V032022",
+                    "signatory":  "Authorised Signatory 04425",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 04425",
+                                                             "Product_Name":  "Product Name 04425",
+                                                             "Risk_Description":  "Risk Description 04425",
+                                                             "Renewal_Date":  "Renewal Date 04425"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142204425/8425/154425",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 04425",
+                                                              "Renewal_Date":  "23-07-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

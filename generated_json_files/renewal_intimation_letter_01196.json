@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 01196",
+                    "letter_date":  "10-06-2026",
+                    "customer_name":  "FINEDGE NETWORKS PVT LTD 01196",
+                    "customer_address":  "Plot 336, Industrial Area, Sector 47, 1296 Road, CHENNAI, TAMIL NADU",
+                    "customer_city":  "CHENNAI",
+                    "customer_state":  "TAMIL NADU",
+                    "customer_pincode":  "600296",
+                    "customer_contact_no":  "9709471124",
+                    "customer_gst_number":  "33AABC5548D1Z9",
+                    "customer_id":  "20240001196",
+                    "servicing_branch":  "CHENNAI",
+                    "insurer_name":  "Heritage General Insurance Company 01196",
+                    "branch_office_address":  "Suite 496, 17TH FLOOR, BUSINESS PARK, CHENNAI - 600296, TAMIL NADU",
+                    "branch_phone":  "1800 102 1196",
+                    "insurer_gst_number":  "33AAHCN0332K1Z3",
+                    "imd_code":  "BRC0001696",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 01196",
+                    "imd_aadhar_no":  "100000001196",
+                    "reference_subject":  "Renewal of your GroupHealthInsurance Policy Ref 01196",
+                    "policy_number":  "P0142201196/8196/151196",
+                    "product_name":  "GroupHealthInsurance",
+                    "risk_description":  "Corporate employee benefit risk 01196",
+                    "policy_expiry_date":  "17-09-2026",
+                    "renewal_date":  "17-09-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 27, Corporate District, CHENNAI - 600296, TAMIL NADU, India",
+                    "care_line":  "1800 102 3216",
+                    "email":  "support01196@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance01196.co.in",
+                    "irda_registration_no":  "396",
+                    "cin":  "U6600033MH2011PLC235196",
+                    "uin":  "HERIGP01196V032022",
+                    "signatory":  "Authorised Signatory 01196",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 01196",
+                                                             "Product_Name":  "Product Name 01196",
+                                                             "Risk_Description":  "Risk Description 01196",
+                                                             "Renewal_Date":  "Renewal Date 01196"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142201196/8196/151196",
+                                                              "Product_Name":  "GroupHealthInsurance",
+                                                              "Risk_Description":  "Corporate employee benefit risk 01196",
+                                                              "Renewal_Date":  "17-09-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

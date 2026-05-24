@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 08571",
+                    "letter_date":  "05-06-2026",
+                    "customer_name":  "TECHVISION SYSTEMS PVT LTD 08571",
+                    "customer_address":  "Plot 511, Industrial Area, Sector 22, 8671 Road, BENGALURU, KARNATAKA",
+                    "customer_city":  "BENGALURU",
+                    "customer_state":  "KARNATAKA",
+                    "customer_pincode":  "560444",
+                    "customer_contact_no":  "9767873749",
+                    "customer_gst_number":  "29AABC1423D1Z4",
+                    "customer_id":  "20240008571",
+                    "servicing_branch":  "BENGALURU",
+                    "insurer_name":  "Heritage General Insurance Company 08571",
+                    "branch_office_address":  "Suite 671, 12TH FLOOR, BUSINESS PARK, BENGALURU - 560444, KARNATAKA",
+                    "branch_phone":  "1800 102 8571",
+                    "insurer_gst_number":  "29AAHCN5707K1Z7",
+                    "imd_code":  "BRC0009071",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 08571",
+                    "imd_aadhar_no":  "100000008571",
+                    "reference_subject":  "Renewal of your GroupHealthInsurance Policy Ref 08571",
+                    "policy_number":  "P0142208571/8571/158571",
+                    "product_name":  "GroupHealthInsurance",
+                    "risk_description":  "Corporate employee benefit risk 08571",
+                    "policy_expiry_date":  "01-12-2026",
+                    "renewal_date":  "01-12-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 22, Corporate District, BENGALURU - 560444, KARNATAKA, India",
+                    "care_line":  "1800 102 0591",
+                    "email":  "support08571@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance08571.co.in",
+                    "irda_registration_no":  "571",
+                    "cin":  "U6600029MH2011PLC242571",
+                    "uin":  "HERIGP08571V032022",
+                    "signatory":  "Authorised Signatory 08571",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 08571",
+                                                             "Product_Name":  "Product Name 08571",
+                                                             "Risk_Description":  "Risk Description 08571",
+                                                             "Renewal_Date":  "Renewal Date 08571"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142208571/8571/158571",
+                                                              "Product_Name":  "GroupHealthInsurance",
+                                                              "Risk_Description":  "Corporate employee benefit risk 08571",
+                                                              "Renewal_Date":  "01-12-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

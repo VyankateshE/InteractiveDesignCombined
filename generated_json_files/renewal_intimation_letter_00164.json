@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 00164",
+                    "letter_date":  "29-05-2026",
+                    "customer_name":  "CLOUDMATRIX SOLUTIONS PVT LTD 00164",
+                    "customer_address":  "Plot 204, Industrial Area, Sector 15, 264 Road, CHENNAI, TAMIL NADU",
+                    "customer_city":  "CHENNAI",
+                    "customer_state":  "TAMIL NADU",
+                    "customer_pincode":  "600074",
+                    "customer_contact_no":  "9701298716",
+                    "customer_gst_number":  "33AABC2132D1Z3",
+                    "customer_id":  "20240000164",
+                    "servicing_branch":  "CHENNAI",
+                    "insurer_name":  "Heritage General Insurance Company 00164",
+                    "branch_office_address":  "Suite 264, 5TH FLOOR, BUSINESS PARK, CHENNAI - 600074, TAMIL NADU",
+                    "branch_phone":  "1800 102 0164",
+                    "insurer_gst_number":  "33AAHCN2788K1Z6",
+                    "imd_code":  "BRC0000664",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 00164",
+                    "imd_aadhar_no":  "100000000164",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 00164",
+                    "policy_number":  "P0142200164/8164/150164",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 00164",
+                    "policy_expiry_date":  "19-11-2026",
+                    "renewal_date":  "19-11-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 15, Corporate District, CHENNAI - 600074, TAMIL NADU, India",
+                    "care_line":  "1800 102 2184",
+                    "email":  "support00164@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance00164.co.in",
+                    "irda_registration_no":  "264",
+                    "cin":  "U6600033MH2011PLC234164",
+                    "uin":  "HERIGP00164V032022",
+                    "signatory":  "Authorised Signatory 00164",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 00164",
+                                                             "Product_Name":  "Product Name 00164",
+                                                             "Risk_Description":  "Risk Description 00164",
+                                                             "Renewal_Date":  "Renewal Date 00164"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142200164/8164/150164",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 00164",
+                                                              "Renewal_Date":  "19-11-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

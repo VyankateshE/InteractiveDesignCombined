@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 07440",
+                    "letter_date":  "15-04-2026",
+                    "customer_name":  "QUANTUMBYTE NETWORKS PVT LTD 07440",
+                    "customer_address":  "Plot 280, Industrial Area, Sector 41, 7540 Road, LUCKNOW, UTTAR PRADESH",
+                    "customer_city":  "LUCKNOW",
+                    "customer_state":  "UTTAR PRADESH",
+                    "customer_pincode":  "226555",
+                    "customer_contact_no":  "9758917360",
+                    "customer_gst_number":  "09AABC6720D1Z7",
+                    "customer_id":  "20240007440",
+                    "servicing_branch":  "LUCKNOW",
+                    "insurer_name":  "Heritage General Insurance Company 07440",
+                    "branch_office_address":  "Suite 340, 1TH FLOOR, BUSINESS PARK, LUCKNOW - 226555, UTTAR PRADESH",
+                    "branch_phone":  "1800 102 7440",
+                    "insurer_gst_number":  "09AAHCN6480K1Z1",
+                    "imd_code":  "BRC0007940",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 07440",
+                    "imd_aadhar_no":  "100000007440",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 07440",
+                    "policy_number":  "P0142207440/8440/157440",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 07440",
+                    "policy_expiry_date":  "26-10-2026",
+                    "renewal_date":  "26-10-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 1, Corporate District, LUCKNOW - 226555, UTTAR PRADESH, India",
+                    "care_line":  "1800 102 9460",
+                    "email":  "support07440@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance07440.co.in",
+                    "irda_registration_no":  "340",
+                    "cin":  "U6600009MH2011PLC241440",
+                    "uin":  "HERIGP07440V032022",
+                    "signatory":  "Authorised Signatory 07440",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 07440",
+                                                             "Product_Name":  "Product Name 07440",
+                                                             "Risk_Description":  "Risk Description 07440",
+                                                             "Renewal_Date":  "Renewal Date 07440"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142207440/8440/157440",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 07440",
+                                                              "Renewal_Date":  "26-10-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

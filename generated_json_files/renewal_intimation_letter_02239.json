@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 02239",
+                    "letter_date":  "04-05-2026",
+                    "customer_name":  "SOFTBRIDGE NETWORKS PVT LTD 02239",
+                    "customer_address":  "Plot 479, Industrial Area, Sector 40, 2339 Road, JAIPUR, RAJASTHAN",
+                    "customer_city":  "JAIPUR",
+                    "customer_state":  "RAJASTHAN",
+                    "customer_pincode":  "302925",
+                    "customer_contact_no":  "9717730641",
+                    "customer_gst_number":  "08AABC9107D1Z8",
+                    "customer_id":  "20240002239",
+                    "servicing_branch":  "JAIPUR",
+                    "insurer_name":  "Heritage General Insurance Company 02239",
+                    "branch_office_address":  "Suite 739, 20TH FLOOR, BUSINESS PARK, JAIPUR - 302925, RAJASTHAN",
+                    "branch_phone":  "1800 102 2239",
+                    "insurer_gst_number":  "08AAHCN8063K1Z2",
+                    "imd_code":  "BRC0002739",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 02239",
+                    "imd_aadhar_no":  "100000002239",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 02239",
+                    "policy_number":  "P0142202239/8239/152239",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 02239",
+                    "policy_expiry_date":  "27-07-2026",
+                    "renewal_date":  "27-07-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 20, Corporate District, JAIPUR - 302925, RAJASTHAN, India",
+                    "care_line":  "1800 102 4259",
+                    "email":  "support02239@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance02239.co.in",
+                    "irda_registration_no":  "539",
+                    "cin":  "U6600008MH2011PLC236239",
+                    "uin":  "HERIGP02239V032022",
+                    "signatory":  "Authorised Signatory 02239",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 02239",
+                                                             "Product_Name":  "Product Name 02239",
+                                                             "Risk_Description":  "Risk Description 02239",
+                                                             "Renewal_Date":  "Renewal Date 02239"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142202239/8239/152239",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 02239",
+                                                              "Renewal_Date":  "27-07-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

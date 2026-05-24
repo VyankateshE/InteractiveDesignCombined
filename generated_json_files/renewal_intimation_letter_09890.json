@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 09890",
+                    "letter_date":  "04-06-2026",
+                    "customer_name":  "QUANTUMBYTE INDUSTRIES PVT LTD 09890",
+                    "customer_address":  "Plot 930, Industrial Area, Sector 41, 9990 Road, MUMBAI, MAHARASHTRA",
+                    "customer_city":  "MUMBAI",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "400296",
+                    "customer_contact_no":  "9778318910",
+                    "customer_gst_number":  "27AABC8570D1Z9",
+                    "customer_id":  "20240009890",
+                    "servicing_branch":  "MUMBAI",
+                    "insurer_name":  "Heritage General Insurance Company 09890",
+                    "branch_office_address":  "Suite 390, 11TH FLOOR, BUSINESS PARK, MUMBAI - 400296, MAHARASHTRA",
+                    "branch_phone":  "1800 102 9890",
+                    "insurer_gst_number":  "27AAHCN8130K1Z3",
+                    "imd_code":  "BRC0010390",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 09890",
+                    "imd_aadhar_no":  "100000009890",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 09890",
+                    "policy_number":  "P0142209890/8890/159890",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 09890",
+                    "policy_expiry_date":  "13-07-2026",
+                    "renewal_date":  "13-07-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 21, Corporate District, MUMBAI - 400296, MAHARASHTRA, India",
+                    "care_line":  "1800 102 1910",
+                    "email":  "support09890@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance09890.co.in",
+                    "irda_registration_no":  "990",
+                    "cin":  "U6600027MH2011PLC243890",
+                    "uin":  "HERIGP09890V032022",
+                    "signatory":  "Authorised Signatory 09890",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 09890",
+                                                             "Product_Name":  "Product Name 09890",
+                                                             "Risk_Description":  "Risk Description 09890",
+                                                             "Renewal_Date":  "Renewal Date 09890"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142209890/8890/159890",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 09890",
+                                                              "Renewal_Date":  "13-07-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

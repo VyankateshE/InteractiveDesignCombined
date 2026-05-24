@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 01719",
+                    "letter_date":  "24-05-2026",
+                    "customer_name":  "SOFTBRIDGE SERVICES PVT LTD 01719",
+                    "customer_address":  "Plot 859, Industrial Area, Sector 20, 1819 Road, JAIPUR, RAJASTHAN",
+                    "customer_city":  "JAIPUR",
+                    "customer_state":  "RAJASTHAN",
+                    "customer_pincode":  "302666",
+                    "customer_contact_no":  "9713612761",
+                    "customer_gst_number":  "08AABC2347D1Z1",
+                    "customer_id":  "20240001719",
+                    "servicing_branch":  "JAIPUR",
+                    "insurer_name":  "Heritage General Insurance Company 01719",
+                    "branch_office_address":  "Suite 219, 20TH FLOOR, BUSINESS PARK, JAIPUR - 302666, RAJASTHAN",
+                    "branch_phone":  "1800 102 1719",
+                    "insurer_gst_number":  "08AAHCN9223K1Z4",
+                    "imd_code":  "BRC0002219",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 01719",
+                    "imd_aadhar_no":  "100000001719",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 01719",
+                    "policy_number":  "P0142201719/8719/151719",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 01719",
+                    "policy_expiry_date":  "22-02-2027",
+                    "renewal_date":  "22-02-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 10, Corporate District, JAIPUR - 302666, RAJASTHAN, India",
+                    "care_line":  "1800 102 3739",
+                    "email":  "support01719@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance01719.co.in",
+                    "irda_registration_no":  "919",
+                    "cin":  "U6600008MH2011PLC235719",
+                    "uin":  "HERIGP01719V032022",
+                    "signatory":  "Authorised Signatory 01719",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 01719",
+                                                             "Product_Name":  "Product Name 01719",
+                                                             "Risk_Description":  "Risk Description 01719",
+                                                             "Renewal_Date":  "Renewal Date 01719"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142201719/8719/151719",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 01719",
+                                                              "Renewal_Date":  "22-02-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

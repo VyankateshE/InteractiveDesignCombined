@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 06251",
+                    "letter_date":  "26-04-2026",
+                    "customer_name":  "TECHVISION SYSTEMS PVT LTD 06251",
+                    "customer_address":  "Plot 891, Industrial Area, Sector 2, 6351 Road, BENGALURU, KARNATAKA",
+                    "customer_city":  "BENGALURU",
+                    "customer_state":  "KARNATAKA",
+                    "customer_pincode":  "560518",
+                    "customer_contact_no":  "9749501669",
+                    "customer_gst_number":  "29AABC1263D1Z6",
+                    "customer_id":  "20240006251",
+                    "servicing_branch":  "BENGALURU",
+                    "insurer_name":  "Heritage General Insurance Company 06251",
+                    "branch_office_address":  "Suite 751, 12TH FLOOR, BUSINESS PARK, BENGALURU - 560518, KARNATAKA",
+                    "branch_phone":  "1800 102 6251",
+                    "insurer_gst_number":  "29AAHCN6267K1Z9",
+                    "imd_code":  "BRC0006751",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 06251",
+                    "imd_aadhar_no":  "100000006251",
+                    "reference_subject":  "Renewal of your GroupHealthInsurance Policy Ref 06251",
+                    "policy_number":  "P0142206251/8251/156251",
+                    "product_name":  "GroupHealthInsurance",
+                    "risk_description":  "Corporate employee benefit risk 06251",
+                    "policy_expiry_date":  "24-07-2026",
+                    "renewal_date":  "24-07-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 12, Corporate District, BENGALURU - 560518, KARNATAKA, India",
+                    "care_line":  "1800 102 8271",
+                    "email":  "support06251@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance06251.co.in",
+                    "irda_registration_no":  "951",
+                    "cin":  "U6600029MH2011PLC240251",
+                    "uin":  "HERIGP06251V032022",
+                    "signatory":  "Authorised Signatory 06251",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 06251",
+                                                             "Product_Name":  "Product Name 06251",
+                                                             "Risk_Description":  "Risk Description 06251",
+                                                             "Renewal_Date":  "Renewal Date 06251"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142206251/8251/156251",
+                                                              "Product_Name":  "GroupHealthInsurance",
+                                                              "Risk_Description":  "Corporate employee benefit risk 06251",
+                                                              "Renewal_Date":  "24-07-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 09298",
+                    "letter_date":  "12-06-2026",
+                    "customer_name":  "URBANCORE SYSTEMS PVT LTD 09298",
+                    "customer_address":  "Plot 338, Industrial Area, Sector 49, 9398 Road, MUMBAI, MAHARASHTRA",
+                    "customer_city":  "MUMBAI",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "400370",
+                    "customer_contact_no":  "9773630862",
+                    "customer_gst_number":  "27AABC0874D1Z2",
+                    "customer_id":  "20240009298",
+                    "servicing_branch":  "MUMBAI",
+                    "insurer_name":  "Heritage General Insurance Company 09298",
+                    "branch_office_address":  "Suite 598, 19TH FLOOR, BUSINESS PARK, MUMBAI - 400370, MAHARASHTRA",
+                    "branch_phone":  "1800 102 9298",
+                    "insurer_gst_number":  "27AAHCN8066K1Z5",
+                    "imd_code":  "BRC0009798",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 09298",
+                    "imd_aadhar_no":  "100000009298",
+                    "reference_subject":  "Renewal of your Group Mediclaim Policy Ref 09298",
+                    "policy_number":  "P0142209298/8298/159298",
+                    "product_name":  "Group Mediclaim",
+                    "risk_description":  "Corporate employee benefit risk 09298",
+                    "policy_expiry_date":  "28-11-2026",
+                    "renewal_date":  "28-11-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 29, Corporate District, MUMBAI - 400370, MAHARASHTRA, India",
+                    "care_line":  "1800 102 1318",
+                    "email":  "support09298@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance09298.co.in",
+                    "irda_registration_no":  "398",
+                    "cin":  "U6600027MH2011PLC243298",
+                    "uin":  "HERIGP09298V032022",
+                    "signatory":  "Authorised Signatory 09298",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 09298",
+                                                             "Product_Name":  "Product Name 09298",
+                                                             "Risk_Description":  "Risk Description 09298",
+                                                             "Renewal_Date":  "Renewal Date 09298"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142209298/8298/159298",
+                                                              "Product_Name":  "Group Mediclaim",
+                                                              "Risk_Description":  "Corporate employee benefit risk 09298",
+                                                              "Renewal_Date":  "28-11-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

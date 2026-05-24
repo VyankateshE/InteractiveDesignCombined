@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 00172",
+                    "letter_date":  "06-06-2026",
+                    "customer_name":  "INFONOVA SYSTEMS PVT LTD 00172",
+                    "customer_address":  "Plot 212, Industrial Area, Sector 23, 272 Road, CHENNAI, TAMIL NADU",
+                    "customer_city":  "CHENNAI",
+                    "customer_state":  "TAMIL NADU",
+                    "customer_pincode":  "600370",
+                    "customer_contact_no":  "9701362068",
+                    "customer_gst_number":  "33AABC2236D1Z2",
+                    "customer_id":  "20240000172",
+                    "servicing_branch":  "CHENNAI",
+                    "insurer_name":  "Heritage General Insurance Company 00172",
+                    "branch_office_address":  "Suite 272, 13TH FLOOR, BUSINESS PARK, CHENNAI - 600370, TAMIL NADU",
+                    "branch_phone":  "1800 102 0172",
+                    "insurer_gst_number":  "33AAHCN2924K1Z5",
+                    "imd_code":  "BRC0000672",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 00172",
+                    "imd_aadhar_no":  "100000000172",
+                    "reference_subject":  "Renewal of your Group Personal Accident Policy Ref 00172",
+                    "policy_number":  "P0142200172/8172/150172",
+                    "product_name":  "Group Personal Accident",
+                    "risk_description":  "Corporate employee benefit risk 00172",
+                    "policy_expiry_date":  "27-11-2026",
+                    "renewal_date":  "27-11-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 23, Corporate District, CHENNAI - 600370, TAMIL NADU, India",
+                    "care_line":  "1800 102 2192",
+                    "email":  "support00172@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance00172.co.in",
+                    "irda_registration_no":  "272",
+                    "cin":  "U6600033MH2011PLC234172",
+                    "uin":  "HERIGP00172V032022",
+                    "signatory":  "Authorised Signatory 00172",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 00172",
+                                                             "Product_Name":  "Product Name 00172",
+                                                             "Risk_Description":  "Risk Description 00172",
+                                                             "Renewal_Date":  "Renewal Date 00172"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142200172/8172/150172",
+                                                              "Product_Name":  "Group Personal Accident",
+                                                              "Risk_Description":  "Corporate employee benefit risk 00172",
+                                                              "Renewal_Date":  "27-11-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

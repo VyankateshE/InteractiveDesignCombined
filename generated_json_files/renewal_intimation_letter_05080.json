@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 05080",
+                    "letter_date":  "25-05-2026",
+                    "customer_name":  "QUANTUMBYTE SERVICES PVT LTD 05080",
+                    "customer_address":  "Plot 620, Industrial Area, Sector 31, 5180 Road, LUCKNOW, UTTAR PRADESH",
+                    "customer_city":  "LUCKNOW",
+                    "customer_state":  "UTTAR PRADESH",
+                    "customer_pincode":  "226148",
+                    "customer_contact_no":  "9740228520",
+                    "customer_gst_number":  "09AABC6040D1Z5",
+                    "customer_id":  "20240005080",
+                    "servicing_branch":  "LUCKNOW",
+                    "insurer_name":  "Heritage General Insurance Company 05080",
+                    "branch_office_address":  "Suite 380, 1TH FLOOR, BUSINESS PARK, LUCKNOW - 226148, UTTAR PRADESH",
+                    "branch_phone":  "1800 102 5080",
+                    "insurer_gst_number":  "09AAHCN6360K1Z8",
+                    "imd_code":  "BRC0005580",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 05080",
+                    "imd_aadhar_no":  "100000005080",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 05080",
+                    "policy_number":  "P0142205080/8080/155080",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 05080",
+                    "policy_expiry_date":  "09-05-2027",
+                    "renewal_date":  "09-05-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 11, Corporate District, LUCKNOW - 226148, UTTAR PRADESH, India",
+                    "care_line":  "1800 102 7100",
+                    "email":  "support05080@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance05080.co.in",
+                    "irda_registration_no":  "680",
+                    "cin":  "U6600009MH2011PLC239080",
+                    "uin":  "HERIGP05080V032022",
+                    "signatory":  "Authorised Signatory 05080",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 05080",
+                                                             "Product_Name":  "Product Name 05080",
+                                                             "Risk_Description":  "Risk Description 05080",
+                                                             "Renewal_Date":  "Renewal Date 05080"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142205080/8080/155080",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 05080",
+                                                              "Renewal_Date":  "09-05-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

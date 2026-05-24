@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 09608",
+                    "letter_date":  "23-04-2026",
+                    "customer_name":  "URBANCORE SOLUTIONS PVT LTD 09608",
+                    "customer_address":  "Plot 648, Industrial Area, Sector 9, 9708 Road, LUCKNOW, UTTAR PRADESH",
+                    "customer_city":  "LUCKNOW",
+                    "customer_state":  "UTTAR PRADESH",
+                    "customer_pincode":  "226851",
+                    "customer_contact_no":  "9776085752",
+                    "customer_gst_number":  "09AABC4904D1Z6",
+                    "customer_id":  "20240009608",
+                    "servicing_branch":  "LUCKNOW",
+                    "insurer_name":  "Heritage General Insurance Company 09608",
+                    "branch_office_address":  "Suite 108, 9TH FLOOR, BUSINESS PARK, LUCKNOW - 226851, UTTAR PRADESH",
+                    "branch_phone":  "1800 102 9608",
+                    "insurer_gst_number":  "09AAHCN3336K1Z9",
+                    "imd_code":  "BRC0010108",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 09608",
+                    "imd_aadhar_no":  "100000009608",
+                    "reference_subject":  "Renewal of your Group Mediclaim Policy Ref 09608",
+                    "policy_number":  "P0142209608/8608/159608",
+                    "product_name":  "Group Mediclaim",
+                    "risk_description":  "Corporate employee benefit risk 09608",
+                    "policy_expiry_date":  "04-10-2026",
+                    "renewal_date":  "04-10-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 9, Corporate District, LUCKNOW - 226851, UTTAR PRADESH, India",
+                    "care_line":  "1800 102 1628",
+                    "email":  "support09608@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance09608.co.in",
+                    "irda_registration_no":  "708",
+                    "cin":  "U6600009MH2011PLC243608",
+                    "uin":  "HERIGP09608V032022",
+                    "signatory":  "Authorised Signatory 09608",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 09608",
+                                                             "Product_Name":  "Product Name 09608",
+                                                             "Risk_Description":  "Risk Description 09608",
+                                                             "Renewal_Date":  "Renewal Date 09608"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142209608/8608/159608",
+                                                              "Product_Name":  "Group Mediclaim",
+                                                              "Risk_Description":  "Corporate employee benefit risk 09608",
+                                                              "Renewal_Date":  "04-10-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 02777",
+                    "letter_date":  "02-05-2026",
+                    "customer_name":  "MEDILINK ENTERPRISES PVT LTD 02777",
+                    "customer_address":  "Plot 117, Industrial Area, Sector 28, 2877 Road, PUNE, MAHARASHTRA",
+                    "customer_city":  "PUNE",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "411851",
+                    "customer_contact_no":  "9721991063",
+                    "customer_gst_number":  "27AABC6101D1Z6",
+                    "customer_id":  "20240002777",
+                    "servicing_branch":  "PUNE",
+                    "insurer_name":  "Heritage General Insurance Company 02777",
+                    "branch_office_address":  "Suite 477, 18TH FLOOR, BUSINESS PARK, PUNE - 411851, MAHARASHTRA",
+                    "branch_phone":  "1800 102 2777",
+                    "insurer_gst_number":  "27AAHCN7209K1Z9",
+                    "imd_code":  "BRC0003277",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 02777",
+                    "imd_aadhar_no":  "100000002777",
+                    "reference_subject":  "Renewal of your Group Personal Accident Policy Ref 02777",
+                    "policy_number":  "P0142202777/8777/152777",
+                    "product_name":  "Group Personal Accident",
+                    "risk_description":  "Corporate employee benefit risk 02777",
+                    "policy_expiry_date":  "16-01-2027",
+                    "renewal_date":  "16-01-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 18, Corporate District, PUNE - 411851, MAHARASHTRA, India",
+                    "care_line":  "1800 102 4797",
+                    "email":  "support02777@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance02777.co.in",
+                    "irda_registration_no":  "177",
+                    "cin":  "U6600027MH2011PLC236777",
+                    "uin":  "HERIGP02777V032022",
+                    "signatory":  "Authorised Signatory 02777",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 02777",
+                                                             "Product_Name":  "Product Name 02777",
+                                                             "Risk_Description":  "Risk Description 02777",
+                                                             "Renewal_Date":  "Renewal Date 02777"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142202777/8777/152777",
+                                                              "Product_Name":  "Group Personal Accident",
+                                                              "Risk_Description":  "Corporate employee benefit risk 02777",
+                                                              "Renewal_Date":  "16-01-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

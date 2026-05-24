@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 00780",
+                    "letter_date":  "15-04-2026",
+                    "customer_name":  "QUANTUMBYTE ENTERPRISES PVT LTD 00780",
+                    "customer_address":  "Plot 820, Industrial Area, Sector 31, 880 Road, CHENNAI, TAMIL NADU",
+                    "customer_city":  "CHENNAI",
+                    "customer_state":  "TAMIL NADU",
+                    "customer_pincode":  "600888",
+                    "customer_contact_no":  "9706176820",
+                    "customer_gst_number":  "33AABC0140D1Z7",
+                    "customer_id":  "20240000780",
+                    "servicing_branch":  "CHENNAI",
+                    "insurer_name":  "Heritage General Insurance Company 00780",
+                    "branch_office_address":  "Suite 880, 1TH FLOOR, BUSINESS PARK, CHENNAI - 600888, TAMIL NADU",
+                    "branch_phone":  "1800 102 0780",
+                    "insurer_gst_number":  "33AAHCN3260K1Z1",
+                    "imd_code":  "BRC0001280",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 00780",
+                    "imd_aadhar_no":  "100000000780",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 00780",
+                    "policy_number":  "P0142200780/8780/150780",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 00780",
+                    "policy_expiry_date":  "28-07-2026",
+                    "renewal_date":  "28-07-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 1, Corporate District, CHENNAI - 600888, TAMIL NADU, India",
+                    "care_line":  "1800 102 2800",
+                    "email":  "support00780@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance00780.co.in",
+                    "irda_registration_no":  "880",
+                    "cin":  "U6600033MH2011PLC234780",
+                    "uin":  "HERIGP00780V032022",
+                    "signatory":  "Authorised Signatory 00780",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 00780",
+                                                             "Product_Name":  "Product Name 00780",
+                                                             "Risk_Description":  "Risk Description 00780",
+                                                             "Renewal_Date":  "Renewal Date 00780"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142200780/8780/150780",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 00780",
+                                                              "Renewal_Date":  "28-07-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

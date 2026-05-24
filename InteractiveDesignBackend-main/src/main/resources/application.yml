@@ -1,6 +1,6 @@
 server:
   port: 8081
-  address: 192.168.0.188
+  # address: 192.168.0.188
 
   tomcat:
     threads:

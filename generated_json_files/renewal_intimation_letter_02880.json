@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 02880",
+                    "letter_date":  "15-04-2026",
+                    "customer_name":  "QUANTUMBYTE NETWORKS PVT LTD 02880",
+                    "customer_address":  "Plot 220, Industrial Area, Sector 31, 2980 Road, LUCKNOW, UTTAR PRADESH",
+                    "customer_city":  "LUCKNOW",
+                    "customer_state":  "UTTAR PRADESH",
+                    "customer_pincode":  "226666",
+                    "customer_contact_no":  "9722806720",
+                    "customer_gst_number":  "09AABC7440D1Z1",
+                    "customer_id":  "20240002880",
+                    "servicing_branch":  "LUCKNOW",
+                    "insurer_name":  "Heritage General Insurance Company 02880",
+                    "branch_office_address":  "Suite 580, 1TH FLOOR, BUSINESS PARK, LUCKNOW - 226666, UTTAR PRADESH",
+                    "branch_phone":  "1800 102 2880",
+                    "insurer_gst_number":  "09AAHCN8960K1Z4",
+                    "imd_code":  "BRC0003380",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 02880",
+                    "imd_aadhar_no":  "100000002880",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 02880",
+                    "policy_number":  "P0142202880/8880/152880",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 02880",
+                    "policy_expiry_date":  "29-04-2027",
+                    "renewal_date":  "29-04-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 1, Corporate District, LUCKNOW - 226666, UTTAR PRADESH, India",
+                    "care_line":  "1800 102 4900",
+                    "email":  "support02880@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance02880.co.in",
+                    "irda_registration_no":  "280",
+                    "cin":  "U6600009MH2011PLC236880",
+                    "uin":  "HERIGP02880V032022",
+                    "signatory":  "Authorised Signatory 02880",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 02880",
+                                                             "Product_Name":  "Product Name 02880",
+                                                             "Risk_Description":  "Risk Description 02880",
+                                                             "Renewal_Date":  "Renewal Date 02880"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142202880/8880/152880",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 02880",
+                                                              "Renewal_Date":  "29-04-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

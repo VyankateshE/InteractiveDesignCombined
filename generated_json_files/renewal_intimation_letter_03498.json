@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 03498",
+                    "letter_date":  "03-05-2026",
+                    "customer_name":  "URBANCORE ENTERPRISES PVT LTD 03498",
+                    "customer_address":  "Plot 838, Industrial Area, Sector 49, 3598 Road, MUMBAI, MAHARASHTRA",
+                    "customer_city":  "MUMBAI",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "400555",
+                    "customer_contact_no":  "9727700662",
+                    "customer_gst_number":  "27AABC5474D1Z7",
+                    "customer_id":  "20240003498",
+                    "servicing_branch":  "MUMBAI",
+                    "insurer_name":  "Heritage General Insurance Company 03498",
+                    "branch_office_address":  "Suite 398, 19TH FLOOR, BUSINESS PARK, MUMBAI - 400555, MAHARASHTRA",
+                    "branch_phone":  "1800 102 3498",
+                    "insurer_gst_number":  "27AAHCN9466K1Z1",
+                    "imd_code":  "BRC0003998",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 03498",
+                    "imd_aadhar_no":  "100000003498",
+                    "reference_subject":  "Renewal of your Group Mediclaim Policy Ref 03498",
+                    "policy_number":  "P0142203498/8498/153498",
+                    "product_name":  "Group Mediclaim",
+                    "risk_description":  "Corporate employee benefit risk 03498",
+                    "policy_expiry_date":  "07-01-2027",
+                    "renewal_date":  "07-01-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 19, Corporate District, MUMBAI - 400555, MAHARASHTRA, India",
+                    "care_line":  "1800 102 5518",
+                    "email":  "support03498@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance03498.co.in",
+                    "irda_registration_no":  "898",
+                    "cin":  "U6600027MH2011PLC237498",
+                    "uin":  "HERIGP03498V032022",
+                    "signatory":  "Authorised Signatory 03498",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 03498",
+                                                             "Product_Name":  "Product Name 03498",
+                                                             "Risk_Description":  "Risk Description 03498",
+                                                             "Renewal_Date":  "Renewal Date 03498"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142203498/8498/153498",
+                                                              "Product_Name":  "Group Mediclaim",
+                                                              "Risk_Description":  "Corporate employee benefit risk 03498",
+                                                              "Renewal_Date":  "07-01-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

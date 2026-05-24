@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 04094",
+                    "letter_date":  "29-04-2026",
+                    "customer_name":  "CLOUDMATRIX SYSTEMS PVT LTD 04094",
+                    "customer_address":  "Plot 534, Industrial Area, Sector 45, 4194 Road, AHMEDABAD, GUJARAT",
+                    "customer_city":  "AHMEDABAD",
+                    "customer_state":  "GUJARAT",
+                    "customer_pincode":  "380629",
+                    "customer_contact_no":  "9732420386",
+                    "customer_gst_number":  "24AABC3222D1Z9",
+                    "customer_id":  "20240004094",
+                    "servicing_branch":  "AHMEDABAD",
+                    "insurer_name":  "Heritage General Insurance Company 04094",
+                    "branch_office_address":  "Suite 194, 15TH FLOOR, BUSINESS PARK, AHMEDABAD - 380629, GUJARAT",
+                    "branch_phone":  "1800 102 4094",
+                    "insurer_gst_number":  "24AAHCN9598K1Z3",
+                    "imd_code":  "BRC0004594",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 04094",
+                    "imd_aadhar_no":  "100000004094",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 04094",
+                    "policy_number":  "P0142204094/8094/154094",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 04094",
+                    "policy_expiry_date":  "26-08-2026",
+                    "renewal_date":  "26-08-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 15, Corporate District, AHMEDABAD - 380629, GUJARAT, India",
+                    "care_line":  "1800 102 6114",
+                    "email":  "support04094@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance04094.co.in",
+                    "irda_registration_no":  "594",
+                    "cin":  "U6600024MH2011PLC238094",
+                    "uin":  "HERIGP04094V032022",
+                    "signatory":  "Authorised Signatory 04094",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 04094",
+                                                             "Product_Name":  "Product Name 04094",
+                                                             "Risk_Description":  "Risk Description 04094",
+                                                             "Renewal_Date":  "Renewal Date 04094"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142204094/8094/154094",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 04094",
+                                                              "Renewal_Date":  "26-08-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

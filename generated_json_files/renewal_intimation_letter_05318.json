@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 05318",
+                    "letter_date":  "23-05-2026",
+                    "customer_name":  "URBANCORE SERVICES PVT LTD 05318",
+                    "customer_address":  "Plot 858, Industrial Area, Sector 19, 5418 Road, AHMEDABAD, GUJARAT",
+                    "customer_city":  "AHMEDABAD",
+                    "customer_state":  "GUJARAT",
+                    "customer_pincode":  "380962",
+                    "customer_contact_no":  "9742113242",
+                    "customer_gst_number":  "24AABC9134D1Z9",
+                    "customer_id":  "20240005318",
+                    "servicing_branch":  "AHMEDABAD",
+                    "insurer_name":  "Heritage General Insurance Company 05318",
+                    "branch_office_address":  "Suite 618, 19TH FLOOR, BUSINESS PARK, AHMEDABAD - 380962, GUJARAT",
+                    "branch_phone":  "1800 102 5318",
+                    "insurer_gst_number":  "24AAHCN0406K1Z3",
+                    "imd_code":  "BRC0005818",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 05318",
+                    "imd_aadhar_no":  "100000005318",
+                    "reference_subject":  "Renewal of your Group Mediclaim Policy Ref 05318",
+                    "policy_number":  "P0142205318/8318/155318",
+                    "product_name":  "Group Mediclaim",
+                    "risk_description":  "Corporate employee benefit risk 05318",
+                    "policy_expiry_date":  "02-01-2027",
+                    "renewal_date":  "02-01-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 9, Corporate District, AHMEDABAD - 380962, GUJARAT, India",
+                    "care_line":  "1800 102 7338",
+                    "email":  "support05318@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance05318.co.in",
+                    "irda_registration_no":  "918",
+                    "cin":  "U6600024MH2011PLC239318",
+                    "uin":  "HERIGP05318V032022",
+                    "signatory":  "Authorised Signatory 05318",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 05318",
+                                                             "Product_Name":  "Product Name 05318",
+                                                             "Risk_Description":  "Risk Description 05318",
+                                                             "Renewal_Date":  "Renewal Date 05318"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142205318/8318/155318",
+                                                              "Product_Name":  "Group Mediclaim",
+                                                              "Risk_Description":  "Corporate employee benefit risk 05318",
+                                                              "Renewal_Date":  "02-01-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 05180",
+                    "letter_date":  "05-05-2026",
+                    "customer_name":  "QUANTUMBYTE ENTERPRISES PVT LTD 05180",
+                    "customer_address":  "Plot 720, Industrial Area, Sector 31, 5280 Road, CHENNAI, TAMIL NADU",
+                    "customer_city":  "CHENNAI",
+                    "customer_state":  "TAMIL NADU",
+                    "customer_pincode":  "600851",
+                    "customer_contact_no":  "9741020420",
+                    "customer_gst_number":  "33AABC7340D1Z6",
+                    "customer_id":  "20240005180",
+                    "servicing_branch":  "CHENNAI",
+                    "insurer_name":  "Heritage General Insurance Company 05180",
+                    "branch_office_address":  "Suite 480, 1TH FLOOR, BUSINESS PARK, CHENNAI - 600851, TAMIL NADU",
+                    "branch_phone":  "1800 102 5180",
+                    "insurer_gst_number":  "33AAHCN8060K1Z9",
+                    "imd_code":  "BRC0005680",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 05180",
+                    "imd_aadhar_no":  "100000005180",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 05180",
+                    "policy_number":  "P0142205180/8180/155180",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 05180",
+                    "policy_expiry_date":  "17-08-2026",
+                    "renewal_date":  "17-08-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 21, Corporate District, CHENNAI - 600851, TAMIL NADU, India",
+                    "care_line":  "1800 102 7200",
+                    "email":  "support05180@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance05180.co.in",
+                    "irda_registration_no":  "780",
+                    "cin":  "U6600033MH2011PLC239180",
+                    "uin":  "HERIGP05180V032022",
+                    "signatory":  "Authorised Signatory 05180",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 05180",
+                                                             "Product_Name":  "Product Name 05180",
+                                                             "Risk_Description":  "Risk Description 05180",
+                                                             "Renewal_Date":  "Renewal Date 05180"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142205180/8180/155180",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 05180",
+                                                              "Renewal_Date":  "17-08-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

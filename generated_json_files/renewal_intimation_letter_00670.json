@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 00670",
+                    "letter_date":  "25-04-2026",
+                    "customer_name":  "QUANTUMBYTE TECHNOLOGIES PVT LTD 00670",
+                    "customer_address":  "Plot 710, Industrial Area, Sector 21, 770 Road, AHMEDABAD, GUJARAT",
+                    "customer_city":  "AHMEDABAD",
+                    "customer_state":  "GUJARAT",
+                    "customer_pincode":  "380814",
+                    "customer_contact_no":  "9705305730",
+                    "customer_gst_number":  "24AABC8710D1Z5",
+                    "customer_id":  "20240000670",
+                    "servicing_branch":  "AHMEDABAD",
+                    "insurer_name":  "Heritage General Insurance Company 00670",
+                    "branch_office_address":  "Suite 770, 11TH FLOOR, BUSINESS PARK, AHMEDABAD - 380814, GUJARAT",
+                    "branch_phone":  "1800 102 0670",
+                    "insurer_gst_number":  "24AAHCN1390K1Z8",
+                    "imd_code":  "BRC0001170",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 00670",
+                    "imd_aadhar_no":  "100000000670",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 00670",
+                    "policy_number":  "P0142200670/8670/150670",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 00670",
+                    "policy_expiry_date":  "09-04-2027",
+                    "renewal_date":  "09-04-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 11, Corporate District, AHMEDABAD - 380814, GUJARAT, India",
+                    "care_line":  "1800 102 2690",
+                    "email":  "support00670@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance00670.co.in",
+                    "irda_registration_no":  "770",
+                    "cin":  "U6600024MH2011PLC234670",
+                    "uin":  "HERIGP00670V032022",
+                    "signatory":  "Authorised Signatory 00670",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 00670",
+                                                             "Product_Name":  "Product Name 00670",
+                                                             "Risk_Description":  "Risk Description 00670",
+                                                             "Renewal_Date":  "Renewal Date 00670"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142200670/8670/150670",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 00670",
+                                                              "Renewal_Date":  "09-04-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 02465",
+                    "letter_date":  "20-04-2026",
+                    "customer_name":  "NEXORA INNOVATIONS PVT LTD 02465",
+                    "customer_address":  "Plot 705, Industrial Area, Sector 16, 2565 Road, PUNE, MAHARASHTRA",
+                    "customer_city":  "PUNE",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "411296",
+                    "customer_contact_no":  "9719520335",
+                    "customer_gst_number":  "27AABC2045D1Z9",
+                    "customer_id":  "20240002465",
+                    "servicing_branch":  "PUNE",
+                    "insurer_name":  "Heritage General Insurance Company 02465",
+                    "branch_office_address":  "Suite 165, 6TH FLOOR, BUSINESS PARK, PUNE - 411296, MAHARASHTRA",
+                    "branch_phone":  "1800 102 2465",
+                    "insurer_gst_number":  "27AAHCN1905K1Z3",
+                    "imd_code":  "BRC0002965",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 02465",
+                    "imd_aadhar_no":  "100000002465",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 02465",
+                    "policy_number":  "P0142202465/8465/152465",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 02465",
+                    "policy_expiry_date":  "10-03-2027",
+                    "renewal_date":  "10-03-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 6, Corporate District, PUNE - 411296, MAHARASHTRA, India",
+                    "care_line":  "1800 102 4485",
+                    "email":  "support02465@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance02465.co.in",
+                    "irda_registration_no":  "765",
+                    "cin":  "U6600027MH2011PLC236465",
+                    "uin":  "HERIGP02465V032022",
+                    "signatory":  "Authorised Signatory 02465",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 02465",
+                                                             "Product_Name":  "Product Name 02465",
+                                                             "Risk_Description":  "Risk Description 02465",
+                                                             "Renewal_Date":  "Renewal Date 02465"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142202465/8465/152465",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 02465",
+                                                              "Renewal_Date":  "10-03-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

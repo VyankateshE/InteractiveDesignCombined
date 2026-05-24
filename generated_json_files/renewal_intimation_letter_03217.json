@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 03217",
+                    "letter_date":  "22-05-2026",
+                    "customer_name":  "MEDILINK SYSTEMS PVT LTD 03217",
+                    "customer_address":  "Plot 557, Industrial Area, Sector 18, 3317 Road, PUNE, MAHARASHTRA",
+                    "customer_city":  "PUNE",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "411148",
+                    "customer_contact_no":  "9725475423",
+                    "customer_gst_number":  "27AABC1821D1Z5",
+                    "customer_id":  "20240003217",
+                    "servicing_branch":  "PUNE",
+                    "insurer_name":  "Heritage General Insurance Company 03217",
+                    "branch_office_address":  "Suite 117, 18TH FLOOR, BUSINESS PARK, PUNE - 411148, MAHARASHTRA",
+                    "branch_phone":  "1800 102 3217",
+                    "insurer_gst_number":  "27AAHCN4689K1Z8",
+                    "imd_code":  "BRC0003717",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 03217",
+                    "imd_aadhar_no":  "100000003217",
+                    "reference_subject":  "Renewal of your Group Personal Accident Policy Ref 03217",
+                    "policy_number":  "P0142203217/8217/153217",
+                    "product_name":  "Group Personal Accident",
+                    "risk_description":  "Corporate employee benefit risk 03217",
+                    "policy_expiry_date":  "01-04-2027",
+                    "renewal_date":  "01-04-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 8, Corporate District, PUNE - 411148, MAHARASHTRA, India",
+                    "care_line":  "1800 102 5237",
+                    "email":  "support03217@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance03217.co.in",
+                    "irda_registration_no":  "617",
+                    "cin":  "U6600027MH2011PLC237217",
+                    "uin":  "HERIGP03217V032022",
+                    "signatory":  "Authorised Signatory 03217",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 03217",
+                                                             "Product_Name":  "Product Name 03217",
+                                                             "Risk_Description":  "Risk Description 03217",
+                                                             "Renewal_Date":  "Renewal Date 03217"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142203217/8217/153217",
+                                                              "Product_Name":  "Group Personal Accident",
+                                                              "Risk_Description":  "Corporate employee benefit risk 03217",
+                                                              "Renewal_Date":  "01-04-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 01447",
+                    "letter_date":  "22-04-2026",
+                    "customer_name":  "MEDILINK SOLUTIONS PVT LTD 01447",
+                    "customer_address":  "Plot 587, Industrial Area, Sector 48, 1547 Road, JAIPUR, RAJASTHAN",
+                    "customer_city":  "JAIPUR",
+                    "customer_state":  "RAJASTHAN",
+                    "customer_pincode":  "302592",
+                    "customer_contact_no":  "9711458793",
+                    "customer_gst_number":  "08AABC8811D1Z8",
+                    "customer_id":  "20240001447",
+                    "servicing_branch":  "JAIPUR",
+                    "insurer_name":  "Heritage General Insurance Company 01447",
+                    "branch_office_address":  "Suite 747, 8TH FLOOR, BUSINESS PARK, JAIPUR - 302592, RAJASTHAN",
+                    "branch_phone":  "1800 102 1447",
+                    "insurer_gst_number":  "08AAHCN4599K1Z2",
+                    "imd_code":  "BRC0001947",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 01447",
+                    "imd_aadhar_no":  "100000001447",
+                    "reference_subject":  "Renewal of your Group Personal Accident Policy Ref 01447",
+                    "policy_number":  "P0142201447/8447/151447",
+                    "product_name":  "Group Personal Accident",
+                    "risk_description":  "Corporate employee benefit risk 01447",
+                    "policy_expiry_date":  "26-05-2027",
+                    "renewal_date":  "26-05-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 8, Corporate District, JAIPUR - 302592, RAJASTHAN, India",
+                    "care_line":  "1800 102 3467",
+                    "email":  "support01447@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance01447.co.in",
+                    "irda_registration_no":  "647",
+                    "cin":  "U6600008MH2011PLC235447",
+                    "uin":  "HERIGP01447V032022",
+                    "signatory":  "Authorised Signatory 01447",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 01447",
+                                                             "Product_Name":  "Product Name 01447",
+                                                             "Risk_Description":  "Risk Description 01447",
+                                                             "Renewal_Date":  "Renewal Date 01447"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142201447/8447/151447",
+                                                              "Product_Name":  "Group Personal Accident",
+                                                              "Risk_Description":  "Corporate employee benefit risk 01447",
+                                                              "Renewal_Date":  "26-05-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 04600",
+                    "letter_date":  "25-05-2026",
+                    "customer_name":  "QUANTUMBYTE SERVICES PVT LTD 04600",
+                    "customer_address":  "Plot 140, Industrial Area, Sector 1, 4700 Road, LUCKNOW, UTTAR PRADESH",
+                    "customer_city":  "LUCKNOW",
+                    "customer_state":  "UTTAR PRADESH",
+                    "customer_pincode":  "226370",
+                    "customer_contact_no":  "9736427400",
+                    "customer_gst_number":  "09AABC9800D1Z2",
+                    "customer_id":  "20240004600",
+                    "servicing_branch":  "LUCKNOW",
+                    "insurer_name":  "Heritage General Insurance Company 04600",
+                    "branch_office_address":  "Suite 700, 1TH FLOOR, BUSINESS PARK, LUCKNOW - 226370, UTTAR PRADESH",
+                    "branch_phone":  "1800 102 4600",
+                    "insurer_gst_number":  "09AAHCN8200K1Z5",
+                    "imd_code":  "BRC0005100",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 04600",
+                    "imd_aadhar_no":  "100000004600",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 04600",
+                    "policy_number":  "P0142204600/8600/154600",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 04600",
+                    "policy_expiry_date":  "14-01-2027",
+                    "renewal_date":  "14-01-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 11, Corporate District, LUCKNOW - 226370, UTTAR PRADESH, India",
+                    "care_line":  "1800 102 6620",
+                    "email":  "support04600@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance04600.co.in",
+                    "irda_registration_no":  "200",
+                    "cin":  "U6600009MH2011PLC238600",
+                    "uin":  "HERIGP04600V032022",
+                    "signatory":  "Authorised Signatory 04600",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 04600",
+                                                             "Product_Name":  "Product Name 04600",
+                                                             "Risk_Description":  "Risk Description 04600",
+                                                             "Renewal_Date":  "Renewal Date 04600"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142204600/8600/154600",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 04600",
+                                                              "Renewal_Date":  "14-01-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

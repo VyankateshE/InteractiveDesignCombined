@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 08981",
+                    "letter_date":  "26-05-2026",
+                    "customer_name":  "TECHVISION TECHNOLOGIES PVT LTD 08981",
+                    "customer_address":  "Plot 921, Industrial Area, Sector 32, 9081 Road, HYDERABAD, TELANGANA",
+                    "customer_city":  "HYDERABAD",
+                    "customer_state":  "TELANGANA",
+                    "customer_pincode":  "500629",
+                    "customer_contact_no":  "9771120539",
+                    "customer_gst_number":  "36AABC6753D1Z9",
+                    "customer_id":  "20240008981",
+                    "servicing_branch":  "HYDERABAD",
+                    "insurer_name":  "Heritage General Insurance Company 08981",
+                    "branch_office_address":  "Suite 281, 2TH FLOOR, BUSINESS PARK, HYDERABAD - 500629, TELANGANA",
+                    "branch_phone":  "1800 102 8981",
+                    "insurer_gst_number":  "36AAHCN2677K1Z3",
+                    "imd_code":  "BRC0009481",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 08981",
+                    "imd_aadhar_no":  "100000008981",
+                    "reference_subject":  "Renewal of your GroupHealthInsurance Policy Ref 08981",
+                    "policy_number":  "P0142208981/8981/158981",
+                    "product_name":  "GroupHealthInsurance",
+                    "risk_description":  "Corporate employee benefit risk 08981",
+                    "policy_expiry_date":  "15-01-2027",
+                    "renewal_date":  "15-01-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 12, Corporate District, HYDERABAD - 500629, TELANGANA, India",
+                    "care_line":  "1800 102 1001",
+                    "email":  "support08981@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance08981.co.in",
+                    "irda_registration_no":  "981",
+                    "cin":  "U6600036MH2011PLC242981",
+                    "uin":  "HERIGP08981V032022",
+                    "signatory":  "Authorised Signatory 08981",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 08981",
+                                                             "Product_Name":  "Product Name 08981",
+                                                             "Risk_Description":  "Risk Description 08981",
+                                                             "Renewal_Date":  "Renewal Date 08981"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142208981/8981/158981",
+                                                              "Product_Name":  "GroupHealthInsurance",
+                                                              "Risk_Description":  "Corporate employee benefit risk 08981",
+                                                              "Renewal_Date":  "15-01-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

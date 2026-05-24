@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 09113",
+                    "letter_date":  "07-06-2026",
+                    "customer_name":  "DATAPRIME NETWORKS PVT LTD 09113",
+                    "customer_address":  "Plot 153, Industrial Area, Sector 14, 9213 Road, PUNE, MAHARASHTRA",
+                    "customer_city":  "PUNE",
+                    "customer_state":  "MAHARASHTRA",
+                    "customer_pincode":  "411518",
+                    "customer_contact_no":  "9772165847",
+                    "customer_gst_number":  "27AABC8469D1Z6",
+                    "customer_id":  "20240009113",
+                    "servicing_branch":  "PUNE",
+                    "insurer_name":  "Heritage General Insurance Company 09113",
+                    "branch_office_address":  "Suite 413, 14TH FLOOR, BUSINESS PARK, PUNE - 411518, MAHARASHTRA",
+                    "branch_phone":  "1800 102 9113",
+                    "insurer_gst_number":  "27AAHCN4921K1Z9",
+                    "imd_code":  "BRC0009613",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 09113",
+                    "imd_aadhar_no":  "100000009113",
+                    "reference_subject":  "Renewal of your Group Mediclaim Policy Ref 09113",
+                    "policy_number":  "P0142209113/8113/159113",
+                    "product_name":  "Group Mediclaim",
+                    "risk_description":  "Corporate employee benefit risk 09113",
+                    "policy_expiry_date":  "27-05-2027",
+                    "renewal_date":  "27-05-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 24, Corporate District, PUNE - 411518, MAHARASHTRA, India",
+                    "care_line":  "1800 102 1133",
+                    "email":  "support09113@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance09113.co.in",
+                    "irda_registration_no":  "213",
+                    "cin":  "U6600027MH2011PLC243113",
+                    "uin":  "HERIGP09113V032022",
+                    "signatory":  "Authorised Signatory 09113",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 09113",
+                                                             "Product_Name":  "Product Name 09113",
+                                                             "Risk_Description":  "Risk Description 09113",
+                                                             "Renewal_Date":  "Renewal Date 09113"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142209113/8113/159113",
+                                                              "Product_Name":  "Group Mediclaim",
+                                                              "Risk_Description":  "Corporate employee benefit risk 09113",
+                                                              "Renewal_Date":  "27-05-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

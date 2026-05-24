@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 03559",
+                    "letter_date":  "04-05-2026",
+                    "customer_name":  "SOFTBRIDGE SERVICES PVT LTD 03559",
+                    "customer_address":  "Plot 899, Industrial Area, Sector 10, 3659 Road, JAIPUR, RAJASTHAN",
+                    "customer_city":  "JAIPUR",
+                    "customer_state":  "RAJASTHAN",
+                    "customer_pincode":  "302814",
+                    "customer_contact_no":  "9728183721",
+                    "customer_gst_number":  "08AABC6267D1Z5",
+                    "customer_id":  "20240003559",
+                    "servicing_branch":  "JAIPUR",
+                    "insurer_name":  "Heritage General Insurance Company 03559",
+                    "branch_office_address":  "Suite 459, 20TH FLOOR, BUSINESS PARK, JAIPUR - 302814, RAJASTHAN",
+                    "branch_phone":  "1800 102 3559",
+                    "insurer_gst_number":  "08AAHCN0503K1Z8",
+                    "imd_code":  "BRC0004059",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 03559",
+                    "imd_aadhar_no":  "100000003559",
+                    "reference_subject":  "Renewal of your Employee Health Cover Policy Ref 03559",
+                    "policy_number":  "P0142203559/8559/153559",
+                    "product_name":  "Employee Health Cover",
+                    "risk_description":  "Corporate employee benefit risk 03559",
+                    "policy_expiry_date":  "09-03-2027",
+                    "renewal_date":  "09-03-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 20, Corporate District, JAIPUR - 302814, RAJASTHAN, India",
+                    "care_line":  "1800 102 5579",
+                    "email":  "support03559@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance03559.co.in",
+                    "irda_registration_no":  "959",
+                    "cin":  "U6600008MH2011PLC237559",
+                    "uin":  "HERIGP03559V032022",
+                    "signatory":  "Authorised Signatory 03559",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 03559",
+                                                             "Product_Name":  "Product Name 03559",
+                                                             "Risk_Description":  "Risk Description 03559",
+                                                             "Renewal_Date":  "Renewal Date 03559"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142203559/8559/153559",
+                                                              "Product_Name":  "Employee Health Cover",
+                                                              "Risk_Description":  "Corporate employee benefit risk 03559",
+                                                              "Renewal_Date":  "09-03-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

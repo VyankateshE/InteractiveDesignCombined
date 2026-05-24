@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 00443",
+                    "letter_date":  "08-05-2026",
+                    "customer_name":  "DATAPRIME INDUSTRIES PVT LTD 00443",
+                    "customer_address":  "Plot 483, Industrial Area, Sector 44, 543 Road, BENGALURU, KARNATAKA",
+                    "customer_city":  "BENGALURU",
+                    "customer_state":  "KARNATAKA",
+                    "customer_pincode":  "560407",
+                    "customer_contact_no":  "9703508117",
+                    "customer_gst_number":  "29AABC5759D1Z3",
+                    "customer_id":  "20240000443",
+                    "servicing_branch":  "BENGALURU",
+                    "insurer_name":  "Heritage General Insurance Company 00443",
+                    "branch_office_address":  "Suite 543, 4TH FLOOR, BUSINESS PARK, BENGALURU - 560407, KARNATAKA",
+                    "branch_phone":  "1800 102 0443",
+                    "insurer_gst_number":  "29AAHCN7531K1Z6",
+                    "imd_code":  "BRC0000943",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 00443",
+                    "imd_aadhar_no":  "100000000443",
+                    "reference_subject":  "Renewal of your Group Mediclaim Policy Ref 00443",
+                    "policy_number":  "P0142200443/8443/150443",
+                    "product_name":  "Group Mediclaim",
+                    "risk_description":  "Corporate employee benefit risk 00443",
+                    "policy_expiry_date":  "25-08-2026",
+                    "renewal_date":  "25-08-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 24, Corporate District, BENGALURU - 560407, KARNATAKA, India",
+                    "care_line":  "1800 102 2463",
+                    "email":  "support00443@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance00443.co.in",
+                    "irda_registration_no":  "543",
+                    "cin":  "U6600029MH2011PLC234443",
+                    "uin":  "HERIGP00443V032022",
+                    "signatory":  "Authorised Signatory 00443",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 00443",
+                                                             "Product_Name":  "Product Name 00443",
+                                                             "Risk_Description":  "Risk Description 00443",
+                                                             "Renewal_Date":  "Renewal Date 00443"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142200443/8443/150443",
+                                                              "Product_Name":  "Group Mediclaim",
+                                                              "Risk_Description":  "Corporate employee benefit risk 00443",
+                                                              "Renewal_Date":  "25-08-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

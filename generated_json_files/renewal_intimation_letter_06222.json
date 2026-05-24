@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 06222",
+                    "letter_date":  "27-05-2026",
+                    "customer_name":  "INFONOVA INNOVATIONS PVT LTD 06222",
+                    "customer_address":  "Plot 862, Industrial Area, Sector 23, 6322 Road, AHMEDABAD, GUJARAT",
+                    "customer_city":  "AHMEDABAD",
+                    "customer_state":  "GUJARAT",
+                    "customer_pincode":  "380444",
+                    "customer_contact_no":  "9749272018",
+                    "customer_gst_number":  "24AABC0886D1Z4",
+                    "customer_id":  "20240006222",
+                    "servicing_branch":  "AHMEDABAD",
+                    "insurer_name":  "Heritage General Insurance Company 06222",
+                    "branch_office_address":  "Suite 722, 3TH FLOOR, BUSINESS PARK, AHMEDABAD - 380444, GUJARAT",
+                    "branch_phone":  "1800 102 6222",
+                    "insurer_gst_number":  "24AAHCN5774K1Z7",
+                    "imd_code":  "BRC0006722",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 06222",
+                    "imd_aadhar_no":  "100000006222",
+                    "reference_subject":  "Renewal of your Group Personal Accident Policy Ref 06222",
+                    "policy_number":  "P0142206222/8222/156222",
+                    "product_name":  "Group Personal Accident",
+                    "risk_description":  "Corporate employee benefit risk 06222",
+                    "policy_expiry_date":  "25-06-2026",
+                    "renewal_date":  "25-06-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 13, Corporate District, AHMEDABAD - 380444, GUJARAT, India",
+                    "care_line":  "1800 102 8242",
+                    "email":  "support06222@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance06222.co.in",
+                    "irda_registration_no":  "922",
+                    "cin":  "U6600024MH2011PLC240222",
+                    "uin":  "HERIGP06222V032022",
+                    "signatory":  "Authorised Signatory 06222",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 06222",
+                                                             "Product_Name":  "Product Name 06222",
+                                                             "Risk_Description":  "Risk Description 06222",
+                                                             "Renewal_Date":  "Renewal Date 06222"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142206222/8222/156222",
+                                                              "Product_Name":  "Group Personal Accident",
+                                                              "Risk_Description":  "Corporate employee benefit risk 06222",
+                                                              "Renewal_Date":  "25-06-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

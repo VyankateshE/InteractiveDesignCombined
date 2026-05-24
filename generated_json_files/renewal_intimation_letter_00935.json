@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 00935",
+                    "letter_date":  "20-05-2026",
+                    "customer_name":  "NEXORA ENTERPRISES PVT LTD 00935",
+                    "customer_address":  "Plot 75, Industrial Area, Sector 36, 1035 Road, JAIPUR, RAJASTHAN",
+                    "customer_city":  "JAIPUR",
+                    "customer_state":  "RAJASTHAN",
+                    "customer_pincode":  "302629",
+                    "customer_contact_no":  "9707404265",
+                    "customer_gst_number":  "08AABC2155D1Z9",
+                    "customer_id":  "20240000935",
+                    "servicing_branch":  "JAIPUR",
+                    "insurer_name":  "Heritage General Insurance Company 00935",
+                    "branch_office_address":  "Suite 235, 16TH FLOOR, BUSINESS PARK, JAIPUR - 302629, RAJASTHAN",
+                    "branch_phone":  "1800 102 0935",
+                    "insurer_gst_number":  "08AAHCN5895K1Z3",
+                    "imd_code":  "BRC0001435",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 00935",
+                    "imd_aadhar_no":  "100000000935",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 00935",
+                    "policy_number":  "P0142200935/8935/150935",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 00935",
+                    "policy_expiry_date":  "30-12-2026",
+                    "renewal_date":  "30-12-2026",
+                    "corporate_registered_office":  "Heritage Tower, Floor 6, Corporate District, JAIPUR - 302629, RAJASTHAN, India",
+                    "care_line":  "1800 102 2955",
+                    "email":  "support00935@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance00935.co.in",
+                    "irda_registration_no":  "135",
+                    "cin":  "U6600008MH2011PLC234935",
+                    "uin":  "HERIGP00935V032022",
+                    "signatory":  "Authorised Signatory 00935",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 00935",
+                                                             "Product_Name":  "Product Name 00935",
+                                                             "Risk_Description":  "Risk Description 00935",
+                                                             "Renewal_Date":  "Renewal Date 00935"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142200935/8935/150935",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 00935",
+                                                              "Renewal_Date":  "30-12-2026"
+                                                          }
+                                                      ]
+                                         }
+                }
+}

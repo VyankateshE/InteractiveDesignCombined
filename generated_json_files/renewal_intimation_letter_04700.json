@@ -1,0 +1,52 @@
+﻿{
+    "english":  {
+                    "letter_type":  "RENEWAL INTIMATION 04700",
+                    "letter_date":  "05-05-2026",
+                    "customer_name":  "QUANTUMBYTE ENTERPRISES PVT LTD 04700",
+                    "customer_address":  "Plot 240, Industrial Area, Sector 1, 4800 Road, CHENNAI, TAMIL NADU",
+                    "customer_city":  "CHENNAI",
+                    "customer_state":  "TAMIL NADU",
+                    "customer_pincode":  "600074",
+                    "customer_contact_no":  "9737219300",
+                    "customer_gst_number":  "33AABC1100D1Z3",
+                    "customer_id":  "20240004700",
+                    "servicing_branch":  "CHENNAI",
+                    "insurer_name":  "Heritage General Insurance Company 04700",
+                    "branch_office_address":  "Suite 800, 1TH FLOOR, BUSINESS PARK, CHENNAI - 600074, TAMIL NADU",
+                    "branch_phone":  "1800 102 4700",
+                    "insurer_gst_number":  "33AAHCN9900K1Z6",
+                    "imd_code":  "BRC0005200",
+                    "imd_name":  "WINTAGE INSURANCE BROKERS LIMITED 04700",
+                    "imd_aadhar_no":  "100000004700",
+                    "reference_subject":  "Renewal of your Corporate Health Protect Policy Ref 04700",
+                    "policy_number":  "P0142204700/8700/154700",
+                    "product_name":  "Corporate Health Protect",
+                    "risk_description":  "Corporate employee benefit risk 04700",
+                    "policy_expiry_date":  "24-04-2027",
+                    "renewal_date":  "24-04-2027",
+                    "corporate_registered_office":  "Heritage Tower, Floor 21, Corporate District, CHENNAI - 600074, TAMIL NADU, India",
+                    "care_line":  "1800 102 6720",
+                    "email":  "support04700@heritageinsurance.co.in",
+                    "website":  "www.heritageinsurance04700.co.in",
+                    "irda_registration_no":  "300",
+                    "cin":  "U6600033MH2011PLC238700",
+                    "uin":  "HERIGP04700V032022",
+                    "signatory":  "Authorised Signatory 04700",
+                    "transactionTable":  {
+                                             "heading":  {
+                                                             "Policy_Number":  "Policy Number 04700",
+                                                             "Product_Name":  "Product Name 04700",
+                                                             "Risk_Description":  "Risk Description 04700",
+                                                             "Renewal_Date":  "Renewal Date 04700"
+                                                         },
+                                             "data":  [
+                                                          {
+                                                              "Policy_Number":  "P0142204700/8700/154700",
+                                                              "Product_Name":  "Corporate Health Protect",
+                                                              "Risk_Description":  "Corporate employee benefit risk 04700",
+                                                              "Renewal_Date":  "24-04-2027"
+                                                          }
+                                                      ]
+                                         }
+                }
+}
